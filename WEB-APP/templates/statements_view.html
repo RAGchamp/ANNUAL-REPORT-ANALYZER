@@ -1,3 +1,4 @@
+{% from "_brand.html" import brand_nav -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,10 +78,7 @@
 </head>
 <body>
 
-<div class="topnav">
-  <span class="brand" aria-label="RAG Champ">{{ logo_svg | safe }}</span>
-  <div class="tagline">ANNUAL REPORT ANALYZER</div>
-</div>
+{{ brand_nav(logo_svg) }}
 
 <main class="container my-4">
 

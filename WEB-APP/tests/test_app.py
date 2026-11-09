@@ -113,7 +113,7 @@ def test_full_flow(client):
     assert re.fullmatch(r"Bharat-Forge-IR-2026-conv-single-page-2-\d{8}-\d{6}\.html", second)
     html1 = (config.ANALYSIS_HISTORY_DIR / first).read_text(encoding="utf-8")
     assert "Bharat Forge Limited" in html1 and "RAG Champ" in html1
-    assert "ANNUAL REPORT ANALYZER" in html1 and q.replace("'", "&#39;") in html1
+    assert "STOCK INVESTMENT PLAYBOOK" in html1 and q.replace("'", "&#39;") in html1
     assert "405–407" in html1 and "Initial question" in html1
     assert "Financial statements referenced:" in html1
     assert "Consolidated Statement of Changes in Equity (PDF p.344–345)" in html1
@@ -237,3 +237,18 @@ def test_running_job_shows_answer_so_far(client, monkeypatch):
     job = wait_job(client, job_id)
     assert job["status"] == "done" and "partial_html" not in job
     assert "34.66%" in job["result"]["answer"]
+
+
+def test_watchlist_and_branding(client):
+    """Every page carries the RAG Champ bar of the STOCK INVESTMENT PLAYBOOK; the home page links the watchlist."""
+    home = client.get("/").get_data(as_text=True)
+    assert 'href="/watchlist"' in home
+    page = client.get("/watchlist")
+    assert page.status_code == 200
+    html = page.get_data(as_text=True)
+    assert "STOCK INVESTMENT PLAYBOOK" in html and "RAG Champ" in html
+    assert 'id="titleTable"' in html and "Nvidia" in html and 'id="myInput"' in html
+    assert "Safe Multiple" not in html                      # the old site's header is not carried over
+    assert client.get("/watchlist.html").status_code == 200
+    for url in ("/", "/ingest", "/model-testing"):
+        assert 'class="rc-topnav"' in client.get(url).get_data(as_text=True), url

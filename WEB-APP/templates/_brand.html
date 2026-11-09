@@ -1,0 +1,41 @@
+{#- The RAG Champ top bar, shared by every page of the app and the saved analysis reports.
+    It is the same bar as the STOCK INVESTMENT PLAYBOOK pages (STOCK-INV-PLAYBOOOK\...\DLTR-PLAYBOOK.html):
+    the Annual Report Analyzer is part of the playbook.
+
+      {% from "_brand.html" import brand_nav %}
+      {{ brand_nav(logo_svg) }}                         the logo links to the home page (/)
+      {{ brand_nav(logo_svg, home=None) }}              a saved report opened from disk: no link
+      {% call brand_nav(logo_svg) %}<button>…</button>{% endcall %}   extra controls before the tagline
+
+    The styles are inline and prefixed "rc-", so the bar looks the same on pages with Bootstrap,
+    with static/style.css, and in standalone saved reports. -#}
+{% macro brand_nav(logo_svg, home="/") -%}
+<style>
+  .rc-topnav{ position:sticky; top:0; z-index:1030; background:#0a3d1f; color:#ffe14d;
+    padding:.9rem 1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .rc-topnav .rc-brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .rc-topnav .rc-brand svg{ height:44px; width:auto; display:block; }
+  .rc-topnav .rc-right{ display:flex; align-items:center; gap:1rem; }
+  .rc-topnav .rc-tagline{ font-weight:600; font-size:1.05rem; color:#ffe14d; letter-spacing:.15em;
+    word-spacing:.6em; font-style:italic; margin:0; }
+  .rc-topnav .rc-right .btn{ color:#ffe14d; border-color:#ffe14d; }
+  @media (max-width:576px){
+    .rc-topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+    .rc-topnav .rc-brand svg{ height:34px; }
+    .rc-topnav .rc-tagline{ font-size:.85rem; letter-spacing:.08em; word-spacing:.3em; }
+  }
+  @media print{ .rc-topnav{ position:static; box-shadow:none; } }
+</style>
+<div class="rc-topnav">
+  {%- if home %}
+  <a class="rc-brand" href="{{ home }}" title="Home" aria-label="RAG Champ — home">{{ logo_svg | safe }}</a>
+  {%- else %}
+  <span class="rc-brand" aria-label="RAG Champ">{{ logo_svg | safe }}</span>
+  {%- endif %}
+  <div class="rc-right">
+    {%- if caller %}{{ caller() }}{% endif %}
+    <div class="rc-tagline">STOCK INVESTMENT PLAYBOOK</div>
+  </div>
+</div>
+{%- endmacro %}

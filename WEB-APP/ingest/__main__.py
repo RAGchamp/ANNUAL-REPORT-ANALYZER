@@ -3,11 +3,12 @@
     python -m ingest "..\\Annual-reports\\Chubb-10-K-2025.pdf"
     python -m ingest report.pdf --format legacy     # force a format
     python -m ingest report.pdf --force             # rebuild even if up to date
+    python -m ingest "..\\Annual-reports\\NVIDIA-10-K-2026"   # an inline XBRL filing (folder or .zip)
 
 One report at a time (INFO/SPLIT-FUNCTIONALITY-PLAN.md, Q7). Scanned reports
 must be transcribed first, from the app (it costs Claude usage).
 
-Exit codes: 0 ingested, 1 unreadable PDF, 2 needs transcription,
+Exit codes: 0 ingested, 1 unreadable PDF (or an XBRL filing that fails its checks), 2 needs transcription,
 3 new model document (it matches no model in MODEL-DOCS; see the gap report).
 """
 
@@ -21,7 +22,7 @@ from ingest.pdf_utils import PdfError
 
 
 def main(argv=None):
-    parser = argparse.ArgumentParser(prog="python -m ingest", description="Ingest one annual report PDF.")
+    parser = argparse.ArgumentParser(prog="python -m ingest", description="Ingest one annual report PDF or inline XBRL filing.")
     parser.add_argument("pdf", type=Path)
     parser.add_argument("--format", choices=["auto", *report_format.FORMATS],
                         help="force a report format (default: keep the package's, or detect)")
@@ -30,8 +31,8 @@ def main(argv=None):
     logging.basicConfig(level=logging.WARNING)
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
-    if not args.pdf.is_file():
-        parser.error(f"not a file: {args.pdf}")
+    if not args.pdf.is_file() and not pipeline.is_xbrl(args.pdf):
+        parser.error(f"not a file or an inline XBRL filing folder: {args.pdf}")
     try:
         if args.force:
             path = pipeline.build_package(args.pdf, args.format)

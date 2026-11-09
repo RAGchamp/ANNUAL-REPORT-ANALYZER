@@ -2,7 +2,7 @@
 -- One SQLite file per annual report, written by the ingester, read by the analyzer.
 -- JSON columns hold lists / objects exactly as the ingester produced them.
 
--- schema_version, ingester_version, pdf_name, pdf_sha256, page_count, built_at,
+-- schema_version, ingester_version, pdf_name, pdf_sha256, source ("xbrl" for an XBRL filing; schema 1.3), page_count, built_at,
 -- company, format, format_source, format_label, summary, quality, and "index":
 -- the report-level facts of the index (sections and page layouts are in their tables).
 CREATE TABLE meta (
@@ -61,7 +61,8 @@ CREATE TABLE lines (
     table_no    INTEGER NOT NULL,
     label       TEXT NOT NULL,
     kind        TEXT NOT NULL,                -- data | total
-    note_ref    TEXT                          -- "21", "5a", "'E'" from the Notes / Schedule column
+    note_ref    TEXT,                         -- "21", "5a", "'E'" from the Notes / Schedule column
+    concept     TEXT                          -- schema 1.3: the XBRL concept ("us-gaap:Revenues"); NULL from a PDF
 );
 
 CREATE TABLE "values" (

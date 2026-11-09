@@ -17,6 +17,13 @@ The app has two parts in one program (`..\INFO\SPLIT-FUNCTIONALITY-PLAN.md`):
 
 Plans: `..\INFO\ANN-RPT-NOTES-ANALYZER-PLAN.md`, `..\INFO\SPLIT-FUNCTIONALITY-PLAN.md`
 
+## Part of the Stock Investment Playbook
+
+The analyzer is one part of the **STOCK INVESTMENT PLAYBOOK** (`C:\Daya\RAGchamp\STOCK-INV-PLAYBOOOK`).
+Every page carries the playbook's RAG Champ bar (`templates\_brand.html`). The home page links the
+**Watchlist** (`/watchlist`): indexes, macroeconomic data, private equity firms, and the stocks to follow,
+with links to their EDGAR filings and a search box.
+
 ## Run
 
 ```powershell
@@ -262,6 +269,63 @@ matching figures and titles. The other differences are handled automatically:
 
 Chubb 2025: 22 consolidated notes (PDF 111–212), with the P&L on p.108, the BS on
 p.107, the CF on p.110 and Equity on p.109.
+
+## Inline XBRL filings (the XBRL route)
+
+US filings on EDGAR (10-K, 20-F, 40-F) are also published as **inline XBRL**: the
+report as an XHTML file in which every statement figure and every note is tagged.
+The app reads such a filing directly from its tags (`ingest\xbrl\`,
+`INFO\XBRL-ROUTE.md`), with no layout rules and no model document:
+
+1. On EDGAR open the filing's index and choose **Download all files**, or download its
+   `.htm`, `.xsd` and `_pre.xml` / `_cal.xml` / `_lab.xml` / `_def.xml` files.
+2. Put them in a folder under `Annual-reports\` (e.g. `Annual-reports\NVIDIA-10-K-2026\`),
+   or put the `.zip` there. The dropdown lists it like a PDF, and the Ingest screen
+   marks it **inline XBRL**. The app does not download from EDGAR itself.
+3. Select it. Ingestion takes about a second (`python -m ingest "..\Annual-reports\NVIDIA-10-K-2026"`
+   also works).
+
+What it gives:
+
+- **Notes** come from the filing's note text blocks, with continuations joined and
+  tables written as `label | FY2026 | FY2025`. Numbers are the printed "Note 13".
+- **Statements** come from the presentation trees with the filed labels and signs.
+  The equity statement is shown one component after another, then the total.
+  Comprehensive income is a second income statement (`C-PL-2`).
+- **Checks**: subtotals from the calculation linkbase (ok / fail), the balance
+  sheet, and the same figure in two statements.
+- **Links**: a line whose XBRL concept is tagged in a note's details is linked to
+  that note ("same XBRL concept tagged in the note"); other lines use the usual rules.
+- **Pages** are the document's pages between its page breaks, with the printed page
+  alongside. The prompt says so, and the Ingest screen's page view shows the filing's
+  own HTML for the page.
+- A filing must pass acceptance checks: at least 5 notes, 3 of the 4 statements,
+  readable figures, a balancing balance sheet, and US GAAP facts. Otherwise it is
+  refused with the reason. IFRS filings (`ifrs-full`) are not read yet.
+- When a PDF and a filing share a name (`JP-MORGAN-2025.pdf` and `JP-MORGAN-2025\`),
+  only the filing is listed. The PDF models (TYPE-3, 6–9) stay for PDF-only reports.
+
+### Downloading a filing from SEC (the XBRL page)
+
+Open **XBRL filings** from the home page (`/xbrl`). Enter the stock's **ticker** and a **link to the filing** on
+SEC EDGAR: its index page (e.g.
+`https://www.sec.gov/Archives/edgar/data/874766/000087476626000012/0000874766-26-000012-index.htm`) or the
+iXBRL viewer link of its 10-K. Click **Download**. The app saves the iXBRL document and the XBRL data files
+(schema, calculation, definition, label and presentation linkbases, extracted instance) in
+`WEB-APP\XBRL-docs\<TICKER>\` with a `filing.json` that records what came from where. The filing is then listed
+with the reports; click **Ingest** on the page (or just select it on the Analyze screen).
+
+- Tick **Replace** to download over a ticker's existing folder.
+- SEC asks automated tools to identify themselves. Set the `SEC_USER_AGENT` environment variable to your name
+  and email (e.g. `Your Name your.email@example.com`) before starting the app; without it a generic name is sent.
+- SEC's website adds a bot-check script to the HTML it serves. The app removes it, so the saved document is
+  exactly as filed.
+
+The Hartford (HIG) FY2025 10-K: 7 files (25.9 MB) in 9 s, ingested in 3 s: 25 notes, all statements,
+24/24 checks ok.
+
+Nvidia FY2026 10-K: 18 notes (pages 56–81), 4 statements (+ comprehensive income),
+332 figures, 28/28 checks ok, 62 passages for "Analyze non notes".
 
 ## Plain-text filings (EDGAR 10-Ks of the 1990s)
 

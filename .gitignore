@@ -1,5 +1,6 @@
 # Not part of the published project
 OLD-STUFF/
+WEB-APP-Pre-Nov-8/
 S-PAD/
 WEB-APP-v1/
 
@@ -15,6 +16,8 @@ WEB-APP/cache/
 WEB-APP/logs/
 WEB-APP/claude-prompt-input.txt
 WEB-APP/Claude-prompt-output.txt
+# Filings downloaded from SEC on the XBRL page (data, ~25 MB each)
+WEB-APP/XBRL-docs/
 
 # Local Claude Code settings
 .claude/settings.local.json

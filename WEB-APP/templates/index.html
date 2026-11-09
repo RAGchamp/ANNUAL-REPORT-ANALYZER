@@ -1,18 +1,24 @@
+{% from "_brand.html" import brand_nav -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Annual Report Foot Notes Analyzer</title>
+  <title>Annual Report Analyzer</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
 </head>
 <body>
-  <nav class="navbar">
-    <button type="button" id="history-toggle" class="ghost" title="Show/hide history">☰ History</button>
-    <h1>Annual Report Foot Notes Analyzer</h1>
-    <a class="ghost nav-link" href="/ingest" title="Ingest reports, see what was found and checked, review scans, export or import packages">Ingest screen ↗</a>
-    <a class="ghost nav-link" href="/model-testing" title="Test what the app extracts from any page of a model document, and report wrong extractions">Model testing</a>
-  </nav>
+  <header class="site-header">
+    {{ brand_nav(logo_svg) }}
+    <nav class="navbar">
+      <button type="button" id="history-toggle" class="ghost" title="Show/hide history">☰ History</button>
+      <h1>Annual Report Analyzer</h1>
+      <a class="ghost nav-link" href="/ingest" title="Ingest reports, see what was found and checked, review scans, export or import packages">Ingest screen ↗</a>
+      <a class="ghost nav-link" href="/xbrl" title="Download a company's inline XBRL filing from SEC EDGAR">XBRL filings</a>
+      <a class="ghost nav-link" href="/watchlist" title="Watchlist: indexes, macroeconomics and the stocks to follow, with links to their filings">Watchlist</a>
+      <a class="ghost nav-link" href="/model-testing" title="Test what the app extracts from any page of a model document, and report wrong extractions">Model testing</a>
+    </nav>
+  </header>
 
   <div class="layout">
     <aside id="history-panel" class="history-panel">

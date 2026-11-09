@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Onboarding a New Annual Report</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/styles/vs2015.min.css">
+<style>
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-light:#6ea8fe;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-red:#dc3545;
+    --biz-green:#198754;
+    --nav-blue:#04264d;
+    --nav-yellow:#ffd60a;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  /* Sticky top nav */
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand-logo{ height:44px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  section[id]{ scroll-margin-top:84px; }
+  html{ scroll-behavior:smooth; }
+
+  .hero{
+    background:linear-gradient(120deg, var(--biz-blue-dark) 0%, var(--biz-blue) 55%, #3d8bfd 100%);
+    color:#fff;
+  }
+  .accent-blue{ border-left:5px solid var(--biz-blue); }
+  .accent-green{ border-left:5px solid var(--biz-green); }
+  .accent-red{ border-left:5px solid var(--biz-red); }
+  .accent-yellow{ border-left:5px solid var(--biz-yellow); }
+
+  .section-title{
+    display:inline-flex; align-items:center; gap:.6rem;
+    padding-bottom:.4rem; border-bottom:3px solid var(--biz-blue);
+    margin-bottom:1.25rem;
+  }
+  .toc-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:1.8rem; height:1.8rem; border-radius:50%;
+    background:var(--biz-yellow); color:#2b2b2b; font-weight:700; font-size:.85rem;
+    margin-right:.5rem; flex:none;
+  }
+  .toc-list a{ text-decoration:none; color:#212529; }
+  .toc-list a:hover{ color:var(--biz-blue); text-decoration:underline; }
+  .toc-item{ display:flex; align-items:center; padding:.4rem 0; }
+  .back-to-top{ font-size:.85rem; }
+  .color-key-dot{ width:.9rem; height:.9rem; border-radius:50%; display:inline-block; margin-right:.4rem; }
+  table thead th{ background:#eef3fb; }
+  .glossary-table thead th{ background:#04264d; color:#fff; }
+
+  /* VS Code style dark code windows */
+  .code-window{ background:#084298; border-radius:.5rem; overflow:hidden; margin:1rem 0 1.5rem; box-shadow:0 .25rem .75rem rgba(0,0,0,.3); }
+  .code-window .code-titlebar{
+    background:#323233; color:#cccccc; padding:.45rem .9rem; font-size:.8rem;
+    display:flex; align-items:center; gap:.4rem; font-family:'Segoe UI',Roboto,sans-serif;
+  }
+  .code-window .dot{ width:.7rem; height:.7rem; border-radius:50%; display:inline-block; }
+  .dot-red{ background:#ff5f56; } .dot-yellow{ background:#ffbd2e; } .dot-green{ background:#27c93f; }
+  .code-window .code-filename{ margin-left:.5rem; opacity:.85; }
+  .code-window pre{ margin:0 !important; padding:1rem 1.25rem !important; background:#084298 !important; overflow-x:auto; }
+  .code-window code, .code-window code *{ font-family:'Fira Code',Consolas,Monaco,monospace; font-size:.85rem; background:transparent !important; color:#ffffff !important; font-weight:700 !important; text-shadow:none; }
+  .code-window .copy-btn{ margin-left:auto; font-size:.75rem; padding:.1rem .6rem; }
+
+  .badge-tool{ background:#04264d; color:var(--nav-yellow); }
+
+  /* Step-by-step walkthrough boxes */
+  .step-box{
+    background:#e9ecef;
+    border-radius:.5rem;
+    overflow:hidden;
+    margin:0 0 1.25rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.12);
+  }
+  .step-box .step-bar{
+    background:var(--nav-blue);
+    color:#5BF527;
+    font-weight:700;
+    padding:.5rem 1.1rem;
+    font-size:.95rem;
+    letter-spacing:.02em;
+  }
+  .step-box .step-bar .step-title{ font-weight:700; }
+  .step-box .step-body{ padding:1rem 1.25rem; }
+  .step-box .step-body p:last-child{ margin-bottom:0; }
+  .step-box .step-file{
+    font-family:'Fira Code',Consolas,Monaco,monospace;
+    font-size:.8rem;
+    margin-bottom:.7rem;
+  }
+  .step-box .step-file mark{
+    background:var(--biz-yellow);
+    color:#2b2b2b;
+    padding:.15rem .5rem;
+    border-radius:.25rem;
+    font-weight:600;
+  }
+  .step-box .step-file .arrow{ color:#6c757d; margin:0 .3rem; font-family:'Segoe UI',Roboto,sans-serif; }
+
+  .problem{ color:var(--biz-red); font-weight:600; }
+  .fix{ color:var(--biz-green); font-weight:600; }
+
+  footer{ background:var(--nav-blue); }
+  footer a{ color:#fff; }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<div class="topnav">
+  <span class="brand"><img class="brand-logo" src="logo.svg" alt="RAG Champ"></span>
+  <div class="tagline">ANNUAL REPORT ANALYZER</div>
+</div>
+
+<!-- HERO -->
+<header class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <span class="badge rounded-pill bg-warning text-dark mb-3">Annual Report Analyzer · Model Documents · Onboarding</span>
+        <h1 class="display-6 fw-bold">Steps Needed for Onboarding a New Annual Report</h1>
+        <p class="lead mb-0">Does every new annual report need new extraction rules? <strong>No.</strong> Only a report whose <strong>layout</strong> differs from every model document does. This guide explains how to tell which case you are in and what onboarding involves. It then walks through how the <strong>JPMorgan Chase 2025 Form 10-K</strong> was onboarded, and why it needed its own model even though a 10-K model (Chubb, TYPE-3) already existed.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+
+  <!-- COLOR KEY -->
+  <div class="mb-5">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body py-3">
+        <div class="row g-2 small text-center text-md-start">
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-blue);"></span>Blue — what to do / how it works</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-red);"></span>Red — a problem hit / what to avoid</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-green);"></span>Green — the fix / what good looks like</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-yellow);"></span>Yellow — prerequisites &amp; definitions</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <section id="toc" class="mb-5">
+    <h2 class="section-title">Table of Contents</h2>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="row toc-list">
+          <div class="col-md-6">
+            <div class="toc-item"><span class="toc-num">1</span><a href="#answer">Short Answer: Is This Needed for Every Report?</a></div>
+            <div class="toc-item"><span class="toc-num">2</span><a href="#matching">How the App Decides: Matching</a></div>
+            <div class="toc-item"><span class="toc-num">3</span><a href="#decide">Which Case Am I In?</a></div>
+            <div class="toc-item"><span class="toc-num">4</span><a href="#steps">The Onboarding Steps (General)</a></div>
+            <div class="toc-item"><span class="toc-num">5</span><a href="#why">Why JPMorgan Did Not Match Chubb</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="toc-item"><span class="toc-num">6</span><a href="#walkthrough">JPMorgan, Step by Step</a></div>
+            <div class="toc-item"><span class="toc-num">7</span><a href="#result">The Result</a></div>
+            <div class="toc-item"><span class="toc-num">8</span><a href="#limits">Known Limitations</a></div>
+            <div class="toc-item"><span class="toc-num">9</span><a href="#future">What Gets Easier Next Time</a></div>
+            <div class="toc-item"><span class="toc-num">10</span><a href="#reference">Quick Reference</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. ANSWER -->
+  <section id="answer" class="mb-5">
+    <h2 class="section-title">1. Short Answer: Is This Needed for Every Report?</h2>
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <p><strong>No.</strong> A model document stands for a <em>layout</em> (how the report is typeset), not for a company or a year. A new report is read automatically when its layout is close enough to one of the models for that model's rules to pass their checks on it. In that case you drop the PDF into <code>Annual-reports\</code>, select it, and analyze. There is nothing to onboard.</p>
+        <p class="mb-0">Onboarding is needed only when the app shows the yellow <strong>"New model document — can't be analyzed until its model is added"</strong> box. That means no existing rules could read the report's notes and statements correctly.</p>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-blue mb-4">
+      <div class="card-body">
+        <h5>What to expect in practice</h5>
+        <div class="table-responsive">
+          <table class="table table-sm align-middle mb-0">
+            <thead><tr><th>New report</th><th>Likely outcome</th></tr></thead>
+            <tbody>
+              <tr><td>Next year's report of a company that is already a model (e.g. JPMorgan 2026, Bharat Forge 2027)</td><td>Usually matches its own model; companies rarely change their typesetting. Not guaranteed: a redesign can break a rule.</td></tr>
+              <tr><td>Another company that uses the same typesetting (e.g. another Indian Ind AS integrated report; another 10-K produced by an EDGAR filing agent like Chubb's)</td><td>Often matches an existing model.</td></tr>
+              <tr><td>A company that designs its own report (its own fonts, columns and note headings), even with the same form type</td><td>Often needs onboarding. <strong>JPMorgan is this case</strong>: it is a Form 10-K like Chubb's, but it is typeset quite differently.</td></tr>
+              <tr><td>A different country, accounting framework or era</td><td>Usually needs onboarding (new wording checks, at least).</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 mb-0">The more formats are onboarded, the more often a new report matches, or needs only a small profile made from switches that already exist (Section 9).</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 2. MATCHING -->
+  <section id="matching" class="mb-5">
+    <h2 class="section-title">2. How the App Decides: Matching</h2>
+    <div class="card shadow-sm accent-blue mb-4">
+      <div class="card-body">
+        <p>When you select or re-ingest a report, the ingester matches it to a model document before it extracts anything (<code>WEB-APP\ingest\models\match.py</code>):</p>
+        <pre><code class="language-plaintext">1. Checksum      the PDF is a model document itself?           ─► matched
+2. Fingerprint   fonts, page shape, form (10-K, 20-F…), framework (US GAAP, Ind AS…),
+                 currencies, note-heading styles, statement titles…  ─► similarity to every model
+3. Trial         the best 3 models (with rules) above 0.55 similarity:
+                 extract the report with each model's rules
+4. Acceptance    did that extraction find ≥ 5 notes numbered from about 1, ≥ 3 of the 4 statements,
+                 readable figures, a balance sheet that balances, and the format's wording?
+                 ─► the first model whose checks all pass is the match
+                 ─► none passes (or two formats are equally close): NEW MODEL DOCUMENT + gap report</code></pre>
+        <p class="mb-0">The decision is made by the <strong>trial extraction</strong>, not by the similarity score. A report can look 71 % like Chubb and still be refused, because Chubb's rules find nothing in it. That is exactly what happened with JPMorgan.</p>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-yellow">
+      <div class="card-body">
+        <h5>Words used in this guide</h5>
+        <div class="table-responsive">
+          <table class="table table-sm align-middle mb-0 glossary-table">
+            <thead><tr><th>Term</th><th>Meaning</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Model document</strong></td><td>One PDF in <code>MODEL-DOCS\</code> that stands for one report layout. Its id is its file name, <code>TYPE-&lt;n&gt;-&lt;COUNTRY&gt;-&lt;FORM&gt;-&lt;YEAR&gt;-&lt;Company&gt;</code>.</td></tr>
+              <tr><td><strong>Profile</strong></td><td>The extraction rules for a layout (<code>WEB-APP\ingest\profiles\__init__.py</code>): the indexer, the switches it turns on, and its acceptance checks.</td></tr>
+              <tr><td><strong>Switch</strong></td><td>An optional rule that only the profiles needing it turn on. A new layout never changes another layout's code path, so existing reports keep exactly the same extraction.</td></tr>
+              <tr><td><strong>Gap report</strong></td><td>What the matcher writes for a refused report: its fingerprint next to the nearest models', and what each model's rules found. Opened with <em>View gap report</em> on the Ingest screen.</td></tr>
+              <tr><td><strong>Quality report</strong></td><td>What one ingestion found: notes, statements, figures, links, checks, narrative pages. Printed by <code>python -m ingest &lt;pdf&gt;</code>.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 3. DECIDE -->
+  <section id="decide" class="mb-5">
+    <h2 class="section-title">3. Which Case Am I In?</h2>
+    <div class="step-box">
+      <div class="step-bar">CHECK <span class="step-title">— Drop the PDF in Annual-reports\ and select it</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>Annual-reports\&lt;report&gt;.pdf</mark><span class="arrow">→</span>Analyze screen, step 1 (or the Ingest screen)</div>
+        <ul class="mb-0">
+          <li><strong>It loads and shows notes and statements:</strong> it matched a model. Glance at the quality summary (notes found, statements, "balance checks ok") and analyze. Done.</li>
+          <li><strong>"New model document":</strong> onboarding is needed. Read the box: it names the nearest model and what its rules found (e.g. <em>"0 notes found (need 5); 0 of 4 statements found"</em>). Then follow Section 4.</li>
+        </ul>
+      </div>
+    </div>
+    <p>The same check from the command line, which also prints the gap report's path:</p>
+    <div class="code-window">
+      <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">PowerShell — C:\Daya\RAGchamp\ANN-RPT-ANALYZER\WEB-APP</span></div>
+      <pre><code class="language-powershell">python -m ingest.models match "..\Annual-reports\JP-MORGAN-2025.pdf"</code></pre>
+    </div>
+    <div class="card shadow-sm accent-red">
+      <div class="card-body">
+        <h5>"Try again" does not help</h5>
+        <p class="mb-0">Re-ingesting a refused report gives the same verdict every time: the verdict is remembered and the rules have not changed. The verdict changes only when new rules are added (which bumps the registry version and re-matches the report automatically).</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 4. STEPS -->
+  <section id="steps" class="mb-5">
+    <h2 class="section-title">4. The Onboarding Steps (General)</h2>
+    <p>These are the steps of the routine in <code>MODEL-DOCS\README.md</code>. You do steps 1 and 7; a Claude Code session in the project does 2–6. The exact prompt to give it is in <code>INFO\HOW-TO-TRAIN-NEW-MODEL-FORMAT.html</code>, Step 3.</p>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 1 <span class="step-title">— Model document</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>MODEL-DOCS\TYPE-&lt;next&gt;-&lt;COUNTRY&gt;-&lt;FORM&gt;-&lt;YEAR&gt;-&lt;Company&gt;.pdf</mark></div>
+        <p>Copy the report into <code>MODEL-DOCS\</code> under the next TYPE number. Keep a copy in <code>Annual-reports\</code> to analyze.</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 2 <span class="step-title">— Diagnose</span></div>
+      <div class="step-body">
+        <p>Read the gap report, then look at the PDF's real pages: where the notes start and end, how note headings are printed, where the statements are, what the running headers and footers look like. Run the nearest model's rules and see <em>where</em> each one fails. This is most of the work.</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 3 <span class="step-title">— Profile and switches</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>WEB-APP\ingest\profiles\__init__.py</mark></div>
+        <p>Make a new profile, usually with <code>derive()</code> from the nearest one. Where the layout needs new logic, add a <strong>switch</strong>, write the rule so it only runs when the switch is on, and turn it on in the new profile only. Never change another layout's code path.</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 4 <span class="step-title">— Register and iterate on the quality report</span></div>
+      <div class="step-body">
+        <p><code>python -m ingest.models register … --profile &lt;id&gt;</code>, then <code>python -m ingest &lt;pdf&gt; --force</code> and read the quality report. Fix, re-ingest, repeat until notes, statements, figures, checks and narrative pages are all right.</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 5 <span class="step-title">— Golden test</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>WEB-APP\tests\test_&lt;name&gt;.py</mark></div>
+        <p>Pin down what a correct extraction looks like: note count and a known note's pages, statement pages, a figure with its period, a link, and one test for each new rule.</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 6 <span class="step-title">— Verify nothing else changed</span></div>
+      <div class="step-body">
+        <p><code>python -m ingest.models verify</code> (every model still matches itself; no other format's rules accept another model) and <code>python -m pytest -q</code> (all tests, including the frozen prompts of the five sample reports, which prove they are byte-identical).</p>
+      </div>
+    </div>
+    <div class="step-box">
+      <div class="step-bar">STEP 7 <span class="step-title">— Try it in the app, then rebuild the exe</span></div>
+      <div class="step-body">
+        <p>Restart <code>python app.py</code>, select the report, check pages on the Model testing screen, ask one question, and rebuild the exe with the dashboard builder.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 5. WHY -->
+  <section id="why" class="mb-5">
+    <h2 class="section-title">5. Why JPMorgan Did Not Match Chubb</h2>
+    <div class="card shadow-sm accent-red mb-4">
+      <div class="card-body">
+        <h5>What the app said</h5>
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">Ingest screen — JP-MORGAN-2025.pdf</span></div>
+          <pre><code class="language-plaintext">New model document — can't be analyzed until its model is added
+Nearest: TYPE-3 USA 10-K 2025 Chubb (similarity 0.71); with its rules: 0 notes found (need 5);
+0 of 4 statements found (need 3); doesn't mention Item 8.</code></pre>
+        </div>
+        <p class="mb-0">Both reports are US Form 10-Ks under US GAAP, so they look similar on paper (similarity 0.71). But Chubb's 10-K is typeset by an EDGAR filing agent, and JPMorgan prints its 10-K like a designed annual report. The rules read <em>layout</em>, and the layouts differ:</p>
+      </div>
+    </div>
+    <div class="table-responsive mb-4">
+      <table class="table table-bordered table-sm align-middle bg-white">
+        <thead><tr><th>What the rules look for</th><th>Chubb (TYPE-3)</th><th>JPMorgan</th><th>Effect with Chubb's rules</th></tr></thead>
+        <tbody>
+          <tr><td>Note headings</td><td><code>12. Debt</code> (number first)</td><td><code>Note 12 – Loans</code> (the word "Note" first)</td><td class="problem">0 notes found</td></tr>
+          <tr><td>Notes running header</td><td>On every notes page</td><td>"Notes to consolidated financial statements" on <strong>left-hand pages only</strong> (PDF 172, 174, … 316)</td><td class="problem">Half the notes pages missing</td></tr>
+          <tr><td>Contents page</td><td>The index line sits below other rows</td><td>The contents page (p.45) has "Notes to consolidated financial statements: Page" in a row near the top</td><td class="problem">Notes section started at p.45, so the statements (p.167–171) were outside the 15-page window before it: 0 statements</td></tr>
+          <tr><td>Text columns</td><td>One column</td><td><strong>Two columns</strong> of 10pt text, tables inside a column or across the page</td><td class="problem">Left and right lines merged into one sentence</td></tr>
+          <tr><td>Footer</td><td>A page number on its own</td><td>"JPMorgan Chase &amp; Co./2025 Form 10-K&nbsp;&nbsp;165"</td><td class="problem">No printed page numbers; the last body lines (bottom 10 %) cut off as "footer"</td></tr>
+          <tr><td>Wording check</td><td><code>ITEM 8</code> in capitals</td><td><code>Item 8.</code></td><td class="problem">"doesn't mention Item 8" (the check was case-sensitive)</td></tr>
+          <tr><td>Balance sheet captions</td><td>Short labels</td><td>"Loans (included $70,684 and $41,350 at fair value)", wrapping onto a second line</td><td class="problem">The amounts in the caption were read as figure columns</td></tr>
+          <tr><td>End of the balance sheet</td><td>Ends at the total</td><td>A table of consolidated VIEs follows, with its own "Total assets 43,295"</td><td class="problem">Balance check compared 43,295 with 4,424,900: failed</td></tr>
+          <tr><td>Company name</td><td>"Chubb Limited"</td><td>"JPMorgan Chase &amp; Co." (no Inc./Limited)</td><td class="problem">Company read as "Federal Deposit Insurance Corporation"</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="card shadow-sm accent-green">
+      <div class="card-body">
+        <h5>The critical decision: a new model, not a change to Chubb's rules</h5>
+        <p>An alternative was to widen Chubb's profile (<code>us-10k-edgar</code>) until it also read JPMorgan, so the report would match TYPE-3 as expected. That was rejected:</p>
+        <ul class="mb-0">
+          <li>Several of the rules are wrong for Chubb's layout. Filling in pages that lack the running header, or reading two columns, would change Chubb's extraction and its frozen prompts.</li>
+          <li>The project rule is <strong>one document = one model</strong>, and a rule for one layout goes behind a switch, never into another layout's code path.</li>
+          <li>A separate model keeps both formats checked against each other: <code>verify</code> proves Chubb's rules don't accept JPMorgan, and the JPMorgan rules don't accept Chubb.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 6. WALKTHROUGH -->
+  <section id="walkthrough" class="mb-5">
+    <h2 class="section-title">6. JPMorgan, Step by Step</h2>
+    <p>The order below is the order the work was done in, including the problems found along the way.</p>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 1 <span class="step-title">— Read the gap report</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>MODEL-DOCS\_candidates\JP-MORGAN-2025\GAP-REPORT.md</mark></div>
+        <p>Nearest model TYPE-3 Chubb at 0.71, with 0 notes, 0 statements and no "Item 8" under its rules. The fingerprint showed sans-serif body text at 10pt (Chubb: 7pt, partly serif), 0 % pages with a notes header near the top, and note headings mostly of the "Note N" style. Useful clue for later: 202 PDF bookmarks, 72 usable as report sections.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 2 <span class="step-title">— Look at the real pages</span></div>
+      <div class="step-body">
+        <p>A short script printed the top rows of the statement and notes pages (font, size, bold, position). Findings:</p>
+        <ul>
+          <li>Statements at PDF 167–171, each titled in 12pt bold sentence case ("Consolidated statements of income") under "JPMorgan Chase &amp; Co.".</li>
+          <li>Notes from PDF 172, each starting at the top of a page with <code>Note N – Title</code> in 12pt bold. The only exception: Notes 16 and 17 share p.279, one per column.</li>
+          <li>The header "Notes to consolidated financial statements" is the first row on pages 172, 174, 176… and absent on 173, 175, 177…</li>
+        </ul>
+        <p class="mb-0">Then each statement page was tested on its own with the existing detector, and <em>all four were recognized correctly</em>. So the "0 statements" was not about the statements at all. It came from the notes section starting at the wrong page (p.45, the contents page), which put the statements outside the window searched before the notes.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 3 <span class="step-title">— New profile us-10k-two-column</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>WEB-APP\ingest\profiles\__init__.py</mark></div>
+        <p>Derived from Chubb's <code>us-10k-edgar</code> (same indexer, same "us-10k" format, so the analyzer treats it as a 10-K) with its own switches and a case-insensitive "Form 10-K" / "Item 8" wording check. Narrative sections come from the PDF bookmarks.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 4 <span class="step-title">— Five switches to find the notes and statements</span></div>
+      <div class="step-body">
+        <div class="table-responsive">
+          <table class="table table-sm align-middle bg-white mb-0">
+            <thead><tr><th>Switch</th><th>Problem</th><th>Rule (only when on)</th><th>Where</th></tr></thead>
+            <tbody>
+              <tr><td><code>header_starts_row</code></td><td class="problem">Contents page p.45 taken as a notes page</td><td class="fix">The header row must <em>start</em> with the header words</td><td><code>pdf_utils.find_header_row</code></td></tr>
+              <tr><td><code>alternate_header_pages</code></td><td class="problem">Right-hand notes pages have no header</td><td class="fix">A single page between two pages of one notes section belongs to it</td><td><code>notes_index._fill_alternate_pages</code></td></tr>
+              <tr><td><code>note_word_headings</code></td><td class="problem"><code>Note 12 – Loans</code> not recognized</td><td class="fix">Headings "Note N – Title"; two on one row = one per column (Notes 16 and 17)</td><td><code>notes_index._note_word_titles</code></td></tr>
+              <tr><td><code>footer_page_numbers</code></td><td class="problem">No printed page numbers; last lines cut</td><td class="fix">The lowest row with a number at either end is the footer, and only it</td><td><code>pdf_utils.page_layout</code></td></tr>
+              <tr><td><code>us_auditor_addressee</code></td><td class="problem">Company = "Federal Deposit Insurance Corporation"</td><td class="fix">Name from "To the Board of Directors and Shareholders of JPMorgan Chase &amp; Co.:"</td><td><code>notes_index._count_names</code></td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 mb-0">First trial build: <strong>34 notes</strong> (PDF 172–316) and all <strong>4 statements</strong>, with printed page numbers. Three titles were still wrong. "Note 8 – Pension and other postretirement" wraps onto a second line, and "Note 26 – Restricted cash, other restricted" was merged with a bold subheading in the right column. The fix: page rows now also carry their individual spans (<code>parts</code>), so a heading's continuation is taken only from the same column, font and size.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 5 <span class="step-title">— Read two columns in the right order</span></div>
+      <div class="step-body">
+        <div class="step-file"><mark>WEB-APP\ingest\clip.py</mark><span class="arrow">→</span><code>_column_order</code> (switch <code>two_column_text</code>)</div>
+        <p>Extracted notes came out with the left and right columns interleaved line by line, so the text Claude would read was unusable:</p>
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">Before — Note 16, p.279</span></div>
+          <pre><code class="language-plaintext">Premises and equipment includes land carried at cost, As of December 31, 2025 and 2024, noninterest-
+as well as buildings, leasehold improvements, internal- bearing and interest-bearing deposits were as follows:</code></pre>
+        </div>
+        <p>The rule finds the gutter (the x in the middle of the page that the fewest characters cross) and reads each band of rows that stays clear of it <strong>left column first, then right</strong>. Rows that cross the gutter stay whole. So do rows with only figures right of the gutter and table-size labels left of it (a table across the page). A first version decided by font size alone. It merged two small tables set side by side, one per column (Note 25 p.291), so it was refined to look at what is right of the gutter.</p>
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">After — Note 25, p.291</span></div>
+          <pre><code class="language-plaintext">Current income tax expense/(benefit)
+U.S. federal | $ 3,109 $ 7,091 $ 8,973
+U.S. state and local | 2,559 | 2,762 | 3,266
+Non-U.S. | 4,268 | 4,753 | 4,355
+Total current income tax expense | 9,936 14,606 16,594
+…
+Tax effect of items recorded in stockholders’ equity
+The preceding table does not reflect the tax effect of
+certain items that are recorded each period directly in …</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 6 <span class="step-title">— Register TYPE-9 and run the full ingestion</span></div>
+      <div class="step-body">
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">PowerShell — C:\Daya\RAGchamp\ANN-RPT-ANALYZER\WEB-APP</span></div>
+          <pre><code class="language-powershell">copy ..\Annual-reports\JP-MORGAN-2025.pdf ..\MODEL-DOCS\TYPE-9-USA-10-K-2025-JPMorgan.pdf
+python -m ingest.models register "..\MODEL-DOCS\TYPE-9-USA-10-K-2025-JPMorgan.pdf" --profile us-10k-two-column --description "…"
+python -m ingest "..\Annual-reports\JP-MORGAN-2025.pdf" --force</code></pre>
+        </div>
+        <p class="mb-0">Registry version 12 → 13. The first quality report found two remaining problems: <span class="problem">2 of 4 balance checks ok</span> and <span class="problem">24 statement figures could not be read</span> ("and $286,771 at fair", "value)").</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 7 <span class="step-title">— Fix the bank balance sheet</span></div>
+      <div class="step-body">
+        <ul>
+          <li><code>wrapped_label_amounts</code> (<code>tables.py</code>): spans that touch with no space ("Loans (included" + "$70,684" + "and $41,350 at fair value)") are one caption. A first cell that closes an open "(" is caption text, not a figure. A caption with an open "(" continues into the figure row below. Result: <code>Loans (included $70,684 and $41,350 at fair value) | 1,493,429 | 1,347,988</code>.</li>
+          <li>A side effect, caught on the next run: the footnote marker now stuck to "Total assets (a)", so the main total no longer matched and the check fell back to the VIE table (0 of 2 ok). Footnote markers are kept apart, and the balance check ignores a trailing "(a)".</li>
+          <li><code>first_total_assets_only</code> (<code>links.py</code>): only each balance sheet's first "Total assets" is checked, so the VIE table's 43,295 is not compared with total liabilities and equity.</li>
+        </ul>
+        <p class="mb-0">Result: <span class="fix">all statement figures readable, balance checks ok, 0 failed checks</span>.</p>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 8 <span class="step-title">— A matcher bug found on the way</span></div>
+      <div class="step-body">
+        <p>The ingestion was right, yet the matcher still said "0 of 2 balance checks ok". Its acceptance check ran the balance check <em>outside</em> the profile, so the new switch was off there. <code>ingest\models\acceptance.py</code> now runs it inside the profile. Because acceptance changed, <code>MATCHER_VERSION</code> went 2 → 3, which re-judges remembered "new model" verdicts.</p>
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">python -m ingest.models match "..\Annual-reports\JP-MORGAN-2025.pdf"</span></div>
+          <pre><code class="language-plaintext">Matched TYPE-9 USA 10-K 2025 JPMorgan (model document, similarity 1.00); profile us-10k-two-column; checks passed</code></pre>
+        </div>
+      </div>
+    </div>
+
+    <div class="step-box">
+      <div class="step-bar">STEP 9 <span class="step-title">— Golden test, verify, full test suite, docs</span></div>
+      <div class="step-body">
+        <ul class="mb-0">
+          <li><code>tests\test_jpm_10k.py</code>: the match and company name; 34 notes with Note 25 = PDF 290–293 (printed 288–291); wrapped titles; Notes 16 and 17 on p.279; statement pages and printed numbers; balance-sheet captions and balance checks; the tax line linked to Note 25; columns read in order; the last body lines kept; Chubb's rules still find no notes in it; the Model testing page.</li>
+          <li><code>tests\test_models.py</code>: the registry test now expects TYPE-9.</li>
+          <li><code>python -m ingest.models verify</code>: <strong>OK</strong>. All nine models match themselves, none is accepted by another format's rules, and every narrative page passes its coverage check.</li>
+          <li><code>python -m pytest -q</code>: the first full run <strong>caught a leak</strong>. A variable reused in the note-title code lengthened one of Bharat Forge's sub-headings (Note 54.1), so its frozen prompt changed. It was fixed, and <code>INDEX_VERSION</code> went 34 → 35 so packages built with the bug are rebuilt. The final run: <strong>467 passed, 3 failed</strong>. The 3 failures (Chubb's frozen prompts: note-table headings) fail identically on the code as committed before this work, so they are not caused by it (Section 8).</li>
+          <li>Updated: <code>MODEL-DOCS\README.md</code> (TYPE-9 row) and <code>.claude\CLAUDE.md</code> (§2, §7 item 25).</li>
+        </ul>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 7. RESULT -->
+  <section id="result" class="mb-5">
+    <h2 class="section-title">7. The Result</h2>
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <div class="code-window">
+          <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">python -m ingest "..\Annual-reports\JP-MORGAN-2025.pdf" — quality report</span></div>
+          <pre><code class="language-plaintext">JP-MORGAN-2025.pdf  ·  US Form 10-K (US GAAP)  ·  410 pages  ·  ingested in 32s
+Model: TYPE-9 USA 10-K 2025 JPMorgan (model document)
+Consolidated: 34 notes (PDF 172–316); statements: P&amp;L p.167–168 · BS p.169 · CF p.171 · Equity p.170
+Figures: 147 statement lines, 402 figures; periods FY2025, FY2024, FY2023
+Links: 79 of 147 statement lines linked to a note (54%) — 62 by figure match, 37 by title match
+Checks: 12 of 22 ok
+Narrative: 72 report sections (from bookmarks); 260 pages → 3778 blocks
+Narrative pages: prose pages 242 · table pages 18 · tables 156; coverage check: 260/260 pages OK
+Narrative passages: 291 (median 2.9 K characters, largest 9.5 K; 18 split); 367 money figures</code></pre>
+        </div>
+        <div class="table-responsive">
+          <table class="table table-sm align-middle mb-0">
+            <thead><tr><th>Item</th><th>Before</th><th>After</th></tr></thead>
+            <tbody>
+              <tr><td>Verdict</td><td class="problem">New model document (blocked)</td><td class="fix">Matched TYPE-9, checks passed</td></tr>
+              <tr><td>Notes</td><td>0</td><td>34 (Notes 1–34, PDF 172–316)</td></tr>
+              <tr><td>Statements</td><td>0 of 4</td><td>4 of 4</td></tr>
+              <tr><td>Balance checks</td><td>—</td><td>2 of 2 ok</td></tr>
+              <tr><td>Company</td><td>Federal Deposit Insurance Corporation</td><td>JPMorgan Chase &amp; Co.</td></tr>
+              <tr><td>Other models' extraction</td><td colspan="2">Unchanged: every new rule is behind a switch that only <code>us-10k-two-column</code> turns on. All model checks pass (<code>verify</code>). Test suite: 467 passed; the 3 Chubb baseline failures existed before this work.</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="mt-3 mb-0">"12 of 22 checks ok": the other 10 are subtotals marked <em>unverified</em> (not a simple sum of the lines above, e.g. "Total net revenue"). That is normal and not a failure.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 8. LIMITS -->
+  <section id="limits" class="mb-5">
+    <h2 class="section-title">8. Known Limitations</h2>
+    <div class="card shadow-sm accent-red">
+      <div class="card-body">
+        <ul class="mb-0">
+          <li><strong>Notes 16 and 17 share p.279</strong>, one per column. Each note is the whole page, so asking about Deposits also sends the Premises and equipment text (and the reverse). Nothing is lost.</li>
+          <li><strong>Two small tables side by side</strong> whose rows on the right are figures only (no labels) can still be read as one row across the page. Check such pages on the Model testing screen if an answer looks odd.</li>
+          <li><strong>"Income tax expense" links to Note 25 by title</strong>, not by figure. 15,547 is printed in more notes than the figure-match rule allows. The link is right; its confidence is "medium".</li>
+          <li><strong>The units line</strong> ("in millions") is not shown for this report in the package summary; the statements themselves carry "(in millions)".</li>
+          <li><strong>Not in the prompt baseline</strong>, like TYPE-6/7/8. Its extraction is pinned by <code>tests\test_jpm_10k.py</code>. Its prompts are not frozen.</li>
+          <li><strong>Chubb's frozen prompts are out of date (not caused by this work).</strong> Three Chubb baseline files expect note-table headings without leading empty cells ("Year Ended December 31"). The current code writes " |  |  | Year Ended December 31", most likely since the <code>aligned_note_columns</code> fix. A checkout of the last commit fails the same way. The baseline should be re-frozen for Chubb once that output is confirmed as wanted.</li>
+          <li>No real Claude analysis was run as part of onboarding. Ask one question (e.g. on Note 25 income taxes) to confirm end to end.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 9. FUTURE -->
+  <section id="future" class="mb-5">
+    <h2 class="section-title">9. What Gets Easier Next Time</h2>
+    <div class="card shadow-sm accent-blue mb-4">
+      <div class="card-body">
+        <p>Each onboarded layout leaves its switches behind. JPMorgan added eight that any future profile can reuse:</p>
+        <p><code>note_word_headings</code> · <code>alternate_header_pages</code> · <code>header_starts_row</code> · <code>two_column_text</code> · <code>footer_page_numbers</code> · <code>us_auditor_addressee</code> · <code>first_total_assets_only</code> · <code>wrapped_label_amounts</code></p>
+        <p class="mb-0">So a later report typeset like JPMorgan's, say another large US bank, may match TYPE-9 directly. Or it may need only a <code>derive()</code> that turns on a different mix of existing switches: a few lines, no new code. A report with a layout never seen before still needs the full routine.</p>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-yellow">
+      <div class="card-body">
+        <h5>Effort to expect</h5>
+        <p class="mb-0">JPMorgan took one Claude Code session: about 8 new switches, about 250 lines of code and tests, two full ingestion iterations after the first build, and a verify plus full test run. Most of the time went into diagnosis (Steps 1–2) and into reading two columns correctly (Step 5). A report that only differs in wording would take minutes.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 10. REFERENCE -->
+  <section id="reference" class="mb-5">
+    <h2 class="section-title">10. Quick Reference</h2>
+    <div class="code-window">
+      <div class="code-titlebar"><span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span><span class="code-filename">PowerShell — C:\Daya\RAGchamp\ANN-RPT-ANALYZER\WEB-APP</span><button class="btn btn-sm btn-light copy-btn" data-copy="ref-cmds">Copy</button></div>
+      <pre><code class="language-powershell" id="ref-cmds"># 1. Does a new report need onboarding?
+python -m ingest.models match "..\Annual-reports\&lt;report&gt;.pdf"
+
+# 2. Onboard (after writing the profile)
+python -m ingest.models register "..\MODEL-DOCS\TYPE-&lt;n&gt;-….pdf" --profile &lt;id&gt; --description "…"
+python -m ingest "..\Annual-reports\&lt;report&gt;.pdf" --force      # read the quality report
+
+# 3. Prove nothing else changed
+python -m ingest.models verify
+python -m pytest -q</code></pre>
+    </div>
+    <div class="card shadow-sm accent-blue">
+      <div class="card-body">
+        <h5>Files involved in the JPMorgan onboarding</h5>
+        <div class="table-responsive">
+          <table class="table table-sm align-middle mb-0">
+            <thead><tr><th>File</th><th>Change</th></tr></thead>
+            <tbody>
+              <tr><td><code>MODEL-DOCS\TYPE-9-USA-10-K-2025-JPMorgan.pdf</code></td><td>The new model document</td></tr>
+              <tr><td><code>WEB-APP\ingest\profiles\__init__.py</code></td><td>8 switches, profile <code>us-10k-two-column</code></td></tr>
+              <tr><td><code>WEB-APP\ingest\pdf_utils.py</code></td><td>Header row must start the row; footer with page number; row spans (<code>parts</code>)</td></tr>
+              <tr><td><code>WEB-APP\ingest\notes_index.py</code></td><td>"Note N – Title" headings, alternate pages, US auditor addressee</td></tr>
+              <tr><td><code>WEB-APP\ingest\clip.py</code></td><td>Two-column reading order</td></tr>
+              <tr><td><code>WEB-APP\ingest\tables.py</code></td><td>Captions with amounts</td></tr>
+              <tr><td><code>WEB-APP\ingest\links.py</code></td><td>First "Total assets" only</td></tr>
+              <tr><td><code>WEB-APP\ingest\models\acceptance.py</code>, <code>match.py</code></td><td>Balance check inside the profile; <code>MATCHER_VERSION</code> 3</td></tr>
+              <tr><td><code>WEB-APP\ingest\models\registry.json</code></td><td>TYPE-9 registered (version 13)</td></tr>
+              <tr><td><code>WEB-APP\tests\test_jpm_10k.py</code>, <code>test_models.py</code></td><td>Golden test; registry test</td></tr>
+              <tr><td><code>MODEL-DOCS\README.md</code>, <code>.claude\CLAUDE.md</code></td><td>Docs</td></tr>
+              <tr><td><code>INFO\HOW-TO-TRAIN-NEW-MODEL-FORMAT.html</code></td><td>The general guide and the Claude Code prompt to use</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Annual Report Analyzer — when a new annual report needs onboarding, and how the JPMorgan 2025 Form 10-K was added as model TYPE-9.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/highlight.js@11.9.0/build/highlight.min.js"></script>
+<script>
+  hljs.highlightAll();
+  document.querySelectorAll(".copy-btn").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var text = document.getElementById(btn.dataset.copy).innerText;
+      navigator.clipboard.writeText(text).then(function () {
+        btn.textContent = "Copied";
+        setTimeout(function () { btn.textContent = "Copy"; }, 1500);
+      });
+    });
+  });
+</script>
+</body>
+</html>

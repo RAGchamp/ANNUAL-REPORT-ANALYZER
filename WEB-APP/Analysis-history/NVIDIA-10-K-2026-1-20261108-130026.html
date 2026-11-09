@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NVIDIA CORP — Initial question — Annual Report Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Palette and components from ANALYSIS-REPORTS/BHARATFORGE-ANN-REPORT-ANALYSIS-2025-26.html */
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-gold:#b8860b;
+    --nav-blue:#0a1128;
+    --nav-yellow:#f2b400;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand svg{ height:42px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  /* light-blue context box: company, report, question */
+  .context-box{
+    background:#e7f1ff;
+    border:1px solid #b6d4fe;
+    border-left:6px solid var(--biz-blue);
+    border-radius:.5rem;
+    padding:1.1rem 1.35rem;
+    box-shadow:0 .15rem .5rem rgba(13,110,253,.08);
+  }
+  .context-box .company{ color:var(--biz-blue-dark); font-weight:700; font-size:1.5rem; margin:0; }
+  .context-box .meta{ font-size:.88rem; color:#34495e; }
+  .context-box .meta strong{ color:#1c2b3a; }
+  .context-box .question-label{
+    font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--biz-blue-dark);
+  }
+  .context-box .question{ font-size:1.12rem; font-weight:600; color:#10233f; margin:0; white-space:pre-wrap; }
+  .context-box .original{ font-size:.9rem; color:#34495e; white-space:pre-wrap; }
+  .prompt-badge{
+    display:inline-block; background:var(--nav-blue); color:var(--nav-yellow);
+    font-weight:700; font-size:.78rem; border-radius:999px; padding:.2rem .7rem;
+  }
+
+  /* analysis content */
+  .analysis{ background:#fff; border-radius:.5rem; padding:1.5rem 1.75rem;
+             box-shadow:0 .125rem .25rem rgba(0,0,0,.075); line-height:1.6; }
+  .analysis h1, .analysis h2{
+    display:inline-block; padding-bottom:.4rem; border-bottom:3px solid var(--biz-gold);
+    margin:1.6rem 0 1rem; font-size:1.4rem; color:#10233f;
+  }
+  .analysis > h1:first-child, .analysis > h2:first-child{ margin-top:0; }
+  .analysis h3{ font-size:1.1rem; margin:1.3rem 0 .6rem; color:var(--biz-blue-dark); }
+  .analysis h4{ font-size:1rem; margin:1.1rem 0 .5rem; }
+  .analysis table.table{ font-size:.9rem; margin-bottom:1.25rem; }
+  .analysis table.table thead th{ background:#ffdf7e !important; color:#212529; border-color:#e6c257; }
+  .analysis table.table tbody tr:nth-child(odd) > *{ background:#d3e3f5 !important; }
+  .analysis table.table tbody tr:nth-child(even) > *{ background:#eef4fc !important; }
+  .analysis td.num{ text-align:right; white-space:nowrap; }
+  .analysis blockquote{
+    border-left:4px solid var(--biz-gold); background:#fff8e6;
+    padding:.75rem 1rem; margin:.75rem 0; font-style:italic;
+  }
+  .analysis pre{ background:#0a1128; color:#f2b400; padding:1rem; border-radius:.5rem; overflow-x:auto; }
+  .analysis code{ color:#b02a37; }
+  .analysis pre code{ color:inherit; }
+
+  footer{ background:var(--nav-blue); }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<div class="topnav">
+  <span class="brand" aria-label="RAG Champ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="RAG Champ logo">
+  <!-- interlocking two-tone mark, flat fill, two colors only -->
+  <circle cx="24" cy="24" r="19" fill="#5BF527"/>
+  <path d="M24,5 A19,19 0 0,0 24,43 A9.5,9.5 0 0,0 24,24 A9.5,9.5 0 0,1 24,5 Z" fill="#FA0C00"/>
+
+  <text x="58" y="33" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="0.3" fill="#ffd60a">RAG Champ</text>
+</svg>
+</span>
+  <div class="tagline">ANNUAL REPORT ANALYZER</div>
+</div>
+
+<main class="container my-4">
+
+  <!-- CONTEXT: company, annual report, question -->
+  <section class="context-box mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+      <h1 class="company">NVIDIA CORP</h1>
+      <span class="prompt-badge">#1 · Initial question</span>
+    </div>
+    <div class="row g-2 meta mb-3">
+      <div class="col-md-6"><strong>Annual report:</strong> NVIDIA-10-K-2026</div>
+      <div class="col-md-6"><strong>Prompt sent:</strong> 08 Nov 2026, 13:00:26</div>
+      <div class="col-md-6"><strong>Statements:</strong> Consolidated</div>
+      <div class="col-md-6"><strong>PDF pages analyzed:</strong> 72–76, 67–69, 70–72</div>
+      <div class="col-12"><strong>Notes analyzed:</strong> Consolidated Note 13 – Income Taxes (PDF p.72–76), Consolidated Note 9 – Balance Sheet Components (PDF p.67–69), Consolidated Note 12 – Commitments and Contingencies (PDF p.70–72)</div>
+      
+      
+      <div class="col-12"><strong>Financial statements referenced:</strong> Consolidated Statements of Income (PDF p.51); Consolidated Statements of Comprehensive Income (PDF p.51–52); Consolidated Balance Sheets (PDF p.53); Consolidated Statements of Cash Flows (PDF p.55); Consolidated Statements of Shareholders&#39; Equity (PDF p.54)</div>
+      
+    </div>
+    
+    <div class="question-label">Question</div>
+    
+    <p class="question">Analyze the company&#39;s tax related liabilities and comment on it.</p>
+  </section>
+
+  <!-- ANALYSIS -->
+  <article class="analysis">
+    <h2>Summary</h2>
+<ul>
+<li><strong>Tax liabilities on the balance sheet more than doubled.</strong> Current taxes payable, long-term income tax payable and long-term deferred tax liabilities total <strong>$8,401m vs $3,955m (+112%)</strong> (Note 9, p.68). This is faster than the 92% rise in tax expense.</li>
+<li><strong>The main driver is uncertain tax positions.</strong> Gross unrecognized tax benefits (UTBs) rose <strong>54.5% to $4,420m</strong> (Note 13, p.76), and accrued interest and penalties rose to $374m. Long-term income tax payable, which is "primarily" UTBs, rose 81% to $3,958m.</li>
+<li><strong>Gross deferred tax liabilities tripled to $4,611m.</strong> The drivers are equity investments (+$1,963m), in line with the $8.9bn equity-security gains, and unremitted foreign earnings (+$922m). Because deferred tax assets grew more, the company stays in a <strong>net deferred tax asset position of $11,484m</strong>.</li>
+<li><strong>The effective tax rate rose from 13.3% to 15.1%.</strong> The causes are a smaller stock-compensation benefit, a heavier foreign mix (Israel) and the first-year adoption of a new disclosure format. The 15.1% is still well below the 21% statutory rate, mainly because of the foreign-derived deduction eligible income (FDDEI) benefit, the Israel incentive rate and tax credits.</li>
+<li><strong>Cash taxes ($20,288m) lagged current tax expense ($22,807m) by $2,519m.</strong> This accrual build is consistent with the rising payables. All note figures tie to the statements.</li>
+</ul>
+<h2>Key figures</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Item</th>
+<th>Current year (FY2026)</th>
+<th>Prior year (FY2025)</th>
+<th>Change</th>
+<th>% change</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Taxes payable (current)</td>
+<td class="num">2,669</td>
+<td class="num">881</td>
+<td class="num">+1,788</td>
+<td class="num">+203.0%</td>
+<td>Note 9, p.68</td>
+</tr>
+<tr>
+<td>Income tax payable (long-term)</td>
+<td class="num">3,958</td>
+<td class="num">2,188</td>
+<td class="num">+1,770</td>
+<td class="num">+80.9%</td>
+<td>Note 9, p.68</td>
+</tr>
+<tr>
+<td>Deferred income tax liability (long-term)</td>
+<td class="num">1,774</td>
+<td class="num">886</td>
+<td class="num">+888</td>
+<td class="num">+100.2%</td>
+<td>Note 9, p.68; Note 13 fn(1), p.75</td>
+</tr>
+<tr>
+<td><strong>Total tax liabilities on the balance sheet</strong></td>
+<td class="num"><strong>8,401</strong></td>
+<td class="num"><strong>3,955</strong></td>
+<td class="num"><strong>+4,446</strong></td>
+<td class="num"><strong>+112.4%</strong></td>
+<td>sum of the three lines above</td>
+</tr>
+<tr>
+<td>Gross unrecognized tax benefits</td>
+<td class="num">4,420</td>
+<td class="num">2,861</td>
+<td class="num">+1,559</td>
+<td class="num">+54.5%</td>
+<td>Note 13, p.76</td>
+</tr>
+<tr>
+<td>Accrued interest &amp; penalties on UTBs</td>
+<td class="num">374</td>
+<td class="num">251</td>
+<td class="num">+123</td>
+<td class="num">+49.0%</td>
+<td>Note 13, p.76</td>
+</tr>
+<tr>
+<td>Gross deferred tax liabilities</td>
+<td class="num">4,611</td>
+<td class="num">1,511</td>
+<td class="num">+3,100</td>
+<td class="num">+205.2%</td>
+<td>Note 13, p.75</td>
+</tr>
+<tr>
+<td>Deferred income tax assets (balance sheet)</td>
+<td class="num">13,258</td>
+<td class="num">10,979</td>
+<td class="num">+2,279</td>
+<td class="num">+20.8%</td>
+<td>Balance Sheet, p.53</td>
+</tr>
+<tr>
+<td>Net deferred tax asset</td>
+<td class="num">11,484</td>
+<td class="num">10,093</td>
+<td class="num">+1,391</td>
+<td class="num">+13.8%</td>
+<td>Note 13, p.75</td>
+</tr>
+<tr>
+<td>Valuation allowance</td>
+<td class="num">768</td>
+<td class="num">1,610</td>
+<td class="num">−842</td>
+<td class="num">−52.3%</td>
+<td>Note 13, p.75</td>
+</tr>
+<tr>
+<td>Current tax expense</td>
+<td class="num">22,807</td>
+<td class="num">15,623</td>
+<td class="num">+7,184</td>
+<td class="num">+46.0%</td>
+<td>Note 13, p.72</td>
+</tr>
+<tr>
+<td>Deferred tax (benefit)</td>
+<td class="num">(1,424)</td>
+<td class="num">(4,477)</td>
+<td class="num">+3,053</td>
+<td class="num">−68.2%</td>
+<td>Note 13, p.72</td>
+</tr>
+<tr>
+<td>Income tax expense</td>
+<td class="num">21,383</td>
+<td class="num">11,146</td>
+<td class="num">+10,237</td>
+<td class="num">+91.8%</td>
+<td>Income Statement, p.51</td>
+</tr>
+<tr>
+<td>Effective tax rate</td>
+<td class="num">15.1%</td>
+<td class="num">13.3%</td>
+<td class="num">+1.8 pp</td>
+<td class="num">—</td>
+<td>21,383/141,450; 11,146/84,026</td>
+</tr>
+<tr>
+<td>Cash paid for income taxes, net</td>
+<td class="num">20,288</td>
+<td class="num">15,118</td>
+<td class="num">+5,170</td>
+<td class="num">+34.2%</td>
+<td>Cash Flow, p.55</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Detailed analysis</h2>
+<h3>1. Composition of tax liabilities</h3>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Liability</th>
+<th>Nature</th>
+<th>FY2026</th>
+<th>Share of total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Income tax payable, long-term</td>
+<td>Mainly UTBs plus interest and penalties</td>
+<td class="num">3,958</td>
+<td class="num">47%</td>
+</tr>
+<tr>
+<td>Taxes payable, current</td>
+<td>Taxes due within one year</td>
+<td class="num">2,669</td>
+<td class="num">32%</td>
+</tr>
+<tr>
+<td>Deferred income tax, long-term</td>
+<td>Net deferred tax liabilities by jurisdiction</td>
+<td class="num">1,774</td>
+<td class="num">21%</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Weight in total liabilities:</strong> tax liabilities are 8,401 / 49,510 = <strong>17.0%</strong> of total liabilities (FY2025: 3,955 / 32,274 = 12.3%) (Balance Sheet, p.53).</li>
+<li><strong>Current taxes payable tripled.</strong> This matches current tax expense running ahead of cash payments: 22,807 − 20,288 = <strong>$2,519m accrued but not yet paid</strong>.</li>
+</ul>
+<h3>2. Uncertain tax positions (the most judgmental part)</h3>
+<ul>
+<li><strong>Additions:</strong> current-year additions were <strong>$1,959m</strong>, up from $1,268m (+54.5%). They equal about 8.6% of current tax expense (1,959 / 22,807).</li>
+<li><strong>Releases:</strong> lapses, decreases and settlements total 224 + 157 + 76 = <strong>$457m</strong>.</li>
+<li><strong>Rate impact:</strong> $3.7bn of the UTBs would lower the effective tax rate if recognized. That is about 2.6 percentage points of FY2026 pre-tax income (3,700 / 141,450).</li>
+<li><strong>Interest and penalties:</strong> the expense was $103m vs $92m.</li>
+<li><strong>Open examinations:</strong> these cover the US, Germany, Hong Kong, India, Israel and Taiwan, for fiscal years 2014–2025 (Note 13, p.76).</li>
+<li><strong>Reconciliation to the balance sheet:</strong> UTBs plus interest are 4,420 + 374 = <strong>$4,794m</strong>, but long-term income tax payable is <strong>$3,958m</strong>. The gap of about $836m is presumably UTBs netted against deferred tax assets or classified as current. This is not disclosed.</li>
+</ul>
+<h3>3. Deferred taxes</h3>
+<p><strong>Growth in deferred tax liabilities:</strong></p>
+<ul>
+<li>Equity investments rose from $264m to $2,227m. This is consistent with the $8,918m equity-security gains (Cash Flow, p.55) and with non-marketable equity securities rising from $3.4bn to $22.3bn (Balance Sheet, p.53).</li>
+<li>Unremitted foreign earnings rose from $891m to $1,813m, reflecting the growth in foreign earnings (foreign pre-tax income $18,269m vs $6,570m, +178%).</li>
+</ul>
+<p><strong>Deferred tax assets:</strong></p>
+<ul>
+<li>Net CFC tested-income assets rose by $2,569m.</li>
+<li>Accruals and reserves rose by $1,586m, in line with the warranty and inventory reserves in Note 9.</li>
+<li>Capitalized R&amp;D fell by $820m, consistent with the OBBBA enactment (Note 13, p.74).</li>
+</ul>
+<p><strong>Valuation allowance:</strong> $711m of state valuation allowance was released. This lifts the quality of the deferred tax assets.</p>
+<p><strong>Netting check:</strong> balance-sheet deferred tax assets of $13,258m minus the long-term deferred tax liability of $1,774m = <strong>$11,484m</strong> ✓. For FY2025: 10,979 − 886 = 10,093 ✓.</p>
+<h3>4. Rate drivers (FY2026 reconciliation, Note 13, p.73)</h3>
+<p><strong>Statutory starting point:</strong> 21% × 141,450 = $29,704m ✓.</p>
+<p><strong>Main reductions:</strong></p>
+<ul>
+<li>FDDEI: (4,208)</li>
+<li>Israel reduced rate: (3,064)</li>
+<li>Credits: (1,933)</li>
+<li>Stock-based compensation: (1,475), vs (2,097) in FY2025</li>
+</ul>
+<p><strong>Main additions:</strong> Israel other (+1,606) and other foreign jurisdictions (+741).</p>
+<p><strong>Arithmetic checks:</strong></p>
+<ul>
+<li>FY2026 items sum to <strong>$21,383m</strong> ✓.</li>
+<li>FY2025 sums to 11,146 ✓ and FY2024 to 4,058 ✓ (p.74).</li>
+</ul>
+<p><strong>Effective rate by origin of income:</strong></p>
+<ul>
+<li>Foreign: (2,550 + 825) / 18,269 = 18.5%.</li>
+<li>US: (19,039 + 1,218 − 1,364 − 885) / 123,181 = 18,008 / 123,181 = 14.6%.</li>
+</ul>
+<p><strong>Cash tax rate:</strong> 20,288 / 141,450 = <strong>14.3%</strong> (FY2025: 15,118 / 84,026 = 18.0%).</p>
+<h2>Impact on the financial statements</h2>
+<h3>Income Statement (Statement of Operations)</h3>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Line</th>
+<th>FY2026</th>
+<th>FY2025</th>
+<th>FY2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Income before income tax</td>
+<td class="num">141,450</td>
+<td class="num">84,026</td>
+<td class="num">33,818</td>
+</tr>
+<tr>
+<td>Income tax expense</td>
+<td class="num">21,383</td>
+<td class="num">11,146</td>
+<td class="num">4,058</td>
+</tr>
+<tr>
+<td>Net income</td>
+<td class="num">120,067</td>
+<td class="num">72,880</td>
+<td class="num">29,760</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Source:</strong> Income Statement, p.51.</li>
+<li><strong>Reconciliation to Note 13:</strong></li>
+<li>Current tax 22,807 + deferred tax (1,424) = 21,383 ✓ (p.72).</li>
+<li>US 123,181 + foreign 18,269 = 141,450 ✓ (p.73).</li>
+<li><strong>Effect:</strong> tax absorbed 15.1% of pre-tax profit (13.3% in FY2025). UTB interest and penalties ($103m) sit inside tax expense.</li>
+<li><strong>Inside the expense:</strong> the $711m valuation allowance release and the changes in UTBs are both part of tax expense.</li>
+</ul>
+<h3>Balance Sheet</h3>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Line</th>
+<th>FY2026</th>
+<th>FY2025</th>
+<th>Tax content (Note 9 / Note 13)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Deferred income tax assets</td>
+<td class="num">13,258</td>
+<td class="num">10,979</td>
+<td>Matches Note 13 fn(1): $13.3bn / $11.0bn ✓</td>
+</tr>
+<tr>
+<td>Accrued and other current liabilities</td>
+<td class="num">21,352</td>
+<td class="num">11,737</td>
+<td>Includes taxes payable 2,669 / 881; the components sum to 21,352 ✓</td>
+</tr>
+<tr>
+<td>Other long-term liabilities</td>
+<td class="num">7,306</td>
+<td class="num">4,245</td>
+<td>Income tax payable 3,958 / 2,188 plus deferred tax 1,774 / 886; the components sum to 7,306 ✓</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Source:</strong> Balance Sheet, p.53.</li>
+<li><strong>Effect:</strong> the build-up of tax liabilities (+$4,446m) is about 25% of the $17,236m increase in total liabilities (49,510 − 32,274).</li>
+</ul>
+<h3>Cash Flow Statement</h3>
+<ul>
+<li><strong>Deferred income taxes:</strong> (1,424) / (4,477) / (2,489). This equals Note 13 total deferred ✓ (Cash Flow, p.55).</li>
+<li><strong>Cash paid for income taxes, net:</strong> 20,288 / 15,118 / 6,549. This equals the Note 13 disaggregation: 16,755 + 1,049 + 1,041 + 1,287 + 156 = 20,288 ✓ (p.74).</li>
+<li><strong>Working-capital lines:</strong> the increases in tax payables sit within "Accrued and other current liabilities" (+5,257) and "Other long-term liabilities" (+1,844).</li>
+<li><strong>Accrual check:</strong> current tax 22,807 − cash paid 20,288 = 2,519. The increase in the two payables is 1,788 + 1,770 = 3,558. The difference of about $1,039m is not explained; prepaid or receivable taxes and acquisition effects are not disclosed.</li>
+<li><strong>Employee tax withholding:</strong> "Payments related to employee stock plan taxes" of (7,948) is cash withheld for employees' taxes in financing. It is not NVIDIA's income tax.</li>
+</ul>
+<h3>Statement of Shareholders' Equity</h3>
+<ul>
+<li><strong>Income taxes:</strong> these affect equity only through net income in retained earnings (120,067) (Equity statement, p.54).</li>
+<li><strong>OCI:</strong> OCI of 150 is shown net of tax. The tax on OCI is not disclosed in the material.</li>
+<li><strong>Stock-compensation tax benefits:</strong> under US GAAP the excess benefits go through tax expense (the (1,475) reconciling item), not APIC.</li>
+<li><strong>Withholding:</strong> the (7,948) "tax withholding related to common stock" reduces APIC. It is employee withholding, not a corporate tax liability.</li>
+</ul>
+<h2>Red flags &amp; areas for follow-up</h2>
+<ol>
+<li><strong>Rapid UTB growth.</strong> UTBs rose 54.5% to $4.4bn, with $1.96bn of current-year additions and audits open across six jurisdictions since FY2014. Ask management which positions are involved (transfer pricing? FDDEI? Israel?) and what range of outcomes they expect.</li>
+<li><strong>UTBs and the long-term payable do not reconcile.</strong> $4,794m of UTBs plus interest compares with $3,958m of long-term income tax payable. Ask for the classification: netted against deferred tax assets, or current.</li>
+<li><strong>Payables vs the current-tax accrual.</strong> The payables increase of $3,558m exceeds the $2,519m current-tax accrual. Ask what explains the roughly $1.0bn difference.</li>
+<li><strong>Movement in net deferred tax assets.</strong> Net deferred tax assets rose by $1,391m, but the deferred tax benefit was $1,424m, a gap of $33m. The likely causes are acquisitions or OCI, but this is not disclosed.</li>
+<li><strong>Acquisition deferred taxes.</strong> Goodwill rose $15.6bn and intangibles $2.5bn, yet the acquired-intangibles deferred tax liability <em>fell</em> from $70m to $38m. Ask whether the acquisitions were asset deals or tax-deductible.</li>
+<li><strong>Indefinite reinvestment.</strong> About $1.4bn of foreign earnings is indefinitely reinvested, with an unquantified unrecorded deferred tax liability.</li>
+<li><strong>Comparability.</strong> The new reconciliation format was adopted prospectively, so FY2026 categories (e.g., "Israel – Other +1,606") are not comparable with FY2025's "foreign tax rate differential".</li>
+<li><strong>Rate sustainability.</strong> The stock-comp benefit is falling, and the OBBBA effects should be monitored.</li>
+<li><strong>No inconsistencies or typos found.</strong> Every table cross-foots and ties to the statements.</li>
+</ol>
+<h2>Sources</h2>
+<ul>
+<li><strong>Note 13 – Income Taxes</strong> (PDF p.72–76)</li>
+<li><strong>Note 9 – Balance Sheet Components</strong> (PDF p.67–69)</li>
+<li><strong>Note 12 – Commitments and Contingencies</strong> (PDF p.70–72): mentions tax indemnities, with no liability recorded</li>
+<li><strong>Consolidated Statements of Income</strong> (p.51)</li>
+<li><strong>Consolidated Statements of Comprehensive Income</strong> (p.51–52)</li>
+<li><strong>Consolidated Balance Sheets</strong> (p.53)</li>
+<li><strong>Consolidated Statements of Shareholders' Equity</strong> (p.54)</li>
+<li><strong>Consolidated Statements of Cash Flows</strong> (p.55)</li>
+</ul>
+  </article>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Generated by the Annual Report Foot Notes Analyzer (RAG Champ) using Claude Code, from the notes to the financial statements in NVIDIA-10-K-2026.
+    Research aid only, not investment advice. Verify every number against the filed annual report.
+  </div>
+</footer>
+
+</body>
+</html>

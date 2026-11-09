@@ -54,7 +54,9 @@ def evaluate(profile, index, page_texts):
         checks.append(_check("figures readable", values and share >= rules.min_readable_share,
                              f"{len(readable)} of {len(values)} statement figures read as numbers"))
         if rules.balance_must_hold:
-            balance = [c for c in links.build_checks(index, views, lines, values)[0] if c["kind"] == "balance"]
+            with profiles.using(profile):       # the balance check reads the profile's switches
+                checks_found = links.build_checks(index, views, lines, values)[0]
+            balance = [c for c in checks_found if c["kind"] == "balance"]
             failed = [c for c in balance if c["status"] != "ok"]
             checks.append(_check("balance sheet", not failed,
                                  f"{len(balance) - len(failed)} of {len(balance)} balance checks ok"

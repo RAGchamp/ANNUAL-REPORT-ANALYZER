@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How RAG Champ's Annual Report Analyzer Adds Value</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-light:#6ea8fe;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-red:#dc3545;
+    --biz-green:#198754;
+    --nav-blue:#04264d;
+    --nav-yellow:#ffd60a;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  /* Sticky top nav */
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand-logo{ height:44px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  section[id]{ scroll-margin-top:84px; }
+  html{ scroll-behavior:smooth; }
+
+  .hero{
+    background:linear-gradient(120deg, var(--biz-blue-dark) 0%, var(--biz-blue) 55%, #3d8bfd 100%);
+    color:#fff;
+  }
+  .accent-blue{ border-left:5px solid var(--biz-blue); }
+  .accent-green{ border-left:5px solid var(--biz-green); }
+  .accent-red{ border-left:5px solid var(--biz-red); }
+  .accent-yellow{ border-left:5px solid var(--biz-yellow); }
+
+  .section-title{
+    display:inline-flex; align-items:center; gap:.6rem;
+    padding-bottom:.4rem; border-bottom:3px solid var(--biz-blue);
+    margin-bottom:1.25rem;
+  }
+  .toc-num{
+    display:inline-flex; align-items:center; justify-content:center;
+    width:1.8rem; height:1.8rem; border-radius:50%;
+    background:var(--biz-yellow); color:#2b2b2b; font-weight:700; font-size:.85rem;
+    margin-right:.5rem; flex:none;
+  }
+  .toc-list a{ text-decoration:none; color:#212529; }
+  .toc-list a:hover{ color:var(--biz-blue); text-decoration:underline; }
+  .toc-item{ display:flex; align-items:center; padding:.4rem 0; }
+  .back-to-top{ font-size:.85rem; }
+  .color-key-dot{ width:.9rem; height:.9rem; border-radius:50%; display:inline-block; margin-right:.4rem; }
+  table thead th{ background:#eef3fb; }
+  .glossary-table thead th{ background:#04264d; color:#fff; }
+
+  /* verdict chips in the scorecard */
+  .edge{ font-weight:700; white-space:nowrap; }
+  .edge-rc{ color:var(--biz-green); }
+  .edge-plain{ color:var(--biz-blue-dark); }
+  .edge-tie{ color:#6c757d; }
+
+  /* Step-by-step boxes */
+  .step-box{
+    background:#e9ecef;
+    border-radius:.5rem;
+    overflow:hidden;
+    margin:0 0 1.25rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.12);
+  }
+  .step-box .step-bar{
+    background:var(--nav-blue);
+    color:#5BF527;
+    font-weight:700;
+    padding:.5rem 1.1rem;
+    font-size:.95rem;
+    letter-spacing:.02em;
+  }
+  .step-box .step-body{ padding:1rem 1.25rem; }
+  .step-box .step-body p:last-child{ margin-bottom:0; }
+
+  .quote{ border-left:3px solid #adb5bd; padding:.25rem .9rem; color:#495057; font-style:italic; margin:.5rem 0 1rem; }
+  footer{ background:var(--nav-blue); }
+  footer a{ color:#fff; }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<div class="topnav">
+  <span class="brand"><img class="brand-logo" src="logo.svg" alt="RAG Champ"></span>
+  <div class="tagline">ANNUAL REPORT ANALYZER</div>
+</div>
+
+<!-- HERO -->
+<header class="hero py-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-9">
+        <span class="badge rounded-pill bg-warning text-dark mb-3">Assessment · Travelers (TRV) FY2025 10-K · 8 Nov 2026</span>
+        <h1 class="display-6 fw-bold">How RAG Champ's Annual Report Analyzer Adds Value</h1>
+        <p class="lead mb-0">The same question, <mark style="background:var(--nav-yellow); color:#2b2b2b; padding:0 .25rem; border-radius:.2rem;"><em>"Analyze Travelers' commercial insurance business from its 2025 10-K"</em></mark>, was answered twice: once by a <strong>plain Claude Code session</strong>, and once by the <strong>RAG Champ Annual Report Analyzer</strong>. Both outputs were checked figure by figure against the filing. The plain session wrote the better <strong>business story</strong>. RAG Champ produced the deeper and better-verified <strong>financial analysis</strong>: tied out, page-cited, reproducible, and it found issues the other run missed. They are complementary, and the value of RAG Champ is that it gives every story a base of numbers that can be checked.</p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="container my-5">
+
+  <!-- COLOR KEY -->
+  <div class="mb-5">
+    <div class="card border-0 shadow-sm">
+      <div class="card-body py-3">
+        <div class="row g-2 small text-center text-md-start">
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-blue);"></span>Blue — how the test was run</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-green);"></span>Green — where RAG Champ adds value</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-red);"></span>Red — where RAG Champ fell short</div>
+          <div class="col-6 col-md-3"><span class="color-key-dot" style="background:var(--biz-yellow);"></span>Yellow — evidence &amp; recommendations</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TOC -->
+  <section id="toc" class="mb-5">
+    <h2 class="section-title">Table of Contents</h2>
+    <div class="card shadow-sm">
+      <div class="card-body">
+        <div class="row toc-list">
+          <div class="col-md-6">
+            <div class="toc-item"><span class="toc-num">1</span><a href="#verdict">The Verdict in Short</a></div>
+            <div class="toc-item"><span class="toc-num">2</span><a href="#experiment">The Experiment</a></div>
+            <div class="toc-item"><span class="toc-num">3</span><a href="#scorecard">Scorecard</a></div>
+            <div class="toc-item"><span class="toc-num">4</span><a href="#adds-value">Where RAG Champ Adds Value</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="toc-item"><span class="toc-num">5</span><a href="#plain-better">Where the Plain Session Did Better</a></div>
+            <div class="toc-item"><span class="toc-num">6</span><a href="#user-value">What This Means for the User</a></div>
+            <div class="toc-item"><span class="toc-num">7</span><a href="#gaps">Gaps to Close in RAG Champ</a></div>
+            <div class="toc-item"><span class="toc-num">8</span><a href="#evidence">Evidence: the Fact Check</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1. VERDICT -->
+  <section id="verdict" class="mb-5">
+    <h2 class="section-title">1. The Verdict in Short</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card shadow-sm accent-green h-100">
+          <div class="card-body">
+            <h5>RAG Champ is the better analyst</h5>
+            <ul class="mb-0">
+              <li>It went <strong>one level deeper</strong> into the numbers. It read the 18 pages of reserve-development triangles and found that about <strong>$440m of favorable workers' comp development</strong> was offsetting about <strong>$250m of adverse general-liability development</strong> in 2025.</li>
+              <li>It <strong>tied every segment figure to the consolidated statements</strong> (✓ marks), in three places for reserves.</li>
+              <li>It raised <strong>three real anomalies</strong> in the filing that the plain session did not mention: a $6m allowance gap, a $109m gap between incurred claims and the P&amp;L, and an unexplained held-for-sale allocation.</li>
+              <li>Every figure carries a <strong>note and page citation</strong>, and the exact prompt Claude received is saved.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card shadow-sm accent-red h-100">
+          <div class="card-body">
+            <h5>The plain session is the better storyteller</h5>
+            <ul class="mb-0">
+              <li>It used <strong>Item 1 (Business) and MD&amp;A</strong>: how the segment is organized, distribution, state concentration, retention and rate trends, the catastrophe treaty, the Canada sale and Fidelis.</li>
+              <li>It quoted the company's <strong>reported combined ratio (91.7%)</strong>. RAG Champ, using notes only, had to build an approximate 95.6% that is not comparable with what Travelers reports.</li>
+              <li>Its output is a <strong>finished playbook document</strong> with a bottom line.</li>
+              <li>Every narrative figure checked was <strong>correct</strong>. Only one phrase could not be confirmed (Section 8).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-yellow mt-4">
+      <div class="card-body">
+        <p class="mb-0"><strong>Opinion.</strong> On a famous company and a well-structured filing, a capable model with web access can write a good, mostly correct overview. RAG Champ's value is not that the plain model fails. It is that RAG Champ makes the numbers <strong>dependable, deeper, checkable and repeatable</strong>, the qualities a user needs before acting on an analysis or comparing companies. The best output combines the two: RAG Champ's verified figures and red flags, plus MD&amp;A context, written up in the playbook format. That is the role this document recommends for RAG Champ inside the STOCK INVESTMENT PLAYBOOK (Section 6).</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 2. EXPERIMENT -->
+  <section id="experiment" class="mb-5">
+    <h2 class="section-title">2. The Experiment</h2>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="step-box">
+          <div class="step-bar">A · Plain Claude Code session</div>
+          <div class="step-body">
+            <p><strong>Prompt 1:</strong> "analyzE TRAVELERs (Ticker TRV) commercial insurance business from its 2025 10-k report".<br>
+               <strong>Prompt 2:</strong> write it up as <code>TRV-COMMERCIAL-INS-BIZ-ANALYSIS.html</code> in the style of <code>CIRCULAR-AI.html</code>.</p>
+            <p><strong>Output:</strong> <code>STOCK-INV-PLAYBOOOK\INDUSTRY-RESEARCH\INSURANCE\TRV-COMMERCIAL-INS-BIZ-ANALYSIS.html</code> (35 KB), 8 sections from <em>Scale</em> to <em>Bottom Line</em>.</p>
+            <p class="mb-0"><strong>Process:</strong> The session found and read the 10-K itself. Its sources list Item 1, Item 7 MD&amp;A and Notes 2, 7 and 8. Which parts of the filing it actually read, and what that cost, are not recorded in the output.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="step-box">
+          <div class="step-bar">B · RAG Champ Annual Report Analyzer</div>
+          <div class="step-body">
+            <p><strong>Input:</strong> TRV's inline XBRL filing, downloaded on the XBRL page into <code>WEB-APP\XBRL-docs\TRV\</code>. All 7 files are exactly as filed.</p>
+            <p><strong>Process</strong> (from <code>logs\app.log</code>):</p>
+            <ul>
+              <li>Ingest: 2.4 s. 22 notes, 5 statements, 341 figures, 26/26 automatic checks ok.</li>
+              <li>Note picking: 5.2 s. Claude chose Notes 2, 6, 8, 20 and 22, and the user confirmed them.</li>
+              <li>Analysis: 78.4 s. Claude received an 87 K-character prompt with no tools.</li>
+            </ul>
+            <p class="mb-0"><strong>Output:</strong> <code>Analysis-history\TRV-1-20261108-141204.html</code>. The prompt and answer are saved as <code>Prompt-History\Claude-code-prompt-29-*</code>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-blue">
+      <div class="card-body">
+        <h5>How the two were compared</h5>
+        <p class="mb-0">Both documents were read in full. Their figures were checked against the 10-K's own text, which is stored page by page in RAG Champ's TRV report package. The table in Section 8 lists each check with the filing page. Note that the comparison is not perfectly like for like. RAG Champ was run in <strong>"Identify notes"</strong> mode, which by design reads only the notes and statements. The plain session could read the whole 10-K. RAG Champ's second mode, <strong>"Analyze non notes"</strong>, reads Item 1, 1A and 7 and was not used in this test.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 3. SCORECARD -->
+  <section id="scorecard" class="mb-5">
+    <h2 class="section-title">3. Scorecard</h2>
+    <div class="card shadow-sm accent-blue">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle small mb-0">
+            <thead><tr><th>Dimension</th><th>Plain Claude Code session</th><th>RAG Champ</th><th>Edge</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Correct figures</strong></td><td>Every narrative figure checked matched the filing. One phrase ("a 2% reserve change" for general liability) could not be found.</td><td>Figures match the notes and statements. Each derived figure shows its arithmetic, and every flagged anomaly is real.</td><td class="edge edge-tie">Both good</td></tr>
+              <tr><td><strong>Business context</strong></td><td>Organization by market, distribution (80 field offices), states (California 13.2%), retention and rate commentary, catastrophe treaty, Canada sale, Fidelis, Simply Business.</td><td>None beyond what the notes say. Notes mode does not read Item 1 or MD&amp;A.</td><td class="edge edge-plain">Plain</td></tr>
+              <tr><td><strong>Headline KPIs</strong></td><td>The reported combined ratio of 91.7% (29.5% expense ratio) and the underlying ratio, which the 10-K confirms improved 0.1 points.</td><td>An approximate combined ratio of 95.6% built from Note 2, labelled "not the company's reported expense ratio". Correct as arithmetic, but not comparable with what Travelers reports.</td><td class="edge edge-plain">Plain</td></tr>
+              <tr><td><strong>Depth on the numbers</strong></td><td>Reserve releases and additions described from MD&amp;A at headline level.</td><td>Development summed by product line and accident year from the triangles: WC −440, GL +250, CMP −102, property −88, auto −44. The underlying loss ratio was 59.4% vs 59.7%, so "most of the loss-ratio gain came from prior-year development". Pre-tax segment income rebuilt and tied to Note 2.</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Reconciliation</strong></td><td>None.</td><td>Segments sum exactly to consolidated premiums, investment income, claims and DAC. Reserves tie three ways: Balance Sheet, Schedule III and Note 8. Unearned premiums and DAC tie to Schedule III. Net income reconciles.</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Red flags found</strong></td><td>Strategic watch items: slowing growth, asbestos, mix shift, California.</td><td>Strategic watch items <em>plus</em> filing anomalies: the allowance shown as $129m on the balance sheet vs $(135)m in Note 6; Note 8 incurred of 27,112 vs P&amp;L claims of 27,221; which segment holds the $4.55bn held-for-sale business.</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Scope definition</strong></td><td>"Commercial" = Business Insurance only (51% of premiums).</td><td>"Commercial" = Business Insurance + Bond &amp; Specialty (60% of premiums), stated up front. Surety and management liability are commercial lines.</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Traceability</strong></td><td>Sources listed by section at the end.</td><td>A note and page on every figure, e.g. "Note 2, p.135".</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Reproducibility &amp; audit</strong></td><td>The output only.</td><td>The exact 87 K-character prompt and the answer are saved, the thread can be continued, and an HTML report is filed in history. The same extraction gives the same content every time.</td><td class="edge edge-rc">RAG Champ</td></tr>
+              <tr><td><strong>Readability</strong></td><td>A polished narrative with colored callouts and a bottom line.</td><td>A dense analyst memo of tables and tie-outs.</td><td class="edge edge-plain">Plain</td></tr>
+              <tr><td><strong>Time / cost</strong></td><td>Not recorded.</td><td>About 86 s of Claude time (5 s + 78 s), on 87 K characters of input.</td><td class="edge edge-tie">Not compared</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 4. WHERE RAG CHAMP ADDS VALUE -->
+  <section id="adds-value" class="mb-5">
+    <h2 class="section-title">4. Where RAG Champ Adds Value</h2>
+
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <h5>4.1 Claude sees exactly the right evidence, all of it</h5>
+        <p>A 221-page 10-K is too long to read carefully in one pass, so a free-roaming session reads selectively. RAG Champ removes that choice. Deterministic Python cuts the filing into notes, and Claude picked five of them by title. The user then confirmed the five, and they were sent <strong>verbatim with their tables intact</strong>, including the full 18-page Note 8 with every accident-year triangle. The model never has to decide what to skim.</p>
+        <p class="mb-0">The result is visible in the reserve analysis. The plain session says workers' comp is "the steady source of reserve releases" and that general-liability losses "came in higher than expected". RAG Champ <strong>quantifies</strong> both from the triangles: about −$440m and +$250m. It shows AY2022 general liability rising from 1,696 to 2,014 (+18.8%) since the first estimate. It then concludes that BI's favorable development "depends on workers' comp releases while liability lines strengthen", at the same time as workers' comp premiums shrink 3.2%. That is the kind of finding an investor pays for.</p>
+      </div>
+    </div>
+
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <h5>4.2 Every number is tied out, and the checks are visible</h5>
+        <p>The prompt carries all five primary statements, plus the LINKED FIGURES that connect statement lines to the notes (from the XBRL tags) and the CHECKS (26/26 ok from the calculation linkbase). Claude is required to explain the impact on every statement. That produced a reconciliation the plain session never attempted:</p>
+        <div class="quote">Premiums 43,914: three segments sum exactly ✓ · Claims reserves 65,737 = BI 51,655 + B&amp;SI 5,672 + Personal 8,407 + Other 3 ✓ (Schedule III) = 67,643 + 3 − 1,909 held for sale ✓ (Note 8) · Net income 6,698 − 373 − 37 = 6,288 ✓</div>
+        <p class="mb-0">Tie-outs are how an analyst knows the segment story is consistent with the audited totals. With them, the reader can rely on the analysis instead of re-checking it.</p>
+      </div>
+    </div>
+
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <h5>4.3 It finds what does not add up</h5>
+        <p>Because it reconciles, RAG Champ notices the gaps. Each one was confirmed in the filing (Section 8):</p>
+        <ul class="mb-0">
+          <li><strong>Reinsurance allowance:</strong> the balance-sheet caption says $129m (p.121), while Note 6's table shows $(135)m (p.155).</li>
+          <li><strong>Incurred claims:</strong> Note 8's total of 27,112 (p.157) does not equal the P&amp;L's 27,221.</li>
+          <li><strong>Held-for-sale business:</strong> $4,550m of assets (p.121) and $1,909m of reserves sit in an unnamed segment. RAG Champ infers from the reserve movements that it is probably Personal Insurance (the Canada sale) and asks for confirmation.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <h5>4.4 Traceable, auditable, repeatable</h5>
+        <ul class="mb-0">
+          <li><strong>Page citations</strong> on every figure, so anyone can open p.135 and check.</li>
+          <li><strong>The exact prompt is saved</strong> (<code>Claude-code-prompt-29-prompt.txt</code>). The question "what did the model actually see?" always has an answer.</li>
+          <li><strong>No tools, no browsing:</strong> Claude can only use the filing text it is given, which removes a whole class of errors (stale web pages, other years' filings, other companies).</li>
+          <li><strong>The same method every time.</strong> The same extraction, prompts and checks give the same content for every company and every year, so analyses can be compared.</li>
+          <li><strong>Follow-ups stay grounded.</strong> A follow-up continues the thread with the same notes and searches the filing again for anything new.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card shadow-sm accent-green">
+      <div class="card-body">
+        <h5>4.5 It scales to any filer in seconds</h5>
+        <p class="mb-0">The XBRL route read three filers it had never seen: Nvidia, The Hartford and Travelers. Each ingested in 1–3 seconds with no setup, every automatic check passed, and 74–81% of statement lines were linked to their notes. A plain session has to find and read each 10-K again every time. RAG Champ reads it once into a package, and every later question costs only the analysis.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 5. WHERE THE PLAIN SESSION DID BETTER -->
+  <section id="plain-better" class="mb-5">
+    <h2 class="section-title">5. Where the Plain Session Did Better</h2>
+    <div class="card shadow-sm accent-red mb-4">
+      <div class="card-body">
+        <h5>5.1 The business, not just the accounts</h5>
+        <p class="mb-0">The plain session's sections on how the segment is organized and its strategy notes come from Item 1 and MD&amp;A. That covers the five markets and their share of premiums, independent-agent distribution, California at 13.2% of premiums, the catastrophe treaty ($575m above a $2.89bn retention), large-deductible receivables of $3.01bn, the US$2.4bn Canada sale to Definity, and the 20% Fidelis quota share. All of it checked out, and none of it is in the notes RAG Champ was given. For a "business" question this context matters as much as the numbers.</p>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-red mb-4">
+      <div class="card-body">
+        <h5>5.2 The company's own KPIs</h5>
+        <p class="mb-0">Travelers reports a Business Insurance combined ratio of <strong>91.7%</strong> (p.66). RAG Champ's approximate <strong>95.6%</strong> divides all of Note 2's G&amp;A, including costs that serve fee income, by premiums. It said so, but a reader comparing with Travelers' investor materials would be confused. Retention, renewal-premium change and the underlying combined ratio are also MD&amp;A figures. A notes-only analysis cannot quote them.</p>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-red">
+      <div class="card-body">
+        <h5>5.3 A finished document</h5>
+        <p class="mb-0">The plain session produced a playbook page with a clear thesis ("close to its peak in this pricing cycle"), strengths and watch items, and the two numbers to track each quarter. RAG Champ's report is a working paper. It is more rigorous, but it needs another step to become a story.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 6. WHAT THIS MEANS FOR THE USER -->
+  <section id="user-value" class="mb-5">
+    <h2 class="section-title">6. What This Means for the User</h2>
+    <div class="card shadow-sm accent-green mb-4">
+      <div class="card-body">
+        <p>A user building conviction in a stock needs three things from an annual-report analysis. The test above shows where each comes from:</p>
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle small mb-0">
+            <thead><tr><th>The user needs</th><th>Plain LLM session</th><th>RAG Champ</th></tr></thead>
+            <tbody>
+              <tr><td><strong>To understand the business</strong></td><td>Good: a readable overview from the whole filing</td><td>"Analyze non notes" mode (Item 1, 1A, 7); not used in this test</td></tr>
+              <tr><td><strong>To trust the numbers</strong></td><td>Probably right, but the user has to re-check each one</td><td>Tied out, cited to the page, anomalies flagged, prompt saved</td></tr>
+              <tr><td><strong>To see what others miss</strong></td><td>Headline-level reading</td><td>Accident-year reserve trends and filing inconsistencies, from the full notes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-yellow">
+      <div class="card-body">
+        <h5>The recommended place for RAG Champ in the playbook</h5>
+        <p>Use RAG Champ as the <strong>evidence engine</strong> and the story agent as the <strong>writer</strong>:</p>
+        <ol class="mb-0">
+          <li><strong>Download and ingest</strong> the filing on the XBRL page (seconds, no setup).</li>
+          <li><strong>Run both RAG Champ modes</strong> on the question. <em>Identify notes</em> gives the numbers, tie-outs and red flags. <em>Analyze non notes</em> gives business context and the reported KPIs from MD&amp;A.</li>
+          <li><strong>Hand both answers to the story agent</strong>, with the rule to use only these figures and keep their page citations, and have it write the playbook page (CIRCULAR-AI style).</li>
+        </ol>
+        <p class="mt-3 mb-0">The playbook page then has the plain session's readability and the analyzer's verified depth. Every figure in it traces back to a page of the filing, and the analysis can be repeated next quarter or on a peer (CB, HIG, TRV) in the same form.</p>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 7. GAPS -->
+  <section id="gaps" class="mb-5">
+    <h2 class="section-title">7. Gaps to Close in RAG Champ</h2>
+    <div class="card shadow-sm accent-yellow">
+      <div class="card-body">
+        <div class="table-responsive">
+          <table class="table table-bordered align-middle small mb-0">
+            <thead><tr><th>#</th><th>Gap seen in this test</th><th>Suggested change</th></tr></thead>
+            <tbody>
+              <tr><td>1</td><td>A business or segment question was answered from the notes only, without the reported KPIs or business context.</td><td>Add a <strong>combined mode</strong> that sends the chosen notes plus the top MD&amp;A segment passages (the segment's "Results of Operations"). At minimum, step 3 should suggest "Analyze non notes" when the question names a business or segment.</td></tr>
+              <tr><td>2</td><td>An approximate ratio (95.6%) stood in for the reported one (91.7%).</td><td>Add a prompt rule: when the extract contains a ratio the company reports, quote it, and label any derived ratio as derived with its basis. A combined mode would supply the reported ratios.</td></tr>
+              <tr><td>3</td><td>The output is a working paper, not a playbook page.</td><td>Add an <strong>"Export to playbook"</strong> step: the story agent turns one or more saved RAG Champ answers into the playbook HTML format, keeping the page citations.</td></tr>
+              <tr><td>4</td><td>Time and cost were not measured for the other approach.</td><td>RAG Champ already logs timings and prompt sizes. Record the token cost too, so future comparisons are complete.</td></tr>
+              <tr><td>5</td><td>A single reader's judgment.</td><td>Repeat the comparison on 3–5 more questions and companies (reserves at CB, debt at JPM, tax at NVDA) before drawing firm conclusions.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+  <!-- 8. EVIDENCE -->
+  <section id="evidence" class="mb-5">
+    <h2 class="section-title">8. Evidence: the Fact Check</h2>
+    <div class="card shadow-sm accent-yellow mb-4">
+      <div class="card-body">
+        <p>Each claim was searched for in the filing's text as stored in RAG Champ's TRV package (document pages of <code>trv-20251231.htm</code>).</p>
+        <div class="table-responsive">
+          <table class="table table-bordered table-sm align-middle small mb-0 glossary-table">
+            <thead><tr><th>Claim</th><th>From</th><th>Filing (page)</th><th>Result</th></tr></thead>
+            <tbody>
+              <tr><td>BI combined ratio 91.7% (92.5%, 94.7%)</td><td>Plain</td><td>p.66–67</td><td>✓ correct</td></tr>
+              <tr><td>BI net written premiums 22,679; gross 25,250 of 47,730</td><td>Plain</td><td>p.65</td><td>✓ correct</td></tr>
+              <tr><td>NWP growth 2024: +8.1%</td><td>Plain</td><td>22,078 / 20,430 (p.65)</td><td>✓ derived correctly</td></tr>
+              <tr><td>Underlying combined ratio improved 0.1 points</td><td>Plain</td><td>p.67</td><td>✓ correct</td></tr>
+              <tr><td>California 13.2% of BI direct written premiums; Canada 1.4%</td><td>Plain</td><td>p.9</td><td>✓ correct</td></tr>
+              <tr><td>80 field offices</td><td>Plain</td><td>p.6</td><td>✓ correct</td></tr>
+              <tr><td>Large-deductible receivables about $3.01bn</td><td>Plain</td><td>p.7</td><td>✓ correct</td></tr>
+              <tr><td>Catastrophe treaty: $575m above a $2.89bn retention</td><td>Plain</td><td>p.17</td><td>✓ correct</td></tr>
+              <tr><td>Retention $6.7m per insured per occurrence</td><td>Plain</td><td>p.9</td><td>✓ correct</td></tr>
+              <tr><td>Canada sale to Definity for about US$2.4bn</td><td>Plain</td><td>p.3, p.60</td><td>✓ correct</td></tr>
+              <tr><td>Fidelis quota share 20%, renewed for 2026</td><td>Plain</td><td>p.7, p.88</td><td>✓ correct</td></tr>
+              <tr><td>Workers' comp net reserves 14,690 after an $870m discount</td><td>Plain</td><td>p.160</td><td>✓ correct</td></tr>
+              <tr><td>General liability: "a 2% reserve change in 2025"</td><td>Plain</td><td>not found</td><td>? could not confirm (MD&amp;A p.105–106 describes the development without a percentage)</td></tr>
+              <tr><td>Allowance $129m on the balance sheet vs $(135)m in Note 6</td><td>RAG Champ</td><td>p.121 / p.155</td><td>✓ real discrepancy of $6m; neither figure explains it. Note 6 nets $285m of recoverables held for sale (8,306 − 135 − 285 = 7,886), so the $6m may belong to the held-for-sale business, as RAG Champ suggested.</td></tr>
+              <tr><td>AY2022 BI general liability: 1,696 at first estimate, 2,014 now</td><td>RAG Champ</td><td>Note 8, p.161</td><td>✓ correct (1,696 → 1,736 → 1,916 → 2,014)</td></tr>
+              <tr><td>Note 8 total incurred 27,112 (P&amp;L 27,221)</td><td>RAG Champ</td><td>p.157</td><td>✓ correct, gap unexplained in the notes</td></tr>
+              <tr><td>Assets held for sale 4,550; reserves held for sale 1,909</td><td>RAG Champ</td><td>p.121, p.124</td><td>✓ correct</td></tr>
+              <tr><td>Segment figures (premiums, NII, segment income) and Schedule III reserves</td><td>Both</td><td>Note 2 p.135–139, Note 20 p.219</td><td>✓ consistent in both documents</td></tr>
+              <tr><td>Reserves vs premiums: 1.8× (plain) vs 2.3× (RAG Champ)</td><td>Both</td><td>p.160 vs p.219</td><td>Both right on different bases: net reserves of five product lines vs all BI reserves in Schedule III. Only the cited version lets a reader see why they differ.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card shadow-sm accent-blue">
+      <div class="card-body">
+        <h5>Files</h5>
+        <ul class="mb-0 small">
+          <li>Plain session: <code>C:\Daya\RAGchamp\STOCK-INV-PLAYBOOOK\INDUSTRY-RESEARCH\INSURANCE\TRV-COMMERCIAL-INS-BIZ-ANALYSIS.html</code></li>
+          <li>RAG Champ: <code>WEB-APP\Analysis-history\TRV-1-20261108-141204.html</code>, with the prompt and answer in <code>WEB-APP\Prompt-History\Claude-code-prompt-29-*.txt</code></li>
+          <li>Filing: <code>WEB-APP\XBRL-docs\TRV\</code> (Form 10-K, period 2025-12-31, from SEC EDGAR); package <code>cache\packages\TRV-a572fc5af0174eb3.rptpkg.db</code></li>
+        </ul>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Annual Report Analyzer — an assessment of what the RAG Champ harness adds over a plain Claude Code session, on Travelers' FY2025 10-K. Prepared 8 Nov 2026. Research aid only, not investment advice.
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

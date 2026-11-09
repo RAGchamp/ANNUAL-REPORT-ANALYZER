@@ -31,7 +31,7 @@ log = logging.getLogger(__name__)
 
 # Bump when the matching or the acceptance checks change: remembered verdicts
 # are then recomputed (packages are not rebuilt; that is INDEX_VERSION).
-MATCHER_VERSION = 2
+MATCHER_VERSION = 3
 SHORTLIST = 3
 FLOOR = 0.55              # below this similarity a model is not worth a trial extraction
 AMBIGUITY_GAP = 0.05      # two different profiles pass within this: doubtful, so "new" (Q8)

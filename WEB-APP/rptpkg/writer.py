@@ -120,7 +120,7 @@ def write_package(path, index, content, meta):
         conn.executemany("INSERT INTO pages VALUES (?, ?, ?, ?, ?, ?, ?)", page_rows)
         conn.executemany(
             "INSERT INTO lines VALUES (:id, :section_id, :unit_id, :seq, :pdf_page, :table_no, :label, :kind,"
-            " :note_ref)", content.get("lines", []))
+            " :note_ref, :concept)", [{"concept": None, **line} for line in content.get("lines", [])])
         conn.executemany(
             'INSERT INTO "values" VALUES (:line_id, :col, :heading, :period_end, :period_label, :raw, :value,'
             " :nil)", content.get("values", []))

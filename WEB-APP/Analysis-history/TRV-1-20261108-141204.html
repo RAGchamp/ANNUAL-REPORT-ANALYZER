@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Travelers Companies, Inc. — Initial question — Annual Report Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Palette and components from ANALYSIS-REPORTS/BHARATFORGE-ANN-REPORT-ANALYSIS-2025-26.html */
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-gold:#b8860b;
+    --nav-blue:#0a1128;
+    --nav-yellow:#f2b400;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand svg{ height:42px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  /* light-blue context box: company, report, question */
+  .context-box{
+    background:#e7f1ff;
+    border:1px solid #b6d4fe;
+    border-left:6px solid var(--biz-blue);
+    border-radius:.5rem;
+    padding:1.1rem 1.35rem;
+    box-shadow:0 .15rem .5rem rgba(13,110,253,.08);
+  }
+  .context-box .company{ color:var(--biz-blue-dark); font-weight:700; font-size:1.5rem; margin:0; }
+  .context-box .meta{ font-size:.88rem; color:#34495e; }
+  .context-box .meta strong{ color:#1c2b3a; }
+  .context-box .question-label{
+    font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--biz-blue-dark);
+  }
+  .context-box .question{ font-size:1.12rem; font-weight:600; color:#10233f; margin:0; white-space:pre-wrap; }
+  .context-box .original{ font-size:.9rem; color:#34495e; white-space:pre-wrap; }
+  .prompt-badge{
+    display:inline-block; background:var(--nav-blue); color:var(--nav-yellow);
+    font-weight:700; font-size:.78rem; border-radius:999px; padding:.2rem .7rem;
+  }
+
+  /* analysis content */
+  .analysis{ background:#fff; border-radius:.5rem; padding:1.5rem 1.75rem;
+             box-shadow:0 .125rem .25rem rgba(0,0,0,.075); line-height:1.6; }
+  .analysis h1, .analysis h2{
+    display:inline-block; padding-bottom:.4rem; border-bottom:3px solid var(--biz-gold);
+    margin:1.6rem 0 1rem; font-size:1.4rem; color:#10233f;
+  }
+  .analysis > h1:first-child, .analysis > h2:first-child{ margin-top:0; }
+  .analysis h3{ font-size:1.1rem; margin:1.3rem 0 .6rem; color:var(--biz-blue-dark); }
+  .analysis h4{ font-size:1rem; margin:1.1rem 0 .5rem; }
+  .analysis table.table{ font-size:.9rem; margin-bottom:1.25rem; }
+  .analysis table.table thead th{ background:#ffdf7e !important; color:#212529; border-color:#e6c257; }
+  .analysis table.table tbody tr:nth-child(odd) > *{ background:#d3e3f5 !important; }
+  .analysis table.table tbody tr:nth-child(even) > *{ background:#eef4fc !important; }
+  .analysis td.num{ text-align:right; white-space:nowrap; }
+  .analysis blockquote{
+    border-left:4px solid var(--biz-gold); background:#fff8e6;
+    padding:.75rem 1rem; margin:.75rem 0; font-style:italic;
+  }
+  .analysis pre{ background:#0a1128; color:#f2b400; padding:1rem; border-radius:.5rem; overflow-x:auto; }
+  .analysis code{ color:#b02a37; }
+  .analysis pre code{ color:inherit; }
+
+  footer{ background:var(--nav-blue); }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<style>
+  .rc-topnav{ position:sticky; top:0; z-index:1030; background:#0a3d1f; color:#ffe14d;
+    padding:.9rem 1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .rc-topnav .rc-brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .rc-topnav .rc-brand svg{ height:44px; width:auto; display:block; }
+  .rc-topnav .rc-right{ display:flex; align-items:center; gap:1rem; }
+  .rc-topnav .rc-tagline{ font-weight:600; font-size:1.05rem; color:#ffe14d; letter-spacing:.15em;
+    word-spacing:.6em; font-style:italic; margin:0; }
+  .rc-topnav .rc-right .btn{ color:#ffe14d; border-color:#ffe14d; }
+  @media (max-width:576px){
+    .rc-topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+    .rc-topnav .rc-brand svg{ height:34px; }
+    .rc-topnav .rc-tagline{ font-size:.85rem; letter-spacing:.08em; word-spacing:.3em; }
+  }
+  @media print{ .rc-topnav{ position:static; box-shadow:none; } }
+</style>
+<div class="rc-topnav">
+  <span class="rc-brand" aria-label="RAG Champ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="RAG Champ logo">
+  <!-- interlocking two-tone mark, flat fill, two colors only -->
+  <circle cx="24" cy="24" r="19" fill="#5BF527"/>
+  <path d="M24,5 A19,19 0 0,0 24,43 A9.5,9.5 0 0,0 24,24 A9.5,9.5 0 0,1 24,5 Z" fill="#FA0C00"/>
+
+  <text x="58" y="33" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="0.3" fill="#ffd60a">RAG Champ</text>
+</svg>
+</span>
+  <div class="rc-right">
+    <div class="rc-tagline">STOCK INVESTMENT PLAYBOOK</div>
+  </div>
+</div>
+
+<main class="container my-4">
+
+  <!-- CONTEXT: company, annual report, question -->
+  <section class="context-box mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+      <h1 class="company">Travelers Companies, Inc.</h1>
+      <span class="prompt-badge">#1 · Initial question</span>
+    </div>
+    <div class="row g-2 meta mb-3">
+      <div class="col-md-6"><strong>Annual report:</strong> TRV</div>
+      <div class="col-md-6"><strong>Prompt sent:</strong> 08 Nov 2026, 14:12:04</div>
+      <div class="col-md-6"><strong>Statements:</strong> Consolidated</div>
+      <div class="col-md-6"><strong>PDF pages analyzed:</strong> 134–139, 157–174, 219, 221, 154–156</div>
+      <div class="col-12"><strong>Notes analyzed:</strong> Consolidated Note 2 – Segment Information (PDF p.134–139), Consolidated Note 8 – Insurance Claim Reserves (PDF p.157–174), Consolidated Note 20 – Schedule III (PDF p.219), Consolidated Note 22 – Schedule VI (PDF p.221), Consolidated Note 6 – Reinsurance (PDF p.154–156)</div>
+      
+      
+      <div class="col-12"><strong>Financial statements referenced:</strong> Consolidated Statement of Income (PDF p.119); Consolidated Statement of Comprehensive Income (PDF p.120); Consolidated Balance Sheet (PDF p.121); Consolidated Statement of Cash Flows (PDF p.123); Consolidated Statement of Changes in Shareholders&#39; Equity (PDF p.122)</div>
+      
+    </div>
+    
+    <div class="question-label">Question</div>
+    
+    <p class="question">analyzE TRAVELER&#39;s commercial insurance business</p>
+  </section>
+
+  <!-- ANALYSIS -->
+  <article class="analysis">
+    <h2>Summary</h2>
+<ul>
+<li><strong>What "commercial" covers:</strong> Travelers has no line called "commercial insurance". I have used its two commercial segments: <strong>Business Insurance (BI)</strong> and <strong>Bond &amp; Specialty Insurance (B&amp;SI)</strong>. Together they earned <strong>$26,519m of premiums in 2025 (60% of the $43,914m group total)</strong> and produced <strong>$4,645m of segment income (69% of the $6,698m total)</strong> (Note 2, p.135).</li>
+<li><strong>Profit grew faster than premiums.</strong> BI segment income rose <strong>+11.8% to $3,695m</strong> and B&amp;SI rose <strong>+16.6% to $950m</strong> (Note 2, p.135). The drivers were higher net investment income (BI +8.7%), more favorable prior-year reserve development, and a lower loss ratio.</li>
+<li><strong>BI's underwriting margin is thin and investment income carries it.</strong> BI's approximate combined ratio is <strong>95.6%</strong> (2024: 96.4%). Net investment income of $2,782m is about <strong>61% of BI's pre-tax income</strong>. B&amp;SI is the high-margin business, at an approximate <strong>82.4%</strong> combined ratio.</li>
+<li><strong>Growth is slowing.</strong> BI net written premiums grew only <strong>+2.7%</strong>, against <strong>+5.0%</strong> for earned premiums. Workers' comp and National Property were flat or down. Growth came from commercial auto and commercial multi-peril (CMP).</li>
+<li><strong>Reserve risk sits in liability lines.</strong> The development tables show <strong>adverse development in BI general liability of about +$250m in 2025</strong> (accident years 2018–2023) and asbestos additions of <strong>$277m</strong>. Both were masked by about <strong>$440m of favorable workers' comp</strong> development (Note 8, pp.158, 161, 165, 173).</li>
+</ul>
+<h2>Key figures</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Item</th>
+<th>2025</th>
+<th>2024</th>
+<th>Change</th>
+<th>% change</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BI earned premiums</td>
+<td class="num">22,412</td>
+<td class="num">21,345</td>
+<td class="num">+1,067</td>
+<td class="num">+5.0%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>BI net written premiums</td>
+<td class="num">22,679</td>
+<td class="num">22,078</td>
+<td class="num">+601</td>
+<td class="num">+2.7%</td>
+<td>Note 2, p.137</td>
+</tr>
+<tr>
+<td>BI net investment income</td>
+<td class="num">2,782</td>
+<td class="num">2,560</td>
+<td class="num">+222</td>
+<td class="num">+8.7%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>BI claims &amp; CAE</td>
+<td class="num">14,154</td>
+<td class="num">13,679</td>
+<td class="num">+475</td>
+<td class="num">+3.5%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>BI segment income (after tax)</td>
+<td class="num">3,695</td>
+<td class="num">3,306</td>
+<td class="num">+389</td>
+<td class="num">+11.8%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>BI catastrophe losses</td>
+<td class="num">1,073</td>
+<td class="num">1,032</td>
+<td class="num">+41</td>
+<td class="num">+4.0%</td>
+<td>Note 2, p.136</td>
+</tr>
+<tr>
+<td>BI favorable PYD</td>
+<td class="num">233</td>
+<td class="num">90</td>
+<td class="num">+143</td>
+<td class="num">+159%</td>
+<td>Note 2, p.136</td>
+</tr>
+<tr>
+<td>B&amp;SI earned premiums</td>
+<td class="num">4,107</td>
+<td class="num">3,958</td>
+<td class="num">+149</td>
+<td class="num">+3.8%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>B&amp;SI net written premiums</td>
+<td class="num">4,262</td>
+<td class="num">4,109</td>
+<td class="num">+153</td>
+<td class="num">+3.7%</td>
+<td>Note 2, p.137</td>
+</tr>
+<tr>
+<td>B&amp;SI segment income</td>
+<td class="num">950</td>
+<td class="num">815</td>
+<td class="num">+135</td>
+<td class="num">+16.6%</td>
+<td>Note 2, p.135</td>
+</tr>
+<tr>
+<td>B&amp;SI favorable PYD</td>
+<td class="num">221</td>
+<td class="num">129</td>
+<td class="num">+92</td>
+<td class="num">+71%</td>
+<td>Note 2, p.136</td>
+</tr>
+<tr>
+<td>BI claims reserves</td>
+<td class="num">51,655</td>
+<td class="num">49,731</td>
+<td class="num">+1,924</td>
+<td class="num">+3.9%</td>
+<td>Note 20, p.219</td>
+</tr>
+<tr>
+<td>B&amp;SI claims reserves</td>
+<td class="num">5,672</td>
+<td class="num">5,365</td>
+<td class="num">+307</td>
+<td class="num">+5.7%</td>
+<td>Note 20, p.219</td>
+</tr>
+<tr>
+<td>BI segment assets</td>
+<td class="num">106,084</td>
+<td class="num">98,311</td>
+<td class="num">+7,773</td>
+<td class="num">+7.9%</td>
+<td>Note 2, p.139</td>
+</tr>
+<tr>
+<td>Net asbestos reserves</td>
+<td class="num">1,360</td>
+<td class="num">1,340</td>
+<td class="num">+20</td>
+<td class="num">+1.5%</td>
+<td>Note 8, p.172</td>
+</tr>
+</tbody>
+</table></div>
+<h2>Detailed analysis</h2>
+<h3>1. Underwriting ratios</h3>
+<p>These are approximate ratios calculated from Note 2 (p.135), each line divided by earned premiums. G&amp;A includes costs that serve fee income, so this is not the company's reported expense ratio.</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Ratio</th>
+<th>BI 2025</th>
+<th>BI 2024</th>
+<th>B&amp;SI 2025</th>
+<th>B&amp;SI 2024</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Loss &amp; LAE</td>
+<td>14,154/22,412 = <strong>63.2%</strong></td>
+<td>13,679/21,345 = 64.1%</td>
+<td>1,764/4,107 = <strong>43.0%</strong></td>
+<td>1,774/3,958 = 44.8%</td>
+</tr>
+<tr>
+<td>DAC amortization</td>
+<td>3,796/22,412 = 16.9%</td>
+<td>3,588/21,345 = 16.8%</td>
+<td>778/4,107 = 18.9%</td>
+<td>756/3,958 = 19.1%</td>
+</tr>
+<tr>
+<td>G&amp;A</td>
+<td>3,482/22,412 = 15.5%</td>
+<td>3,303/21,345 = 15.5%</td>
+<td>843/4,107 = 20.5%</td>
+<td>832/3,958 = 21.0%</td>
+</tr>
+<tr>
+<td><strong>Approx. combined</strong></td>
+<td class="num"><strong>95.6%</strong></td>
+<td class="num"><strong>96.4%</strong></td>
+<td class="num"><strong>82.4%</strong></td>
+<td class="num"><strong>84.9%</strong></td>
+</tr>
+<tr>
+<td>Catastrophe ratio</td>
+<td>1,073/22,412 = 4.8%</td>
+<td>1,032/21,345 = 4.8%</td>
+<td class="num">0.6%</td>
+<td class="num">1.3%</td>
+</tr>
+<tr>
+<td>PYD benefit</td>
+<td>(233)/22,412 = (1.0)%</td>
+<td>(90)/21,345 = (0.4)%</td>
+<td class="num">(5.4)%</td>
+<td class="num">(3.3)%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>BI underlying loss ratio</strong> (excluding catastrophes and prior-year development):</p>
+<ul>
+<li>2025: (14,154 − 1,073 + 233) / 22,412 = <strong>59.4%</strong></li>
+<li>2024: (13,679 − 1,032 + 90) / 21,345 = <strong>59.7%</strong></li>
+</ul>
+<p>The underlying ratio improved only about 0.3 points. Most of BI's 0.9-point loss-ratio gain came from prior-year development, not from current-year pricing.</p>
+<h3>2. Pre-tax rebuild of segment income (ties to Note 2)</h3>
+<p><strong>BI 2025</strong></p>
+<ul>
+<li>Revenues 26,018 − expenses (14,154 + 3,796 + 3,482 = 21,432) = 4,586 pre-tax</li>
+<li>Less tax 891 = <strong>3,695</strong> ✓</li>
+<li>Effective tax rate: 891 / 4,586 = 19.4%</li>
+</ul>
+<p><strong>BI 2024</strong></p>
+<ul>
+<li>24,657 − 20,570 = 4,087; less tax 781 = <strong>3,306</strong> ✓</li>
+<li>Effective tax rate: 19.1%</li>
+</ul>
+<p><strong>B&amp;SI 2025</strong></p>
+<ul>
+<li>4,579 − 3,385 = 1,194; less tax 244 = <strong>950</strong> ✓</li>
+<li>Effective tax rate: 20.4%</li>
+</ul>
+<p><strong>Where BI's pre-tax income comes from (2025)</strong></p>
+<ul>
+<li>Underwriting result: 22,412 − 21,432 = 980</li>
+<li>Net investment income: 2,782</li>
+<li>Fee income and other revenues: 445 + 379 = 824</li>
+</ul>
+<p>Net investment income is therefore <strong>61%</strong> of BI's pre-tax income (2,782 / 4,586). This reflects BI's long-tailed reserves: reserves are <strong>2.3×</strong> earned premiums (51,655 / 22,412), which creates a large float (Note 20, p.219).</p>
+<h3>3. Mix and growth in BI (Note 2, pp.137–138)</h3>
+<p><strong>Earned premiums by product</strong></p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Product</th>
+<th>2025</th>
+<th>2024</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>CMP</td>
+<td class="num">5,797</td>
+<td class="num">5,269</td>
+<td class="num"><strong>+10.0%</strong></td>
+</tr>
+<tr>
+<td>Commercial auto</td>
+<td class="num">3,942</td>
+<td class="num">3,590</td>
+<td class="num"><strong>+9.8%</strong></td>
+</tr>
+<tr>
+<td>Commercial property</td>
+<td class="num">3,772</td>
+<td class="num">3,616</td>
+<td class="num">+4.3%</td>
+</tr>
+<tr>
+<td>General liability</td>
+<td class="num">3,566</td>
+<td class="num">3,464</td>
+<td class="num">+2.9%</td>
+</tr>
+<tr>
+<td>Workers' comp</td>
+<td class="num">3,360</td>
+<td class="num">3,470</td>
+<td class="num"><strong>−3.2%</strong></td>
+</tr>
+<tr>
+<td>International</td>
+<td class="num">1,899</td>
+<td class="num">1,863</td>
+<td class="num">+1.9%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Net written premiums by market</strong></p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Market</th>
+<th>2025</th>
+<th>2024</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Middle Market</td>
+<td class="num">12,541</td>
+<td class="num">12,023</td>
+<td class="num">+4.3%</td>
+</tr>
+<tr>
+<td>Select Accounts</td>
+<td class="num">3,830</td>
+<td class="num">3,727</td>
+<td class="num">+2.8%</td>
+</tr>
+<tr>
+<td>National Accounts</td>
+<td class="num">1,262</td>
+<td class="num">1,259</td>
+<td class="num">+0.2%</td>
+</tr>
+<tr>
+<td>National Property &amp; Other</td>
+<td class="num">3,112</td>
+<td class="num">3,134</td>
+<td class="num">−0.7%</td>
+</tr>
+<tr>
+<td>International</td>
+<td class="num">1,934</td>
+<td class="num">1,935</td>
+<td class="num">0.0%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Interpretation</strong></p>
+<ul>
+<li>Growth is concentrated in Middle Market and in auto and CMP.</li>
+<li>Written premiums (+2.7%) are now growing more slowly than earned premiums (+5.0%). That points to slower earned growth in 2026 unless pricing reaccelerates.</li>
+</ul>
+<p><strong>B&amp;SI:</strong> growth came from International NWP (582 vs 506, +15.0%) and Surety (+4.6%). Management Liability was flat (+0.7%).</p>
+<h3>4. Reserve quality by commercial line</h3>
+<p>Change in incurred estimates during 2025, calculated as the 2025 column minus the 2024 column, summed across accident years (Note 8, pp.161–167):</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Line</th>
+<th>2025 development</th>
+<th>Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>BI workers' comp</td>
+<td><strong>−440 (favorable)</strong></td>
+<td>Every accident year 2016–2022 is down; AY2016 has fallen from 2,768 to 2,092 since first estimate</td>
+</tr>
+<tr>
+<td>BI general liability</td>
+<td><strong>+250 (adverse)</strong></td>
+<td>AY2022 up from 1,696 to 2,014 (+18.8% since first estimate); AY2023 up from 1,998 to 2,129</td>
+</tr>
+<tr>
+<td>BI CMP</td>
+<td class="num">−102</td>
+<td>Favorable in recent years</td>
+</tr>
+<tr>
+<td>BI commercial property</td>
+<td class="num">−88</td>
+<td>Favorable</td>
+</tr>
+<tr>
+<td>BI commercial auto</td>
+<td class="num">−44</td>
+<td>AY2023 +50 and AY2022 +9, offset by AY2024 −92</td>
+</tr>
+<tr>
+<td>B&amp;SI general liability</td>
+<td>adverse in recent AYs</td>
+<td>AY2024 up from 1,001 to 1,073 (+7.2%); AY2023 from 862 to 884</td>
+</tr>
+<tr>
+<td>B&amp;SI fidelity &amp; surety</td>
+<td>strongly favorable</td>
+<td>AY2021 has fallen from 284 to 76</td>
+</tr>
+</tbody>
+</table></div>
+<p>The BI development tables sum to about −424 favorable. BI's reported net PYD is −233. The roughly $190m gap is consistent with the $277m asbestos and run-off additions, which sit outside these tables (Note 8, p.158).</p>
+<p><strong>Interpretation:</strong> BI's reported favorable development depends on workers' comp releases while liability lines strengthen. Workers' comp premiums are shrinking (−3.2%), so this cushion may fade.</p>
+<h2>Impact on the financial statements</h2>
+<h3>Income Statement (Statement of Operations)</h3>
+<p>Commercial segment figures roll into the consolidated lines as follows (Note 2, p.135 vs Statement of Income, p.119):</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>P&amp;L line (2025 / 2024)</th>
+<th>BI + B&amp;SI share 2025</th>
+<th>Reconciliation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Premiums 43,914 / 41,941</td>
+<td>26,519 (60%)</td>
+<td>Three segments sum exactly to 43,914 ✓</td>
+</tr>
+<tr>
+<td>Net investment income 3,959 / 3,590</td>
+<td>3,227 (82%)</td>
+<td>Sums exactly ✓</td>
+</tr>
+<tr>
+<td>Fee income 495 / 473</td>
+<td class="num">445</td>
+<td>BI only ✓</td>
+</tr>
+<tr>
+<td>Claims &amp; CAE 27,221 / 27,059</td>
+<td class="num">15,918</td>
+<td>Sums exactly ✓</td>
+</tr>
+<tr>
+<td>Amortization of DAC 7,266 / 6,973</td>
+<td class="num">4,574</td>
+<td>Sums exactly ✓</td>
+</tr>
+<tr>
+<td>G&amp;A 6,120 / 5,819</td>
+<td class="num">4,325</td>
+<td>Segments total 6,071; the other 49 is in "Interest Expense and Other"</td>
+</tr>
+<tr>
+<td>Income tax 1,508 / 1,181</td>
+<td class="num">1,135</td>
+<td>Segments total 1,620; the 112 difference is the tax benefit on interest and realized losses</td>
+</tr>
+</tbody>
+</table></div>
+<p>Net income reconciles: 6,698 − 373 − 37 = <strong>6,288</strong> ✓ (Note 2, p.138; P&amp;L p.119).</p>
+<p>Schedule III's "Other operating expenses" of 6,545 equal G&amp;A 6,120 plus interest 425 ✓ (Note 20, p.219).</p>
+<h3>Balance Sheet</h3>
+<ul>
+<li><strong>Claims reserves: 65,737 / 64,093</strong> (BS p.121).</li>
+<li>Schedule III splits this as BI 51,655 + B&amp;SI 5,672 + Personal 8,407 + Other 3 = 65,737 ✓ (Note 20, p.219).</li>
+<li>Note 8 shows 67,643 property-casualty + 3 accident &amp; health − 1,909 held for sale = 65,737 ✓ (Note 8, p.157).</li>
+<li>Commercial reserves (57,327) are <strong>87%</strong> of the total.</li>
+<li><strong>Unearned premium reserves: 22,431 / 22,289.</strong> BI 11,088 + B&amp;SI 3,145 + Personal 8,198 ✓ (Note 20).</li>
+<li><strong>Deferred acquisition costs: 3,518 / 3,494.</strong> BI 1,750 + B&amp;SI 542 + Personal 1,226 ✓ (Note 20).</li>
+<li><strong>Reinsurance recoverables: 7,886 / 8,000.</strong> Ties to Note 6 (p.155) and to the "$7.89 billion" in Note 8 (p.160).</li>
+<li><strong>Total assets: 143,708 / 133,189.</strong> BI assets of 106,084 are 74% of the total ✓ (Note 2, p.139).</li>
+</ul>
+<h3>Cash Flow Statement</h3>
+<p>Commercial underwriting and float drive operating cash flow of <strong>10,606 / 9,074</strong> (CF p.123):</p>
+<ul>
+<li>Change in claims reserves: +3,300 / +2,680</li>
+<li>Change in unearned premium reserves: +584 / +1,488 (the slowdown is consistent with slower written-premium growth)</li>
+<li>Change in DAC: −7,373 / −7,173</li>
+</ul>
+<p>Long-tailed BI reserves grow faster than payments. Total net claims payments were 23,913 against 27,112 incurred (Note 8, p.157). This float is invested; investing outflow was 7,652.</p>
+<p>Commercial cash flows are not disclosed separately by segment.</p>
+<h3>Statement of Shareholders' Equity</h3>
+<ul>
+<li>Commercial segment income of 4,645 feeds net income of 6,288 and so retained earnings (49,630 → 54,931) (Equity p.122).</li>
+<li>The bond portfolio backing commercial reserves drives other comprehensive income: unrealized gains of +2,744 pre-tax (OCI p.120) moved the AOCI loss from −4,967 to −2,500.</li>
+<li>AOCI is not allocated by segment.</li>
+</ul>
+<h2>Red flags &amp; areas for follow-up</h2>
+<ol>
+<li><strong>Allowance mismatch.</strong> The balance sheet caption shows an allowance for uncollectible reinsurance of <strong>$129m</strong>, but the Note 6 table shows <strong>$(135)m</strong> (BS p.121 vs Note 6 p.155). The difference is $6m, possibly the held-for-sale portion. Clarify.</li>
+<li><strong>Held-for-sale business.</strong> Assets of $4,550m and liabilities of $2,542m are held for sale (BS p.121), including $1,909m of reserves (Note 8, p.157) and $285m of recoverables (Note 6, p.155). The provided notes do not say which segment holds this business.
+   - Personal Insurance reserves fell from 8,992 to 8,407 although its premiums grew, which suggests the business is in Personal Insurance.
+   - Confirm that the commercial segments are unaffected.</li>
+<li><strong>Adverse liability development.</strong> BI general liability is about +$250m adverse in 2025, AY2022–2023 keep rising, and B&amp;SI general liability AY2024 is up 7.2%. Ask about social inflation and the adequacy of reserves for recent accident years.</li>
+<li><strong>Recurring asbestos charges.</strong> Additions were $284m (2023), $242m (2024) and $277m (2025), and management says further liabilities "cannot now be reasonably estimated" (Note 8, pp.173–174).</li>
+<li><strong>Dependence on workers' comp releases.</strong> About $440m of favorable development came from workers' comp in 2025, while workers' comp premiums are falling.</li>
+<li><strong>Slowing written premiums.</strong> BI NWP grew +2.7% against +5.0% earned. Ask about retention and rate trends by market.</li>
+<li><strong>Small tie-out gap.</strong> Note 8's total incurred of 27,112 does not equal P&amp;L claims of 27,221 (a difference of 109). This is likely accident &amp; health, held-for-sale or other items, but it is not explained.</li>
+<li><strong>Expense allocation basis.</strong> Schedule III expenses are allocated on statutory practices (Note 20, footnote 2), and net investment income is allocated notionally (Note 2, p.134). Segment margins therefore depend on allocation choices.</li>
+</ol>
+<h2>Sources</h2>
+<ul>
+<li>Note 2 – Segment Information (PDF pp.134–139)</li>
+<li>Note 6 – Reinsurance (pp.154–156)</li>
+<li>Note 8 – Insurance Claim Reserves (pp.157–174)</li>
+<li>Note 20 – Schedule III (p.219)</li>
+<li>Note 22 – Schedule VI (p.221)</li>
+<li>Consolidated Statement of Income (p.119)</li>
+<li>Consolidated Statement of Comprehensive Income (p.120)</li>
+<li>Consolidated Balance Sheet (p.121)</li>
+<li>Consolidated Statement of Changes in Shareholders' Equity (p.122)</li>
+<li>Consolidated Statement of Cash Flows (p.123)</li>
+</ul>
+  </article>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Generated by the Annual Report Foot Notes Analyzer (RAG Champ) using Claude Code, from the notes to the financial statements in TRV.
+    Research aid only, not investment advice. Verify every number against the filed annual report.
+  </div>
+</footer>
+
+</body>
+</html>

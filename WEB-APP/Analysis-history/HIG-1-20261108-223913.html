@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hartford Insurance Group, Inc. — Initial question — Annual Report Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Palette and components from ANALYSIS-REPORTS/BHARATFORGE-ANN-REPORT-ANALYSIS-2025-26.html */
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-gold:#b8860b;
+    --nav-blue:#0a1128;
+    --nav-yellow:#f2b400;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand svg{ height:42px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  /* light-blue context box: company, report, question */
+  .context-box{
+    background:#e7f1ff;
+    border:1px solid #b6d4fe;
+    border-left:6px solid var(--biz-blue);
+    border-radius:.5rem;
+    padding:1.1rem 1.35rem;
+    box-shadow:0 .15rem .5rem rgba(13,110,253,.08);
+  }
+  .context-box .company{ color:var(--biz-blue-dark); font-weight:700; font-size:1.5rem; margin:0; }
+  .context-box .meta{ font-size:.88rem; color:#34495e; }
+  .context-box .meta strong{ color:#1c2b3a; }
+  .context-box .question-label{
+    font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--biz-blue-dark);
+  }
+  .context-box .question{ font-size:1.12rem; font-weight:600; color:#10233f; margin:0; white-space:pre-wrap; }
+  .context-box .original{ font-size:.9rem; color:#34495e; white-space:pre-wrap; }
+  .prompt-badge{
+    display:inline-block; background:var(--nav-blue); color:var(--nav-yellow);
+    font-weight:700; font-size:.78rem; border-radius:999px; padding:.2rem .7rem;
+  }
+
+  /* analysis content */
+  .analysis{ background:#fff; border-radius:.5rem; padding:1.5rem 1.75rem;
+             box-shadow:0 .125rem .25rem rgba(0,0,0,.075); line-height:1.6; }
+  .analysis h1, .analysis h2{
+    display:inline-block; padding-bottom:.4rem; border-bottom:3px solid var(--biz-gold);
+    margin:1.6rem 0 1rem; font-size:1.4rem; color:#10233f;
+  }
+  .analysis > h1:first-child, .analysis > h2:first-child{ margin-top:0; }
+  .analysis h3{ font-size:1.1rem; margin:1.3rem 0 .6rem; color:var(--biz-blue-dark); }
+  .analysis h4{ font-size:1rem; margin:1.1rem 0 .5rem; }
+  .analysis table.table{ font-size:.9rem; margin-bottom:1.25rem; }
+  .analysis table.table thead th{ background:#ffdf7e !important; color:#212529; border-color:#e6c257; }
+  .analysis table.table tbody tr:nth-child(odd) > *{ background:#d3e3f5 !important; }
+  .analysis table.table tbody tr:nth-child(even) > *{ background:#eef4fc !important; }
+  .analysis td.num{ text-align:right; white-space:nowrap; }
+  .analysis blockquote{
+    border-left:4px solid var(--biz-gold); background:#fff8e6;
+    padding:.75rem 1rem; margin:.75rem 0; font-style:italic;
+  }
+  .analysis pre{ background:#0a1128; color:#f2b400; padding:1rem; border-radius:.5rem; overflow-x:auto; }
+  .analysis code{ color:#b02a37; }
+  .analysis pre code{ color:inherit; }
+
+  footer{ background:var(--nav-blue); }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<style>
+  .rc-topnav{ position:sticky; top:0; z-index:1030; background:#0a3d1f; color:#ffe14d;
+    padding:.9rem 1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .rc-topnav .rc-brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .rc-topnav .rc-brand svg{ height:44px; width:auto; display:block; }
+  .rc-topnav .rc-right{ display:flex; align-items:center; gap:1rem; }
+  .rc-topnav .rc-tagline{ font-weight:600; font-size:1.05rem; color:#ffe14d; letter-spacing:.15em;
+    word-spacing:.6em; font-style:italic; margin:0; }
+  .rc-topnav .rc-right .btn{ color:#ffe14d; border-color:#ffe14d; }
+  @media (max-width:576px){
+    .rc-topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+    .rc-topnav .rc-brand svg{ height:34px; }
+    .rc-topnav .rc-tagline{ font-size:.85rem; letter-spacing:.08em; word-spacing:.3em; }
+  }
+  @media print{ .rc-topnav{ position:static; box-shadow:none; } }
+</style>
+<div class="rc-topnav">
+  <span class="rc-brand" aria-label="RAG Champ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="RAG Champ logo">
+  <!-- interlocking two-tone mark, flat fill, two colors only -->
+  <circle cx="24" cy="24" r="19" fill="#5BF527"/>
+  <path d="M24,5 A19,19 0 0,0 24,43 A9.5,9.5 0 0,0 24,24 A9.5,9.5 0 0,1 24,5 Z" fill="#FA0C00"/>
+
+  <text x="58" y="33" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="0.3" fill="#ffd60a">RAG Champ</text>
+</svg>
+</span>
+  <div class="rc-right">
+    <div class="rc-tagline">STOCK INVESTMENT PLAYBOOK</div>
+  </div>
+</div>
+
+<main class="container my-4">
+
+  <!-- CONTEXT: company, annual report, question -->
+  <section class="context-box mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+      <h1 class="company">The Hartford Insurance Group, Inc.</h1>
+      <span class="prompt-badge">#1 · Initial question</span>
+    </div>
+    <div class="row g-2 meta mb-3">
+      <div class="col-md-6"><strong>Annual report:</strong> HIG</div>
+      <div class="col-md-6"><strong>Prompt sent:</strong> 08 Nov 2026, 22:39:13</div>
+      <div class="col-md-6"><strong>Statements:</strong> Consolidated</div>
+      <div class="col-md-6"><strong>PDF pages analyzed:</strong> 213, 148–155, 140–147</div>
+      <div class="col-12"><strong>Notes analyzed:</strong> Consolidated Note 21 – Schedule I Summary of Investments - Other Than Investments in Affiliates (PDF p.213), Consolidated Note 5 – Investments (PDF p.148–155), Consolidated Note 4 – Fair Value Measurements (PDF p.140–147)</div>
+      
+      
+      <div class="col-12"><strong>Financial statements referenced:</strong> Consolidated Statements of Operations (PDF p.123); Consolidated Statements of Comprehensive Income (Loss) (PDF p.124); Consolidated Balance Sheets (PDF p.125); Consolidated Statements of Cash Flows (PDF p.127); Consolidated Statement of Changes in Stockholders&#39; Equity (PDF p.126)</div>
+      
+    </div>
+    
+    <div class="question-label">Question</div>
+    
+    <p class="question">give breakup of hartford&#39;s total investments as of Dec-31-2025</p>
+  </section>
+
+  <!-- ANALYSIS -->
+  <article class="analysis">
+    <h2>Summary</h2>
+<ul>
+<li><strong>Total investments at 31-Dec-2025 were $63,957m</strong>, up $4,747m (+8.0%) from $59,210m (Balance Sheet, p.125). Schedule I gives the same total (Note 21, p.213).</li>
+<li><strong>Fixed maturities, AFS dominate at $46,041m (72.0%)</strong>. Next come mortgage loans at $6,837m (10.7%), limited partnerships and other alternative investments at $5,804m (9.1%) and short-term investments at $4,353m (6.8%). The remaining lines total $922m (1.4%).</li>
+<li><strong>Within AFS bonds, corporates are the largest block at $23,076m (half of AFS).</strong> Structured securities follow at $16,485m (ABS, CLOs, CMBS, RMBS), then municipals at $4,652m and U.S. Treasuries at $1,381m (Note 5, p.150).</li>
+<li><strong>The bond book's net unrealized loss narrowed</strong> from $(1,955)m to $(814)m because interest rates fell (Note 5, p.150–151). This drove the $898m AFS gain in OCI (Comprehensive Income, p.124).</li>
+<li><strong>About 93% of the fair-valued investments are Level 1/2.</strong> Level 3 assets rose to $4,028m from $2,992m (Note 4, p.141–142, 146).</li>
+</ul>
+<h2>Key figures</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Item (carrying amount, $m)</th>
+<th>31-Dec-2025</th>
+<th>31-Dec-2024</th>
+<th>Change</th>
+<th>% change</th>
+<th>% of 2025 total</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed maturities, AFS</td>
+<td class="num">46,041</td>
+<td class="num">42,567</td>
+<td class="num">+3,474</td>
+<td class="num">+8.2%</td>
+<td class="num">72.0%</td>
+<td>BS p.125; Note 5 p.150; Note 21 p.213</td>
+</tr>
+<tr>
+<td>FVO securities</td>
+<td class="num">168</td>
+<td class="num">308</td>
+<td class="num">−140</td>
+<td class="num">−45.5%</td>
+<td class="num">0.3%</td>
+<td>BS p.125; Note 4 p.147</td>
+</tr>
+<tr>
+<td>Equity securities, at fair value</td>
+<td class="num">492</td>
+<td class="num">603</td>
+<td class="num">−111</td>
+<td class="num">−18.4%</td>
+<td class="num">0.8%</td>
+<td>BS p.125; Note 4 p.141–142</td>
+</tr>
+<tr>
+<td>Mortgage loans, net of ACL</td>
+<td class="num">6,837</td>
+<td class="num">6,396</td>
+<td class="num">+441</td>
+<td class="num">+6.9%</td>
+<td class="num">10.7%</td>
+<td>BS p.125; Note 5 p.153</td>
+</tr>
+<tr>
+<td>Limited partnerships and other alternative investments</td>
+<td class="num">5,804</td>
+<td class="num">5,042</td>
+<td class="num">+762</td>
+<td class="num">+15.1%</td>
+<td class="num">9.1%</td>
+<td>BS p.125; Note 21 p.213</td>
+</tr>
+<tr>
+<td>Other investments</td>
+<td class="num">262</td>
+<td class="num">226</td>
+<td class="num">+36</td>
+<td class="num">+15.9%</td>
+<td class="num">0.4%</td>
+<td>BS p.125; Note 21 p.213</td>
+</tr>
+<tr>
+<td>Short-term investments</td>
+<td class="num">4,353</td>
+<td class="num">4,068</td>
+<td class="num">+285</td>
+<td class="num">+7.0%</td>
+<td class="num">6.8%</td>
+<td>BS p.125; Note 4 p.141–142</td>
+</tr>
+<tr>
+<td><strong>Total investments</strong></td>
+<td class="num"><strong>63,957</strong></td>
+<td class="num"><strong>59,210</strong></td>
+<td class="num"><strong>+4,747</strong></td>
+<td class="num"><strong>+8.0%</strong></td>
+<td class="num"><strong>100%</strong></td>
+<td>BS p.125; Note 21 p.213</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Tie-out of the totals:</strong></p>
+<ul>
+<li>2025: 46,041 + 168 + 492 + 6,837 + 5,804 + 262 + 4,353 = <strong>63,957</strong> ✓</li>
+<li>2024: 42,567 + 308 + 603 + 6,396 + 5,042 + 226 + 4,068 = <strong>59,210</strong> ✓</li>
+</ul>
+<h2>Detailed analysis</h2>
+<h3>1. Schedule I breakup (cost vs. fair value vs. carrying amount, 2025)</h3>
+<p>All figures are from Note 21, p.213.</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Type</th>
+<th>Cost</th>
+<th>Fair value</th>
+<th>On Balance Sheet</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>U.S. govt &amp; agencies</td>
+<td class="num">6,253</td>
+<td class="num">5,929</td>
+<td class="num">5,929</td>
+</tr>
+<tr>
+<td>States/municipalities</td>
+<td class="num">4,831</td>
+<td class="num">4,652</td>
+<td class="num">4,652</td>
+</tr>
+<tr>
+<td>Foreign governments</td>
+<td class="num">440</td>
+<td class="num">447</td>
+<td class="num">447</td>
+</tr>
+<tr>
+<td>Public utilities</td>
+<td class="num">2,793</td>
+<td class="num">2,716</td>
+<td class="num">2,716</td>
+</tr>
+<tr>
+<td>All other corporate bonds</td>
+<td class="num">20,512</td>
+<td class="num">20,360</td>
+<td class="num">20,360</td>
+</tr>
+<tr>
+<td>Other MBS/ABS</td>
+<td class="num">12,042</td>
+<td class="num">11,937</td>
+<td class="num">11,937</td>
+</tr>
+<tr>
+<td><strong>Fixed maturities, AFS</strong></td>
+<td class="num"><strong>46,871</strong></td>
+<td class="num"><strong>46,041</strong></td>
+<td class="num"><strong>46,041</strong></td>
+</tr>
+<tr>
+<td>FVO securities</td>
+<td class="num">199</td>
+<td class="num">168</td>
+<td class="num">168</td>
+</tr>
+<tr>
+<td>Common stocks</td>
+<td class="num">369</td>
+<td class="num">470</td>
+<td class="num">470</td>
+</tr>
+<tr>
+<td>Non-redeemable preferred stocks</td>
+<td class="num">22</td>
+<td class="num">22</td>
+<td class="num">22</td>
+</tr>
+<tr>
+<td>Mortgage loans</td>
+<td class="num">6,886</td>
+<td class="num">6,607</td>
+<td class="num">6,837</td>
+</tr>
+<tr>
+<td>Other investments</td>
+<td class="num">279</td>
+<td class="num">262</td>
+<td class="num">262</td>
+</tr>
+<tr>
+<td>Short-term investments</td>
+<td class="num">4,353</td>
+<td class="num">4,353</td>
+<td class="num">4,353</td>
+</tr>
+<tr>
+<td>Limited partnerships and other alternative investments</td>
+<td class="num">5,804</td>
+<td>n/a</td>
+<td class="num">5,804</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td class="num"><strong>64,783</strong></td>
+<td class="num">—</td>
+<td class="num"><strong>63,957</strong></td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>Arithmetic checks:</strong></p>
+<ul>
+<li>The cost column sums to 64,783 ✓.</li>
+<li>The AFS sub-rows sum to 46,041 at fair value and 46,871 at cost ✓.</li>
+<li>Mortgage loans: cost 6,886 less ACL 49 = 6,837 ✓.</li>
+</ul>
+<h3>2. AFS bonds by type (Note 5, p.150)</h3>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Type</th>
+<th>Fair value 2025</th>
+<th>Fair value 2024</th>
+<th>Change</th>
+<th>Gross unrealized loss 2025</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Corporate</td>
+<td class="num">23,076</td>
+<td class="num">20,636</td>
+<td class="num">+2,440</td>
+<td class="num">(604)</td>
+</tr>
+<tr>
+<td>RMBS</td>
+<td class="num">6,178</td>
+<td class="num">5,230</td>
+<td class="num">+948</td>
+<td class="num">(244)</td>
+</tr>
+<tr>
+<td>ABS</td>
+<td class="num">4,663</td>
+<td class="num">3,937</td>
+<td class="num">+726</td>
+<td class="num">(16)</td>
+</tr>
+<tr>
+<td>Municipal</td>
+<td class="num">4,652</td>
+<td class="num">5,304</td>
+<td class="num">−652</td>
+<td class="num">(268)</td>
+</tr>
+<tr>
+<td>CLOs</td>
+<td class="num">3,316</td>
+<td class="num">3,250</td>
+<td class="num">+66</td>
+<td class="num">(1)</td>
+</tr>
+<tr>
+<td>CMBS</td>
+<td class="num">2,328</td>
+<td class="num">2,736</td>
+<td class="num">−408</td>
+<td class="num">(150)</td>
+</tr>
+<tr>
+<td>U.S. Treasuries</td>
+<td class="num">1,381</td>
+<td class="num">994</td>
+<td class="num">+387</td>
+<td class="num">(139)</td>
+</tr>
+<tr>
+<td>Foreign govt.</td>
+<td class="num">447</td>
+<td class="num">480</td>
+<td class="num">−33</td>
+<td class="num">(2)</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td class="num"><strong>46,041</strong></td>
+<td class="num"><strong>42,567</strong></td>
+<td class="num"><strong>+3,474</strong></td>
+<td class="num"><strong>(1,424)</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Amortized cost roll to fair value:</strong></li>
+<li>2025: 46,871 − 16 ACL + 610 gains − 1,424 losses = 46,041 ✓</li>
+<li>2024: 44,538 − 16 + 272 − 2,227 = 42,567 ✓</li>
+<li><strong>Portfolio mix:</strong> the book shifted toward corporates and structured securities and away from municipals and CMBS.</li>
+<li><strong>Maturity profile (Note 5, p.150):</strong></li>
+<li>Structured securities (ABS + CLOs + CMBS + RMBS) total 16,485, which matches the "MBS/ABS" maturity line ✓.</li>
+<li>9,531 matures in over 10 years, and 1,179 within one year.</li>
+<li><strong>Unrealized losses (Note 5, p.151):</strong> 2,659 positions are in an unrealized loss position. $(1,365)m of the losses is more than 12 months old. 94% of the positions are depressed less than 20%.</li>
+</ul>
+<h3>3. Fair value hierarchy, 2025 (Note 4, p.141)</h3>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Category</th>
+<th>Total</th>
+<th>L1</th>
+<th>L2</th>
+<th>L3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>AFS</td>
+<td class="num">46,041</td>
+<td class="num">164</td>
+<td class="num">42,505</td>
+<td class="num">3,372</td>
+</tr>
+<tr>
+<td>FVO</td>
+<td class="num">168</td>
+<td class="num">—</td>
+<td class="num">—</td>
+<td class="num">168</td>
+</tr>
+<tr>
+<td>Equity securities</td>
+<td class="num">492</td>
+<td class="num">379</td>
+<td class="num">7</td>
+<td class="num">106</td>
+</tr>
+<tr>
+<td>Short-term investments</td>
+<td class="num">4,353</td>
+<td class="num">602</td>
+<td class="num">3,369</td>
+<td class="num">382</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>Level 3 totals 4,028, which is 6.3% of total investments (4,028 / 63,957).</li>
+<li>Level 3 grew by $1,036m. Net purchases were $2,847m against settlements and sales of $1,505m (Note 4, p.146).</li>
+</ul>
+<h3>4. Other components</h3>
+<ul>
+<li><strong>Mortgage loans</strong> (Note 5, p.152–153):</li>
+<li>Amortized cost is $6,886m. The largest property types are industrial (46.6%) and multifamily (32.1%); office is only 5.8% ($399m).</li>
+<li>Weighted-average LTV is 56% and DSCR is 2.36x. No loans are past due.</li>
+<li>Fair value is $6,607m, which is <strong>$230m below carrying amount</strong> (2024: a $495m gap) (Note 4, p.147).</li>
+<li><strong>Limited partnerships and other alternative investments, $5,804m:</strong></li>
+<li>$5,313m is accounted for under the equity method (Note 5, p.155).</li>
+<li>The rest (5,804 − 5,313 = $491m) is insurer-owned life insurance at cash surrender value.</li>
+<li>Unfunded commitments are $2.6bn.</li>
+<li><strong>Short-term investments</strong> include $87m of reverse repurchase agreements (Note 5, p.154).</li>
+<li><strong>Other investments</strong> include $87m of overseas deposits measured at NAV (Note 4, p.142).</li>
+<li><strong>Restricted investments</strong> total $3,846m (Note 5, p.155).</li>
+</ul>
+<h3>5. Yield</h3>
+<ul>
+<li>Net investment income was $2,911m (P&amp;L p.123; Note 5 p.148).</li>
+<li>Average investments were (63,957 + 59,210) / 2 = 61,584.</li>
+<li><strong>Net yield ≈ 4.73%</strong>, against roughly 4.4% in 2024 (prior-year average not available; estimated from 2,568 / 59,210).</li>
+<li>Income from limited partnerships rose to $303m from $148m (Note 5, p.148).</li>
+</ul>
+<h2>Impact on the financial statements</h2>
+<h3>Income Statement (Statement of Operations)</h3>
+<ul>
+<li><strong>Net investment income</strong> was $2,911m (2024: $2,568m), +13.4%.</li>
+<li>It equals Note 5's gross income of $3,010m less $99m of expenses ✓ (P&amp;L p.123; Note 5 p.148).</li>
+<li>It is 10.3% of total revenues of $28,368m.</li>
+<li><strong>Net realized losses</strong> were $(100)m (2024: $(61)m), which ties to Note 5 ✓. The main components were:</li>
+<li>net losses on bond sales of $(68)m;</li>
+<li>equity securities, +$58m;</li>
+<li>other, net, $(84)m;</li>
+<li>the mortgage-loan ACL, $(6)m.</li>
+</ul>
+<h3>Balance Sheet</h3>
+<ul>
+<li>The seven investment lines and <strong>Total investments of $63,957m / $59,210m</strong> tie to Notes 4, 5 and 21 (see the table above).</li>
+<li>Investments are 74.4% of total assets (63,957 / 85,997).</li>
+<li>Accrued investment income of $474m is shown separately: AFS $439m and mortgage loans $25m, which sum to $464m. The remaining $10m is unexplained.</li>
+</ul>
+<h3>Cash Flow Statement</h3>
+<p>All figures are from the Cash Flow Statement, p.127.</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Asset</th>
+<th>Purchases</th>
+<th>Proceeds</th>
+<th>Net</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fixed maturities, AFS</td>
+<td class="num">(12,769)</td>
+<td class="num">10,352</td>
+<td class="num">(2,417)</td>
+</tr>
+<tr>
+<td>Mortgage loans</td>
+<td class="num">(2,021)</td>
+<td class="num">1,598</td>
+<td class="num">(423)</td>
+</tr>
+<tr>
+<td>Limited partnerships</td>
+<td class="num">(1,025)</td>
+<td class="num">291</td>
+<td class="num">(734)</td>
+</tr>
+<tr>
+<td>Equity securities</td>
+<td class="num">(97)</td>
+<td class="num">240</td>
+<td class="num">+143</td>
+</tr>
+<tr>
+<td>FVO securities</td>
+<td class="num">(17)</td>
+<td class="num">109</td>
+<td class="num">+92</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li>These investment flows, plus derivatives of (12) and short-term investments of (149), total <strong>(3,500)</strong>.</li>
+<li>Adding property and equipment (169) and other (89) gives (3,758), the net cash used for investing activities ✓.</li>
+<li>The net mortgage outflow of 423 is close to the 446 rise in amortized cost.</li>
+<li>The limited partnership outflow of 734 plus equity-method income makes up most of the 762 increase.</li>
+</ul>
+<h3>Statement of Shareholders' Equity</h3>
+<ul>
+<li>The AFS unrealized position improved by 1,141 pre-tax: (−814) − (−1,955).</li>
+<li>This produced the <strong>+$898m</strong> "Change in net unrealized gain (loss) on fixed maturities, AFS" in OCI (Comprehensive Income, p.124). That implies a tax rate of about 21% (1 − 898 / 1,141).</li>
+<li>Total OCI of +$829m moved AOCI from $(2,886)m to $(2,057)m (Equity statement p.126; BS p.125).</li>
+<li>Investment income also feeds net income of $3,836m and therefore retained earnings.</li>
+</ul>
+<h2>Red flags &amp; areas for follow-up</h2>
+<ol>
+<li><strong>Schedule I uses different classes from Note 5.</strong>
+   - Schedule I shows "U.S. govt &amp; agencies" of 5,929 against U.S. Treasuries of 1,381 in Note 5, and "MBS/ABS" of 11,937 against structured securities of 16,485.
+   - Both gaps are exactly <strong>4,548</strong>, which suggests agency RMBS is reported under government in Schedule I. This is not stated; confirm with management.</li>
+<li><strong>Mortgage loans sit $230m above their Level 3 fair value.</strong> This economic loss does not appear in book value or OCI.</li>
+<li><strong>Level 3 grew 35%</strong> (2,992 → 4,028), mainly in private corporates ($2,866m) and short-term investments (98 → 382). The unobservable-input table covers only $2,765m of the corporates, because broker-priced items are excluded.</li>
+<li><strong>Fair value is not disclosed</strong> for limited partnerships ($5.8bn) in Schedule I. There are also $2.6bn of unfunded commitments.</li>
+<li><strong>The FVO book halved</strong> and lost $(30)m in fair value (Note 4, p.147).</li>
+<li><strong>Source and tagging oddities:</strong>
+   - The cash-flow equity-proceeds line is labelled "Marketable Securities", and "Securties" is a typo.
+   - The equity statement's "Total – Treasury stock acquired (1.6)" appears to be a scaling or tagging error (the real figure is $(1,616)m).
+   - In Note 4's 2024 table, foreign-exchange derivative liabilities are shown as a positive 18. The total of (12) only works if 18 nets against (30).
+   - The contents of "Other investments" ($262m) are not fully broken down. Are derivative assets of $20m included?</li>
+<li><strong>Accrued investment income</strong> has a $10m difference that is not explained (see Balance Sheet above).</li>
+</ol>
+<h2>Sources</h2>
+<ul>
+<li>Note 21 – Schedule I (p.213)</li>
+<li>Note 5 – Investments (p.148–155)</li>
+<li>Note 4 – Fair Value Measurements (p.140–147)</li>
+<li>Statements of Operations (p.123), Comprehensive Income (p.124), Balance Sheets (p.125), Changes in Stockholders' Equity (p.126), Cash Flows (p.127)</li>
+</ul>
+  </article>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Generated by the Annual Report Foot Notes Analyzer (RAG Champ) using Claude Code, from the notes to the financial statements in HIG.
+    Research aid only, not investment advice. Verify every number against the filed annual report.
+  </div>
+</footer>
+
+</body>
+</html>

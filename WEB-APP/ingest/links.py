@@ -25,6 +25,7 @@ Checks:
 import re
 from collections import defaultdict
 
+from ingest import profiles
 from rptpkg.model import note_unit_id, section_code
 
 # "(note 3)", "(Refer note 16)", "(notes 5 and 6)", "(Schedule XVII)", "Note No. 15"
@@ -34,6 +35,7 @@ PAGE_MARK_RE = re.compile(r"^--- PDF page (\d+)")
 FIGURE_RE = re.compile(r"\(?-?\$?\s?\d[\d,]*\.?\d*\)?")
 YEAR_VALUE_RE = re.compile(r"^(19|20)\d{2}$")
 TOTAL_ASSETS_RE = re.compile(r"^total\s+assets$", re.I)
+FOOTNOTE_MARK_END_RE = re.compile(r"(?:\s*\([a-z]\))+$")
 TOTAL_EQ_LIAB_RE = re.compile(
     r"^total\s+(?:equity\s+and\s+liabilities|liabilities\s+and\s+(?:shareholders|stockholders)?['’]?\s*equity)$",
     re.I)
@@ -287,10 +289,20 @@ def build_checks(index, views, lines, values):
                     block = []
 
     # the balance sheet balances
+    first_only = profiles.active().switches.first_total_assets_only
+
+    def bare(label):
+        # first_total_assets_only: "Total assets (a)" - the footnote marker is not part of the name
+        return FOOTNOTE_MARK_END_RE.sub("", label.strip()) if first_only else label.strip()
+
     for key, section in index["sections"].items():
-        for line in [l for l in lines if l["section_id"] == key and TOTAL_ASSETS_RE.match(l["label"].strip())]:
+        checked_units = set()
+        for line in [l for l in lines if l["section_id"] == key and TOTAL_ASSETS_RE.match(bare(l["label"]))]:
+            if first_only and line["unit_id"] in checked_units:
+                continue        # a sub-table under the balance sheet (assets of consolidated VIEs)
+            checked_units.add(line["unit_id"])
             other = next((l for l in lines if l["unit_id"] == line["unit_id"]
-                          and TOTAL_EQ_LIAB_RE.match(l["label"].strip())), None)
+                          and TOTAL_EQ_LIAB_RE.match(bare(l["label"]))), None)
             if not other:
                 continue
             assets, claims = _col_values(by_line[line["id"]]), _col_values(by_line[other["id"]])

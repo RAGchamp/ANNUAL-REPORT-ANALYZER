@@ -1,0 +1,162 @@
+# JPMorgan Chase: exposure to mortgage-related assets (FY2025 vs FY2024)
+
+## Summary
+- **The exposure is about $683bn, or 15.4% of total assets, and it shrank slightly.** It has four parts: mortgage-backed securities (MBS), retained residential mortgages, commercial real estate (CRE) loans and mortgage servicing rights (MSRs). Together they fell from $696.4bn to $682.8bn (−2.0%), while total assets grew 10.5%. The decline came from held-to-maturity (HTM) MBS run-off (−$11.5bn) and lower residential mortgages (−$6.0bn). CRE loans grew by $3.1bn.
+- **Credit quality is strong on average, but late-stage delinquencies are rising.** The weighted-average loan-to-value (LTV) is 48% and the weighted-average FICO score is 775. However:
+  - residential nonaccrual loans rose 21.7%;
+  - loans 150 or more days past due rose 60%;
+  - loans modified for borrowers in financial difficulty ("FDMs") rose roughly fivefold, from $206m to $1,024m. This was mostly forbearance after the January 2025 Los Angeles wildfires, and $571m of these FDMs were 150+ days past due.
+- **The biggest market risk is an unrealised loss on HTM MBS that is not in equity.** HTM MBS have a fair value $9.9bn below cost. Because HTM securities are carried at amortised cost, this loss never passes through earnings or accumulated other comprehensive income (AOCI). The unrealised loss on available-for-sale (AFS) MBS, which does go through AOCI, narrowed from $3.9bn to $1.1bn.
+- **MSRs are stable at $9.2bn and earnings from mortgage fees are small.** Mortgage fees and related income was $1,381m, under 1% of total net revenue. Hedging gains from MSR risk management are getting smaller.
+- **CRE: the risk sits in office, retail and industrial lending.** For "Other commercial" CRE, 9.75% of loans are criticized and nonaccrual loans rose to 2.08%.
+
+## Key figures ($m)
+
+| Item | FY2025 | FY2024 | Change | % change | Source |
+|---|---|---|---|---|---|
+| AFS MBS – fair value | 101,447 | 100,769 | +678 | +0.7% | Note 10, p.231 |
+| AFS MBS – amortised cost | 102,547 | 104,628 | −2,081 | −2.0% | Note 10, p.231 |
+| AFS MBS – net unrealised loss (gains − losses) | (1,100) | (3,859) | +2,759 | −71.5% | Note 10, p.231 |
+| HTM MBS – amortised cost (carrying value) | 103,108 | 114,599 | −11,491 | −10.0% | Note 10, p.231 |
+| HTM MBS – fair value | 93,186 | 99,809 | −6,623 | −6.6% | Note 10, p.231 |
+| HTM MBS – unrealised loss not booked (cost − fair value) | 9,922 | 14,790 | −4,868 | −32.9% | Note 10, p.231 |
+| Retained residential real estate loans | 303,531 | 309,513 | −5,982 | −1.9% | Note 12, p.243 |
+| Wholesale loans secured by real estate | 165,545 | 162,432 | +3,113 | +1.9% | Note 12, p.253/255 |
+| – Multifamily | 105,130 | 101,114 | +4,016 | +4.0% | Note 12, p.255 |
+| – Other commercial | 60,415 | 61,318 | −903 | −1.5% | Note 12, p.255 |
+| MSRs (fair value) | 9,167 | 9,121 | +46 | +0.5% | Note 15, p.276 |
+| **Total mortgage-related (carrying values)** | **682,798** | **696,434** | **−13,636** | **−2.0%** | calculated |
+| As % of total assets (4,424,900 / 4,002,814) | 15.4% | 17.4% | −2.0pp | | Balance Sheet, p.169 |
+| Residential nonaccrual loans | 3,632 | 2,984 | +648 | +21.7% | Note 12, p.245 |
+| Residential loans 30–149 days past due | 1,234 | 1,379 | −145 | −10.5% | Note 12, p.244 |
+| Residential loans 150+ days past due | 1,337 | 835 | +502 | +60.1% | Note 12, p.244 |
+| Residential FDMs (during the year) | 1,024 | 206 | +818 | +397% | Note 12, p.246 |
+| Residential gross charge-offs | 58 | 206 | −148 | −71.8% | Note 12, p.244 |
+| CRE criticized loans | 10,550 | 10,730 | −180 | −1.7% | Note 12, p.255 |
+| CRE criticized nonaccrual loans | 1,678 | 1,439 | +239 | +16.6% | Note 12, p.255 |
+| Mortgage fees and related income | 1,381 | 1,401 | −20 | −1.4% | Income Statement, p.167; Note 15, p.277 |
+
+The total is built as AFS MBS at fair value + HTM MBS at amortised cost + residential loans + CRE loans + MSRs:
+- FY2025: 101,447 + 103,108 + 303,531 + 165,545 + 9,167 = 682,798.
+- FY2024: 100,769 + 114,599 + 309,513 + 162,432 + 9,121 = 696,434.
+
+The total leaves out three things:
+- mortgage loans held at fair value or held-for-sale (not split out by type);
+- MBS held in trading assets (covered in Note 2, which was not provided);
+- the securitisation exposures discussed in Note 14 (not provided).
+
+## Detailed analysis
+
+### 1. Mortgage-backed securities ($204.6bn carrying value; 26.3% of investment securities of $777.3bn)
+- **Composition.** Agency MBS (U.S. government-sponsored enterprises and agencies) dominate: 90,972 AFS fair value + 89,073 HTM cost = $180.0bn, or 88% of the MBS book. This is mainly interest-rate risk, not credit risk (Note 10, p.231–232).
+- **Non-agency MBS are small:**
+
+  | | AFS fair value | HTM cost | Total |
+  |---|---|---|---|
+  | U.S. residential | 5,585 | 7,542 | |
+  | Non-U.S. residential | 406 | — | |
+  | Commercial | 4,484 | 6,493 | |
+  | **Total** | | | **$24.5bn** |
+
+  All HTM securities are investment grade, and about 99% are rated AA+ or better (p.233).
+- **Duration and yield.** AFS MBS yield 4.55%, but HTM MBS yield only 2.87% (p.234). The HTM book is older, low-coupon paper bought before rates rose. Substantially all residential MBS mature contractually after 10 years. Their expected weighted-average lives are about 7 years for agency MBS, 6 years for agency collateralised mortgage obligations (CMOs) and 4 years for non-agency CMOs (p.234, footnote c).
+- **Unrecognised loss.** HTM MBS have a net unrealised loss of $9.9bn, which is 2.7% of stockholders' equity (9,922 / 362,438). Across all HTM securities, the loss is 270,134 − 253,344 = $16.8bn, or 4.6% of equity.
+- **AFS → HTM transfer.** In Q3 2025, $44.1bn of securities moved from AFS to HTM, carrying $575m of pre-tax gains in AOCI (p.230). The note does not say how much of this was MBS.
+- **Credit allowance.** The allowance on all investment securities is only $106m (p.233), and the provision was a release of $(28)m.
+
+### 2. Residential mortgages ($303.5bn retained)
+- **The quality of the book is high:**
+  - weighted-average LTV is 48% and weighted-average FICO is 775;
+  - loans with LTV above 100% total only $362m (71 + 4 + 282 + 5);
+  - $296.4bn of loans have LTV at or below 80% (p.245).
+- **Concentration is high.** California is 38.7% of the book (117,500 / 303,531). New York adds 15.3%.
+- **Delinquencies are building at the late stage:**
+  - 30+ days past due rose from 2,214 to 2,571 (+16%), and the ratio rose from 0.71% to 0.84% (p.244);
+  - 150+ days past due rose 60%;
+  - nonaccrual loans rose $648m.
+- **Why charge-offs fell anyway.** Charge-offs dropped to $58m because these loans are well collateralised and wildfire forbearance delays any charge-offs.
+- **FDMs.** Of the $1,024m, $882m are second 90-day forbearances for borrowers hit by the Los Angeles wildfires. The rest extended loan lives by 19 years and cut the weighted-average rate from 6.94% to 6.08% (p.246).
+- **Other figures:**
+  - loans in foreclosure: $575m (p.246);
+  - Q1 2025: of the $1.0bn of FDMs, $571m were 150+ days past due (p.246).
+
+### 3. Commercial real estate ($165.5bn)
+- **Multifamily ($105.1bn)** is the larger and cleaner part: 4.43% criticized and 0.40% nonaccrual.
+- **Other commercial ($60.4bn)**, mainly office, retail and industrial, is weaker: 9.75% criticized and 2.08% nonaccrual, up from 1.80% (p.255).
+- **CRE gross charge-offs** rose from $324m to $420m (+29.6%) (p.253).
+- **Construction and development loans** were $12.4bn (p.255).
+- **CRE FDMs** rose from $354m to $815m, and $438m of these are criticized nonaccrual. Defaults of FDMs within 12 months of modification jumped from $3m to $173m (p.259). This is the clearest stress signal in the mortgage-related book.
+
+### 4. MSRs and mortgage banking
+- **MSR movements.** The MSR asset of $9,167m is the result of:
+  - additions of $1,066m;
+  - run-off ("collection/realisation of expected cash flows") of $(1,068)m;
+  - valuation changes of +$48m.
+
+  Third-party loans serviced rose to $668bn (p.276).
+- **Interest-rate sensitivity is limited:**
+  - a 20% adverse change in prepayment speed would cut fair value by $(353)m;
+  - a 200bp adverse change in the option-adjusted spread would cut it by $(757)m (p.277).
+
+  Both are small next to equity.
+- **Revenue.** Production revenue was flat at $622m. Net servicing revenue fell from 751 to 704, as risk-management gains dropped from 159 to 118 (p.277).
+
+## Impact on the financial statements
+
+### Income Statement (Statement of Operations)
+- **Mortgage fees and related income: 1,381 / 1,401 / 1,176** (Income Statement, p.167). This ties to Note 15: CCB 1,326 + all other 55 = 1,381 (p.277). MSR fair-value changes go through this line.
+- **Investment securities losses: (57) / (1,021) / (3,180)** (p.167). This ties to Note 10: realised gains 674 less realised losses (731) = (57) (p.233). The note does not give an MBS-only split.
+- **Provision for credit losses: 14,212 / 10,678** (p.167). This includes the HTM/AFS securities allowance release of $(28)m (Note 10, p.233) and the mortgage-loan allowances. The mortgage share of the provision is not given in the notes provided (it is in Note 13).
+- **Interest income: 193,341 / 193,933.** MBS yields of 2.87–4.55% feed this line. Amortisation of the AOCI from the AFS→HTM transfer will offset the premium/discount on the transferred securities (p.230).
+
+### Balance Sheet
+All lines below are from the Balance Sheet, p.169.
+
+- **AFS securities: 507,198 / 406,852.** These equal the Note 10 total fair values. MBS are 101,447 of the FY2025 figure (20%).
+- **HTM securities: 270,134 / 274,468.** These equal the Note 10 amortised cost. MBS are 103,108 of the FY2025 figure (38%).
+- **Investment securities total: 777,332 = 507,198 + 270,134.** This ties.
+- **Loans: 1,493,429 / 1,347,988.** These tie to Note 12 (p.241). Residential retained loans of 303,531 sit within consumer retained loans of 368,741, and CRE of 165,545 sits within wholesale retained loans of 792,367.
+- **Allowance for loan losses: (25,765) / (24,345).** The mortgage share is not in the notes provided.
+- **Goodwill, MSRs and other intangible assets: 64,458 / 64,560.** Goodwill 52,731 + MSRs 9,167 = 61,898. That implies other intangibles of 2,560, which is consistent with the note: $1.3bn finite-lived + $1.3bn indefinite-lived, or gross $3.5bn less $0.962bn amortisation ≈ $2.54bn (p.278). FY2024 gives 64,560 − 52,565 − 9,121 = 2,874, against about $2.9bn in the note. Both years tie within rounding.
+- **Other assets** include foreclosed property (real estate owned) (p.240), but the amount is not given.
+
+### Cash Flow Statement
+All lines below are from the Cash Flow Statement, p.171.
+
+- **HTM paydowns and maturities: 54,791 / 99,363.** These largely explain the $11.5bn MBS run-off. The MBS share is not disclosed.
+- **HTM purchases: (5,432) / (4,709).** These match Note 10 footnote (b): $5.4bn and $4.7bn.
+- **AFS activity: purchases (308,772), sales 141,295, paydowns 37,414.** The MBS split is not given.
+- **Loans held-for-sale: originations (260,772) and proceeds 235,232** (operating activities). These include mortgage production, but the split is not given.
+- **Two items are non-cash and do not appear in the cash flow statement:** the $44.1bn AFS→HTM transfer and loan reclassifications to held-for-sale (Note 10, p.230; Note 12, p.242).
+- **MSR fair-value changes** are non-cash and fall within "Other" adjustments.
+
+### Statement of Shareholders' Equity
+- **OCI: unrealised gains/(losses) on investment securities: 3,569 / (87)** after tax (Comprehensive Income, p.168). These feed total OCI of 8,166, which moves AOCI from (12,456) to (4,290) (Equity Statement, p.170).
+  - The pre-tax improvement in AFS MBS of $2.76bn is part of the 3,569.
+  - AOCI still holds the $575m pre-tax gain from the transfer, which will be amortised.
+- **The $9.9bn HTM MBS loss is not reflected in equity.**
+- **Net income of 57,048 goes to retained earnings.** It includes the mortgage fees and provisions above.
+
+## Red flags & areas for follow-up
+1. **Unrealised HTM losses of $16.8bn in total ($9.9bn on MBS) are invisible in equity.** Ask how much of the $44.1bn moved from AFS to HTM was MBS, and why the transfer was made.
+2. **Residential FDMs rose fivefold and loans 150+ days past due rose 60%.** These are concentrated in California (38.7%). Ask about the outcome of the wildfire forbearances after the second 90-day period, and about expected losses.
+3. **CRE FDM defaults rose from $3m to $173m, and Other-commercial CRE nonaccrual loans rose to 2.08%.** Ask for the office exposure separately.
+4. **Two small inconsistencies in Note 15.** MSR run-off is $(1,068)m in the MSR activity table (p.276) but $(1,065)m in the mortgage fees table (p.277). For FY2024 the figures are (1,068) and (1,067). Ask for the reconciling item.
+5. **Loans at fair value in Consumer, excluding credit card, more than doubled, from 15,531 to 33,183** (p.241). These are probably mortgages held in CIB, but the type is not disclosed.
+6. **Total-row label is ambiguous.** In Note 10, "Total investment securities, net of allowance $777,360" is the total *amortised cost* (507,226 + 270,134). The Balance Sheet figure of 777,332 uses AFS at fair value. Both are correct, but the label could mislead readers.
+7. **Information that is missing from the material provided:**
+   - MBS held as trading assets (Note 2);
+   - the allowance for loan losses by class (Note 13);
+   - securitisation and VIE exposures (Note 14);
+   - mortgage repurchase or representations-and-warranties liabilities;
+   - MBS cash flows separated from other securities.
+8. **Extraction artifacts.** Some of the extracted tables on p.244 and p.247 have scrambled columns. I used the totals, which tie: for FY2025, 300,960 + 1,234 + 1,337 = 303,531.
+
+## Sources
+- Note 10 – Investment securities, PDF p.230–234
+- Note 12 – Loans, PDF p.238–259 (mainly p.241, 243–246, 253, 255–256, 259)
+- Note 15 – Goodwill, MSRs and other intangible assets, PDF p.274–278
+- Consolidated statements of income and of comprehensive income, PDF p.167–168
+- Consolidated balance sheets, PDF p.169
+- Consolidated statements of changes in stockholders' equity, PDF p.170
+- Consolidated statements of cash flows, PDF p.171

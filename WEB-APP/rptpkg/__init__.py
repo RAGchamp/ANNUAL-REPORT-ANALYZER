@@ -6,7 +6,8 @@ analyzer can't read the package and the report must be re-ingested; a minor
 bump only adds optional tables or columns.
 """
 
-SCHEMA_VERSION = "1.2"      # 1.1: doc_sections, narrative_pages, page_blocks; 1.2: doc_passages
+SCHEMA_VERSION = "1.3"      # 1.1: doc_sections, narrative_pages, page_blocks; 1.2: doc_passages;
+                            # 1.3: lines.concept, meta "source" (INFO/XBRL-ROUTE.md)
 
 from rptpkg.reader import Package, PackageError, open_package  # noqa: E402
 

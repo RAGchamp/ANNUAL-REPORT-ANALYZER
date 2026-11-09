@@ -22,7 +22,9 @@ GENERIC = set("liability liabilities asset assets income expense expenses total 
               "significant key main overall trend trends analyse analyze".split())
 KIND_WORDS = {"references": "cited in the Notes column", "ties_to": "same figure in the note",
               "mentions": "title match"}
-LABEL_KIND = {"label": "cited in the line"}
+LABEL_KIND = {"label": "cited in the line",
+              # an XBRL filing (INFO/XBRL-ROUTE.md): the line's concept is tagged in the note
+              "xbrl concept": "same XBRL concept tagged in the note"}
 STATEMENT_SHORT = {"PL": "P&L", "BS": "Balance Sheet", "CF": "Cash Flow", "EQ": "Changes in Equity"}
 MAX_HINT_NOTES = 4
 MAX_LINKED_LINES = 30

@@ -1,0 +1,152 @@
+## Summary
+
+- **Tax liabilities on the balance sheet more than doubled.** Current taxes payable, long-term income tax payable and long-term deferred tax liabilities total **$8,401m vs $3,955m (+112%)** (Note 9, p.68). This is faster than the 92% rise in tax expense.
+- **The main driver is uncertain tax positions.** Gross unrecognized tax benefits (UTBs) rose **54.5% to $4,420m** (Note 13, p.76), and accrued interest and penalties rose to $374m. Long-term income tax payable, which is "primarily" UTBs, rose 81% to $3,958m.
+- **Gross deferred tax liabilities tripled to $4,611m.** The drivers are equity investments (+$1,963m), in line with the $8.9bn equity-security gains, and unremitted foreign earnings (+$922m). Because deferred tax assets grew more, the company stays in a **net deferred tax asset position of $11,484m**.
+- **The effective tax rate rose from 13.3% to 15.1%.** The causes are a smaller stock-compensation benefit, a heavier foreign mix (Israel) and the first-year adoption of a new disclosure format. The 15.1% is still well below the 21% statutory rate, mainly because of the foreign-derived deduction eligible income (FDDEI) benefit, the Israel incentive rate and tax credits.
+- **Cash taxes ($20,288m) lagged current tax expense ($22,807m) by $2,519m.** This accrual build is consistent with the rising payables. All note figures tie to the statements.
+
+## Key figures
+
+| Item | Current year (FY2026) | Prior year (FY2025) | Change | % change | Source |
+|---|---|---|---|---|---|
+| Taxes payable (current) | 2,669 | 881 | +1,788 | +203.0% | Note 9, p.68 |
+| Income tax payable (long-term) | 3,958 | 2,188 | +1,770 | +80.9% | Note 9, p.68 |
+| Deferred income tax liability (long-term) | 1,774 | 886 | +888 | +100.2% | Note 9, p.68; Note 13 fn(1), p.75 |
+| **Total tax liabilities on the balance sheet** | **8,401** | **3,955** | **+4,446** | **+112.4%** | sum of the three lines above |
+| Gross unrecognized tax benefits | 4,420 | 2,861 | +1,559 | +54.5% | Note 13, p.76 |
+| Accrued interest & penalties on UTBs | 374 | 251 | +123 | +49.0% | Note 13, p.76 |
+| Gross deferred tax liabilities | 4,611 | 1,511 | +3,100 | +205.2% | Note 13, p.75 |
+| Deferred income tax assets (balance sheet) | 13,258 | 10,979 | +2,279 | +20.8% | Balance Sheet, p.53 |
+| Net deferred tax asset | 11,484 | 10,093 | +1,391 | +13.8% | Note 13, p.75 |
+| Valuation allowance | 768 | 1,610 | −842 | −52.3% | Note 13, p.75 |
+| Current tax expense | 22,807 | 15,623 | +7,184 | +46.0% | Note 13, p.72 |
+| Deferred tax (benefit) | (1,424) | (4,477) | +3,053 | −68.2% | Note 13, p.72 |
+| Income tax expense | 21,383 | 11,146 | +10,237 | +91.8% | Income Statement, p.51 |
+| Effective tax rate | 15.1% | 13.3% | +1.8 pp | — | 21,383/141,450; 11,146/84,026 |
+| Cash paid for income taxes, net | 20,288 | 15,118 | +5,170 | +34.2% | Cash Flow, p.55 |
+
+## Detailed analysis
+
+### 1. Composition of tax liabilities
+
+| Liability | Nature | FY2026 | Share of total |
+|---|---|---|---|
+| Income tax payable, long-term | Mainly UTBs plus interest and penalties | 3,958 | 47% |
+| Taxes payable, current | Taxes due within one year | 2,669 | 32% |
+| Deferred income tax, long-term | Net deferred tax liabilities by jurisdiction | 1,774 | 21% |
+
+- **Weight in total liabilities:** tax liabilities are 8,401 / 49,510 = **17.0%** of total liabilities (FY2025: 3,955 / 32,274 = 12.3%) (Balance Sheet, p.53).
+- **Current taxes payable tripled.** This matches current tax expense running ahead of cash payments: 22,807 − 20,288 = **$2,519m accrued but not yet paid**.
+
+### 2. Uncertain tax positions (the most judgmental part)
+
+- **Additions:** current-year additions were **$1,959m**, up from $1,268m (+54.5%). They equal about 8.6% of current tax expense (1,959 / 22,807).
+- **Releases:** lapses, decreases and settlements total 224 + 157 + 76 = **$457m**.
+- **Rate impact:** $3.7bn of the UTBs would lower the effective tax rate if recognized. That is about 2.6 percentage points of FY2026 pre-tax income (3,700 / 141,450).
+- **Interest and penalties:** the expense was $103m vs $92m.
+- **Open examinations:** these cover the US, Germany, Hong Kong, India, Israel and Taiwan, for fiscal years 2014–2025 (Note 13, p.76).
+- **Reconciliation to the balance sheet:** UTBs plus interest are 4,420 + 374 = **$4,794m**, but long-term income tax payable is **$3,958m**. The gap of about $836m is presumably UTBs netted against deferred tax assets or classified as current. This is not disclosed.
+
+### 3. Deferred taxes
+
+**Growth in deferred tax liabilities:**
+- Equity investments rose from $264m to $2,227m. This is consistent with the $8,918m equity-security gains (Cash Flow, p.55) and with non-marketable equity securities rising from $3.4bn to $22.3bn (Balance Sheet, p.53).
+- Unremitted foreign earnings rose from $891m to $1,813m, reflecting the growth in foreign earnings (foreign pre-tax income $18,269m vs $6,570m, +178%).
+
+**Deferred tax assets:**
+- Net CFC tested-income assets rose by $2,569m.
+- Accruals and reserves rose by $1,586m, in line with the warranty and inventory reserves in Note 9.
+- Capitalized R&D fell by $820m, consistent with the OBBBA enactment (Note 13, p.74).
+
+**Valuation allowance:** $711m of state valuation allowance was released. This lifts the quality of the deferred tax assets.
+
+**Netting check:** balance-sheet deferred tax assets of $13,258m minus the long-term deferred tax liability of $1,774m = **$11,484m** ✓. For FY2025: 10,979 − 886 = 10,093 ✓.
+
+### 4. Rate drivers (FY2026 reconciliation, Note 13, p.73)
+
+**Statutory starting point:** 21% × 141,450 = $29,704m ✓.
+
+**Main reductions:**
+- FDDEI: (4,208)
+- Israel reduced rate: (3,064)
+- Credits: (1,933)
+- Stock-based compensation: (1,475), vs (2,097) in FY2025
+
+**Main additions:** Israel other (+1,606) and other foreign jurisdictions (+741).
+
+**Arithmetic checks:**
+- FY2026 items sum to **$21,383m** ✓.
+- FY2025 sums to 11,146 ✓ and FY2024 to 4,058 ✓ (p.74).
+
+**Effective rate by origin of income:**
+- Foreign: (2,550 + 825) / 18,269 = 18.5%.
+- US: (19,039 + 1,218 − 1,364 − 885) / 123,181 = 18,008 / 123,181 = 14.6%.
+
+**Cash tax rate:** 20,288 / 141,450 = **14.3%** (FY2025: 15,118 / 84,026 = 18.0%).
+
+## Impact on the financial statements
+
+### Income Statement (Statement of Operations)
+
+| Line | FY2026 | FY2025 | FY2024 |
+|---|---|---|---|
+| Income before income tax | 141,450 | 84,026 | 33,818 |
+| Income tax expense | 21,383 | 11,146 | 4,058 |
+| Net income | 120,067 | 72,880 | 29,760 |
+
+- **Source:** Income Statement, p.51.
+- **Reconciliation to Note 13:**
+  - Current tax 22,807 + deferred tax (1,424) = 21,383 ✓ (p.72).
+  - US 123,181 + foreign 18,269 = 141,450 ✓ (p.73).
+- **Effect:** tax absorbed 15.1% of pre-tax profit (13.3% in FY2025). UTB interest and penalties ($103m) sit inside tax expense.
+- **Inside the expense:** the $711m valuation allowance release and the changes in UTBs are both part of tax expense.
+
+### Balance Sheet
+
+| Line | FY2026 | FY2025 | Tax content (Note 9 / Note 13) |
+|---|---|---|---|
+| Deferred income tax assets | 13,258 | 10,979 | Matches Note 13 fn(1): $13.3bn / $11.0bn ✓ |
+| Accrued and other current liabilities | 21,352 | 11,737 | Includes taxes payable 2,669 / 881; the components sum to 21,352 ✓ |
+| Other long-term liabilities | 7,306 | 4,245 | Income tax payable 3,958 / 2,188 plus deferred tax 1,774 / 886; the components sum to 7,306 ✓ |
+
+- **Source:** Balance Sheet, p.53.
+- **Effect:** the build-up of tax liabilities (+$4,446m) is about 25% of the $17,236m increase in total liabilities (49,510 − 32,274).
+
+### Cash Flow Statement
+
+- **Deferred income taxes:** (1,424) / (4,477) / (2,489). This equals Note 13 total deferred ✓ (Cash Flow, p.55).
+- **Cash paid for income taxes, net:** 20,288 / 15,118 / 6,549. This equals the Note 13 disaggregation: 16,755 + 1,049 + 1,041 + 1,287 + 156 = 20,288 ✓ (p.74).
+- **Working-capital lines:** the increases in tax payables sit within "Accrued and other current liabilities" (+5,257) and "Other long-term liabilities" (+1,844).
+- **Accrual check:** current tax 22,807 − cash paid 20,288 = 2,519. The increase in the two payables is 1,788 + 1,770 = 3,558. The difference of about $1,039m is not explained; prepaid or receivable taxes and acquisition effects are not disclosed.
+- **Employee tax withholding:** "Payments related to employee stock plan taxes" of (7,948) is cash withheld for employees' taxes in financing. It is not NVIDIA's income tax.
+
+### Statement of Shareholders' Equity
+
+- **Income taxes:** these affect equity only through net income in retained earnings (120,067) (Equity statement, p.54).
+- **OCI:** OCI of 150 is shown net of tax. The tax on OCI is not disclosed in the material.
+- **Stock-compensation tax benefits:** under US GAAP the excess benefits go through tax expense (the (1,475) reconciling item), not APIC.
+- **Withholding:** the (7,948) "tax withholding related to common stock" reduces APIC. It is employee withholding, not a corporate tax liability.
+
+## Red flags & areas for follow-up
+
+1. **Rapid UTB growth.** UTBs rose 54.5% to $4.4bn, with $1.96bn of current-year additions and audits open across six jurisdictions since FY2014. Ask management which positions are involved (transfer pricing? FDDEI? Israel?) and what range of outcomes they expect.
+2. **UTBs and the long-term payable do not reconcile.** $4,794m of UTBs plus interest compares with $3,958m of long-term income tax payable. Ask for the classification: netted against deferred tax assets, or current.
+3. **Payables vs the current-tax accrual.** The payables increase of $3,558m exceeds the $2,519m current-tax accrual. Ask what explains the roughly $1.0bn difference.
+4. **Movement in net deferred tax assets.** Net deferred tax assets rose by $1,391m, but the deferred tax benefit was $1,424m, a gap of $33m. The likely causes are acquisitions or OCI, but this is not disclosed.
+5. **Acquisition deferred taxes.** Goodwill rose $15.6bn and intangibles $2.5bn, yet the acquired-intangibles deferred tax liability *fell* from $70m to $38m. Ask whether the acquisitions were asset deals or tax-deductible.
+6. **Indefinite reinvestment.** About $1.4bn of foreign earnings is indefinitely reinvested, with an unquantified unrecorded deferred tax liability.
+7. **Comparability.** The new reconciliation format was adopted prospectively, so FY2026 categories (e.g., "Israel – Other +1,606") are not comparable with FY2025's "foreign tax rate differential".
+8. **Rate sustainability.** The stock-comp benefit is falling, and the OBBBA effects should be monitored.
+9. **No inconsistencies or typos found.** Every table cross-foots and ties to the statements.
+
+## Sources
+
+- **Note 13 – Income Taxes** (PDF p.72–76)
+- **Note 9 – Balance Sheet Components** (PDF p.67–69)
+- **Note 12 – Commitments and Contingencies** (PDF p.70–72): mentions tax indemnities, with no liability recorded
+- **Consolidated Statements of Income** (p.51)
+- **Consolidated Statements of Comprehensive Income** (p.51–52)
+- **Consolidated Balance Sheets** (p.53)
+- **Consolidated Statements of Shareholders' Equity** (p.54)
+- **Consolidated Statements of Cash Flows** (p.55)

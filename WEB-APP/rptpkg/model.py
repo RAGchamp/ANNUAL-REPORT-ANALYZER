@@ -40,6 +40,10 @@ def model_line(meta):
     """"TYPE-3 USA 10-K 2025 Chubb (model document; checks passed)"."""
     if not meta.get("model"):
         return None
+    if meta.get("source") == "xbrl":
+        # INFO/XBRL-ROUTE.md §7: no layout model, only acceptance checks
+        checks = (meta.get("model_checks") or {}).get("summary", "")
+        return f"{meta.get('model_short') or meta['model']} (inline XBRL filing; {checks})"
     how = ("model document" if meta.get("model_match") == "model document"
            else f"similarity {meta.get('model_score', 0):.2f}")
     checks = (meta.get("model_checks") or {}).get("summary", "")

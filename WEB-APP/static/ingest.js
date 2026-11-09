@@ -66,6 +66,8 @@ function renderReport(r) {
 
   const head = el("div", "ingest-head");
   head.append(el("b", "", r.name), el("span", "muted", ` (${r.size_mb} MB)`));
+  // an inline XBRL filing (folder or .zip) is read from its tags, not its layout (INFO/XBRL-ROUTE.md)
+  if (r.xbrl) head.append(el("span", "status-badge status-xbrl", "inline XBRL"));
   const status = r.needs_transcription ? "needs transcription" : r.status;
   head.append(el("span", `status-badge status-${status.replace(/ /g, "-")}`, status));
   if (r.format_label) {
@@ -121,7 +123,8 @@ function renderReport(r) {
     }
   });
   actions.appendChild(ingest);
-  if (!r.scanned) actions.appendChild(format);   // a scanned report's format comes from its transcription
+  // a scanned report's format comes from its transcription, an XBRL filing's from its tags
+  if (!r.scanned && !r.xbrl) actions.appendChild(format);
 
   if (r.needs_transcription) {
     const transcribe = el("button", "", "Transcribe");

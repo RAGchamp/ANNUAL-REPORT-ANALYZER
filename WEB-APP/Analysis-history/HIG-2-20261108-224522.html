@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Hartford Insurance Group, Inc. — Follow-up question 1 — Annual Report Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Palette and components from ANALYSIS-REPORTS/BHARATFORGE-ANN-REPORT-ANALYSIS-2025-26.html */
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-gold:#b8860b;
+    --nav-blue:#0a1128;
+    --nav-yellow:#f2b400;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand svg{ height:42px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  /* light-blue context box: company, report, question */
+  .context-box{
+    background:#e7f1ff;
+    border:1px solid #b6d4fe;
+    border-left:6px solid var(--biz-blue);
+    border-radius:.5rem;
+    padding:1.1rem 1.35rem;
+    box-shadow:0 .15rem .5rem rgba(13,110,253,.08);
+  }
+  .context-box .company{ color:var(--biz-blue-dark); font-weight:700; font-size:1.5rem; margin:0; }
+  .context-box .meta{ font-size:.88rem; color:#34495e; }
+  .context-box .meta strong{ color:#1c2b3a; }
+  .context-box .question-label{
+    font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--biz-blue-dark);
+  }
+  .context-box .question{ font-size:1.12rem; font-weight:600; color:#10233f; margin:0; white-space:pre-wrap; }
+  .context-box .original{ font-size:.9rem; color:#34495e; white-space:pre-wrap; }
+  .prompt-badge{
+    display:inline-block; background:var(--nav-blue); color:var(--nav-yellow);
+    font-weight:700; font-size:.78rem; border-radius:999px; padding:.2rem .7rem;
+  }
+
+  /* analysis content */
+  .analysis{ background:#fff; border-radius:.5rem; padding:1.5rem 1.75rem;
+             box-shadow:0 .125rem .25rem rgba(0,0,0,.075); line-height:1.6; }
+  .analysis h1, .analysis h2{
+    display:inline-block; padding-bottom:.4rem; border-bottom:3px solid var(--biz-gold);
+    margin:1.6rem 0 1rem; font-size:1.4rem; color:#10233f;
+  }
+  .analysis > h1:first-child, .analysis > h2:first-child{ margin-top:0; }
+  .analysis h3{ font-size:1.1rem; margin:1.3rem 0 .6rem; color:var(--biz-blue-dark); }
+  .analysis h4{ font-size:1rem; margin:1.1rem 0 .5rem; }
+  .analysis table.table{ font-size:.9rem; margin-bottom:1.25rem; }
+  .analysis table.table thead th{ background:#ffdf7e !important; color:#212529; border-color:#e6c257; }
+  .analysis table.table tbody tr:nth-child(odd) > *{ background:#d3e3f5 !important; }
+  .analysis table.table tbody tr:nth-child(even) > *{ background:#eef4fc !important; }
+  .analysis td.num{ text-align:right; white-space:nowrap; }
+  .analysis blockquote{
+    border-left:4px solid var(--biz-gold); background:#fff8e6;
+    padding:.75rem 1rem; margin:.75rem 0; font-style:italic;
+  }
+  .analysis pre{ background:#0a1128; color:#f2b400; padding:1rem; border-radius:.5rem; overflow-x:auto; }
+  .analysis code{ color:#b02a37; }
+  .analysis pre code{ color:inherit; }
+
+  footer{ background:var(--nav-blue); }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<style>
+  .rc-topnav{ position:sticky; top:0; z-index:1030; background:#0a3d1f; color:#ffe14d;
+    padding:.9rem 1.5rem; display:flex; justify-content:space-between; align-items:center; gap:1rem;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25); font-family:system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif; }
+  .rc-topnav .rc-brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .rc-topnav .rc-brand svg{ height:44px; width:auto; display:block; }
+  .rc-topnav .rc-right{ display:flex; align-items:center; gap:1rem; }
+  .rc-topnav .rc-tagline{ font-weight:600; font-size:1.05rem; color:#ffe14d; letter-spacing:.15em;
+    word-spacing:.6em; font-style:italic; margin:0; }
+  .rc-topnav .rc-right .btn{ color:#ffe14d; border-color:#ffe14d; }
+  @media (max-width:576px){
+    .rc-topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+    .rc-topnav .rc-brand svg{ height:34px; }
+    .rc-topnav .rc-tagline{ font-size:.85rem; letter-spacing:.08em; word-spacing:.3em; }
+  }
+  @media print{ .rc-topnav{ position:static; box-shadow:none; } }
+</style>
+<div class="rc-topnav">
+  <span class="rc-brand" aria-label="RAG Champ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="RAG Champ logo">
+  <!-- interlocking two-tone mark, flat fill, two colors only -->
+  <circle cx="24" cy="24" r="19" fill="#5BF527"/>
+  <path d="M24,5 A19,19 0 0,0 24,43 A9.5,9.5 0 0,0 24,24 A9.5,9.5 0 0,1 24,5 Z" fill="#FA0C00"/>
+
+  <text x="58" y="33" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="0.3" fill="#ffd60a">RAG Champ</text>
+</svg>
+</span>
+  <div class="rc-right">
+    <div class="rc-tagline">STOCK INVESTMENT PLAYBOOK</div>
+  </div>
+</div>
+
+<main class="container my-4">
+
+  <!-- CONTEXT: company, annual report, question -->
+  <section class="context-box mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+      <h1 class="company">The Hartford Insurance Group, Inc.</h1>
+      <span class="prompt-badge">#2 · Follow-up question 1</span>
+    </div>
+    <div class="row g-2 meta mb-3">
+      <div class="col-md-6"><strong>Annual report:</strong> HIG</div>
+      <div class="col-md-6"><strong>Prompt sent:</strong> 08 Nov 2026, 22:45:22</div>
+      <div class="col-md-6"><strong>Statements:</strong> Consolidated</div>
+      <div class="col-md-6"><strong>PDF pages analyzed:</strong> 213, 148–155, 140–147, 156–160</div>
+      <div class="col-12"><strong>Notes analyzed:</strong> Consolidated Note 21 – Schedule I Summary of Investments - Other Than Investments in Affiliates (PDF p.213), Consolidated Note 5 – Investments (PDF p.148–155), Consolidated Note 4 – Fair Value Measurements (PDF p.140–147), Consolidated Note 6 – Derivatives (PDF p.156–160)</div>
+      
+      
+      <div class="col-12"><strong>Financial statements referenced:</strong> Consolidated Statements of Operations (PDF p.123); Consolidated Statements of Comprehensive Income (Loss) (PDF p.124); Consolidated Balance Sheets (PDF p.125); Consolidated Statements of Cash Flows (PDF p.127); Consolidated Statement of Changes in Stockholders&#39; Equity (PDF p.126)</div>
+      
+    </div>
+    
+    <div class="question-label">Original question</div>
+    <p class="original mb-2">give breakup of hartford&#39;s total investments as of Dec-31-2025</p>
+    <div class="question-label">Follow-up question</div>
+    
+    <p class="question">analyze the risk on corporate bonds</p>
+  </section>
+
+  <!-- ANALYSIS -->
+  <article class="analysis">
+    <h1>Risk on Hartford's corporate bond portfolio (31-Dec-2025)</h1>
+<h2>Summary</h2>
+<ul>
+<li><strong>The corporate book is the largest single credit exposure.</strong> It is <strong>$23,076m at fair value</strong>: 50.1% of AFS bonds, 36.1% of total investments and <strong>1.22× stockholders' equity</strong> (Note 5, p.150; Balance Sheet, p.125).</li>
+<li><strong>The risk shown so far is mainly interest-rate (mark-to-market) risk, not credit loss.</strong> The net unrealized loss narrowed from $(916)m to $(229)m. The ACL on corporates fell to <strong>nil</strong>, and the company booked no net credit losses on AFS in 2025 (Note 5, p.149–150).</li>
+<li><strong>Aged losses remain.</strong> $7,089m of corporates have been under water for 12 months or more, with $(570)m of losses. That is 94% of the corporate unrealized losses (Note 5, p.151).</li>
+<li><strong>Valuation risk is rising.</strong> Level 3 corporates grew to <strong>$2,866m</strong> from $2,281m, mostly private placements priced on unobservable spreads (Note 4, p.141–142, 145–146).</li>
+<li><strong>Key data is missing from the material</strong>: credit-rating mix (investment grade vs. below), duration, and sector or industry split beyond the "financial services 11%" remark. Credit quality therefore cannot be fully assessed.</li>
+</ul>
+<h2>1. Size and valuation (Note 5, p.150)</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>$m</th>
+<th>2025</th>
+<th>2024</th>
+<th>Change</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Amortized cost</td>
+<td class="num">23,305</td>
+<td class="num">21,555</td>
+<td class="num">+1,750</td>
+</tr>
+<tr>
+<td>ACL</td>
+<td class="num">—</td>
+<td class="num">(3)</td>
+<td class="num">+3</td>
+</tr>
+<tr>
+<td>Gross unrealized gains</td>
+<td class="num">375</td>
+<td class="num">117</td>
+<td class="num">+258</td>
+</tr>
+<tr>
+<td>Gross unrealized losses</td>
+<td class="num">(604)</td>
+<td class="num">(1,033)</td>
+<td class="num">+429</td>
+</tr>
+<tr>
+<td><strong>Fair value</strong></td>
+<td class="num"><strong>23,076</strong></td>
+<td class="num"><strong>20,636</strong></td>
+<td><strong>+2,440 (+11.8%)</strong></td>
+</tr>
+<tr>
+<td>Net unrealized gain/(loss)</td>
+<td class="num">(229)</td>
+<td class="num">(916)</td>
+<td class="num">+687</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Roll-forward checks:</strong></li>
+<li>2025: 23,305 + 375 − 604 = 23,076 ✓</li>
+<li>2024: 21,555 − 3 + 117 − 1,033 = 20,636 ✓</li>
+<li><strong>Schedule I agrees</strong> (Note 21, p.213):</li>
+<li>Public utilities: fair value 2,716, cost 2,793.</li>
+<li>All other corporate bonds: fair value 20,360, cost 20,512.</li>
+<li>Sum: fair value 23,076 ✓ and cost 23,305 ✓.</li>
+<li><strong>Growth:</strong> the book grew faster than the AFS book as a whole (+11.8% vs. +8.2%). Hartford is adding credit risk.</li>
+</ul>
+<h2>2. Unrealized losses and aging (Note 5, p.151)</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Corporates in a loss position</th>
+<th>&lt;12 months FV / loss</th>
+<th>≥12 months FV / loss</th>
+<th>Total FV / loss</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="num">2025</td>
+<td>2,372 / (34)</td>
+<td>7,089 / (570)</td>
+<td>9,461 / (604)</td>
+</tr>
+<tr>
+<td class="num">2024</td>
+<td>5,883 / (138)</td>
+<td>8,212 / (895)</td>
+<td>14,095 / (1,033)</td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Share under water:</strong> 41.0% of corporates by fair value (9,461 / 23,076), down from 68.3% (14,095 / 20,636).</li>
+<li><strong>Depth of the aged bucket:</strong> 570 / (7,089 + 570) = <strong>7.4% below cost</strong> on average. That is consistent with rate-driven depreciation, not distress. The company says 94% of all AFS loss positions are depressed by less than 20% (Note 5, p.151).</li>
+<li><strong>Share of total AFS losses:</strong> corporates are 42.4% (604 / 1,424). The company states it has no intent or need to sell. That assertion is what keeps these losses in OCI rather than in earnings (Note 5, p.149, 151).</li>
+</ul>
+<h2>3. Credit losses (ACL) (Note 5, p.149, 148)</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Corporate ACL, $m</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opening balance</td>
+<td class="num">3</td>
+<td class="num">9</td>
+<td class="num">2</td>
+</tr>
+<tr>
+<td>New allowances</td>
+<td class="num">—</td>
+<td class="num">—</td>
+<td class="num">9</td>
+</tr>
+<tr>
+<td>Reduction due to sales</td>
+<td class="num">—</td>
+<td class="num">(3)</td>
+<td class="num">(5)</td>
+</tr>
+<tr>
+<td>Net increase/(decrease)</td>
+<td class="num">(3)</td>
+<td class="num">1</td>
+<td class="num">3</td>
+</tr>
+<tr>
+<td>Write-offs</td>
+<td class="num">—</td>
+<td class="num">(4)</td>
+<td class="num">—</td>
+</tr>
+<tr>
+<td><strong>Closing balance</strong></td>
+<td class="num"><strong>—</strong></td>
+<td class="num"><strong>3</strong></td>
+<td class="num"><strong>9</strong></td>
+</tr>
+</tbody>
+</table></div>
+<ul>
+<li><strong>Credit history:</strong> realized credit experience has been small. Net credit losses on AFS were nil in 2025, $(2)m in 2024 and $(14)m in 2023 (Note 5, p.148). There were $4m of corporate write-offs in 2024.</li>
+<li><strong>Zero allowance:</strong> a nil allowance on a $23bn book with $570m of aged losses relies wholly on management's cash-flow judgement (Note 5, p.149). It is worth testing against the rating mix, which is not disclosed here.</li>
+</ul>
+<h2>4. Valuation / Level 3 risk (Note 4, p.141–146)</h2>
+<ul>
+<li><strong>Hierarchy split for 2025:</strong></li>
+<li>Level 2: $20,210m (87.6%).</li>
+<li>Level 3: $2,866m (12.4%; 2024: 11.1%).</li>
+<li>Level 1: none.</li>
+<li><strong>Level 3 roll-forward</strong> (Note 4, p.146):</li>
+<li>Movement: 2,281 + 3 (net income) + 63 (OCI) + 1,402 purchases − 842 settlements − 91 sales + 62 transfers in − 12 transfers out = 2,866 ✓.</li>
+<li>Growth is driven by purchases of private placements, not by transfers.</li>
+<li><strong>Unobservable inputs:</strong> $2,765m is valued by discounted cash flows. Spreads range from 88 to 811 bps, with a weighted average of <strong>289 bps</strong> (2024: 286 bps on $2,166m) (Note 4, p.145).</li>
+<li>The remaining $101m (2,866 − 2,765) is broker-priced and excluded from the input table.</li>
+<li>Wider spreads lower fair value.</li>
+<li><strong>Exposure to below-investment-grade debt:</strong> the inputs table mentions "below investment grade privately placed securities and private bank loans" (Note 4, p.144). The amount is not given.</li>
+</ul>
+<h2>5. Concentration (Note 5, p.150)</h2>
+<ul>
+<li><strong>Issuers:</strong> the largest are Morgan Stanley, SPCC Funding I LLC and Entergy, each under 1% of invested assets. No single issuer exceeds 10% of equity.</li>
+<li><strong>Sectors:</strong> financial services is the largest sector at about 11% of invested assets. Measured against total investments, that is roughly 0.11 × 63,957 ≈ $7.0bn. This is an estimate, because "invested assets" is not defined in the material.</li>
+</ul>
+<h2>6. Synthetic corporate credit (Note 6, p.157, 160)</h2>
+<ul>
+<li><strong>Exposure:</strong> $392m notional of <strong>below-investment-grade (B+) corporate basket CDS</strong> sold, 2 years to maturity, fair value $27m.</li>
+<li><strong>Offset:</strong> the exposure is fully offset by $392m of offsetting swaps (fair value $(27)m). Net economic exposure is therefore nil, leaving counterparty risk. Collateral is posted.</li>
+</ul>
+<h2>Impact on the financial statements</h2>
+<ul>
+<li><strong>Income Statement:</strong> corporate credit losses would flow through <strong>net realized losses</strong>, which were $(100)m in total (P&amp;L, p.123; Note 5, p.148). The corporate ACL release of $3m was a small benefit. Net investment income from fixed maturities was $2,367m, but the material does not split corporates out (Note 5, p.148).</li>
+<li><strong>Balance Sheet:</strong> $23,076m sits inside "Total fixed maturities, AFS" of $46,041m (Balance Sheet, p.125), at fair value. There is no ACL deduction in 2025.</li>
+<li><strong>Other comprehensive income / Shareholders' Equity:</strong></li>
+<li>Corporates contributed a pre-tax improvement of about <strong>$687m</strong> (−229 vs. −916). That is about 60% of the $1,141m total AFS improvement behind the $898m OCI gain (Comprehensive Income, p.124).</li>
+<li>At the ~21% implied tax rate, that is roughly $543m after tax.</li>
+<li>It reduced the AOCI deficit, which moved from $(2,886)m to $(2,057)m (Equity statement, p.126).</li>
+<li>Level 3 corporate OCI was +$63m (Note 4, p.146).</li>
+<li><strong>Cash Flow:</strong> purchases and sales of corporate bonds sit inside the AFS lines: purchases of (12,769) and proceeds of 10,352 (Cash Flow, p.127). They are not split by sector.</li>
+</ul>
+<h2>Red flags / follow-up</h2>
+<ol>
+<li><strong>No rating, duration or industry breakdown</strong> for the corporate book is in the material. Ask for the NAIC/rating mix and the below-investment-grade exposure (needed to judge both the nil ACL and the Level 3 privates).</li>
+<li><strong>$570m of losses aged 12 months or more</strong> depend on the hold-to-recovery assertion. A forced sale (for liquidity or capital) would move them into earnings.</li>
+<li><strong>Level 3 private credit is growing fast</strong> (+25.6%, from 2,281 to 2,866). It is valued with internal matrix and broker inputs, which carries model risk.</li>
+<li><strong>Spread sensitivity:</strong> no sensitivity is disclosed. A widening of spreads would reverse part of the 2025 OCI gain.</li>
+<li><strong>Financial-sector concentration</strong> of about 11% of invested assets is correlated risk; two of the three largest issuers are financial.</li>
+</ol>
+  </article>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Generated by the Annual Report Foot Notes Analyzer (RAG Champ) using Claude Code, from the notes to the financial statements in HIG.
+    Research aid only, not investment advice. Verify every number against the filed annual report.
+  </div>
+</footer>
+
+</body>
+</html>

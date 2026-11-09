@@ -1,0 +1,11 @@
+Asked at: 2026-11-08 00:39:52
+Kind: analysis
+Report: JP-MORGAN-2025.pdf
+Scope: Consolidated
+Notes: Consolidated Note 10 – Investment securities (PDF p.230–234), Consolidated Note 12 – Loans (PDF p.238–259), Consolidated Note 15 – Goodwill, mortgage servicing rights, and other intangible assets (PDF p.274–278)
+PDF pages: 230, 231, 232, 233, 234, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 274, 275, 276, 277, 278
+Financial statements: Consolidated statements of income (PDF p.167–168); Consolidated balance sheets (PDF p.169); Consolidated statements of cash flows (PDF p.171); Consolidated statements of changes in stockholders’ equity (PDF p.170)
+Thread: e396b8634c63418f962b53bf7b14d399
+Saved HTML: JP-MORGAN-2025-1-20261108-003952.html
+
+analyze jp morgan's exposure to mortgage related assets

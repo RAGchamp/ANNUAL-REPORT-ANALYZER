@@ -1,3 +1,4 @@
+{% from "_brand.html" import brand_nav -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,7 +148,7 @@
     .section-title{ font-size:1.25rem; }
   }
   @media print{
-    .topnav, #toc-col, .no-print, .page-marker a, .stored-text{ display:none !important; }
+    .rc-topnav, #toc-col, .no-print, .page-marker a, .stored-text{ display:none !important; }
     #doc{ width:100% !important; flex:0 0 100%; max-width:100%; }
     body{ background:#fff; }
     .doc-card{ box-shadow:none; border:1px solid #dee2e6; }
@@ -223,14 +224,12 @@
 <body{% if doc.toc %} data-bs-spy="scroll" data-bs-target="#toc-nav" data-bs-root-margin="0px 0px -70%" tabindex="0"{% endif %}>
 <a class="visually-hidden-focusable" href="#doc">Skip to document</a>
 
-<div class="topnav">
-  <span class="brand" aria-label="RAG Champ">{{ logo_svg | safe }}</span>
-  <div class="tagline">ANNUAL REPORT ANALYZER</div>
+{% call brand_nav(logo_svg) %}
   {% if doc.toc %}
   <button class="btn btn-sm btn-outline-warning btn-contents d-lg-none" type="button"
           data-bs-toggle="offcanvas" data-bs-target="#toc" aria-controls="toc">☰ Contents</button>
   {% endif %}
-</div>
+{% endcall %}
 
 <div class="container-fluid">
   <div class="row">

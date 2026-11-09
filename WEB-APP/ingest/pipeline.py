@@ -9,6 +9,10 @@ us-10k, legacy, or scanned via the OCR transcription) -> the clipped text of
 every note, schedule and statement -> the text of every page -> the
 statement tables -> write the package.
 
+An inline XBRL filing (a folder or .zip of the files EDGAR publishes) takes the
+XBRL route instead (ingest/xbrl, INFO/XBRL-ROUTE.md): no model matching, no
+layout rules, the same package.
+
 Everything the analyzer needs is in the package, so no PDF is read at
 question time. A package is rebuilt when the ingester changes
 (notes_index.INDEX_VERSION: bump it whenever what goes into a package
@@ -29,6 +33,9 @@ import rptpkg
 from ingest import clip, figures, links, narrative, notes_index, ocr_transcribe, profiles, quality, report_format, tables
 from ingest.models import match as matcher
 from ingest.models import registry
+from ingest.xbrl import XBRL_VERSION
+from ingest.xbrl import build as xbrl_build
+from ingest.xbrl import filing as xbrl_filing
 from ingest.pdf_utils import open_pdf, reuse_page_text
 from rptpkg import store
 from rptpkg.model import model_line, note_unit_id
@@ -39,6 +46,7 @@ log = logging.getLogger(__name__)
 INGESTER_VERSION = notes_index.INDEX_VERSION
 NeedsTranscription = notes_index.NeedsTranscription
 NewModelDocument = matcher.NewModelDocument
+XbrlError = xbrl_build.XbrlError
 
 _locks = {}
 _locks_guard = threading.Lock()
@@ -61,8 +69,15 @@ def _format_matches(meta, format_choice):
     return meta.get("format") == format_choice and meta.get("format_source") == "manual"
 
 
+def is_xbrl(path):
+    """An inline XBRL filing (folder or .zip), read by the XBRL route."""
+    return xbrl_filing.is_filing(path)
+
+
 def _usable(package, pdf_path, format_choice):
     meta = package.meta
+    if meta.get("source") == "xbrl":
+        return meta.get("ingester_version") == INGESTER_VERSION and meta.get("xbrl_version") == XBRL_VERSION
     if meta.get("format") == "transcribed":
         local = ocr_transcribe.status(pdf_path)
         if not local["done"]:
@@ -89,7 +104,7 @@ def package_status(pdf_path):
     except OSError:
         found = None
     if found is None:
-        verdict = matcher.known_verdict(pdf_path)
+        verdict = None if is_xbrl(pdf_path) else matcher.known_verdict(pdf_path)
         if verdict is not None:
             return {"status": "new model document", "new_model": verdict.to_json()}
         return {"status": "not ingested"}
@@ -99,7 +114,8 @@ def package_status(pdf_path):
         return {"status": "stale", "reason": str(exc)}
     meta = package.meta
     usable = _usable(package, pdf_path, None) and (
-        meta.get("registry_version") == registry.load().version or _imported_scan(package, pdf_path))
+        meta.get("source") == "xbrl" or meta.get("registry_version") == registry.load().version
+        or _imported_scan(package, pdf_path))
     return {
         "status": "up to date" if usable else "stale",
         "format": meta.get("format"), "format_label": meta.get("format_label"),
@@ -157,12 +173,55 @@ def _package_content(index, pdf_path):
     return content
 
 
+def _write(path, pdf_path, index, content, meta, format_label, seconds, extra_quality=None):
+    """The quality report, then the package; older packages of this report go."""
+    report = quality.build(index, content, seconds)
+    report.update(extra_quality or {})
+    report["lines_text"] = quality.report_lines(report, format_label)   # shown in step 1 and the Ingest screen
+    write_package(path, index, content, {
+        **meta,
+        "ingester_version": INGESTER_VERSION,
+        "format_label": format_label,
+        "summary": notes_index.summary(index),
+        "units": content["units"],
+        "fiscal_month_day": content["fiscal_month_day"],
+        "quality": report,
+        "ingested_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "ingest_seconds": round(seconds, 1),
+    })
+    for old in store.other_versions(pdf_path, path):
+        old.unlink(missing_ok=True)
+
+
+def build_xbrl_package(path):
+    """The XBRL route (INFO/XBRL-ROUTE.md): read the filing, pass its acceptance
+    checks (XbrlError otherwise), write the package."""
+    path = Path(path)
+    started = time.monotonic()
+    result = xbrl_build.read(path)
+    xbrl_build.check_or_raise(result, path)
+    content = result.content
+    content["model"] = model_line(result.meta)
+    sha = store.pdf_sha256(path)
+    target = store.package_path(path, sha)
+    seconds = time.monotonic() - started
+    _write(target, path, result.index, content,
+           {**result.meta, "registry_version": registry.load().version, "pdf_sha256": sha},
+           result.meta["format_label"], seconds,
+           {"source": "xbrl", "xbrl": {**result.meta["xbrl_facts"], "main": result.meta["xbrl_files"]["main"]}})
+    log.info("Ingested %s (inline XBRL) in %.1fs -> %s", path.name, time.monotonic() - started, target.name)
+    return target
+
+
 def build_package(pdf_path, format_choice=None, result=None):
     """Match the PDF to a model document, then write its package with that
     model's profile. Raises NewModelDocument when no model matches,
     NeedsTranscription for a scanned report that isn't transcribed yet, and
-    PdfError if it can't be read. result: a match already made."""
+    PdfError if it can't be read. result: a match already made.
+    An inline XBRL filing takes the XBRL route (format_choice does not apply)."""
     pdf_path = Path(pdf_path)
+    if is_xbrl(pdf_path):
+        return build_xbrl_package(pdf_path)
     started = time.monotonic()
     result = result or matcher.match(pdf_path, format_choice)
     index = result.index
@@ -174,22 +233,8 @@ def build_package(pdf_path, format_choice=None, result=None):
     fmt = index.get("format", "modern")
     format_label = report_format.FORMAT_LABELS.get(fmt, fmt)
     seconds = time.monotonic() - started
-    report = quality.build(index, content, seconds)
-    report["lines_text"] = quality.report_lines(report, format_label)   # shown in step 1 and the Ingest screen
-    write_package(path, index, content, {
-        **result.meta(registry.load().version),
-        "ingester_version": INGESTER_VERSION,
-        "pdf_sha256": sha,
-        "format_label": format_label,
-        "summary": notes_index.summary(index),
-        "units": content["units"],
-        "fiscal_month_day": content["fiscal_month_day"],
-        "quality": report,
-        "ingested_at": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "ingest_seconds": round(seconds, 1),
-    })
-    for old in store.other_versions(pdf_path, path):
-        old.unlink(missing_ok=True)
+    _write(path, pdf_path, index, content, {**result.meta(registry.load().version), "pdf_sha256": sha},
+           format_label, seconds)
     # the JSON index cache of earlier versions of the app
     (Path(config.CACHE_DIR) / f"{pdf_path.stem}.notes-index.json").unlink(missing_ok=True)
     log.info("Ingested %s in %.1fs -> %s", pdf_path.name, time.monotonic() - started, path.name)
@@ -225,6 +270,9 @@ def _rematch_if_registry_changed(path, package, pdf_path, format_choice):
     reg = registry.load()
     meta = package.meta
     if meta.get("registry_version") == reg.version or _imported_scan(package, pdf_path):
+        return path
+    if meta.get("source") == "xbrl":
+        update_meta(path, registry_version=reg.version)      # XBRL filings are not matched to models
         return path
     own = reg.by_sha(meta.get("pdf_sha256"))
     if own and own.id == meta.get("model") and own.profile == meta.get("profile"):

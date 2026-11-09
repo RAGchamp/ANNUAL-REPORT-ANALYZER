@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chubb Limited — Follow-up question 1 — Annual Report Analyzer</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  /* Palette and components from ANALYSIS-REPORTS/BHARATFORGE-ANN-REPORT-ANALYSIS-2025-26.html */
+  :root{
+    --biz-blue:#0d6efd;
+    --biz-blue-dark:#084298;
+    --biz-yellow:#ffc107;
+    --biz-gold:#b8860b;
+    --nav-blue:#0a1128;
+    --nav-yellow:#f2b400;
+  }
+  body{ background:#f7f8fa; margin:0; }
+
+  .topnav{
+    position:sticky; top:0; z-index:1030;
+    background:var(--nav-blue);
+    color:var(--nav-yellow);
+    padding:.9rem 1.5rem;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    box-shadow:0 .15rem .5rem rgba(0,0,0,.25);
+  }
+  .topnav .brand{ display:inline-flex; align-items:center; text-decoration:none; }
+  .topnav .brand svg{ height:42px; width:auto; display:block; }
+  .topnav .tagline{
+    font-weight:600; font-size:1.05rem; color:var(--nav-yellow);
+    letter-spacing:.15em; word-spacing:.6em; font-style:italic;
+  }
+  @media (max-width:576px){
+    .topnav{ flex-direction:column; text-align:center; gap:.4rem; padding:.75rem 1rem; }
+  }
+
+  /* light-blue context box: company, report, question */
+  .context-box{
+    background:#e7f1ff;
+    border:1px solid #b6d4fe;
+    border-left:6px solid var(--biz-blue);
+    border-radius:.5rem;
+    padding:1.1rem 1.35rem;
+    box-shadow:0 .15rem .5rem rgba(13,110,253,.08);
+  }
+  .context-box .company{ color:var(--biz-blue-dark); font-weight:700; font-size:1.5rem; margin:0; }
+  .context-box .meta{ font-size:.88rem; color:#34495e; }
+  .context-box .meta strong{ color:#1c2b3a; }
+  .context-box .question-label{
+    font-size:.75rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase;
+    color:var(--biz-blue-dark);
+  }
+  .context-box .question{ font-size:1.12rem; font-weight:600; color:#10233f; margin:0; white-space:pre-wrap; }
+  .context-box .original{ font-size:.9rem; color:#34495e; white-space:pre-wrap; }
+  .prompt-badge{
+    display:inline-block; background:var(--nav-blue); color:var(--nav-yellow);
+    font-weight:700; font-size:.78rem; border-radius:999px; padding:.2rem .7rem;
+  }
+
+  /* analysis content */
+  .analysis{ background:#fff; border-radius:.5rem; padding:1.5rem 1.75rem;
+             box-shadow:0 .125rem .25rem rgba(0,0,0,.075); line-height:1.6; }
+  .analysis h1, .analysis h2{
+    display:inline-block; padding-bottom:.4rem; border-bottom:3px solid var(--biz-gold);
+    margin:1.6rem 0 1rem; font-size:1.4rem; color:#10233f;
+  }
+  .analysis > h1:first-child, .analysis > h2:first-child{ margin-top:0; }
+  .analysis h3{ font-size:1.1rem; margin:1.3rem 0 .6rem; color:var(--biz-blue-dark); }
+  .analysis h4{ font-size:1rem; margin:1.1rem 0 .5rem; }
+  .analysis table.table{ font-size:.9rem; margin-bottom:1.25rem; }
+  .analysis table.table thead th{ background:#ffdf7e !important; color:#212529; border-color:#e6c257; }
+  .analysis table.table tbody tr:nth-child(odd) > *{ background:#d3e3f5 !important; }
+  .analysis table.table tbody tr:nth-child(even) > *{ background:#eef4fc !important; }
+  .analysis td.num{ text-align:right; white-space:nowrap; }
+  .analysis blockquote{
+    border-left:4px solid var(--biz-gold); background:#fff8e6;
+    padding:.75rem 1rem; margin:.75rem 0; font-style:italic;
+  }
+  .analysis pre{ background:#0a1128; color:#f2b400; padding:1rem; border-radius:.5rem; overflow-x:auto; }
+  .analysis code{ color:#b02a37; }
+  .analysis pre code{ color:inherit; }
+
+  footer{ background:var(--nav-blue); }
+</style>
+</head>
+<body>
+
+<!-- STICKY TOP NAV -->
+<div class="topnav">
+  <span class="brand" aria-label="RAG Champ"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 48" role="img" aria-label="RAG Champ logo">
+  <!-- interlocking two-tone mark, flat fill, two colors only -->
+  <circle cx="24" cy="24" r="19" fill="#5BF527"/>
+  <path d="M24,5 A19,19 0 0,0 24,43 A9.5,9.5 0 0,0 24,24 A9.5,9.5 0 0,1 24,5 Z" fill="#FA0C00"/>
+
+  <text x="58" y="33" font-family="'Segoe UI', Verdana, Arial, sans-serif" font-weight="700" font-size="26" letter-spacing="0.3" fill="#ffd60a">RAG Champ</text>
+</svg>
+</span>
+  <div class="tagline">ANNUAL REPORT ANALYZER</div>
+</div>
+
+<main class="container my-4">
+
+  <!-- CONTEXT: company, annual report, question -->
+  <section class="context-box mb-4">
+    <div class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2">
+      <h1 class="company">Chubb Limited</h1>
+      <span class="prompt-badge">#2 · Follow-up question 1</span>
+    </div>
+    <div class="row g-2 meta mb-3">
+      <div class="col-md-6"><strong>Annual report:</strong> Chubb-10-K-2025.pdf</div>
+      <div class="col-md-6"><strong>Prompt sent:</strong> 07 Nov 2026, 22:56:17</div>
+      <div class="col-md-6"><strong>Statements:</strong> Consolidated</div>
+      <div class="col-md-6"><strong>PDF pages analyzed:</strong> 204–209</div>
+      <div class="col-12"><strong>Notes analyzed:</strong> Consolidated Note 19 – Segment information (PDF p.204–209)</div>
+      
+      <div class="col-12"><strong>Report sections analyzed</strong> (management's commentary, not audited): ITEM 1. Business › Competitive Environment · Overseas General Insurance (27 percent of 2025 Consolidated NPE) · Overview (PDF 8); ITEM 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations › Premiums · Combined Ratio · Overseas General Insurance (PDF 58–59); ITEM 1. Business › Segment Information · North America Commercial P&amp;C Insurance (38 percent of 2025 Consolidated NPE) · Overview · Products and Distribution (PDF 5–6); ITEM 7. Management’s Discussion and Analysis of Financial Condition and Results of Operations › Crop Insurance (PDF 78–79); ITEM 1. Business › Competitive Environment · North America Agricultural Insurance (5 percent of 2025 Consolidated NPE) · Overview · Products and Distribution (PDF 7–8)</div>
+      
+      
+      <div class="col-12"><strong>Financial statements referenced:</strong> CONSOLIDATED STATEMENTS OF OPERATIONS AND COMPREHENSIVE INCOME (PDF p.108); CONSOLIDATED BALANCE SHEETS (PDF p.107); CONSOLIDATED STATEMENTS OF CASH FLOWS (PDF p.110); CONSOLIDATED STATEMENTS OF SHAREHOLDERS’ EQUITY (PDF p.109)</div>
+      
+    </div>
+    
+    <div class="question-label">Original question</div>
+    <p class="original mb-2">Give overview of Overseas General Insurance</p>
+    <div class="question-label">Follow-up question</div>
+    
+    <p class="question">give an overview of the company&#39;s agriculture insurance business</p>
+  </section>
+
+  <!-- ANALYSIS -->
+  <article class="analysis">
+    <h2>Summary</h2>
+<ul>
+<li><strong>North America Agricultural Insurance</strong> is Chubb's smallest P&amp;C segment, at 5% of 2025 consolidated NPE (Item 1, p.7). The audited figures agree: $2,919m of $53,014m is 5.5% (Note 19, p.206).</li>
+<li>The segment has two businesses (Item 1, p.7–8):</li>
+<li><strong>Rain and Hail</strong>: federally subsidised MPCI crop insurance plus private crop-hail cover.</li>
+<li><strong>Chubb Agribusiness</strong>: farm and ranch cover, and commercial agribusiness P&amp;C.</li>
+<li>2025 was a strong year:</li>
+<li>Net premiums earned rose 7.9%.</li>
+<li>Underwriting income rose 46% to $517m.</li>
+<li>Segment income rose 40% to $577m (Note 19, p.206–207).</li>
+</ul>
+<h2>What management says about the business</h2>
+<ul>
+<li><strong>Market position:</strong> management states Chubb has been one of the leading U.S. crop insurers since the 1980s. It works through Rain and Hail, a managing general agent subsidiary, and is geographically diversified across U.S. crops (MD&amp;A, p.78).</li>
+<li><strong>MPCI:</strong></li>
+<li>The program is run with the USDA's Risk Management Agency, which sets the terms, rates and forms (MD&amp;A, p.78).</li>
+<li>It covers revenue (commodity price and yield), yield, margin, prevented planting and replant (Item 1, p.7).</li>
+<li>Deductibles range from 10% to 50% (MD&amp;A, p.78).</li>
+<li>Risk is shared with the government through the Standard Reinsurance Agreement (SRA), which has pro-rata and state stop-loss terms. Chubb adds third-party proportional and stop-loss reinsurance, and may use crop derivatives (MD&amp;A, p.78).</li>
+<li><strong>Crop-hail:</strong> a private product. Chubb sets its own rates and limits exposure through township liability limits and reinsurance (MD&amp;A, p.79).</li>
+<li><strong>Competition:</strong> all approved MPCI providers sell the same product forms and rates, so management says Chubb competes on service and digital tools (Item 1, p.8).</li>
+<li><strong>Economics and seasonality:</strong></li>
+<li>Premiums depend on February commodity prices and on price volatility.</li>
+<li>Losses depend on the October harvest price and on crop yields.</li>
+<li>Written and earned premiums are concentrated in Q2 and Q3.</li>
+<li>The underwriting result is usually not estimable until Q4 (MD&amp;A, p.79).</li>
+<li><strong>Outlook:</strong> the 2026 SRA has no significant changes, so management says it does not affect the 2026 outlook (MD&amp;A, p.78). This is an expectation, not a result.</li>
+</ul>
+<h2>2025 performance</h2>
+<p>The MD&amp;A states (p.58):</p>
+<ul>
+<li>Net premiums written rose <strong>$223m (8.2%)</strong>, mainly because of a <strong>$179m favourable year-over-year effect</strong> from the federal profit-share agreement.</li>
+<li>Higher acreage and policy growth also helped, partly offset by lower commodity prices.</li>
+<li>Net premiums earned rose <strong>$214m (7.9%)</strong>.</li>
+<li>The combined ratio fell because of lower catastrophe losses, partly offset by less favourable prior-period development.</li>
+</ul>
+<p>The $179m adjustment is most of the NPW growth. Without it, NPW grew about $44m (223 − 179), or about 1.6% of 2,703. The adjustment itself is not disclosed in the notes provided.</p>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>$ millions (Note 19, p.206–208)</th>
+<th>2025</th>
+<th>2024</th>
+<th>2023</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Net premiums written</td>
+<td class="num">2,926</td>
+<td class="num">2,703</td>
+<td class="num">3,188</td>
+</tr>
+<tr>
+<td>Net premiums earned</td>
+<td class="num">2,919</td>
+<td class="num">2,705</td>
+<td class="num">3,169</td>
+</tr>
+<tr>
+<td>Losses and loss expenses</td>
+<td class="num">2,239</td>
+<td class="num">2,170</td>
+<td class="num">2,874</td>
+</tr>
+<tr>
+<td>Acquisition + admin costs</td>
+<td class="num">163</td>
+<td class="num">181</td>
+<td class="num">149</td>
+</tr>
+<tr>
+<td>Underwriting income</td>
+<td class="num">517</td>
+<td class="num">354</td>
+<td class="num">146</td>
+</tr>
+<tr>
+<td>Segment income</td>
+<td class="num">577</td>
+<td class="num">412</td>
+<td class="num">183</td>
+</tr>
+<tr>
+<td>Combined ratio (calculated)</td>
+<td class="num">82.3%</td>
+<td class="num">86.9%</td>
+<td class="num">95.4%</td>
+</tr>
+<tr>
+<td>Loss ratio (calculated)</td>
+<td class="num">76.7%</td>
+<td class="num">80.2%</td>
+<td class="num">90.7%</td>
+</tr>
+</tbody>
+</table></div>
+<p><strong>How the combined ratio is calculated:</strong> (2,239 + 169 − 6) / 2,919 = 82.3%, compared with 2,351 / 2,705 = 86.9% in 2024.</p>
+<p><strong>Points from the table:</strong></p>
+<ul>
+<li>The improvement came mostly from losses: the loss ratio fell 3.5 points and the expense ratio fell from 6.7% to 5.6%.</li>
+<li>The segment's results are volatile. NPE fell 14.6% in 2024 (2,705 against 3,169) before recovering.</li>
+<li>Administrative expenses are negative in all three years: (6), (10) and (1). The excerpts do not explain why.</li>
+<li>Segment income of $577m is 4.1% of total segment income ($14,227m). Investment income is small ($86m), so this is mainly an underwriting business.</li>
+<li>Losses include realised gains and losses on crop derivatives, reclassified from investment results (Note 19, p.205). The reported loss ratio therefore already includes the effect of the hedges.</li>
+</ul>
+<h2>How it shows in the audited numbers</h2>
+<div class="table-responsive"><table class="table table-sm table-bordered align-middle">
+<thead>
+<tr>
+<th>Report figure</th>
+<th>Audited source</th>
+<th>Ties?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>5% of consolidated NPE (Item 1, p.7)</td>
+<td>2,919 / 53,014 = 5.5% (Note 19, p.206)</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>NPW +$223m, +8.2% (MD&amp;A, p.58)</td>
+<td>2,926 − 2,703 = 223; 8.25%</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>NPE +$214m, +7.9% (MD&amp;A, p.58)</td>
+<td>2,919 − 2,705 = 214; 7.9%</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Profit-share effect $179m (MD&amp;A, p.58)</td>
+<td>not in Note 19</td>
+<td>not disclosed</td>
+</tr>
+<tr>
+<td>Lower catastrophe losses; less favourable prior-period development (MD&amp;A, p.58)</td>
+<td>only total losses are shown (2,239)</td>
+<td>not separately disclosed</td>
+</tr>
+</tbody>
+</table></div>
+<p>The material provided does not split results between Rain and Hail and Agribusiness, or between MPCI and crop-hail. It also does not give catastrophe losses or prior-year development in dollars.</p>
+<h2>Risks and questions for management</h2>
+<ul>
+<li><strong>Risks:</strong></li>
+<li>Climate and catastrophe-like exposure to drought, hail and storms (MD&amp;A, p.78).</li>
+<li>Commodity price falls between February and October.</li>
+<li>Dependence on the federal program and the SRA terms.</li>
+<li><strong>Questions:</strong>
+  1. Is the $179m profit-share effect a one-off? What is the underlying growth?
+  2. What was the dollar effect of catastrophe losses and prior-year development on the combined ratio?
+  3. How much did the crop derivatives gain or lose in 2025?
+  4. What do the negative administrative expenses represent?</li>
+</ul>
+  </article>
+
+</main>
+
+<footer class="text-white py-4 mt-5">
+  <div class="container text-center small">
+    Generated by the Annual Report Foot Notes Analyzer (RAG Champ) using Claude Code, from the notes to the financial statements in Chubb-10-K-2025.pdf.
+    Research aid only, not investment advice. Verify every number against the filed annual report.
+  </div>
+</footer>
+
+</body>
+</html>

@@ -17,6 +17,7 @@ Every annual report is first **matched** to one of the model documents in this f
 | `TYPE-6-CANADA-40-F-2025-Magna.pdf` | Canadian Form 40-F, financial statements exhibit (US GAAP, U.S. dollars) | `ca-40f-usgaap` |
 | `TYPE-7-INDIA-20-F-2025-Infosys.pdf` | Indian company's Form 20-F (IFRS), notes numbered 2.1, 2.2 … | `in-20f-ifrs` |
 | `TYPE-8-AUSTRALIA-20-F-2025-BHP.pdf` | Australian company's Form 20-F (IFRS, US$M), numbered statement titles | `au-20f-ifrs` |
+| `TYPE-9-USA-10-K-2025-JPMorgan.pdf` | US Form 10-K typeset like an annual report: two text columns, "Note 12 – Loans" headings, notes header on left-hand pages only | `us-10k-two-column` |
 | `_candidates\<name>\` | Reports proposed from the app ("Propose as a model document"), each with its `GAP-REPORT.md` | — |
 
 - **Each document is its own model.** Its id is the file name:

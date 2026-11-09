@@ -43,6 +43,11 @@ def _us10k_profile(package):
              f"Periods in the statements: {periods}{ended}"]
     if package.meta.get("units"):
         lines.append(f"Units: {package.meta['units']}")
+    if package.meta.get("source") == "xbrl":
+        # only XBRL packages get this line, so PDF prompts stay byte-identical (INFO/XBRL-ROUTE.md §9)
+        lines.append("Source: the filing's inline XBRL (statement figures, notes and links read from its tags, "
+                     "not from page layout). \"PDF page\" numbers are the filing's document pages (between its "
+                     "page breaks); the printed page number is given alongside.")
     lines.append("The statements have no Notes column; LINKED FIGURES shows how the app linked "
                  "statement lines to the notes.")
     return "\n".join(lines) + "\n\n"

@@ -1,5 +1,5 @@
 {
- "version": 12,
+ "version": 13,
  "fingerprint_version": 1,
  "models": [
   {
@@ -451,6 +451,62 @@
      "schedules": 1,
      "item_8": false,
      "item_18": true
+    }
+   }
+  },
+  {
+   "id": "TYPE-9-USA-10-K-2025-JPMorgan",
+   "file": "TYPE-9-USA-10-K-2025-JPMorgan.pdf",
+   "sha256": "e16cdad03ca84732dbe21b2595c112e975d5a3f27bce9f394828160275bfe79c",
+   "profile": "us-10k-two-column",
+   "description": "US Form 10-K typeset like an annual report (JPMorgan Chase): two text columns, 'Note N – Title' headings, notes running header on left-hand pages, sentence-case statement titles",
+   "fingerprint": {
+    "version": 1,
+    "physical": {
+     "text_share": 1.0,
+     "page_shape": "letter",
+     "pages": 410,
+     "pages_band": "300+",
+     "producer": "other"
+    },
+    "typography": {
+     "mono": 0.0,
+     "serif": 0.01,
+     "sans": 0.99,
+     "bold": 0.1,
+     "big_title_pages": 0.0,
+     "body_size": 10
+    },
+    "document": {
+     "form": "10-K",
+     "frameworks": [
+      "us-gaap"
+     ],
+     "currencies": [
+      "usd"
+     ],
+     "units": [
+      "millions",
+      "thousands"
+     ]
+    },
+    "era": {
+     "decade": 2020
+    },
+    "structure": {
+     "notes_header_pages": 0.0,
+     "note_headings": {
+      "number-dot": 5.9,
+      "number-caps": 0.0,
+      "paren-caps": 0.0,
+      "note-word": 24.1,
+      "section-numbered": 0.2
+     },
+     "statement_title_pages": 13,
+     "numbered_statement_titles": 0,
+     "schedules": 3,
+     "item_8": true,
+     "item_18": false
     }
    }
   }

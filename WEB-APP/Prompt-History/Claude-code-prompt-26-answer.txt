@@ -1,0 +1,77 @@
+## Summary
+- **North America Agricultural Insurance** is Chubb's smallest P&C segment, at 5% of 2025 consolidated NPE (Item 1, p.7). The audited figures agree: $2,919m of $53,014m is 5.5% (Note 19, p.206).
+- The segment has two businesses (Item 1, p.7–8):
+  - **Rain and Hail**: federally subsidised MPCI crop insurance plus private crop-hail cover.
+  - **Chubb Agribusiness**: farm and ranch cover, and commercial agribusiness P&C.
+- 2025 was a strong year:
+  - Net premiums earned rose 7.9%.
+  - Underwriting income rose 46% to $517m.
+  - Segment income rose 40% to $577m (Note 19, p.206–207).
+
+## What management says about the business
+- **Market position:** management states Chubb has been one of the leading U.S. crop insurers since the 1980s. It works through Rain and Hail, a managing general agent subsidiary, and is geographically diversified across U.S. crops (MD&A, p.78).
+- **MPCI:**
+  - The program is run with the USDA's Risk Management Agency, which sets the terms, rates and forms (MD&A, p.78).
+  - It covers revenue (commodity price and yield), yield, margin, prevented planting and replant (Item 1, p.7).
+  - Deductibles range from 10% to 50% (MD&A, p.78).
+  - Risk is shared with the government through the Standard Reinsurance Agreement (SRA), which has pro-rata and state stop-loss terms. Chubb adds third-party proportional and stop-loss reinsurance, and may use crop derivatives (MD&A, p.78).
+- **Crop-hail:** a private product. Chubb sets its own rates and limits exposure through township liability limits and reinsurance (MD&A, p.79).
+- **Competition:** all approved MPCI providers sell the same product forms and rates, so management says Chubb competes on service and digital tools (Item 1, p.8).
+- **Economics and seasonality:**
+  - Premiums depend on February commodity prices and on price volatility.
+  - Losses depend on the October harvest price and on crop yields.
+  - Written and earned premiums are concentrated in Q2 and Q3.
+  - The underwriting result is usually not estimable until Q4 (MD&A, p.79).
+- **Outlook:** the 2026 SRA has no significant changes, so management says it does not affect the 2026 outlook (MD&A, p.78). This is an expectation, not a result.
+
+## 2025 performance
+The MD&A states (p.58):
+- Net premiums written rose **$223m (8.2%)**, mainly because of a **$179m favourable year-over-year effect** from the federal profit-share agreement.
+- Higher acreage and policy growth also helped, partly offset by lower commodity prices.
+- Net premiums earned rose **$214m (7.9%)**.
+- The combined ratio fell because of lower catastrophe losses, partly offset by less favourable prior-period development.
+
+The $179m adjustment is most of the NPW growth. Without it, NPW grew about $44m (223 − 179), or about 1.6% of 2,703. The adjustment itself is not disclosed in the notes provided.
+
+| $ millions (Note 19, p.206–208) | 2025 | 2024 | 2023 |
+|---|---|---|---|
+| Net premiums written | 2,926 | 2,703 | 3,188 |
+| Net premiums earned | 2,919 | 2,705 | 3,169 |
+| Losses and loss expenses | 2,239 | 2,170 | 2,874 |
+| Acquisition + admin costs | 163 | 181 | 149 |
+| Underwriting income | 517 | 354 | 146 |
+| Segment income | 577 | 412 | 183 |
+| Combined ratio (calculated) | 82.3% | 86.9% | 95.4% |
+| Loss ratio (calculated) | 76.7% | 80.2% | 90.7% |
+
+**How the combined ratio is calculated:** (2,239 + 169 − 6) / 2,919 = 82.3%, compared with 2,351 / 2,705 = 86.9% in 2024.
+
+**Points from the table:**
+- The improvement came mostly from losses: the loss ratio fell 3.5 points and the expense ratio fell from 6.7% to 5.6%.
+- The segment's results are volatile. NPE fell 14.6% in 2024 (2,705 against 3,169) before recovering.
+- Administrative expenses are negative in all three years: (6), (10) and (1). The excerpts do not explain why.
+- Segment income of $577m is 4.1% of total segment income ($14,227m). Investment income is small ($86m), so this is mainly an underwriting business.
+- Losses include realised gains and losses on crop derivatives, reclassified from investment results (Note 19, p.205). The reported loss ratio therefore already includes the effect of the hedges.
+
+## How it shows in the audited numbers
+
+| Report figure | Audited source | Ties? |
+|---|---|---|
+| 5% of consolidated NPE (Item 1, p.7) | 2,919 / 53,014 = 5.5% (Note 19, p.206) | yes |
+| NPW +$223m, +8.2% (MD&A, p.58) | 2,926 − 2,703 = 223; 8.25% | yes |
+| NPE +$214m, +7.9% (MD&A, p.58) | 2,919 − 2,705 = 214; 7.9% | yes |
+| Profit-share effect $179m (MD&A, p.58) | not in Note 19 | not disclosed |
+| Lower catastrophe losses; less favourable prior-period development (MD&A, p.58) | only total losses are shown (2,239) | not separately disclosed |
+
+The material provided does not split results between Rain and Hail and Agribusiness, or between MPCI and crop-hail. It also does not give catastrophe losses or prior-year development in dollars.
+
+## Risks and questions for management
+- **Risks:**
+  - Climate and catastrophe-like exposure to drought, hail and storms (MD&A, p.78).
+  - Commodity price falls between February and October.
+  - Dependence on the federal program and the SRA terms.
+- **Questions:**
+  1. Is the $179m profit-share effect a one-off? What is the underlying growth?
+  2. What was the dollar effect of catastrophe losses and prior-year development on the combined ratio?
+  3. How much did the crop derivatives gain or lose in 2025?
+  4. What do the negative administrative expenses represent?

@@ -1,0 +1,11 @@
+Asked at: 2026-11-08 13:00:26
+Kind: analysis
+Report: NVIDIA-10-K-2026
+Scope: Consolidated
+Notes: Consolidated Note 13 – Income Taxes (PDF p.72–76), Consolidated Note 9 – Balance Sheet Components (PDF p.67–69), Consolidated Note 12 – Commitments and Contingencies (PDF p.70–72)
+PDF pages: 72, 73, 74, 75, 76, 67, 68, 69, 70, 71, 72
+Financial statements: Consolidated Statements of Income (PDF p.51); Consolidated Statements of Comprehensive Income (PDF p.51–52); Consolidated Balance Sheets (PDF p.53); Consolidated Statements of Cash Flows (PDF p.55); Consolidated Statements of Shareholders' Equity (PDF p.54)
+Thread: 50c0dd88fc0b44c78f8f533b1f5336c8
+Saved HTML: NVIDIA-10-K-2026-1-20261108-130026.html
+
+Analyze the company's tax related liabilities and comment on it.

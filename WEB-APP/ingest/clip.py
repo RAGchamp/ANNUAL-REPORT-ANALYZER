@@ -19,6 +19,7 @@ landscape Fixed Assets schedule) is turned first, exactly as when indexing.
 """
 
 import re
+from collections import Counter
 from pathlib import Path
 
 import pymupdf
@@ -279,11 +280,67 @@ def _finish_text(index, text):
     return legacy_index.legacy_clean(text) if index.get("format") == "legacy" else text
 
 
+def _gutter(spans, width):
+    """two_column_text: the x in the middle fifth of the page that the fewest
+    characters cross (between the columns: x = 310 on a JPMorgan page)."""
+    def crossing(x):
+        return sum(len(s["text"]) for s in spans if s["bbox"][0] < x < s["bbox"][2])
+    middle = width / 2
+    return min(range(int(width * 0.4), int(width * 0.6) + 1), key=lambda x: (crossing(x), abs(x - middle)))
+
+
+FIGURE_SPAN_RE = re.compile(r"^(?:[$(]?\s*[-–—]?[\d,.]+\s*\)?\s*%?|[$%—–-]|NM|\(\w\))"
+                            r"(?:\s+(?:[$(]?\s*[-–—]?[\d,.]+\s*\)?\s*%?|[$%—–-]|NM|\(\w\)))*$")
+
+
+def _column_order(spans, width):
+    """two_column_text: the spans as groups in reading order. A row is *full
+    width* when a span crosses the gutter, or when everything right of the
+    gutter is figures and everything left of it is smaller than the body text
+    (a table across the page whose label column ends before the gutter). Two
+    tables set side by side, one per column, have labels in the right column.
+    Runs of full-width rows stay row by row; each run of the other rows is read
+    left column first, then right."""
+    if not spans:
+        return []
+    gutter = _gutter(spans, width)
+    sizes = Counter()
+    for s in spans:
+        sizes[round(s["size"])] += len(s["text"])
+    body = sizes.most_common(1)[0][0]
+    groups, current, current_full = [], [], None
+    for row in _group_rows(spans):
+        row_spans = row["spans"]
+        left = [s for s in row_spans if s["bbox"][2] <= gutter]
+        right = [s for s in row_spans if s["bbox"][0] >= gutter]
+        crosses = len(left) + len(right) < len(row_spans)
+        table_row = (bool(left) and bool(right) and all(FIGURE_SPAN_RE.match(s["text"].strip()) for s in right)
+                     and all(s["size"] < body - 0.5 for s in left))
+        full = crosses or table_row
+        if current and full != current_full:
+            groups.append((current_full, current))
+            current = []
+        current_full = full
+        current = current + row_spans
+    groups.append((current_full, current))
+    ordered = []
+    for full, group in groups:
+        if full:
+            ordered.append(group)
+        else:
+            ordered.append([s for s in group if s["bbox"][2] <= gutter])
+            ordered.append([s for s in group if s["bbox"][2] > gutter])
+    return [g for g in ordered if g]
+
+
 def _page_text(index, doc, pno, y_from, y_to):
     page, temp = _work_page(index, doc, pno)
     try:
         horizontal, rotated = _spans_in(page, y_from, y_to)
-        text = _rows_to_text(horizontal)
+        if profiles.active().switches.two_column_text:
+            text = "\n".join(_rows_to_text(group) for group in _column_order(horizontal, page.rect.width))
+        else:
+            text = _rows_to_text(horizontal)
         # On a turned page, the sideways text is just the running header.
         if rotated and temp is None:
             text += "\n[Rotated text on this page:]\n" + clean_text(

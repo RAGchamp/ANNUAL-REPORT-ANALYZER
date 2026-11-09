@@ -1,0 +1,1023 @@
+REPORT PROFILE
+Format: US annual report on Form 10-K (US GAAP)
+Periods in the statements: FY2025, FY2024, FY2023 (years ended December 31)
+Units: (in millions of U.S. dollars, except per share data)
+Source: the filing's inline XBRL (statement figures, notes and links read from its tags, not from page layout). "PDF page" numbers are the filing's document pages (between its page breaks); the printed page number is given alongside.
+The statements have no Notes column; LINKED FIGURES shows how the app linked statement lines to the notes.
+
+Annual report: HIG
+Statements: Consolidated
+Notes provided: Consolidated Note 21 – Schedule I Summary of Investments - Other Than Investments in Affiliates (PDF p.213), Consolidated Note 5 – Investments (PDF p.148–155), Consolidated Note 4 – Fair Value Measurements (PDF p.140–147), Consolidated Note 6 – Derivatives (PDF p.156–160)
+Primary financial statements provided: Consolidated Statements of Operations (PDF p.123); Consolidated Statements of Comprehensive Income (Loss) (PDF p.124); Consolidated Balance Sheets (PDF p.125); Consolidated Statements of Cash Flows (PDF p.127); Consolidated Statement of Changes in Stockholders' Equity (PDF p.126)
+
+----- PRIMARY FINANCIAL STATEMENTS (PDF page numbers) -----
+=== Consolidated Statements of Operations (Consolidated) ===
+--- PDF page 123 (printed page 123) ---
+Consolidated Statements of Operations
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Revenues
+Earned premiums | 24,030 | 22,567 | 21,026
+Fee income | 1,417 | 1,373 | 1,300
+Net investment income | 2,911 | 2,568 | 2,305
+Net realized losses | (100) | (61) | (188)
+Other revenues | 110 | 88 | 84
+Total revenues | 28,368 | 26,535 | 24,527
+Benefits, losses and expenses
+Benefits, losses and loss adjustment expenses | 15,238 | 14,874 | 14,238
+Amortization of deferred policy acquisition costs ("DAC") | 2,516 | 2,282 | 2,044
+Selling, General and Administrative Expense | 5,584 | 5,258 | 4,881
+Interest expense | 199 | 199 | 199
+Amortization of other intangible assets | 71 | 71 | 71
+Restructuring and other costs | — | 2 | 6
+Benefits, losses and expenses | 23,608 | 22,686 | 21,439
+Income (Loss) from Continuing Operations before Income Taxes, Noncontrolling Interest | 4,760 | 3,849 | 3,088
+Income tax expense | 924 | 738 | 584
+Net income | 3,836 | 3,111 | 2,504
+Less: Preferred stock dividends | 21 | 21 | 21
+Net income (loss) available to common stockholders | 3,815 | 3,090 | 2,483
+Earnings per common share
+Net income (loss) Basic | 13.51 | 10.51 | 8.09
+Net income (loss) Diluted | 13.32 | 10.35 | 7.97
+
+=== Consolidated Statements of Comprehensive Income (Loss) (Consolidated) ===
+--- PDF page 124 (printed page 124) ---
+Consolidated Statements of Comprehensive Income (Loss)
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Net income | 3,836 | 3,111 | 2,504
+Other comprehensive income (loss) (“OCI”):
+Change in net unrealized gain (loss) on fixed maturities, available-for-sale ("AFS") | 898 | (57) | 1,112
+Change in unrealized losses on fixed maturities with an allowance for credit losses ("ACL") | 3 | 2 | (1)
+Change in net gain (loss) on cash flow hedging instruments | (24) | 19 | (19)
+Change in foreign currency translation adjustments | 13 | (8) | 6
+Change in liability for future policy benefits adjustments | (9) | 8 | (10)
+Change in pension and other postretirement plan adjustments | (52) | (1) | (96)
+OCI, net of tax | 829 | (37) | 992
+Comprehensive income | 4,665 | 3,074 | 3,496
+
+=== Consolidated Balance Sheets (Consolidated) ===
+--- PDF page 125 (printed page 125) ---
+Consolidated Balance Sheets
+(in millions of U.S. dollars, except per share data) | Dec 31, 2025 | Dec 31, 2024
+Assets
+Investments:
+Total fixed maturities, AFS | 46,041 | 42,567
+Fixed maturities, at fair value using the fair value option ("FVO securities") | 168 | 308
+Equity securities, at fair value | 492 | 603
+Financing Receivable, after Allowance for Credit Loss | 6,837 | 6,396
+Limited partnerships and other alternative investments | 5,804 | 5,042
+Other investments | 262 | 226
+Short-term investments | 4,353 | 4,068
+Total investments | 63,957 | 59,210
+Cash | 133 | 183
+Restricted Cash | 44 | 51
+Accrued Investment Income Receivable | 474 | 450
+Premiums receivable and agents' balances (net of ACL of $142 and $117) | 6,316 | 5,998
+Reinsurance recoverables (net of allowance for uncollectible reinsurance of $69 and $75) | 7,191 | 7,140
+Deferred policy acquisition costs | 1,347 | 1,239
+Deferred income taxes, net | 901 | 1,229
+Goodwill | 1,911 | 1,911
+Property and equipment, net | 931 | 888
+Other intangible assets, net | 566 | 637
+Other assets | 2,226 | 1,981
+Total assets | 85,997 | 80,917
+Liabilities
+Unpaid losses and loss adjustment expenses | 46,268 | 44,610
+Liability for Future Policy Benefit, before Reinsurance | 444 | 448
+Policyholder Account Balance | 612 | 614
+Unearned premiums | 10,053 | 9,408
+Long-term debt | 4,371 | 4,366
+Other liabilities | 5,270 | 5,024
+Total liabilities | 67,018 | 64,470
+Stockholders’ Equity
+Preferred stock, $0.01 par value — 50,000,000 shares authorized, 13,800 shares issued at December 31, 2025 and December 31, 2024, aggregate liquidation preference of $345 | 334 | 334
+Common Stock, Value, Issued | 3 | 3
+Additional paid-in capital | 549 | 578
+Retained earnings | 24,739 | 21,531
+Treasury Stock, Value | (4,589) | (3,113)
+Accumulated other comprehensive loss, net of tax | (2,057) | (2,886)
+Total stockholders' equity | 18,979 | 16,447
+Total liabilities and stockholders’ equity | 85,997 | 80,917
+Common Stock, Shares, Issued | 326,960,228 | 326,960,228
+
+=== Consolidated Statements of Cash Flows (Consolidated) ===
+--- PDF page 127 (printed page 127) ---
+Consolidated Statements of Cash Flows
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Operating Activities
+Net income | 3,836 | 3,111 | 2,504
+Adjustments to reconcile net income to net cash provided by operating activities
+Net realized losses | 100 | 61 | 188
+Additional Cash Flow Elements, Operating Activities
+Amortization of deferred policy acquisition costs | 2,516 | 2,282 | 2,044
+Additions to deferred policy acquisition costs | (2,624) | (2,408) | (2,159)
+Depreciation and amortization | 396 | 356 | 510
+Other operating activities, net | 148 | 329 | 213
+Increase in reinsurance recoverables | (63) | (54) | (155)
+Net change in accrued and deferred income taxes | 42 | (100) | (29)
+Increase in insurance liabilities | 2,272 | 3,058 | 1,819
+Increase (Decrease) in Premiums Receivable | (419) | (458) | (708)
+Net change in other assets and other liabilities | (282) | (268) | (7)
+Cash provided by operating activities | 5,922 | 5,909 | 4,220
+Investing Activities
+Proceeds from the sale/maturity/prepayment of:
+Fixed maturities, AFS | 10,352 | 10,808 | 6,806
+Proceeds From Sale and Maturity of Fair Value Option, Fixed Maturity Securties | 109 | 50 | 2
+Proceeds from Sale and Maturity of Marketable Securities | 240 | 401 | 2,173
+Mortgage loans | 1,598 | 740 | 1,036
+Limited partnerships and other alternative investments | 291 | 238 | 295
+Payments for the purchase of:
+Fixed maturities, AFS | (12,769) | (14,023) | (9,105)
+Payments for the purchase of Fair Value Option Fixed Maturity Securties | (17) | (52) | —
+Equity securities, at fair value | (97) | (44) | (1,183)
+Mortgage loans | (2,021) | (1,025) | (1,055)
+Limited partnerships and other alternative investments | (1,025) | (664) | (966)
+Net proceeds from (payments for) derivatives | (12) | 35 | (129)
+Net additions of property and equipment | (169) | (145) | (215)
+Net payments for short-term investments | (149) | (80) | (69)
+Other investing activities, net | (89) | (7) | (21)
+Net cash used for investing activities | (3,758) | (3,768) | (2,431)
+Financing Activities
+Deposits and other additions to investment and universal life-type contracts | 127 | 108 | 96
+Withdrawals and other deductions from investment and universal life-type contracts | (116) | (115) | (100)
+Net issuance (return of) shares under incentive and stock compensation plans, including related excise tax benefit | (18) | 22 | 6
+Treasury stock acquired, including related excise tax paid | (1,615) | (1,514) | (1,400)
+Payments for Repurchase of Preferred Stock and Preference Stock | (21) | (21) | (21)
+Dividends paid on common stock | (592) | (556) | (528)
+Net cash used for financing activities | (2,235) | (2,076) | (1,947)
+Effect of Exchange Rate on Cash, Cash Equivalent, Restricted Cash, and Restricted Cash Equivalent, Including Discontinued Operation | 14 | (20) | 3
+Net increase (decrease) in cash and restricted cash | (57) | 45 | (155)
+Cash and restricted cash — beginning of period | 234 | 189 | 344
+Cash and restricted cash — end of period | 177 | 234 | 189
+Supplemental Disclosure of Cash Flow Information
+Interest paid | 206 | 211 | 209
+
+=== Consolidated Statement of Changes in Stockholders' Equity (Consolidated) ===
+--- PDF page 126 (printed page 126) ---
+Consolidated Statement of Changes in Stockholders' Equity
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Preferred Stock, end of period
+Beginning balance | 334 | 334 | 
+Ending balance | 334 | 334 | 334
+Preferred Shares Outstanding
+Preferred Stock, Shares Outstanding, Ending Balance | 13,800 | 13,800 | 13,800
+Common Stock
+Beginning balance | 3 | 3 | 
+Ending balance | 3 | 3 | 3
+Preferred Shares Outstanding
+Common Shares Outstanding (in thousands)
+Common Shares Outstanding, beginning of period | 287,556 | 298,472 | 315,111
+Treasury stock acquired | (12,943) | (14,443) | (19,238)
+Issuance of shares under incentive and stock compensation plans and other | 2,950 | 4,427 | 3,299
+Return of shares under incentive and stock compensation plans to treasury stock | (640) | (900) | (700)
+Common Shares Outstanding, end of period | 276,923 | 287,556 | 298,472
+Additional Paid-in Capital
+Beginning balance | 578 | 648 | 1,895
+Issuance of shares under incentive and stock compensation plans and other | (170) | (203) | (153)
+Stock-based compensation plans expense | 141 | 133 | 125
+Treasury Stock, Retired, Cost Method, Amount | — | — | (1,219)
+Ending balance | 549 | 578 | 648
+Retained Earnings
+Beginning balance | 21,531 | 19,007 | 17,058
+Net income | 3,836 | 3,111 | 2,504
+Dividends declared on preferred stock | (21) | (21) | (21)
+Dividends declared on common stock | (607) | (566) | (534)
+Ending balance | 24,739 | 21,531 | 19,007
+Treasury Stock, Common
+Beginning balance | (3,113) | (1,816) | (1,773)
+Treasury Stock, Retired, Cost Method, Amount | — | — | (1,219)
+Treasury stock acquired | (1,616) | (1,515) | (1,414)
+Net shares acquired related to employee incentive and stock compensation plans | (73) | (87) | (55)
+Ending balance | (4,589) | (3,113) | (1,816)
+Accumulated Other Comprehensive Loss, net of tax
+Beginning balance | (2,886) | (2,849) | (3,841)
+Other Comprehensive Income (Loss), Net of Tax | 829 | (37) | 992
+Ending balance | (2,057) | (2,886) | (2,849)
+Total
+Beginning balance | 16,447 | 15,327 | 
+Net income | 3,836 | 3,111 | 2,504
+Treasury stock acquired | (1.6) | (1.5) | (1.4)
+Ending balance | 18,979 | 16,447 | 15,327
+Preferred Shares Outstanding
+Common Shares Outstanding (in thousands)
+Treasury stock acquired | (12.9) | (14.4) | (19.2)
+Cash dividends declared per common share | 2.160 | 1.930 | 1.745
+Preferred Stock, Dividends Per Share, Declared | 1,500.00 | 1,500.00 | 1,500.00
+----- END OF PRIMARY FINANCIAL STATEMENTS -----
+
+----- LINKED FIGURES (statement lines the app linked to the notes provided; found automatically - check them against the statements and notes) -----
+- Total fixed maturities, AFS (Consolidated Balance Sheets, PDF p.125) | FY2025 46,041 | FY2024 42,567 -> Note 4 (same XBRL concept tagged in the note); Note 5 (same XBRL concept tagged in the note)
+- Fixed maturities, at fair value using the fair value option ("FVO securities") (Consolidated Balance Sheets, PDF p.125) | FY2025 168 | FY2024 308 -> Note 4 (same XBRL concept tagged in the note)
+- Equity securities, at fair value (Consolidated Balance Sheets, PDF p.125) | FY2025 492 | FY2024 603 -> Note 4 (same XBRL concept tagged in the note)
+- Financing Receivable, after Allowance for Credit Loss (Consolidated Balance Sheets, PDF p.125) | FY2025 6,837 | FY2024 6,396 -> Note 4 (same XBRL concept tagged in the note); Note 5 (same XBRL concept tagged in the note)
+- Other investments (Consolidated Balance Sheets, PDF p.125) | FY2025 262 | FY2024 226 -> Note 5 (title match)
+- Short-term investments (Consolidated Balance Sheets, PDF p.125) | FY2025 4,353 | FY2024 4,068 -> Note 4 (same XBRL concept tagged in the note)
+- Total investments (Consolidated Balance Sheets, PDF p.125) | FY2025 63,957 | FY2024 59,210 -> Note 21 (same figure in the note)
+- Other assets (Consolidated Balance Sheets, PDF p.125) | FY2025 2,226 | FY2024 1,981 -> Note 5 (same XBRL concept tagged in the note)
+- Total assets (Consolidated Balance Sheets, PDF p.125) | FY2025 85,997 | FY2024 80,917 -> Note 5 (same XBRL concept tagged in the note)
+- Policyholder Account Balance (Consolidated Balance Sheets, PDF p.125) | FY2025 612 | FY2024 614 -> Note 4 (same XBRL concept tagged in the note)
+- Total liabilities (Consolidated Balance Sheets, PDF p.125) | FY2025 67,018 | FY2024 64,470 -> Note 5 (same XBRL concept tagged in the note)
+- Fixed maturities, AFS (Consolidated Statements of Cash Flows, PDF p.127) | FY2025 10,352 | FY2024 10,808 | FY2023 6,806 -> Note 5 (same XBRL concept tagged in the note)
+- Limited partnerships and other alternative investments (Consolidated Statements of Cash Flows, PDF p.127) | FY2025 (1,025) | FY2024 (664) | FY2023 (966) -> Note 5 (title match)
+- Net proceeds from (payments for) derivatives (Consolidated Statements of Cash Flows, PDF p.127) | FY2025 (12) | FY2024 35 | FY2023 (129) -> Note 6 (title match)
+- Deposits and other additions to investment and universal life-type contracts (Consolidated Statements of Cash Flows, PDF p.127) | FY2025 127 | FY2024 108 | FY2023 96 -> Note 5 (title match)
+- Withdrawals and other deductions from investment and universal life-type contracts (Consolidated Statements of Cash Flows, PDF p.127) | FY2025 (116) | FY2024 (115) | FY2023 (100) -> Note 5 (title match)
+- Net investment income (Consolidated Statements of Operations, PDF p.123) | FY2025 2,911 | FY2024 2,568 | FY2023 2,305 -> Note 5 (title match)
+CHECKS (automatic)
+- ok: Total assets 85,997 vs 'Total liabilities and stockholders’ equity' 85,997 (FY2025)
+- ok: Total assets 80,917 vs 'Total liabilities and stockholders’ equity' 80,917 (FY2024)
+----- END OF LINKED FIGURES -----
+
+----- NOTES EXTRACTED FROM THE ANNUAL REPORT (PDF page numbers) -----
+=== Note 21 — Schedule I Summary of Investments - Other Than Investments in Affiliates (Consolidated) ===
+--- PDF page 213 (printed page 213) ---
+The Hartford Insurance Group, Inc.
+Schedule I
+Summary of Investments — Other Than Investments in Affiliates
+(in millions)
+As of December 31, 2025
+Type of Investment | Cost | Fair Value | Amount at which shown on Balance Sheet
+Fixed Maturities
+Bonds and notes
+U.S. government and government agencies and authorities (guaranteed and sponsored) | $6,253 | $5,929 | $5,929
+States, municipalities and political subdivisions | 4,831 | 4,652 | 4,652
+Foreign governments | 440 | 447 | 447
+Public utilities | 2,793 | 2,716 | 2,716
+All other corporate bonds | 20,512 | 20,360 | 20,360
+All other mortgage-backed and asset-backed securities | 12,042 | 11,937 | 11,937
+Total fixed maturities, available-for-sale | 46,871 | 46,041 | 46,041
+Fixed maturities, at fair value using fair value option | 199 | 168 | 168
+Equity Securities [1]
+Common stocks
+Industrial, miscellaneous and all other | 369 | 470 | 470
+Non-redeemable preferred stocks | 22 | 22 | 22
+Total equity securities [1] | 391 | 492 | 492
+Mortgage loans [2] | 6,886 | 6,607 | 6,837
+Other investments | 279 | 262 | 262
+Short-term investments | 4,353 | 4,353 | 4,353
+Limited partnerships and other alternative investments [3] | 5,804 | 5,804
+Total investments | $64,783 | $63,957
+[1]Cost of equity securities represents original cost.
+[2]Cost of mortgage loans excludes the ACL of $49. For further information, refer to Schedule V - Valuation and Qualifying Accounts.
+[3]Cost of limited partnerships and other alternative investments is presented as the carrying value, which is primarily accounted for under the equity method.
+
+=== Note 5 — Investments (Consolidated) ===
+--- PDF page 148 (printed page 148) ---
+5. Investments
+Net Investment Income
+For the years ended December 31,
+(Before tax) | 2025 | 2024 | 2023
+Fixed maturities [1] | $2,367 | $2,204 | $1,895
+Equity securities | 21 | 35 | 45
+Mortgage loans | 296 | 266 | 235
+Limited partnerships and other alternative investments | 303 | 148 | 212
+Other investments [2] | 23 | 14 | 9
+Gross investment income | $3,010 | $2,667 | $2,396
+Investment expenses | (99) | (99) | (91)
+Total net investment income | $2,911 | $2,568 | $2,305
+[1]Includes net investment income on short-term investments.
+[2]Primarily includes changes in fair value of certain equity fund investments and income from derivatives that qualify for hedge accounting and are used to hedge fixed maturities.
+Net Realized Gains (Losses)
+For the years ended December 31,
+(Before tax) | 2025 | 2024 | 2023
+Gross gains on sales of fixed maturities | $61 | $31 | $30
+Gross losses on sales of fixed maturities | (129) | (198) | (149)
+Equity securities [1]
+Net realized gains (losses) on sales of equity securities | 12 | (11) | 100
+Change in net unrealized gains (losses) of equity securities | 46 | 84 | (22)
+Net realized and unrealized gains (losses) on equity securities | 58 | 73 | 78
+Net credit losses on fixed maturities, AFS | — | (2) | (14)
+Change in ACL on mortgage loans | (6) | 3 | (15)
+Other, net [2] | (84) | 32 | (118)
+Net realized losses | $(100) | $(61) | $(188)
+[1]The change in net unrealized gains (losses) on equity securities still held as of the end of the period and included in net realized gains (losses) were $49, $68, and $17 for the years ended December 31, 2025, 2024, and 2023, respectively.
+[2]Includes gains (losses) on non-qualifying derivatives for the years ended December 31, 2025, 2024, and 2023 of $(16), $13, and $(108), respectively, and gains (losses) from transactional foreign currency revaluation of $(15), $20, and $(15), respectively.
+Proceeds from the sales of fixed maturities, AFS totaled $5.7 billion, $5.7 billion, and $3.8 billion for the years ended December 31, 2025, 2024, and 2023, respectively. Sales of fixed maturities, AFS in 2025 were primarily a result of tactical changes to the portfolio driven by changing market conditions, in addition to duration and liquidity management. Non-cash investing activities for the year ended December 31, 2025, included $17 related to the exchange of equity securities for limited partnerships and other alternative investments. Non-cash investing activities for the year ended December 31, 2024, included $18 related to the exchange of short-term investments for equity securities.
+Accrued Investment Income on Fixed Maturities, AFS and Mortgage Loans
+As of December 31, 2025 and December 31, 2024, the Company reported accrued investment income related to fixed maturities, AFS of $439 and $412, respectively, and accrued investment income related to mortgage loans of $25 and $22, respectively. These amounts are not included in the carrying value of the fixed maturities or mortgage loans. Investment income on fixed maturities and mortgage loans is accrued unless it is past due over 90 days or management deems the interest uncollectible. The Company does not include the current accrued investment income balance when estimating the ACL. The Company has a policy to write-off accrued investment income balances that are more than 90 days past due. Write-offs of accrued investment income are recorded as a credit loss component of net realized gains and losses.
+
+--- PDF page 149 (printed page 149) ---
+Recognition and Presentation of Intent-to-Sell Impairments and ACL on Fixed Maturities, AFS
+The Company will record an "intent-to-sell impairment" as a reduction to the amortized cost of fixed maturities, AFS in an unrealized loss position if the Company intends to sell or it is more likely than not that the Company will be required to sell the fixed maturity before a recovery in value. A corresponding charge is recorded in net realized losses equal to the difference between the fair value on the impairment date and the amortized cost basis of the fixed maturity before recognizing the impairment.
+For fixed maturities where a credit loss has been identified and no intent-to-sell impairment has been recorded, the Company will record an ACL for the portion of the unrealized loss related to the credit loss. Any remaining unrealized loss on a fixed maturity after recording an ACL is the non-credit amount and is recorded in OCI. The ACL is the excess of the amortized cost over the greater of the Company's best estimate of the present value of expected future cash flows or the security's fair value. Cash flows are discounted at the effective yield that is used to record interest income. The ACL cannot exceed the unrealized loss and, therefore, it may fluctuate with changes in the fair value of the fixed maturity if the fair value is greater than the Company's best estimate of the present value of expected future cash flows. The initial ACL and any subsequent changes are recorded in net realized gains and losses. The ACL is written off against the amortized cost in the period in which all or a portion of the related fixed maturity is determined to be uncollectible.
+Developing the Company’s best estimate of expected future cash flows is a quantitative and qualitative process that incorporates information received from third-party sources along with certain internal assumptions regarding the future performance. The Company's considerations include, but are not limited to, (a) changes in the financial condition of the issuer and/or the underlying collateral, (b) whether the issuer is current on contractually obligated interest and principal payments, (c) credit ratings, (d) payment structure of the security and (e) the extent to which the fair value has been less than the amortized cost of the security.
+For non-structured securities, assumptions include, but are not limited to, economic and industry-specific trends and fundamentals, instrument-specific developments including changes in credit ratings, industry earnings multiples and the issuer’s ability to restructure, access capital markets, and execute asset sales.
+For structured securities, assumptions include, but are not limited to, various performance indicators such as historical and projected default and recovery rates, credit ratings, current and projected delinquency rates, loan-to-value ("LTV") ratios, average cumulative collateral loss rates that vary by vintage year, prepayment speeds, and property value declines. These assumptions require the use of significant management judgment and include the probability of issuer default and estimates regarding timing and amount of expected recoveries which may include estimating the underlying collateral value.
+ACL on Fixed Maturities, AFS by Type
+For the years ended December 31,
+2025 | 2024 | 2023
+(Before tax) | CMBS | Corporate | CLOs | Total | CMBS | Corporate | Total | CMBS | Corporate | Total
+Balance as of beginning of period | $13 | $3 | $— | $16 | $12 | $9 | $21 | $10 | $2 | $12
+Credit losses on fixed maturities where an allowance was not previously recorded | — | — | 2 | 2 | 1 | — | 1 | — | 9 | 9
+Reduction due to sales | — | — | — | — | — | (3) | (3) | — | (5) | (5)
+Net increases (decreases) on fixed maturities where an allowance was previously recorded | 1 | (3) | — | (2) | — | 1 | 1 | 2 | 3 | 5
+Write-offs charged against the allowance | — | — | — | — | — | (4) | (4) | — | — | —
+Balance as of end of period | $14 | $— | $2 | $16 | $13 | $3 | $16 | $12 | $9 | $21
+
+--- PDF page 150 (printed page 150) ---
+Fixed Maturities, AFS
+Fixed Maturities, AFS, by Type
+December 31, 2025 | December 31, 2024
+AmortizedCost | ACL | GrossUnrealizedGains | GrossUnrealizedLosses | FairValue | AmortizedCost | ACL | GrossUnrealizedGains | GrossUnrealizedLosses | FairValue
+ABS | $4,628 | $— | $51 | $(16) | $4,663 | $3,948 | $— | $28 | $(39) | $3,937
+CLOs | 3,310 | (2) | 9 | (1) | 3,316 | 3,237 | — | 13 | — | 3,250
+CMBS | 2,468 | (14) | 24 | (150) | 2,328 | 2,976 | (13) | 21 | (248) | 2,736
+Corporate | 23,305 | — | 375 | (604) | 23,076 | 21,555 | (3) | 117 | (1,033) | 20,636
+Foreign govt./govt. agencies | 440 | — | 9 | (2) | 447 | 500 | — | 3 | (23) | 480
+Municipal | 4,831 | — | 89 | (268) | 4,652 | 5,574 | — | 77 | (347) | 5,304
+RMBS | 6,372 | — | 50 | (244) | 6,178 | 5,610 | — | 13 | (393) | 5,230
+U.S. Treasuries | 1,517 | — | 3 | (139) | 1,381 | 1,138 | — | — | (144) | 994
+Total fixed maturities, AFS | $46,871 | $(16) | $610 | $(1,424) | $46,041 | $44,538 | $(16) | $272 | $(2,227) | $42,567
+Fixed Maturities, AFS, by Contractual Maturity Year
+December 31, 2025 | December 31, 2024
+Amortized Cost | Fair Value | Amortized Cost | Fair Value
+One year or less | $1,174 | $1,179 | $1,308 | $1,298
+Over one year through five years | 9,725 | 9,791 | 9,564 | 9,414
+Over five years through ten years | 9,046 | 9,055 | 7,687 | 7,334
+Over ten years | 10,148 | 9,531 | 10,208 | 9,368
+Subtotal | 30,093 | 29,556 | 28,767 | 27,414
+Mortgage-backed and asset-backed securities | 16,778 | 16,485 | 15,771 | 15,153
+Total fixed maturities, AFS | $46,871 | $46,041 | $44,538 | $42,567
+Estimated maturities may differ from contractual maturities due to call or prepayment provisions. Due to the potential for variability in payment speeds (i.e., prepayments or extensions), mortgage-backed and asset-backed securities are not categorized by contractual maturity.
+Concentration of Credit Risk
+The Company aims to maintain a diversified investment portfolio including issuer, sector and geographic stratification, where applicable, and has established certain exposure limits, diversification standards and review procedures to mitigate credit risk. The Company had no investment exposure to any credit concentration risk of a single issuer greater than 10% of the Company's stockholders' equity as of December 31, 2025, or December 31, 2024, other than U.S. government securities and certain U.S. government agencies.
+As of December 31, 2025, other than U.S. government securities and certain U.S. government agencies, the
+Company’s three largest exposures by issuer were Morgan Stanley, SPCC Funding I LLC, and the Entergy Corporation, each of which comprised less than 1% of total invested assets. As of December 31, 2024, other than U.S. government securities and certain U.S. government agencies, the Company’s three largest exposures by issuer were NextEra Energy Inc., Morgan Stanley, and the Government of Canada, each of which comprised less than 1% of total invested assets. The Company’s three largest exposures by sector as of December 31, 2025, were the financial services sector, the RMBS sector, and the municipal sector, which comprised approximately 11%, 10%, and 7%, respectively, of total invested assets. The Company’s three largest exposures by sector as of December 31, 2024, were the financial services sector, the municipal sector, and the RMBS sector, which comprised approximately 11%, 9%, and 9%, respectively, of total invested assets.
+
+--- PDF page 151 (printed page 151) ---
+Unrealized Losses on Fixed Maturities, AFS
+Unrealized Loss Aging for Fixed Maturities, AFS by Type and Length of Time as of December 31, 2025
+Less Than 12 Months | 12 Months or More | Total
+Fair Value | Unrealized Losses | Fair Value | Unrealized Losses | Fair Value | Unrealized Losses
+ABS | $405 | $(2) | $339 | $(14) | $744 | $(16)
+CLOs | 496 | (1) | — | — | 496 | (1)
+CMBS | 119 | (3) | 1,852 | (147) | 1,971 | (150)
+Corporate | 2,372 | (34) | 7,089 | (570) | 9,461 | (604)
+Foreign govt./govt. agencies | 39 | — | 38 | (2) | 77 | (2)
+Municipal | 407 | (7) | 2,286 | (261) | 2,693 | (268)
+RMBS | 256 | (1) | 2,626 | (243) | 2,882 | (244)
+U.S. Treasuries | 592 | (11) | 563 | (128) | 1,155 | (139)
+Total fixed maturities, AFS in an unrealized loss position | $4,686 | $(59) | $14,793 | $(1,365) | $19,479 | $(1,424)
+Unrealized Loss Aging for Fixed Maturities, AFS by Type and Length of Time as of December 31, 2024
+Less Than 12 Months | 12 Months or More | Total
+Fair Value | Unrealized Losses | Fair Value | Unrealized Losses | Fair Value | Unrealized Losses
+ABS | $1,088 | $(14) | $407 | $(25) | $1,495 | $(39)
+CLOs | 78 | — | — | — | 78 | —
+CMBS | 228 | (4) | 2,299 | (244) | 2,527 | (248)
+Corporate | 5,883 | (138) | 8,212 | (895) | 14,095 | (1,033)
+Foreign govt./govt. agencies | 165 | (5) | 178 | (18) | 343 | (23)
+Municipal | 1,263 | (27) | 2,712 | (320) | 3,975 | (347)
+RMBS | 1,297 | (29) | 2,672 | (364) | 3,969 | (393)
+U.S. Treasuries | 406 | (26) | 461 | (118) | 867 | (144)
+Total fixed maturities, AFS in an unrealized loss position | $10,408 | $(243) | $16,941 | $(1,984) | $27,349 | $(2,227)
+As of December 31, 2025, fixed maturities, AFS in an unrealized loss position consisted of 2,659 instruments and were primarily depressed due to higher interest rates and/or wider credit spreads since the purchase date. As of December 31, 2025, 94% of these fixed maturities were depressed less than 20% of cost or amortized cost. The decrease in total gross unrealized losses as of December 31, 2025 was primarily attributable to lower interest rates.
+Most of the fixed maturities depressed for twelve months or more relate to the corporate sector, municipal bonds, and RMBS, which were primarily depressed because current rates are higher and/or market spreads are wider than at the respective purchase dates. The Company neither has an intention to sell nor does it expect to be required to sell the fixed maturities outlined in the preceding discussion. The decision to record credit losses on fixed maturities, AFS in the form of an ACL requires us to make qualitative and quantitative estimates of expected future cash flows.
+
+--- PDF page 152 (printed page 152) ---
+Mortgage Loans
+ACL on Mortgage Loans
+The Company reviews mortgage loans on a quarterly basis to estimate the ACL with changes in the ACL recorded in net realized gains and losses. Apart from an ACL recorded on individual mortgage loans where the borrower is experiencing financial difficulties, the Company records an ACL on the pool of mortgage loans based on lifetime expected credit losses. The Company utilizes a third-party forecasting model to estimate lifetime expected credit losses at a loan level under multiple economic scenarios. The scenarios use macroeconomic data provided by an internationally recognized economics firm that generates forecasts of varying economic factors such as GDP growth, unemployment and interest rates. The economic scenarios are projected over 10 years. The first two to four years of the 10-year period assume a specific modeled economic scenario (including moderate upside, moderate recession and severe recession scenarios) and then revert to historical long-term assumptions over the remaining period. Using these economic scenarios, the forecasting model projects property-specific operating income and capitalization rates used to estimate the value of a future operating income stream. The operating income and the property valuations derived from capitalization rates are compared to loan payment and principal amounts to create debt service coverage ratios ("DSCRs") and LTVs over the forecast period. The Company's process also considers qualitative factors. The model overlays historical data about mortgage loan performance based on DSCRs and LTVs and projects the probability of default, amount of loss given a default and resulting expected loss through maturity for each loan under each economic scenario. Economic scenarios are probability-weighted based on a statistical analysis of the forecasted economic factors and qualitative analysis. The Company records the change in the ACL on mortgage loans based on the weighted-average expected credit losses across the selected economic scenarios.
+When a borrower is experiencing financial difficulty, including when foreclosure is probable, the Company measures an ACL on individual mortgage loans. The ACL is established for any shortfall between the amortized cost of the loan and the fair value of the collateral less costs to sell. Estimates of collectibility from an individual borrower require the use of significant management judgment and include the probability and timing of
+borrower default and loss severity estimates. In addition, cash flow projections may change based upon new information about the borrower's ability to pay and/or the value of underlying collateral such as changes in projected property value estimates. During the period in which all or a portion of the mortgage loan is determined to be uncollectible, the ACL is written off against the amortized cost.
+There were no mortgage loans held-for-sale as of December 31, 2025 or December 31, 2024. For the year ended December 31, 2025, the Company had no mortgage loans that have had extensions or restructurings other than what is allowable under the original terms of the contract or with borrowers experiencing financial difficulties. For the year ended December 31, 2024, one office property mortgage loan with an amortized cost of $9 was granted a term extension of three years at the original rate, which is a below-market rate, with a borrower experiencing financial difficulties. The modified loan represents less than 1% of the mortgage loan portfolio and is current and performing in conjunction with the modified terms.
+ACL on Mortgage Loans
+For the years ended December 31,
+2025 | 2024 | 2023
+ACL as of beginning of period | $44 | $51 | $36
+Current period provision (release) | 6 | (3) | 15
+Current period gross write-offs | (1) | (4) | —
+ACL as of December 31, | $49 | $44 | $51
+The weighted-average LTV ratio of the Company’s mortgage loan portfolio was 56% as of December 31, 2025, while the weighted-average LTV ratio at origination of these loans was 58%. LTV ratios compare the loan amount to the value of the underlying property collateralizing the loan with property values based on appraisals updated no less than annually. Factors considered in estimating property values include, among other things, actual and expected property cash flows, geographic market data and the ratio of the property's net operating income to its value. DSCR compares a property’s net operating income to the borrower’s principal and interest payments and are updated no less than annually through reviews of underlying properties.
+Mortgage Loans LTV & DSCR by Origination Year as of December 31, 2025
+2025 | 2024 | 2023 | 2022 | 2021 | 2020 & Prior | Total
+Loan-to-value | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost [1] | Avg. DSCR
+Greater than 80% | $30 | 1.83x | $— | —x | $— | —x | $— | —x | $36 | 0.98x | $164 | 1.39x | $230 | 1.38x
+65% - 80% | 56 | 1.53x | 76 | 1.03x | 23 | 0.83x | 95 | 1.65x | 444 | 2.72x | 315 | 1.96x | 1,009 | 2.14x
+Less than 65% | 1,123 | 1.80x | 535 | 1.57x | 401 | 1.40x | 645 | 2.93x | 993 | 3.10x | 1,950 | 2.75x | 5,647 | 2.44x
+Total mortgage loans | $1,209 | 1.79x | $611 | 1.50x | $424 | 1.37x | $740 | 2.77x | $1,473 | 2.93x | $2,429 | 2.56x | $6,886 | 2.36x
+[1]Amortized cost of mortgage loans excludes ACL of $49.
+
+--- PDF page 153 (printed page 153) ---
+Mortgage Loans LTV & DSCR by Origination Year as of December 31, 2024
+2024 | 2023 | 2022 | 2021 | 2020 | 2019 & Prior | Total
+Loan-to-value | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost | Avg. DSCR | Amortized Cost [1] | Avg. DSCR
+Greater than 80% | $25 | 0.63x | $— | —x | $16 | 1.05x | $37 | 1.03x | $— | —x | $110 | 1.68x | $188 | 1.34x
+65% - 80% | 89 | 1.42x | 7 | 1.35x | 204 | 1.89x | 421 | 2.55x | 100 | 3.60x | 439 | 2.01x | 1,260 | 2.26x
+Less than 65% | 357 | 1.62x | 489 | 1.39x | 696 | 2.85x | 1,108 | 2.93x | 518 | 2.67x | 1,824 | 2.71x | 4,992 | 2.57x
+Total mortgage loans | $471 | 1.52x | $496 | 1.39x | $916 | 2.61x | $1,566 | 2.79x | $618 | 2.82x | $2,373 | 2.53x | $6,440 | 2.47x
+[1]Amortized cost of mortgage loans excludes ACL of $44.
+Mortgage Loans by Region
+December 31, 2025 | December 31, 2024
+Amortized Cost | Percent of Total | Amortized Cost | Percent of Total
+East North Central | $401 | 5.8% | $362 | 5.6%
+Middle Atlantic | 275 | 4.0% | 259 | 4.0%
+Mountain | 903 | 13.1% | 764 | 11.9%
+New England | 351 | 5.1% | 356 | 5.5%
+Pacific | 1,417 | 20.6% | 1,400 | 21.8%
+South Atlantic | 2,005 | 29.1% | 1,821 | 28.3%
+West North Central | 128 | 1.9% | 97 | 1.5%
+West South Central | 720 | 10.4% | 588 | 9.1%
+Other [1] | 686 | 10.0% | 793 | 12.3%
+Total mortgage loans | 6,886 | 100.0% | 6,440 | 100.0%
+ACL | (49) | (44)
+Total mortgage loans, net of ACL | $6,837 | $6,396
+[1]Primarily represents loans collateralized by multiple properties in various regions.
+Mortgage Loans by Property Type
+December 31, 2025 | December 31, 2024
+Amortized Cost | Percent of Total | Amortized Cost | Percent of Total
+Commercial
+Industrial | $3,208 | 46.6% | $2,737 | 42.5%
+Multifamily | 2,209 | 32.1% | 2,161 | 33.5%
+Office | 399 | 5.8% | 507 | 7.9%
+Retail [1] | 992 | 14.4% | 957 | 14.9%
+Single Family | 78 | 1.1% | 78 | 1.2%
+Total mortgage loans | 6,886 | 100.0% | 6,440 | 100.0%
+ACL | (49) | (44)
+Total mortgage loans, net of ACL | $6,837 | $6,396
+[1]Primarily comprised of grocery-anchored retail centers, with no exposure to regional shopping malls.
+Past-Due Mortgage Loans
+Mortgage loans are considered past due if a payment of principal or interest is not received according to the contractual terms of the loan agreement, which typically includes a grace period. As of December 31, 2025 and December 31, 2024, the Company held no mortgage loans considered past due.
+Mortgage Servicing
+The Company originates, sells, and services commercial mortgage loans on behalf of third parties and recognizes servicing fee income over the period that services are performed. As of December 31, 2025, under this program, the Company serviced mortgage loans with a total outstanding principal of $10.4 billion, of which $4.8 billion was serviced on behalf of third parties and $5.6 billion was retained and reported in total investments on the Company's Consolidated Balance Sheets. As of December 31, 2024, the Company serviced mortgage loans with a total outstanding principal balance of $10.0 billion, of which $4.8 billion was serviced on behalf of third parties and $5.2 billion was retained and reported in total investments on the Company's Consolidated Balance Sheets. Servicing rights are carried at the lower of cost or fair value and were $0 as of December 31, 2025 and December 31, 2024, because servicing fees were market-level fees at origination and remain adequate to compensate the Company for servicing the loans.
+Variable Interest Entities
+The Company is engaged with various special purpose entities and other entities that are deemed to be variable interest entities ("VIEs") primarily as an investor through normal investment activities or, at times, as an investment manager.
+A VIE is an entity that either has investors that lack certain essential characteristics of a controlling financial interest, such as simple majority kick-out rights, or lacks sufficient funds to finance its own activities without financial support provided by other entities. The Company performs ongoing qualitative assessments of its VIEs to determine whether the Company has a controlling financial interest in the VIE and therefore is the primary beneficiary. The Company is deemed to have a controlling financial interest when it has both the ability to direct the activities that most significantly impact the economic performance of the VIE and the obligation to absorb losses or right to receive benefits from the VIE that could potentially be significant to the VIE. Based on the Company’s assessment, if it
+
+--- PDF page 154 (printed page 154) ---
+determines it is the primary beneficiary, the Company consolidates the VIE in the Company’s Consolidated Financial Statements.
+Consolidated VIEs
+As of December 31, 2025 and 2024, the Company did not hold any securities for which it is the primary beneficiary.
+Non-Consolidated VIEs
+The Company, through normal investment activities, makes passive investments in limited partnerships and other alternative investments. For these non-consolidated VIEs, the Company has determined it is not the primary beneficiary as it has no ability to direct activities that could significantly affect the economic performance of the investments. The Company’s maximum exposure to loss as of December 31, 2025 and 2024 is limited to the total carrying value of $4.0 billion and $3.2 billion, respectively, which are a portion of the investments in limited partnerships and other alternative investments in the Company's Consolidated Balance Sheets that are primarily recorded using the equity method of accounting. As of December 31, 2025 and 2024, the Company has outstanding commitments totaling $2.4 billion and $2.0 billion, respectively, whereby the Company is committed to fund these investments and may be called by the partnership during the commitment period to fund the purchase of new investments and partnership expenses. These investments are generally of a passive nature in that the Company does not take an active role in management.
+Furthermore, the Company makes investments in entities that sponsor affordable housing projects. Similarly, for these non-consolidated VIEs, the Company has determined it is not the primary beneficiary as it has no ability to direct activities that could significantly affect the economic performance of the investments. The Company applies the proportional amortization method to subsequently measure its investments in such qualified affordable housing projects, where costs are amortized over the period in which the investor expects to receive tax credits and the resulting amortization is recognized as a component of income tax expense on the Company's Consolidated Statements of Operations. For the years ended December 31, 2025, 2024, and 2023, the Company recognized amortization of $13, $2, and $1 respectively, and related tax benefits of $24, $8, and $1, respectively. The income tax credits and other income tax benefits are recognized in operating activities in the Consolidated Statement of Cash Flows. The carrying value of these investments, which are reported in other assets on the Company’s Consolidated Balance Sheets was $121 and $51 as of December 31, 2025, and December 31, 2024, respectively. As of December 31, 2025 and December 31, 2024, the Company has outstanding commitments related to affordable housing projects of $259 and $267, respectively, that are contingent on various conditions precedent to funding.
+In addition, the Company makes passive investments in structured securities issued by VIEs for which the Company is not the manager. These investments are included in ABS, CLOs, CMBS, and RMBS and are reported in fixed maturities, AFS, and FVO securities, on the Company's Consolidated Balance Sheets. The Company has not provided financial or other support with respect to these investments other than its
+original investment. For these investments, the Company determined it is not the primary beneficiary due to the relative size of the Company’s investment in comparison to the principal amount of the structured securities issued by the VIEs, the Company’s inability to direct the activities that most significantly impact the economic performance of the VIEs, and, where applicable, the level of credit subordination which reduces the Company’s obligation to absorb losses or right to receive benefits. The Company’s maximum exposure to loss on these investments is limited to the amount of the Company’s investment.
+For the year ended December 31, 2024, the Company sold $86 of fixed maturities, AFS for a net realized loss of less than $1 to a CLO issued by a VIE. The Company then purchased $24 of fixed maturities, AFS and $50 of FVO securities from the VIE issuer. These investments are valued based on unobservable inputs and are classified within Level 3 of the fair value hierarchy. The Company has determined it is not the primary beneficiary of the VIE issuer as it has no ability to direct the activities that could significantly affect the economic performance of the securitization.
+Reverse Repurchase Agreements, Other Collateral Transactions and Restricted Investments
+Reverse Repurchase Agreements
+From time to time, the Company enters into reverse repurchase agreements where the Company purchases securities and simultaneously agrees to resell the same or substantially the same securities. The maturity of these transactions is generally within one year. The agreements require additional collateral to be transferred to the Company under specified conditions and the Company has the right to sell or re-pledge the securities received. The Company accounts for reverse repurchase agreements as collateralized financing. As of December 31, 2025 and December 31, 2024, the Company reported $87 and $0, respectively, within short-term investments on the Consolidated Balance Sheets representing a receivable for the amount of cash transferred to purchase the securities.
+Other Collateral Transactions
+For disclosure of collateral in support of derivative transactions, refer to the Derivative Collateral Arrangements section in Note 6 - Derivatives of Notes to Consolidated Financial Statements.
+
+--- PDF page 155 (printed page 155) ---
+Other Restricted Investments
+The Company is required by law to deposit securities with government agencies in certain states in which it conducts business. In addition, the Company is required to hold fixed maturities and short-term investments in trust for the benefit of syndicate policyholders, hold fixed maturities in a Lloyd's of London ("Lloyd's") trust account to provide a portion of the required capital, and maintain other investments primarily consisting of overseas deposits in various countries with Lloyd's to support underwriting activities in those countries. Lloyd's is an insurance market-place operating worldwide. Lloyd's does not underwrite risks. The Company accepts risks as the sole member of Lloyd's Syndicate 1221 ("Lloyd's Syndicate").
+The following table presents the components of the Company’s exposure to other restricted investments.
+December 31, 2025 | December 31, 2024
+Fair Value | Fair Value
+Securities on deposit with government agencies | $2,558 | $2,362
+Fixed maturities in trust for benefit of Lloyd's Syndicate policyholders | 1,178 | 1,056
+Short-term investments in trust for benefit of Lloyd's Syndicate policyholders | 23 | 25
+Other investments | 87 | 61
+Total Other Restricted Investments | $3,846 | $3,504
+Equity Method Investments
+The majority of the Company's investments in limited partnerships and other alternative investments, including real estate joint ventures, real estate funds, private equity funds, and other funds (collectively, “limited partnerships”), are accounted for under the equity method of accounting. The remainder of investments in limited partnerships and other alternative investments consists of investments in insurer-owned life insurance accounted for at cash surrender value.
+Equity method income is reported in net investment income, except amounts related to strategic investments classified in other assets which are reported in other revenues. For investments accounted for under the equity method, the Company’s maximum exposure to loss as of December 31, 2025 is limited to the total carrying value of $5.3 billion. In addition, the Company has outstanding commitments totaling $2.6 billion to fund limited partnership investments as of December 31, 2025. The Company’s investments accounted for under the equity method are generally of a passive nature in that the Company does not take an active role in the management.
+For the periods ended December 31, 2025 and 2024 aggregate investment income from investments accounted for under the equity method did not exceed 10% of the Company’s before tax consolidated net income. For the period ended December 31, 2023 aggregate investment income from investments accounted for under the equity method exceeded 10% of the Company’s before tax consolidated net income. Accordingly, the Company is disclosing aggregated, summarized financial data for the Company’s investments accounted for under the equity method based on the most recently available information. This aggregated, summarized financial data does not represent the Company’s proportionate share of investees' assets or earnings.
+Aggregated summarized financial information of the Company’s equity method investees:
+As of December 31,
+2025 | 2024
+Balance sheet:
+Total assets | $396,968 | $356,430
+Total liabilities | $69,322 | $57,017
+The Company's carrying value | $5,313 | $4,552
+For the years ended December 31,
+2025 | 2024 | 2023
+Operating results:
+Net investment income (loss) | $(1,502) | $(1,002) | $(1,240)
+Net income excluding net investment income | $19,040 | $14,778 | $13,000
+The Company's share of equity method income | $291 | $103 | $181
+
+=== Note 4 — Fair Value Measurements (Consolidated) ===
+--- PDF page 140 (printed page 140) ---
+4. Fair Value Measurements
+The Company carries certain financial assets and liabilities at estimated fair value. Fair value is defined as the price that would be received to sell an asset or paid to transfer a liability in the principal or most advantageous market in an orderly transaction between market participants. Our fair value framework includes a hierarchy that gives the highest priority to the use of quoted prices in active markets, followed by the use of market observable inputs, followed by the use of unobservable inputs.
+The fair value hierarchy levels are as follows:
+Level 1 Fair values based on unadjusted quoted prices for identical assets or liabilities, in active markets that the Company has the ability to access at the measurement date.
+
+--- PDF page 141 (printed page 141) ---
+Level 2 Fair values primarily based on observable inputs, other than quoted prices included in Level 1, or based on prices for similar assets and liabilities.
+Level 3 Fair values derived when one or more of the significant inputs are unobservable (including assumptions about risk). With little or no observable market, the determination of fair values uses considerable judgment and represents the Company’s best estimate of an amount that could be realized in a market exchange for the asset or liability. Also included are securities that are traded within illiquid markets and/or priced by independent brokers.
+The Company will classify the financial asset or liability by level based upon the lowest level input that is significant to the determination of the fair value. In most cases, both observable inputs (e.g., changes in interest rates) and unobservable inputs (e.g., changes in risk assumptions) are used to determine fair values that the Company has classified within Level 3.
+Assets and (Liabilities) Carried at Fair Value by Hierarchy Level as of December 31, 2025
+Total | Quoted Prices inActive Marketsfor IdenticalAssets(Level 1) | SignificantObservableInputs(Level 2) | SignificantUnobservableInputs(Level 3)
+Assets accounted for at fair value on a recurring basis
+Fixed maturities, AFS
+Asset-backed securities ("ABS") | $4,663 | $— | $4,496 | $167
+Collateralized loan obligations ("CLOs") | 3,316 | — | 3,099 | 217
+Commercial mortgage-backed securities ("CMBS") | 2,328 | — | 2,213 | 115
+Corporate | 23,076 | — | 20,210 | 2,866
+Foreign government/government agencies | 447 | — | 447 | —
+Municipal | 4,652 | — | 4,652 | —
+Residential mortgage-backed securities ("RMBS") | 6,178 | — | 6,171 | 7
+U.S. Treasuries | 1,381 | 164 | 1,217 | —
+Total fixed maturities, AFS | 46,041 | 164 | 42,505 | 3,372
+FVO securities | 168 | — | — | 168
+Equity securities, at fair value [1] | 492 | 379 | 7 | 106
+Derivative assets
+Foreign exchange derivatives | 20 | — | 20 | —
+Total derivative assets [2] | 20 | — | 20 | —
+Short-term investments | 4,353 | 602 | 3,369 | 382
+Total assets accounted for at fair value on a recurring basis | $51,074 | $1,145 | $45,901 | $4,028
+Liabilities accounted for at fair value on a recurring basis
+Derivative liabilities
+Foreign exchange derivatives | (17) | — | (17) | —
+Interest rate derivatives | (3) | — | (3) | —
+Total derivative liabilities [3] | (20) | — | (20) | —
+Total liabilities accounted for at fair value on a recurring basis | $(20) | $— | $(20) | $—
+
+--- PDF page 142 (printed page 142) ---
+Assets and (Liabilities) Carried at Fair Value by Hierarchy Level as of December 31, 2024
+Total | Quoted Prices inActive Marketsfor IdenticalAssets(Level 1) | SignificantObservableInputs(Level 2) | SignificantUnobservableInputs(Level 3)
+Assets accounted for at fair value on a recurring basis
+Fixed maturities, AFS
+ABS | $3,937 | $— | $3,915 | $22
+CLOs | 3,250 | — | 3,134 | 116
+CMBS | 2,736 | — | 2,569 | 167
+Corporate | 20,636 | — | 18,355 | 2,281
+Foreign government/government agencies | 480 | — | 480 | —
+Municipal | 5,304 | — | 5,304 | —
+RMBS | 5,230 | — | 5,206 | 24
+U.S. Treasuries | 994 | 57 | 937 | —
+Total fixed maturities, AFS | 42,567 | 57 | 39,900 | 2,610
+FVO securities | 308 | — | 111 | 197
+Equity securities, at fair value [1] | 603 | 372 | 144 | 87
+Derivative assets
+Credit derivatives | 30 | — | 30 | —
+Equity derivatives | 4 | — | 4 | —
+Foreign exchange derivatives | 23 | — | 23 | —
+Total derivative assets [2] | 57 | — | 57 | —
+Short-term investments | 4,068 | 1,271 | 2,699 | 98
+Total assets accounted for at fair value on a recurring basis | $47,603 | $1,700 | $42,911 | $2,992
+Liabilities accounted for at fair value on a recurring basis
+Derivative liabilities
+Credit derivatives | $(30) | $— | $(30) | $—
+Foreign exchange derivatives | 18 | — | 18 | —
+Total derivative liabilities [3] | (12) | — | (12) | —
+Total liabilities accounted for at fair value on a recurring basis | $(12) | $— | $(12) | $—
+[1]Level 3 includes investments that have contractual sales restrictions that require consent to sell and are in place for the duration that the securities are held by the Company.
+[2]Includes derivative instruments in a net positive fair value position after consideration of the accrued interest and impact of collateral posting requirements which may be imposed by agreements and applicable law. See footnote [3] to this table for derivative liabilities.
+[3]Includes derivative instruments in a net negative fair value position (derivative liability) after consideration of the accrued interest and impact of collateral posting requirements which may be imposed by agreements and applicable law.
+The Company has overseas deposits included in other investments of $87 and $61 as of December 31, 2025 and December 31, 2024, respectively, which are measured at fair value using the net asset value as a practical expedient.
+Fixed Maturities, Equity Securities, Short-term Investments, and Derivatives
+Valuation Techniques
+The Company generally determines fair values using valuation techniques that use prices, rates, and other relevant information
+evident from market transactions involving identical or similar instruments. Valuation techniques also include, where appropriate, estimates of future cash flows that are converted into a single discounted amount using current market expectations. The Company uses a "waterfall" approach comprised of the following pricing sources and techniques, which are listed in priority order:
+•Quoted prices, unadjusted, for identical assets or liabilities in active markets, which are classified as Level 1.
+•Prices from third-party pricing services, which primarily utilize a combination of techniques. These services utilize recently reported trades of identical, similar, or benchmark securities making adjustments for market observable inputs
+
+--- PDF page 143 (printed page 143) ---
+available through the reporting date. If there are no recently reported trades, they may use a discounted cash flow technique to develop a price using expected cash flows based upon the anticipated future performance of the underlying collateral discounted at an estimated market rate. Both techniques develop prices that consider the time value of future cash flows and provide a margin for risk, including liquidity and credit risk. Most prices provided by third-party pricing services are classified as Level 2 because the inputs used in pricing the securities are observable. However, some securities that are less liquid or trade less actively are classified as Level 3. Additionally, certain long-dated securities include benchmark interest rate or credit spread assumptions that are not observable in the marketplace and are thus classified as Level 3.
+•Internal matrix pricing is a valuation process internally developed for private placement securities for which the Company is unable to obtain a price from a third-party pricing service. Internal pricing matrices determine credit spreads that, when combined with risk-free rates, are applied to contractual cash flows to develop a price. The Company develops credit spreads using market based data for public securities adjusted for credit spread differentials between public and private securities, which are obtained from a survey of multiple private placement brokers. The market-based reference credit spread considers the issuer’s sector, financial strength, and term to maturity, using an independent public security index, while the credit spread differential considers the non-public nature of the security. Securities priced using internal matrix pricing are classified as Level 2 because the significant inputs are observable or can be corroborated with observable data.
+•Independent broker quotes, which are typically non-binding, use inputs that can be difficult to corroborate with observable market based data. Brokers may use present value techniques using assumptions specific to the security types, or they may use recent transactions of similar securities. Due to the lack of transparency in the process that brokers use to develop prices, valuations that are based on independent broker quotes are classified as Level 3.
+The fair value of derivative instruments is determined primarily using a discounted cash flow model or option model technique and incorporates counterparty credit risk. In some cases, quoted
+market prices for exchange-traded and OTC cleared derivatives may be used and in other cases independent broker quotes may be used. The pricing valuation models primarily use inputs that are observable in the market or can be corroborated by observable market data. The valuation of certain derivatives may include significant inputs that are unobservable, such as volatility levels, and reflect the Company’s view of what other market participants would use when pricing such instruments.
+Valuation Controls
+The process for determining the fair value of investments is monitored by the Valuation Committee, which is a cross-functional group of senior management within the Company. The purpose of the Valuation Committee is to provide oversight of the pricing policy, procedures and controls, including approval of valuation methodologies and pricing sources. The Valuation Committee reviews market data trends, pricing statistics and trading statistics to ensure that prices are reasonable and consistent with our fair value framework. Controls and procedures used to assess third-party pricing services are reviewed by the Valuation Committee, including the results of annual due-diligence reviews. Controls include, but are not limited to, reviewing daily and monthly price changes, stale prices, and missing prices and comparing new trade prices to third-party pricing services, weekly price changes to published bond index prices, and daily OTC derivative market valuations to counterparty valuations. The Company has a dedicated pricing group that works with trading and investment professionals to challenge prices received by a third party pricing source if the Company believes that the valuation received does not accurately reflect the fair value. New valuation models and changes to current models require approval by the Valuation Committee. In addition, the Company’s enterprise-wide Operational Risk Management function provides an independent review of the suitability and reliability of model inputs, as well as an analysis of significant changes to current models.
+Valuation Inputs
+Quoted prices for identical assets in active markets are considered Level 1 and consist of on-the-run U.S. Treasuries, money market funds, exchange-traded equity securities, open-ended mutual funds, certain short-term investments, and exchange traded derivative instruments.
+
+--- PDF page 144 (printed page 144) ---
+Valuation Inputs Used in Levels 2 and 3 Measurements for Securities and Derivatives
+Level 2 Primary Observable Inputs | Level 3Primary Unobservable Inputs
+Fixed Maturity Investments
+Structured securities (includes ABS, CLOs, CMBS and RMBS)
+• Benchmark yields and spreads • Monthly payment information • Collateral performance, which varies by vintage year and includes delinquency rates, loss severity rates and refinancing assumptions • Credit default swap indices Other inputs for ABS, CLOs, and RMBS: • Estimate of future principal prepayments, derived from the characteristics of the underlying structure • Prepayment speeds previously experienced at the interest rate levels projected for the collateral | • Independent broker quotes• Credit spreads beyond observable curve• Interest rates beyond observable curve Other inputs for less liquid securities or those that trade less actively, including subprime RMBS:• Estimated cash flows• Credit spreads, which include illiquidity premium• Constant prepayment rates• Constant default rates• Loss severity
+Corporates
+• Benchmark yields and spreads • Reported trades, bids, offers of the same or similar securities • Issuer spreads and credit default swap curves Other inputs for investment grade privately placed securities that utilize internal matrix pricing: • Credit spreads for public securities of similar quality, maturity, and sector, adjusted for non-public nature | • Independent broker quotes • Credit spreads beyond observable curve • Interest rates beyond observable curve Other inputs for below investment grade privately placed securities and private bank loans: • Credit spreads for public securities of similar quality, maturity, and sector, adjusted for non-public nature
+U.S. Treasuries, Municipals, and Foreign government/government agencies
+• Benchmark yields and spreads • Issuer credit default swap curves • Political events in emerging market economies • Municipal Securities Rulemaking Board reported trades and material event notices • Issuer financial statements | • Credit spreads beyond observable curve• Interest rates beyond observable curve
+Equity Securities
+• Quoted prices in markets that are not active | • For privately traded equity securities, internal discounted cash flow models utilizing earnings multiples or other cash flow assumptions that are not observable • Private company financials
+Short-term Investments
+• Benchmark yields and spreads• Reported trades, bids, offers• Issuer spreads and credit default swap curves• Material event notices and new issue money market rates | • Independent broker quotes • For privately traded investments, credit spreads for public securities of similar quality, maturity, and sector, adjusted for non-public nature
+Derivatives
+Credit derivatives
+• Swap yield curve • Credit default swap curves | • Not applicable
+Foreign exchange derivatives
+• Swap yield curve• Currency spot and forward rates• Cross currency basis curves | • Not applicable
+Interest rate derivatives
+• Swap yield curve | • Not applicable
+Equity derivatives
+• Equity index levels | • Not applicable
+
+--- PDF page 145 (printed page 145) ---
+Significant Unobservable Inputs for Level 3 - Securities
+Assets accounted for at fair value on a recurring basis | Fair Value | Predominant Valuation Technique | Significant Unobservable Input | Minimum | Maximum | Weighted Average [1] | Impact of Increase in Input on Fair Value [2]
+As of December 31, 2025
+ABS | $167 | Discounted cash flows | Spread | 434 bps | 843 bps | 530 bps | Decrease
+CLOs | $217 | Discounted cash flows | Spread | 270 bps | 1,021 bps | 544 bps | Decrease
+CMBS [3] | $115 | Discounted cash flows | Spread (encompasses prepayment, default risk and loss severity) | 245 bps | 1,000 bps | 397 bps | Decrease
+Corporate [4] | $2,765 | Discounted cash flows | Spread | 88 bps | 811 bps | 289 bps | Decrease
+RMBS | $7 | Discounted cash flows | Spread [6] | 88 bps | 551 bps | 172 bps | Decrease
+Constant prepayment rate [6] | 2% | 5% | 4% | Decrease [5]
+Constant default rate [6] | 1% | 5% | 2% | Decrease
+Loss severity [6] | 37% | 80% | 50% | Decrease
+Equity Securities | $56 | Adjusted Cost | Private company financials | N/A | N/A | N/A | Increase
+$14 | Discounted cash flows | Spread | 1,370 bps | 1,370 bps | 1,370 bps | Decrease
+Short-term investments | $382 | Discounted cash flows | Spread | 164 bps | 186 bps | 177 bps | Decrease
+As of December 31, 2024
+CMBS [3] | $166 | Discounted cash flows | Spread (encompasses prepayment, default risk and loss severity) | 200 bps | 1,221 bps | 418 bps | Decrease
+Corporate [4] | $2,166 | Discounted cash flows | Spread | 81 bps | 794 bps | 286 bps | Decrease
+RMBS | $19 | Discounted cash flows | Spread [6] | 100 bps | 372 bps | 181 bps | Decrease
+Constant prepayment rate [6] | 1% | 6% | 4% | Decrease [5]
+Constant default rate [6] | 1% | 4% | 2% | Decrease
+Loss severity [6] | 30% | 50% | 41% | Decrease
+Short-term investments | $98 | Discounted cash flows | Spread | 266 bps | 266 bps | 266 bps | Decrease
+[1]The weighted average is determined based on the fair value of the securities.
+[2]Conversely, the impact of a decrease in input would have the opposite impact to the fair value as that presented in the table.
+[3]Excludes securities for which the Company bases fair value on broker quotations.
+[4]Excludes securities for which the Company bases fair value on broker quotations; however, included are broker priced lower-rated private placement securities for which the Company receives spread and yield information to corroborate the fair value.
+[5]Decrease for above market rate coupons and increase for below market rate coupons.
+[6]Generally, a change in the assumption used for the constant default rate would have been accompanied by a directionally similar change in the assumption used for the loss severity and a directionally opposite change in the assumption used for constant prepayment rate and would have resulted in wider spreads.
+As of December 31, 2025 and 2024, the fair values of the Company's level 3 derivatives were less than $1 for both periods.
+The table above excludes certain securities for which fair values are predominately based on independent broker quotes. While the Company does not have access to the significant unobservable inputs that independent brokers may use in their pricing process, the Company believes brokers likely use inputs similar to those used by the Company and third-party pricing services to price similar instruments. As such, in their pricing models, brokers likely use estimated loss severity rates,
+prepayment rates, constant default rates and credit spreads. Therefore, similar to non-broker priced securities, increases in these inputs would generally cause fair values to decrease. As of December 31, 2025, no significant adjustments were made by the Company to broker prices received.
+
+--- PDF page 146 (printed page 146) ---
+Level 3 Assets and Liabilities Measured at Fair Value on a Recurring Basis Using Significant Unobservable Inputs
+The Company uses derivative instruments to manage the risk associated with certain assets and liabilities. However, the
+derivative instrument may not be classified within the same fair value hierarchy level as the associated asset or liability.
+Fair Value Rollforwards for Financial Instruments Classified as Level 3 for the Year Ended December 31, 2025
+Total realized/unrealized gains (losses)
+Fair value as of January 1, 2025 | Included in net income [1] | Included in OCI [2] | Purchases | Settlements | Sales | Transfers into Level 3 [3] | Transfers out of Level 3 [3] | Fair value as of December 31, 2025
+Assets
+Fixed maturities, AFS
+ABS | $22 | $— | $3 | $200 | $(48) | $— | $— | $(10) | $167
+CLOs | 116 | — | — | 470 | (29) | — | — | (340) | 217
+CMBS | 167 | (1) | 8 | — | (41) | (10) | 45 | (53) | 115
+Corporate | 2,281 | 3 | 63 | 1,402 | (842) | (91) | 62 | (12) | 2,866
+RMBS | 24 | — | — | 37 | (11) | — | — | (43) | 7
+Total fixed maturities, AFS | 2,610 | 2 | 74 | 2,109 | (971) | (101) | 107 | (458) | 3,372
+FVO securities | 197 | 4 | (34) | 16 | (15) | — | — | — | 168
+Equity securities, at fair value | 87 | (1) | — | 40 | (19) | (1) | — | — | 106
+Short-term investments | 98 | — | — | 682 | (347) | (51) | — | — | 382
+Total Assets | $2,992 | $5 | $40 | $2,847 | $(1,352) | $(153) | $107 | $(458) | $4,028
+Fair Value Rollforwards for Financial Instruments Classified as Level 3 for the Year Ended December 31, 2024
+Total realized/unrealized gains (losses)
+Fair value as of January 1, 2024 | Included in net income [1] | Included in OCI [2] | Purchases | Settlements | Sales | Transfers into Level 3 [3] | Transfers out of Level 3 [3] | Fair value as of December 31, 2024
+Assets
+Fixed maturities, AFS
+ABS | $— | $— | $— | $70 | $— | $— | $— | $(48) | $22
+CLOs | 113 | — | — | 919 | (64) | — | — | (852) | 116
+CMBS | 227 | (6) | 18 | — | (10) | (67) | 39 | (34) | 167
+Corporate | 1,861 | — | (23) | 876 | (316) | (126) | 9 | — | 2,281
+RMBS | 36 | — | — | 90 | (17) | — | — | (85) | 24
+Total fixed maturities, AFS | 2,237 | (6) | (5) | 1,955 | (407) | (193) | 48 | (1,019) | 2,610
+FVO securities | 167 | (7) | — | 52 | (15) | — | — | — | 197
+Equity securities, at fair value | 58 | 3 | — | 49 | (20) | (3) | — | — | 87
+Short-term investments | 25 | — | — | 145 | (72) | — | — | — | 98
+Total Assets | $2,487 | $(10) | $(5) | $2,201 | $(514) | $(196) | $48 | $(1,019) | $2,992
+[1]Amounts in these columns are generally reported in net realized gains (losses). All amounts are before income taxes.
+[2]All amounts are before income taxes.
+[3]Transfers into and/or (out of) Level 3 are primarily attributable to the availability of market observable information and the re-evaluation of the observability of pricing inputs.
+
+--- PDF page 147 (printed page 147) ---
+Changes in Unrealized Gains (Losses) for Financial Instruments Classified as Level 3 Still Held at Year End
+December 31, 2025 | December 31, 2024
+Changes in Unrealized Gain/(Loss) included in Net Income [1] [2] | Changes in Unrealized Gain/(Loss) included in OCI [3] | Changes in Unrealized Gain/(Loss) included in Net Income [1] [2] | Changes in Unrealized Gain/(Loss) included in OCI [3]
+Assets
+Fixed maturities, AFS
+ABS | $— | $3 | $— | $—
+CLOs | $— | $— | $— | $—
+CMBS | — | 7 | — | 10
+Corporate | 3 | 61 | — | (26)
+Total fixed maturities, AFS | 3 | 71 | — | (16)
+FVO securities | (30) | — | (7) | —
+Equity securities, at fair value | 1 | — | — | —
+Total Assets | $(26) | $71 | $(7) | $(16)
+[1]All amounts in these rows are reported in net realized gains (losses). All amounts are before income taxes.
+[2]Amounts presented are for Level 3 only and therefore may not agree to other disclosures included herein.
+[3]Changes in unrealized gains (losses) on fixed maturities, AFS are reported in changes in net unrealized gain (loss) on fixed maturities in the Consolidated Statements of Comprehensive Income (Loss).
+Fair Value Option
+The Company has elected the fair value option for certain investments in residual interests of securitizations and other securities that contain embedded credit derivatives with underlying credit risk related to residential real estate in order to reflect changes in fair value in earnings. These instruments are included within FVO securities on the Consolidated Balance Sheets and changes in the fair value of these investments are reported in net realized gains and losses.
+As of December 31, 2025 and 2024, the fair value of assets using the fair value option was $168 and $308, respectively, of which $168 and $197, respectively, were residual interests of securitizations.
+For the years ended December 31, 2025, 2024, and 2023, net realized gains (losses) related to the change in fair value of assets using the fair value option were $(30), $(5), and $5, respectively.
+Financial Instruments Not Carried at Fair Value
+Financial Assets and Liabilities Not Carried at Fair Value
+December 31, 2025 | December 31, 2024
+Fair Value Hierarchy Level | Carrying Amount [1] | Fair Value | Fair Value Hierarchy Level | Carrying Amount [1] | Fair Value
+Assets
+Mortgage loans | Level 3 | $6,837 | $6,607 | Level 3 | $6,396 | $5,901
+Liabilities
+Other policyholder funds and benefits payable | Level 3 | $612 | $613 | Level 3 | $614 | $614
+Senior notes [2] | Level 2 | $3,872 | $3,528 | Level 2 | $3,867 | $3,406
+Junior subordinated debentures [2] | Level 2 | $499 | $473 | Level 2 | $499 | $460
+[1]As of December 31, 2025 and December 31, 2024, the carrying amount of mortgage loans is net of ACL of $49 and $44, respectively.
+[2]Included in long-term debt in the Consolidated Balance Sheets, except for any current maturities, which are included in short-term debt when applicable.
+
+=== Note 6 — Derivatives (Consolidated) ===
+--- PDF page 156 (printed page 156) ---
+6. Derivatives
+The Company utilizes a variety of OTC, OTC-cleared and exchange traded derivative instruments as a part of its overall risk management strategy as well as to enter into replication transactions or income generation covered call transactions. Derivative instruments are used to manage risk associated with interest rate, equity market, credit spread, issuer default, price, and currency exchange rate or volatility. Replication transactions are used as an economical means to synthetically replicate the characteristics and performance of assets that are permissible investments under the Company’s investment policies.
+Strategies that Qualify for Hedge Accounting
+Some of the Company's derivatives satisfy hedge accounting requirements as outlined in Note 1 - Basis of Presentation and Significant Accounting Policies. Typically, these hedging instruments include interest rate swaps and, to a lesser extent, foreign currency swaps where the terms or expected cash flows of the hedged item closely match the terms of the swap.
+Cash Flow Hedges
+Interest rate swaps are predominantly used to manage portfolio duration and better match cash receipts from assets with cash disbursements required to fund liabilities. These derivatives primarily convert interest receipts on variable-rate fixed maturity securities to fixed rates. The Company has also entered into interest rate swaps to convert the variable interest payments on the $500 junior subordinated debentures due 2067 to fixed interest payments. For further information, see the Junior Subordinated Debentures section within Note 13 - Debt.
+Foreign currency swaps are used to convert foreign currency-denominated cash flows related to certain investment receipts to U.S. dollars in order to reduce cash flow fluctuations due to changes in currency rates.
+Non-qualifying Strategies
+Derivative relationships that do not qualify for hedge accounting (“non-qualifying strategies”) primarily include hedges of interest rate, foreign currency, and equity risk of certain fixed maturities and equities. In addition, hedging and replication strategies that utilize credit default swaps do not qualify for hedge accounting. The non-qualifying strategies include:
+Credit Contracts
+Credit default swaps are used to purchase credit protection on an individual entity or referenced index to economically hedge against default risk and credit-related changes in the value of
+fixed maturity securities. Credit default swaps are also used to assume credit risk related to an individual entity or referenced index as a part of replication transactions. These contracts require the Company to pay or receive a periodic fee in exchange for compensation from the counterparty or the Company should the referenced security issuers experience a credit event, as defined in the contract. The Company also enters into credit default swaps to terminate existing credit default swaps, thereby offsetting the changes in value of the original swap going forward.
+Interest Rate Swaps and Futures
+The Company uses interest rate swaps and, to a lesser extent, futures to manage interest rate duration between assets and liabilities. In addition, the Company enters into interest rate swaps to terminate existing swaps, thereby offsetting the changes in value of the original swap going forward. As of December 31, 2025 and December 31, 2024, the notional amount of interest rate swaps in offsetting relationships was $333 and $344, respectively.
+Foreign Currency Swaps
+The Company enters into foreign currency swaps to convert the foreign currency exposures of certain foreign currency-denominated fixed maturity investments to U.S. dollars.
+Equity Index Options
+The Company enters into equity index options to hedge the impact of a decline in the equity markets on the investment portfolio.
+Derivative Balance Sheet Classification
+For reporting purposes, the Company has elected to offset within assets or liabilities based upon the net of the fair value amounts, income accruals, and related cash collateral receivables and payables of OTC derivative instruments executed in a legal entity and with the same counterparty under a master netting agreement, which provides the Company with the legal right of offset. The following fair value amounts do not include income accruals or related cash collateral receivables and payables, which are netted with derivative fair value amounts to determine balance sheet presentation. The Company’s derivative instruments are held for risk management purposes, unless otherwise noted in the following table. The notional amount of derivative contracts represents the basis upon which pay or receive amounts are calculated and is presented in the table to quantify the volume of the Company’s derivative activity. Notional amounts are not necessarily reflective of credit risk.
+
+--- PDF page 157 (printed page 157) ---
+Derivative Balance Sheet Presentation
+Net Derivatives | Asset Derivatives | Liability Derivatives
+Notional Amount | Fair Value | Fair Value | Fair Value
+Hedge Designation/ Derivative Type | Dec 31, 2025 | Dec 31, 2024 | Dec 31, 2025 | Dec 31, 2024 | Dec 31, 2025 | Dec 31, 2024 | Dec 31, 2025 | Dec 31, 2024
+Cash flow hedges
+Interest rate swaps | $3,775 | $4,225 | $(1) | $— | $— | $— | $(1) | $—
+Foreign currency swaps | 588 | 646 | 3 | 41 | 33 | 52 | (30) | (11)
+Total cash flow hedges | 4,363 | 4,871 | 2 | 41 | 33 | 52 | (31) | (11)
+Non-qualifying strategies
+Interest rate contracts
+Interest rate swaps and futures | 333 | 344 | (2) | — | — | 1 | (2) | (1)
+Foreign exchange contracts
+Foreign currency swaps | 588 | 647 | — | — | — | — | — | —
+Credit contracts
+Credit derivatives in offsetting positions | 985 | 986 | — | — | 27 | 31 | (27) | (31)
+Equity contracts
+Equity index options | — | 233 | — | 4 | — | 4 | — | —
+Total non-qualifying strategies | 1,906 | 2,210 | (2) | 4 | 27 | 36 | (29) | (32)
+Total cash flow hedges and non-qualifying strategies | $6,269 | $7,081 | $— | $45 | $60 | $88 | $(60) | $(43)
+Balance Sheet Location
+Fixed maturities, AFS | $588 | $647 | $— | $— | $— | $— | $— | $—
+Other investments | 1,695 | 3,011 | 20 | 57 | 55 | 66 | (35) | (9)
+Other liabilities | 3,986 | 3,423 | (20) | (12) | 5 | 22 | (25) | (34)
+Total derivatives | $6,269 | $7,081 | $— | $45 | $60 | $88 | $(60) | $(43)
+.
+
+--- PDF page 158 (printed page 158) ---
+Offsetting of Derivative Assets/Liabilities
+The following tables present the gross fair value amounts, the amounts offset, and net position of derivative instruments eligible for offset in the Company's Consolidated Balance Sheets. Offsetting amounts include fair value amounts, income accruals
+and related cash collateral receivables and payables associated with derivative instruments that are traded under a common master netting agreement, as described in the preceding discussion. Also included in the tables are financial collateral receivables and payables, which are contractually permitted to be offset upon an event of default, although are disallowed for offsetting under U.S. GAAP.
+Offsetting Derivative Assets and Liabilities
+(i) | (ii) | (iii) = (i) - (ii) | (iv) | (v) = (iii) - (iv)
+Net Amounts Presented in the Statement of Financial Position | Collateral Disallowed for Offset in the Statement of Financial Position
+Gross Amounts of Recognized Assets (Liabilities) | Gross Amounts Offset in the Statement of Financial Position | Derivative Assets [1] (Liabilities) [2] | Accrued Interest and Cash Collateral (Received) [3] Pledged [2] | Financial Collateral (Received) Pledged [4] | Net Amount
+As of December 31, 2025
+Other investments | $60 | $58 | $20 | $(18) | $1 | $1
+Other liabilities | $(60) | $(38) | $(20) | $(2) | $(21) | $(1)
+As of December 31, 2024
+Other investments | $88 | $86 | $57 | $(55) | $— | $2
+Other liabilities | $(43) | $(42) | $(12) | $11 | $(1) | $—
+[1]Included in other investments in the Company's Consolidated Balance Sheets.
+[2]Included in other liabilities in the Company's Consolidated Balance Sheets and is limited to the net derivative payable associated with each counterparty.
+[3]Included in other investments in the Company's Consolidated Balance Sheets and is limited to the net derivative receivable associated with each counterparty.
+[4]Excludes collateral associated with exchange-traded derivative instruments.
+Cash Flow Hedges
+For derivative instruments that are designated and qualify as cash flow hedges, the gain or loss on the derivative is reported
+as a component of OCI and reclassified into earnings in the same period or periods during which the hedged transaction affects earnings. All components of each derivative’s gain or loss were included in the assessment of hedge effectiveness.
+Gain (Loss) Recognized in OCI
+Year Ended December 31,
+2025 | 2024 | 2023
+Interest rate swaps | $12 | $(14) | $6
+Foreign currency swaps | (28) | 41 | (31)
+Total | $(16) | $27 | $(25)
+Gain (Loss) Reclassified from AOCI into Income
+Year Ended December 31,
+2025 | 2024 | 2023
+Net Investment Income | Interest Expense | Net Investment Income | Interest Expense | Net Investment Income | Interest Expense
+Interest rate swaps | $(8) | $12 | $(25) | $16 | $(26) | $15
+Foreign currency swaps | 10 | — | 12 | — | 10 | —
+Total | $2 | $12 | $(13) | $16 | $(16) | $15
+Total amounts presented on the Consolidated Statement of Operations | $2,911 | $199 | $2,568 | $199 | $2,305 | $199
+
+--- PDF page 159 (printed page 159) ---
+As of December 31, 2025, the before tax deferred net gains on derivative instruments recorded in AOCI that are expected to be reclassified to earnings during the next twelve months are $27. This expectation is based on the anticipated interest payments on hedged investments in fixed maturity securities and long-term debt that will occur over the next twelve months. Over that time, the Company will recognize the deferred net gains (losses) as an adjustment to net investment income or interest expense, as applicable, over the term of the hedged instrument cash flows.
+During the years ended December 31, 2025, 2024, and 2023, the Company had no net reclassifications from AOCI to earnings
+resulting from the discontinuance of cash-flow hedges due to forecasted transactions that were no longer probable of occurring.
+Non-qualifying Strategies
+For non-qualifying strategies, including embedded derivatives that are required to be bifurcated from their host contracts and accounted for as derivatives, the gain or loss on the derivative is recognized currently in earnings within net realized gains (losses).
+Non-Qualifying Strategies Recognized within Net Realized Gains (Losses)
+For the Year Ended December 31,
+2025 | 2024 | 2023
+Interest rate contracts
+Interest rate swaps and futures | (2) | 8 | (3)
+Credit contracts
+Credit derivatives that purchase credit protection | — | — | (105)
+Equity contracts
+Equity index options | (14) | 5 | —
+Total [1] | $(16) | $13 | $(108)
+[1]Excludes investments that contain an embedded credit derivative for which the Company has elected the fair value option. For further discussion, see the Fair Value Option section in Note 4 - Fair Value Measurements.
+Credit Risk Assumed through Credit Derivatives
+The Company enters into credit default swaps that assume credit risk of a single entity or referenced index in order to synthetically replicate investment transactions that are permissible under the Company's investment policies. The Company will receive periodic payments based on an agreed upon rate and notional amount and will only make a payment if there is a credit event. A credit event payment will typically be
+equal to the notional value of the swap contract less the value of the referenced security issuer’s debt obligation after the occurrence of the credit event. A credit event is generally defined as a default on contractually obligated interest or principal payments or bankruptcy of the referenced entity. The credit default swaps in which the Company assumes credit risk may reference investment grade single corporate issuers and baskets, which include standard diversified portfolios of corporate and CMBS issuers.
+
+--- PDF page 160 (printed page 160) ---
+Credit Risk Assumed Derivatives by Type
+Underlying Referenced Credit Obligation(s) [1]
+Notional Amount [2] | Fair Value | Weighted Average Years to Maturity | Type | Average Credit Rating | Offsetting Notional Amount [3] | Offsetting Fair Value [3]
+As of December 31, 2025
+Basket credit default swaps [4]
+Investment grade risk exposure | $100 | $1 | 3 years | CMBS Credit | AAA | $100 | $(1)
+Below investment grade risk exposure | 392 | 27 | 2 years | Corporate Credit | B+ | 392 | (27)
+Below investment grade risk exposure | 1 | (1) | Less than 1 year | CMBS Credit | B- | 1 | 1
+Total [5] | $493 | $27 | $493 | $(27)
+As of December 31, 2024
+Basket credit default swaps [4]
+Investment grade risk exposure | $100 | $— | 4 years | CMBS Credit | AAA | $100 | $—
+Below investment grade risk exposure | 392 | 30 | 3 years | Corporate Credit | B+ | 392 | (30)
+Below investment grade risk exposure | 1 | (1) | Less than 1 year | CMBS Credit | CCC | 1 | 1
+Total [5] | $493 | $29 | $493 | $(29)
+[1]The average credit ratings are based on availability and are generally the midpoint of the available ratings among Moody’s, S&P, and Fitch. If no rating is available from a rating agency, then an internally developed rating is used.
+[2]Notional amount is equal to the maximum potential future loss amount. These derivatives are governed by agreements and applicable law which include collateral posting requirements. There is no additional specific collateral related to these contracts or recourse provisions included in the contracts to offset losses.
+[3]The Company has entered into offsetting credit default swaps to terminate certain existing credit default swaps, thereby offsetting the future changes in value of, or losses paid related to, the original swap.
+[4]Comprised of swaps of standard market indices of diversified portfolios of corporate and CMBS issuers referenced through credit default swaps. These swaps are subsequently valued based upon the observable standard market index.
+[5]Excludes investments that contain an embedded credit derivative for which the Company has elected the fair value option. For further discussion, see the Fair Value Option section in Note 4 - Fair Value Measurements.
+Derivative Collateral Arrangements
+The Company enters into various collateral arrangements in connection with its derivative instruments, which require both the pledging and accepting of collateral. As of December 31, 2025 and 2024, the Company has pledged cash collateral associated with derivative instruments of $27 and $31, respectively. In general, collateral receivable is recorded in other assets or other liabilities on the Company's Consolidated Balance Sheets as determined by the Company's election to offset on the balance sheet. As of December 31, 2025 and 2024, the Company pledged securities collateral associated with derivative instruments with a fair value of $22 and $1, respectively, which have been included in fixed maturities on the Consolidated Balance Sheets. The counterparties have the right to sell or re-pledge these securities.
+In addition, as of December 31, 2025 and 2024, the Company has pledged initial margin of cash related to OTC-cleared and exchange traded derivatives with a fair value of $7 and $10 respectively, which is recorded in other investments or other assets on the Company's Consolidated Balance Sheets. As of December 31, 2025 and 2024, the Company has pledged initial margin of securities related to OTC-cleared and exchange traded derivatives with a fair value of $98 and $103, respectively, which are included within fixed maturities on the Company's Consolidated Balance Sheets.
+As of December 31, 2025 and 2024, the Company accepted cash collateral associated with derivative instruments of $50 and $78, respectively, which was invested and recorded in the Consolidated Balance Sheets in fixed maturities and short-term investments with corresponding amounts recorded in other investments or other liabilities as determined by the Company's election to offset on the balance sheet. The Company also accepted securities collateral as of December 31, 2025 and 2024 with a fair value of $2 and $0, respectively, which the Company has the right to repledge or sell. As of December 31, 2025 and 2024, the Company had no repledged securities. In addition, as of December 31, 2025 and 2024, non‑cash collateral accepted was held in separate custodial accounts and was not included in the Company’s Consolidated Balance Sheets.
+----- END OF NOTES -----
+
+Conversation so far in this analysis thread:
+
+User asked: give breakup of hartford's total investments as of Dec-31-2025
+You answered: ## Summary
+
+- **Total investments at 31-Dec-2025 were $63,957m**, up $4,747m (+8.0%) from $59,210m (Balance Sheet, p.125). Schedule I gives the same total (Note 21, p.213).
+- **Fixed maturities, AFS dominate at $46,041m (72.0%)**. Next come mortgage loans at $6,837m (10.7%), limited partnerships and other alternative investments at $5,804m (9.1%) and short-term investments at $4,353m (6.8%). The remaining lines total $922m (1.4%).
+- **Within AFS bonds, corporates are the largest block at $23,076m (half of AFS).** Structured securities follow at $16,485m (ABS, CLOs, CMBS, RMBS), then municipals at $4,652m and U.S. Treasuries at $1,381m (Note 5, p.150).
+- **The bond book's net unrealized loss narrowed** from $(1,955)m to $(814)m because interest rates fell (Note 5, p.150–151). This drove the $898m AFS gain in OCI (Comprehensive Income, p.124).
+- **About 93% of the fair-valued investments are Level 1/2.** Level 3 assets rose to $4,028m from $2,992m (Note 4, p.141–142, 146).
+
+## Key figures
+
+| Item (carrying amount, $m) | 31-Dec-2025 | 31-Dec-2024 | Change | % change | % of 2025 total | Source |
+|---|---|---|---|---|---|---|
+| Fixed maturities, AFS | 46,041 | 42,567 | +3,474 | +8.2% | 72.0% | BS p.125; Note 5 p.150; Note 21 p.213 |
+| FVO securities | 168 | 308 | −140 | −45.5% | 0.3% | BS p.125; Note 4 p.147 |
+| Equity securities, at fair value | 492 | 603 | −111 | −18.4% | 0.8% | BS p.125; Note 4 p.141–142 |
+| Mortgage loans, net of ACL | 6,837 | 6,396 | +441 | +6.9% | 10.7% | BS p.125; Note 5 p.153 |
+| Limited partnerships and other alternative investments | 5,804 | 5,042 | +762 | +15.1% | 9.1% | BS p.125; Note 21 p.213 |
+| Other investments | 262 | 226 | +36 | +15.9% | 0.4% | BS p.125; Note 21 p.213 |
+| Short-term investments | 4,353 | 4,068 | +285 | +7.0% | 6.8% | BS p.125; Note 4 p.141–142 |
+| **Total investments** | **63,957** | **59,210** | **+4,747** | **+8.0%** | **100%** | BS p.125; Note 21 p.213 |
+
+**Tie-out of the totals:**
+- 2025: 46,041 + 168 + 492 + 6,837 + 5,804 + 262 + 4,353 = **63,957** ✓
+- 2024: 42,567 + 308 + 603 + 6,396 + 5,042 + 226 + 4,068 = **59,210** ✓
+
+## Detailed analysis
+
+### 1. Schedule I breakup (cost vs. fair value vs. carrying amount, 2025)
+
+All figures are from Note 21, p.213.
+
+| Type | Cost | Fair value | On Balance Sheet |
+|---|---|---|---|
+| U.S. govt & agencies | 6,253 | 5,929 | 5,929 |
+| States/municipalities | 4,831 | 4,652 | 4,652 |
+| Foreign governments | 440 | 447 | 447 |
+| Public utilities | 2,793 | 2,716 | 2,716 |
+| All other corporate bonds | 20,512 | 20,360 | 20,360 |
+| Other MBS/ABS | 12,042 | 11,937 | 11,937 |
+| **Fixed maturities, AFS** | **46,871** | **46,041** | **46,041** |
+| FVO securities | 199 | 168 | 168 |
+| Common stocks | 369 | 470 | 470 |
+| Non-redeemable preferred stocks | 22 | 22 | 22 |
+| Mortgage loans | 6,886 | 6,607 | 6,837 |
+| Other investments | 279 | 262 | 262 |
+| Short-term investments | 4,353 | 4,353 | 4,353 |
+| Limited partnerships and other alternative investments | 5,804 | n/a | 5,804 |
+| **Total** | **64,783** | — | **63,957** |
+
+**Arithmetic checks:**
+- The cost column sums to 64,783 ✓.
+- The AFS sub-rows sum to 46,041 at fair value and 46,871 at cost ✓.
+- Mortgage loans: cost 6,886 less ACL 49 = 6,837 ✓.
+
+### 2. AFS bonds by type (Note 5, p.150)
+
+| Type | Fair value 2025 | Fair value 2024 | Change | Gross unrealized loss 2025 |
+|---|---|---|---|---|
+| Corporate | 23,076 | 20,636 | +2,440 | (604) |
+| RMBS | 6,178 | 5,230 | +948 | (244) |
+| ABS | 4,663 | 3,937 | +726 | (16) |
+| Municipal | 4,652 | 5,304 | −652 | (268) |
+| CLOs | 3,316 | 3,250 | +66 | (1) |
+| CMBS | 2,328 | 2,736 | −408 | (150) |
+| U.S. Treasuries | 1,381 | 994 | +387 | (139) |
+| Foreign govt. | 447 | 480 | −33 | (2) |
+| **Total** | **46,041** | **42,567** | **+3,474** | **(1,424)** |
+
+- **Amortized cost roll to fair value:**
+  - 2025: 46,871 − 16 ACL + 610 gains − 1,424 losses = 46,041 ✓
+  - 2024: 44,538 − 16 + 272 − 2,227 = 42,567 ✓
+- **Portfolio mix:** the book shifted toward corporates and structured securities and away from municipals and CMBS.
+- **Maturity profile (Note 5, p.150):**
+  - Structured securities (ABS + CLOs + CMBS + RMBS) total 16,485, which matches the "MBS/ABS" maturity line ✓.
+  - 9,531 matures in over 10 years, and 1,179 within one year.
+- **Unrealized losses (Note 5, p.151):** 2,659 positions are in an unrealized loss position. $(1,365)m of the losses is more than 12 months old. 94% of the positions are depressed less than 20%.
+
+### 3. Fair value hierarchy, 2025 (Note 4, p.141)
+
+| Category | Total | L1 | L2 | L3 |
+|---|---|---|---|---|
+| AFS | 46,041 | 164 | 42,505 | 3,372 |
+| FVO | 168 | — | — | 168 |
+| Equity securities | 492 | 379 | 7 | 106 |
+| Short-term investments | 4,353 | 602 | 3,369 | 382 |
+
+- Level 3 totals 4,028, which is 6.3% of total investments (4,028 / 63,957).
+- Level 3 grew by $1,036m. Net purchases were $2,847m against settlements and sales of $1,505m (Note 4, p.146).
+
+### 4. Other components
+
+- **Mortgage loans** (Note 5, p.152–153):
+  - Amortized cost is $6,886m. The largest property types are industrial (46.6%) and multifamily (32.1%); office is only 5.8% ($399m).
+  - Weighted-average LTV is 56% and DSCR is 2.36x. No loans are past due.
+  - Fair value is $6,607m, which is **$230m below carrying amount** (2024: a $495m gap) (Note 4, p.147).
+- **Limited partnerships and other alternative investments, $5,804m:**
+  - $5,313m is accounted for under the equity method (Note 5, p.155).
+  - The rest (5,804 − 5,313 = $491m) is insurer-owned life insurance at cash surrender value.
+  - Unfunded commitments are $2.6bn.
+- **Short-term investments** include $87m of reverse repurchase agreements (Note 5, p.154).
+- **Other investments** include $87m of overseas deposits measured at NAV (Note 4, p.142).
+- **Restricted investments** total $3,846m (Note 5, p.155).
+
+### 5. Yield
+
+- Net investment income was $2,911m (P&L p.123; Note 5 p.148).
+- Average investments were (63,957 + 59,210) / 2 = 61,584.
+- **Net yield ≈ 4.73%**, against roughly 4.4% in 2024 (prior-year average not available; estimated from 2,568 / 59,210).
+- Income from limited partnerships rose to $303m from $148m (Note 5, p.148).
+
+## Impact on the financial statements
+
+### Income Statement (Statement of Operations)
+
+- **Net investment income** was $2,911m (2024: $2,568m), +13.4%.
+  - It equals Note 5's gross income of $3,010m less $99m of expenses ✓ (P&L p.123; Note 5 p.148).
+  - It is 10.3% of total revenues of $28,368m.
+- **Net realized losses** were $(100)m (2024: $(61)m), which ties to Note 5 ✓. The main components were:
+  - net losses on bond sales of $(68)m;
+  - equity securities, +$58m;
+  - other, net, $(84)m;
+  - the mortgage-loan ACL, $(6)m.
+
+### Balance Sheet
+
+- The seven investment lines and **Total investments of $63,957m / $59,210m** tie to Notes 4, 5 and 21 (see the table above).
+- Investments are 74.4% of total assets (63,957 / 85,997).
+- Accrued investment income of $474m is shown separately: AFS $439m and mortgage loans $25m, which sum to $464m. The remaining $10m is unexplained.
+
+### Cash Flow Statement
+
+All figures are from the Cash Flow Statement, p.127.
+
+| Asset | Purchases | Proceeds | Net |
+|---|---|---|---|
+| Fixed maturities, AFS | (12,769) | 10,352 | (2,417) |
+| Mortgage loans | (2,021) | 1,598 | (423) |
+| Limited partnerships | (1,025) | 291 | (734) |
+| Equity securities | (97) | 240 | +143 |
+| FVO securities | (17) | 109 | +92 |
+
+- These investment flows, plus derivatives of (12) and short-term investments of (149), total **(3,500)**.
+- Adding property and equipment (169) and other (89) gives (3,758), the net cash used for investing activities ✓.
+- The net mortgage outflow of 423 is close to the 446 rise in amortized cost.
+- The limited partnership outflow of 734 plus equity-method income makes up most of the 762 increase.
+
+### Statement of Shareholders' Equity
+
+- The AFS unrealized position improved by 1,141 pre-tax: (−814) − (−1,955).
+- This produced the **+$898m** "Change in net unrealized gain (loss) on fixed maturities, AFS" in OCI (Comprehensive Income, p.124). That implies a tax rate of about 21% (1 − 898 / 1,141).
+- Total OCI of +$829m moved AOCI from $(2,886)m to $(2,057)m (Equity statement p.126; BS p.125).
+- Investment income also feeds net income of $3,836m and therefore retained earnings.
+
+## Red flags & areas for follow-up
+
+1. **Schedule I uses different classes from Note 5.**
+   - Schedule I shows "U.S. govt & agencies" of 5,929 against U.S. Treasuries of 1,381 in Note 5, and "MBS/ABS" of 11,937 against structured securities of 16,485.
+   - Both gaps are exactly **4,548**, which suggests agency RMBS is reported under government in Schedule I. This is not stated; confirm with management.
+2. **Mortgage loans sit $230m above their Level 3 fair value.** This economic loss does not appear in book value or OCI.
+3. **Level 3 grew 35%** (2,992 → 4,028), mainly in private corporates ($2,866m) and short-term investments (98 → 382). The unobservable-input table covers only $2,765m of the corporates, because broker-priced items are excluded.
+4. **Fair value is not disclosed** for limited partnerships ($5.8bn) in Schedule I. There are also $2.6bn of unfunded commitments.
+5. **The FVO book halved** and lost $(30)m in fair value (Note 4, p.147).
+6. **Source and tagging oddities:**
+   - The cash-flow equity-proceeds line is labelled "Marketable Securities", and "Securties" is a typo.
+   - The equity statement's "Total – Treasury stock acquired (1.6)" appears to be a scaling or tagging error (the real figure is $(1,616)m).
+   - In Note 4's 2024 table, foreign-exchange derivative liabilities are shown as a positive 18. The total of (12) only works if 18 nets against (30).
+   - The contents of "Other investments" ($262m) are not fully broken down. Are derivative assets of $20m included?
+7. **Accrued investment income** has a $10m difference that is not explained (see Balance Sheet above).
+
+## Sources
+
+- Note 21 – Schedule I (p.213)
+- Note 5 – Investments (p.148–155)
+- Note 4 – Fair Value Measurements (p.140–147)
+- Statements of Operations (p.123), Comprehensive Income (p.124), Balance Sheets (p.125), Changes in Stockholders' Equity (p.126), Cash Flows (p.127)
+
+Now answer this follow-up question, using the statements, the notes and the conversation above. Keep the same citation style: (Note X, p.N) for notes, (Balance Sheet, p.N) etc. for statements. As always, explain how the matter affects the primary financial statements (Income Statement, Balance Sheet, Cash Flow, Shareholders' Equity), in a short "Impact on the financial statements" section if the answer involves figures. Use headings and tables only where they help; a short answer is fine for a short question.
+
+FOLLOW-UP QUESTION: analyze the risk on corporate bonds

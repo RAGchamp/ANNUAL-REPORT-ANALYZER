@@ -1,0 +1,180 @@
+## Summary
+- **What "commercial" covers:** Travelers has no line called "commercial insurance". I have used its two commercial segments: **Business Insurance (BI)** and **Bond & Specialty Insurance (B&SI)**. Together they earned **$26,519m of premiums in 2025 (60% of the $43,914m group total)** and produced **$4,645m of segment income (69% of the $6,698m total)** (Note 2, p.135).
+- **Profit grew faster than premiums.** BI segment income rose **+11.8% to $3,695m** and B&SI rose **+16.6% to $950m** (Note 2, p.135). The drivers were higher net investment income (BI +8.7%), more favorable prior-year reserve development, and a lower loss ratio.
+- **BI's underwriting margin is thin and investment income carries it.** BI's approximate combined ratio is **95.6%** (2024: 96.4%). Net investment income of $2,782m is about **61% of BI's pre-tax income**. B&SI is the high-margin business, at an approximate **82.4%** combined ratio.
+- **Growth is slowing.** BI net written premiums grew only **+2.7%**, against **+5.0%** for earned premiums. Workers' comp and National Property were flat or down. Growth came from commercial auto and commercial multi-peril (CMP).
+- **Reserve risk sits in liability lines.** The development tables show **adverse development in BI general liability of about +$250m in 2025** (accident years 2018–2023) and asbestos additions of **$277m**. Both were masked by about **$440m of favorable workers' comp** development (Note 8, pp.158, 161, 165, 173).
+
+## Key figures
+| Item | 2025 | 2024 | Change | % change | Source |
+|---|---|---|---|---|---|
+| BI earned premiums | 22,412 | 21,345 | +1,067 | +5.0% | Note 2, p.135 |
+| BI net written premiums | 22,679 | 22,078 | +601 | +2.7% | Note 2, p.137 |
+| BI net investment income | 2,782 | 2,560 | +222 | +8.7% | Note 2, p.135 |
+| BI claims & CAE | 14,154 | 13,679 | +475 | +3.5% | Note 2, p.135 |
+| BI segment income (after tax) | 3,695 | 3,306 | +389 | +11.8% | Note 2, p.135 |
+| BI catastrophe losses | 1,073 | 1,032 | +41 | +4.0% | Note 2, p.136 |
+| BI favorable PYD | 233 | 90 | +143 | +159% | Note 2, p.136 |
+| B&SI earned premiums | 4,107 | 3,958 | +149 | +3.8% | Note 2, p.135 |
+| B&SI net written premiums | 4,262 | 4,109 | +153 | +3.7% | Note 2, p.137 |
+| B&SI segment income | 950 | 815 | +135 | +16.6% | Note 2, p.135 |
+| B&SI favorable PYD | 221 | 129 | +92 | +71% | Note 2, p.136 |
+| BI claims reserves | 51,655 | 49,731 | +1,924 | +3.9% | Note 20, p.219 |
+| B&SI claims reserves | 5,672 | 5,365 | +307 | +5.7% | Note 20, p.219 |
+| BI segment assets | 106,084 | 98,311 | +7,773 | +7.9% | Note 2, p.139 |
+| Net asbestos reserves | 1,360 | 1,340 | +20 | +1.5% | Note 8, p.172 |
+
+## Detailed analysis
+
+### 1. Underwriting ratios
+These are approximate ratios calculated from Note 2 (p.135), each line divided by earned premiums. G&A includes costs that serve fee income, so this is not the company's reported expense ratio.
+
+| Ratio | BI 2025 | BI 2024 | B&SI 2025 | B&SI 2024 |
+|---|---|---|---|---|
+| Loss & LAE | 14,154/22,412 = **63.2%** | 13,679/21,345 = 64.1% | 1,764/4,107 = **43.0%** | 1,774/3,958 = 44.8% |
+| DAC amortization | 3,796/22,412 = 16.9% | 3,588/21,345 = 16.8% | 778/4,107 = 18.9% | 756/3,958 = 19.1% |
+| G&A | 3,482/22,412 = 15.5% | 3,303/21,345 = 15.5% | 843/4,107 = 20.5% | 832/3,958 = 21.0% |
+| **Approx. combined** | **95.6%** | **96.4%** | **82.4%** | **84.9%** |
+| Catastrophe ratio | 1,073/22,412 = 4.8% | 1,032/21,345 = 4.8% | 0.6% | 1.3% |
+| PYD benefit | (233)/22,412 = (1.0)% | (90)/21,345 = (0.4)% | (5.4)% | (3.3)% |
+
+**BI underlying loss ratio** (excluding catastrophes and prior-year development):
+- 2025: (14,154 − 1,073 + 233) / 22,412 = **59.4%**
+- 2024: (13,679 − 1,032 + 90) / 21,345 = **59.7%**
+
+The underlying ratio improved only about 0.3 points. Most of BI's 0.9-point loss-ratio gain came from prior-year development, not from current-year pricing.
+
+### 2. Pre-tax rebuild of segment income (ties to Note 2)
+**BI 2025**
+- Revenues 26,018 − expenses (14,154 + 3,796 + 3,482 = 21,432) = 4,586 pre-tax
+- Less tax 891 = **3,695** ✓
+- Effective tax rate: 891 / 4,586 = 19.4%
+
+**BI 2024**
+- 24,657 − 20,570 = 4,087; less tax 781 = **3,306** ✓
+- Effective tax rate: 19.1%
+
+**B&SI 2025**
+- 4,579 − 3,385 = 1,194; less tax 244 = **950** ✓
+- Effective tax rate: 20.4%
+
+**Where BI's pre-tax income comes from (2025)**
+- Underwriting result: 22,412 − 21,432 = 980
+- Net investment income: 2,782
+- Fee income and other revenues: 445 + 379 = 824
+
+Net investment income is therefore **61%** of BI's pre-tax income (2,782 / 4,586). This reflects BI's long-tailed reserves: reserves are **2.3×** earned premiums (51,655 / 22,412), which creates a large float (Note 20, p.219).
+
+### 3. Mix and growth in BI (Note 2, pp.137–138)
+
+**Earned premiums by product**
+
+| Product | 2025 | 2024 | Change |
+|---|---|---|---|
+| CMP | 5,797 | 5,269 | **+10.0%** |
+| Commercial auto | 3,942 | 3,590 | **+9.8%** |
+| Commercial property | 3,772 | 3,616 | +4.3% |
+| General liability | 3,566 | 3,464 | +2.9% |
+| Workers' comp | 3,360 | 3,470 | **−3.2%** |
+| International | 1,899 | 1,863 | +1.9% |
+
+**Net written premiums by market**
+
+| Market | 2025 | 2024 | Change |
+|---|---|---|---|
+| Middle Market | 12,541 | 12,023 | +4.3% |
+| Select Accounts | 3,830 | 3,727 | +2.8% |
+| National Accounts | 1,262 | 1,259 | +0.2% |
+| National Property & Other | 3,112 | 3,134 | −0.7% |
+| International | 1,934 | 1,935 | 0.0% |
+
+**Interpretation**
+- Growth is concentrated in Middle Market and in auto and CMP.
+- Written premiums (+2.7%) are now growing more slowly than earned premiums (+5.0%). That points to slower earned growth in 2026 unless pricing reaccelerates.
+
+**B&SI:** growth came from International NWP (582 vs 506, +15.0%) and Surety (+4.6%). Management Liability was flat (+0.7%).
+
+### 4. Reserve quality by commercial line
+Change in incurred estimates during 2025, calculated as the 2025 column minus the 2024 column, summed across accident years (Note 8, pp.161–167):
+
+| Line | 2025 development | Comment |
+|---|---|---|
+| BI workers' comp | **−440 (favorable)** | Every accident year 2016–2022 is down; AY2016 has fallen from 2,768 to 2,092 since first estimate |
+| BI general liability | **+250 (adverse)** | AY2022 up from 1,696 to 2,014 (+18.8% since first estimate); AY2023 up from 1,998 to 2,129 |
+| BI CMP | −102 | Favorable in recent years |
+| BI commercial property | −88 | Favorable |
+| BI commercial auto | −44 | AY2023 +50 and AY2022 +9, offset by AY2024 −92 |
+| B&SI general liability | adverse in recent AYs | AY2024 up from 1,001 to 1,073 (+7.2%); AY2023 from 862 to 884 |
+| B&SI fidelity & surety | strongly favorable | AY2021 has fallen from 284 to 76 |
+
+The BI development tables sum to about −424 favorable. BI's reported net PYD is −233. The roughly $190m gap is consistent with the $277m asbestos and run-off additions, which sit outside these tables (Note 8, p.158).
+
+**Interpretation:** BI's reported favorable development depends on workers' comp releases while liability lines strengthen. Workers' comp premiums are shrinking (−3.2%), so this cushion may fade.
+
+## Impact on the financial statements
+
+### Income Statement (Statement of Operations)
+Commercial segment figures roll into the consolidated lines as follows (Note 2, p.135 vs Statement of Income, p.119):
+
+| P&L line (2025 / 2024) | BI + B&SI share 2025 | Reconciliation |
+|---|---|---|
+| Premiums 43,914 / 41,941 | 26,519 (60%) | Three segments sum exactly to 43,914 ✓ |
+| Net investment income 3,959 / 3,590 | 3,227 (82%) | Sums exactly ✓ |
+| Fee income 495 / 473 | 445 | BI only ✓ |
+| Claims & CAE 27,221 / 27,059 | 15,918 | Sums exactly ✓ |
+| Amortization of DAC 7,266 / 6,973 | 4,574 | Sums exactly ✓ |
+| G&A 6,120 / 5,819 | 4,325 | Segments total 6,071; the other 49 is in "Interest Expense and Other" |
+| Income tax 1,508 / 1,181 | 1,135 | Segments total 1,620; the 112 difference is the tax benefit on interest and realized losses |
+
+Net income reconciles: 6,698 − 373 − 37 = **6,288** ✓ (Note 2, p.138; P&L p.119).
+
+Schedule III's "Other operating expenses" of 6,545 equal G&A 6,120 plus interest 425 ✓ (Note 20, p.219).
+
+### Balance Sheet
+- **Claims reserves: 65,737 / 64,093** (BS p.121).
+  - Schedule III splits this as BI 51,655 + B&SI 5,672 + Personal 8,407 + Other 3 = 65,737 ✓ (Note 20, p.219).
+  - Note 8 shows 67,643 property-casualty + 3 accident & health − 1,909 held for sale = 65,737 ✓ (Note 8, p.157).
+  - Commercial reserves (57,327) are **87%** of the total.
+- **Unearned premium reserves: 22,431 / 22,289.** BI 11,088 + B&SI 3,145 + Personal 8,198 ✓ (Note 20).
+- **Deferred acquisition costs: 3,518 / 3,494.** BI 1,750 + B&SI 542 + Personal 1,226 ✓ (Note 20).
+- **Reinsurance recoverables: 7,886 / 8,000.** Ties to Note 6 (p.155) and to the "$7.89 billion" in Note 8 (p.160).
+- **Total assets: 143,708 / 133,189.** BI assets of 106,084 are 74% of the total ✓ (Note 2, p.139).
+
+### Cash Flow Statement
+Commercial underwriting and float drive operating cash flow of **10,606 / 9,074** (CF p.123):
+- Change in claims reserves: +3,300 / +2,680
+- Change in unearned premium reserves: +584 / +1,488 (the slowdown is consistent with slower written-premium growth)
+- Change in DAC: −7,373 / −7,173
+
+Long-tailed BI reserves grow faster than payments. Total net claims payments were 23,913 against 27,112 incurred (Note 8, p.157). This float is invested; investing outflow was 7,652.
+
+Commercial cash flows are not disclosed separately by segment.
+
+### Statement of Shareholders' Equity
+- Commercial segment income of 4,645 feeds net income of 6,288 and so retained earnings (49,630 → 54,931) (Equity p.122).
+- The bond portfolio backing commercial reserves drives other comprehensive income: unrealized gains of +2,744 pre-tax (OCI p.120) moved the AOCI loss from −4,967 to −2,500.
+- AOCI is not allocated by segment.
+
+## Red flags & areas for follow-up
+1. **Allowance mismatch.** The balance sheet caption shows an allowance for uncollectible reinsurance of **$129m**, but the Note 6 table shows **$(135)m** (BS p.121 vs Note 6 p.155). The difference is $6m, possibly the held-for-sale portion. Clarify.
+2. **Held-for-sale business.** Assets of $4,550m and liabilities of $2,542m are held for sale (BS p.121), including $1,909m of reserves (Note 8, p.157) and $285m of recoverables (Note 6, p.155). The provided notes do not say which segment holds this business.
+   - Personal Insurance reserves fell from 8,992 to 8,407 although its premiums grew, which suggests the business is in Personal Insurance.
+   - Confirm that the commercial segments are unaffected.
+3. **Adverse liability development.** BI general liability is about +$250m adverse in 2025, AY2022–2023 keep rising, and B&SI general liability AY2024 is up 7.2%. Ask about social inflation and the adequacy of reserves for recent accident years.
+4. **Recurring asbestos charges.** Additions were $284m (2023), $242m (2024) and $277m (2025), and management says further liabilities "cannot now be reasonably estimated" (Note 8, pp.173–174).
+5. **Dependence on workers' comp releases.** About $440m of favorable development came from workers' comp in 2025, while workers' comp premiums are falling.
+6. **Slowing written premiums.** BI NWP grew +2.7% against +5.0% earned. Ask about retention and rate trends by market.
+7. **Small tie-out gap.** Note 8's total incurred of 27,112 does not equal P&L claims of 27,221 (a difference of 109). This is likely accident & health, held-for-sale or other items, but it is not explained.
+8. **Expense allocation basis.** Schedule III expenses are allocated on statutory practices (Note 20, footnote 2), and net investment income is allocated notionally (Note 2, p.134). Segment margins therefore depend on allocation choices.
+
+## Sources
+- Note 2 – Segment Information (PDF pp.134–139)
+- Note 6 – Reinsurance (pp.154–156)
+- Note 8 – Insurance Claim Reserves (pp.157–174)
+- Note 20 – Schedule III (p.219)
+- Note 22 – Schedule VI (p.221)
+- Consolidated Statement of Income (p.119)
+- Consolidated Statement of Comprehensive Income (p.120)
+- Consolidated Balance Sheet (p.121)
+- Consolidated Statement of Changes in Shareholders' Equity (p.122)
+- Consolidated Statement of Cash Flows (p.123)

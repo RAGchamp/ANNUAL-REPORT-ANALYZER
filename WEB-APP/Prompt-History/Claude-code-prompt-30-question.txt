@@ -1,0 +1,11 @@
+Asked at: 2026-11-08 22:39:13
+Kind: analysis
+Report: HIG
+Scope: Consolidated
+Notes: Consolidated Note 21 – Schedule I Summary of Investments - Other Than Investments in Affiliates (PDF p.213), Consolidated Note 5 – Investments (PDF p.148–155), Consolidated Note 4 – Fair Value Measurements (PDF p.140–147)
+PDF pages: 213, 148, 149, 150, 151, 152, 153, 154, 155, 140, 141, 142, 143, 144, 145, 146, 147
+Financial statements: Consolidated Statements of Operations (PDF p.123); Consolidated Statements of Comprehensive Income (Loss) (PDF p.124); Consolidated Balance Sheets (PDF p.125); Consolidated Statements of Cash Flows (PDF p.127); Consolidated Statement of Changes in Stockholders' Equity (PDF p.126)
+Thread: a97f117435d14c37b717e4fe6cb2cef7
+Saved HTML: HIG-1-20261108-223913.html
+
+give breakup of hartford's total investments as of Dec-31-2025

@@ -38,11 +38,15 @@ from ingest.pdf_utils import PdfError, find_header_row, open_pdf, page_layout, p
 
 log = logging.getLogger(__name__)
 
-INDEX_VERSION = 34
+INDEX_VERSION = 36      # 36: schema 1.3 (lines.concept; the XBRL route, INFO/XBRL-ROUTE.md)
 
 HEADING_RE = re.compile(r"^(\d{1,3})(?:\.(\d{1,2}))?\s*\.?\s+(\S.*)$")
 # "(1)   SIGNIFICANT ACCOUNTING POLICIES" in plain-text filings (group 2: no sub-number)
 PLAIN_HEADING_RE = re.compile(r"^\((\d{1,3})\)()\s+(\S.*)$")
+# "Note 12 – Loans" (note_word_headings; group 2: no sub-number). A row may hold two:
+# "Note 16 – Premises and equipment   Note 17 – Deposits" (one note per column).
+NOTE_WORD_HEADING_RE = re.compile(r"^Note\s+(\d{1,3})()\s*[–—-]\s*(\S.*)$")
+NOTE_WORD_SPLIT_RE = re.compile(r"\s+(?=Note\s+\d{1,3}\s*[–—-]\s)")
 CONTD_RE = re.compile(r"\(\s*CONT(?:D|INUED)?\.?\s*\)", re.I)
 MAX_NOTE_STEP = 4
 WRAP_MARGIN_SHARE = 0.1  # a wrapping heading line ends within 10% of the right margin
@@ -81,6 +85,9 @@ def _section_of(page_text):
 COMPANY_SUFFIX = r"(?:Limited|Ltd\.?|Inc\.?|Corporation|PLC|Plc)"
 AUDITOR_ADDRESSEE_RE = re.compile(
     r"To the Members of\s+((?:[A-Z][A-Za-z&'.\-]*\s+){1,5}" + COMPANY_SUFFIX + ")")
+# "To the Board of Directors and Shareholders of\nJPMorgan Chase & Co.:" (us_auditor_addressee)
+US_AUDITOR_ADDRESSEE_RE = re.compile(
+    r"To the Board of Directors and (?:Shareholders|Stockholders) of\s+([A-Z][^:\n]{2,60}?)\s*:")
 COMPANY_NAME_RE = re.compile(
     r"\b((?:[A-Z][A-Za-z&'.\-]*[ \t]+){1,5}" + COMPANY_SUFFIX + r")\b")
 
@@ -182,6 +189,8 @@ def _build(pdf_path, force_format, profile):
         _fill_run_on_pages(doc, pages, rows_by_page)
     if profiles.active().switches.untitled_statement_pages:
         _add_untitled_statement_pages(doc, pages, statement_pages)
+    if profiles.active().switches.alternate_header_pages:
+        _fill_alternate_pages(doc, pages, rows_by_page)
 
     sections = {}
     for section in config.NOTES_HEADERS:
@@ -230,6 +239,9 @@ def _build(pdf_path, force_format, profile):
 def _count_names(text, auditor_names, all_names):
     for match in AUDITOR_ADDRESSEE_RE.finditer(text):
         auditor_names[" ".join(match.group(1).split())] += 1
+    if profiles.active().switches.us_auditor_addressee:
+        for match in US_AUDITOR_ADDRESSEE_RE.finditer(text):
+            auditor_names[" ".join(match.group(1).split())] += 1
     for match in COMPANY_NAME_RE.finditer(text):
         all_names[match.group(1).strip()] += 1
 
@@ -389,6 +401,21 @@ def _fill_run_on_pages(doc, pages, rows_by_page):
             rows_by_page[pno] = rows
 
 
+def _fill_alternate_pages(doc, pages, rows_by_page):
+    """The JPMorgan 10-K prints "Notes to consolidated financial statements" on
+    left-hand pages only (PDF 172, 174 … 316). A single page between two pages of
+    one notes section belongs to that section."""
+    for pno in sorted(pages):
+        nxt = pno + 2
+        if pno + 1 in pages or nxt not in pages or pages[nxt]["section"] != pages[pno]["section"]:
+            continue
+        rows = page_rows(doc[pno])          # PDF page pno + 1
+        layout = page_layout(doc[pno], rows)
+        layout["section"] = pages[pno]["section"]
+        pages[pno + 1] = layout
+        rows_by_page[pno + 1] = rows
+
+
 FIGURE_ROW_RE = re.compile(r"\d{1,3}(?:,\d{3})+|\(\d[\d,]*\)|—")
 
 
@@ -433,11 +460,55 @@ def _heading_candidates(section_pages, pages, rows_by_page, plain=False):
         for i, row in enumerate(body):
             if row["x0"] > left + 25 or (not plain and not row["bold"]):
                 continue
+            if profiles.active().switches.note_word_headings:
+                for title in _note_word_titles(i, body):
+                    candidates.append((pno, i, row, NOTE_WORD_HEADING_RE.match(title), body))
+                continue
             match = HEADING_RE.match(row["text"]) or (PLAIN_HEADING_RE.match(row["text"]) if plain else None)
             if not match or (plain and not _is_capitals(match.group(3))):
                 continue
             candidates.append((pno, i, row, match, body))
     return candidates
+
+
+def _runs(parts, gap=12.0):
+    """A row's spans in runs of one font and size with no wide gap: one run per
+    column ("Note 26 – Restricted cash, other restricted" | "Intercompany funds
+    transfers", a subheading in the right column)."""
+    runs = []
+    for x0, x1, text, font, size in parts:
+        if runs and x0 - runs[-1]["x1"] <= gap and (font, size) == runs[-1]["style"]:
+            runs[-1]["text"] += " " + text
+            runs[-1]["x1"] = x1
+        else:
+            runs.append({"x0": x0, "x1": x1, "text": text, "style": (font, size)})
+    return runs
+
+
+def _note_word_titles(i, body):
+    """note_word_headings: the full "Note N – Title" headings that start on body
+    row i. A heading wraps onto bold lines of its style directly below it in the
+    same column ("Note 8 – Pension and other postretirement" / "employee benefit
+    plans"); two notes may share the row, one per column."""
+    titles = []
+    for run in _runs(body[i]["parts"]):
+        for piece in NOTE_WORD_SPLIT_RE.split(run["text"]):
+            if not NOTE_WORD_HEADING_RE.match(piece):
+                continue
+            title, last_y1 = piece, body[i]["y1"]
+            for nxt in body[i + 1:i + 5]:
+                if nxt["y0"] - last_y1 >= 8:
+                    break
+                below = [r for r in _runs(nxt["parts"]) if abs(r["x0"] - run["x0"]) < 3
+                         and r["style"] == run["style"]]
+                if not below:
+                    continue            # a row of the other column only
+                if NOTE_WORD_HEADING_RE.match(below[0]["text"]):
+                    break
+                title += " " + below[0]["text"]
+                last_y1 = nxt["y1"]
+            titles.append(title)
+    return titles
 
 
 def _find_notes(section_pages, pages, rows_by_page):
@@ -491,9 +562,10 @@ def _find_notes(section_pages, pages, rows_by_page):
         if not (title[0].isalpha() or title[0] == "("):
             continue
 
+        full_title = title if profiles.active().switches.note_word_headings else _full_title(title, row, i, body)
         notes.append({
             "no": number,
-            "title": _truncate(_full_title(title, row, i, body)),
+            "title": _truncate(full_title),
             "start_page": pno,
             "start_y": round(row["y0"], 1),
             "end_page": None,
@@ -626,9 +698,13 @@ def summary(index):
     if index.get("format") == "transcribed":
         return transcribed_index.summary(index)
     parts = []
+    # an inline XBRL filing has document pages, not PDF pages (INFO/XBRL-ROUTE.md §8)
+    pages = "p." if index.get("source") == "xbrl" else "PDF p."
     for section in index["sections"].values():
         parts.append(
             f"{section['label']} notes: {len(section['notes'])} "
-            f"(PDF p.{section['first_page']}–{section['last_page']})"
+            f"({pages}{section['first_page']}–{section['last_page']})"
         )
+    if index.get("source") == "xbrl" and parts:
+        parts[-1] += " · from the filing's inline XBRL"
     return " · ".join(parts) if parts else "No notes sections found"

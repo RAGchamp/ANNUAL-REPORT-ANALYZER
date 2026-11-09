@@ -16,6 +16,7 @@ Flow (see INFO/ANN-RPT-NOTES-ANALYZER-PLAN.md):
   job status                GET  /api/jobs/<id>
   history                   GET  /api/history, /api/history/<sno>
   model testing             GET  /model-testing (INFO/MODEL-FEEDBACK-FUNCTIONALITY-PLAN.md)
+  XBRL filings from EDGAR   GET  /xbrl (ingest/xbrl_routes.py)
 
 This module wires the two parts together: it is the only place that uses both.
 """
@@ -29,9 +30,12 @@ from analyzer import routes as analyzer_routes
 from analyzer import source
 from ingest import pipeline, report_format
 from ingest import model_test_routes
+from ingest import xbrl_routes
 from ingest import routes as ingest_routes
 from ingest.pdf_utils import PdfError
-from webcommon import JOBS, JOBS_LOCK, UserError, list_reports, render_markdown, resolve_report
+from rptpkg import store
+from webcommon import (JOBS, JOBS_LOCK, UserError, is_xbrl_report, list_reports, logo_svg, render_markdown,
+                       resolve_report)
 
 logging.basicConfig(
     level=logging.INFO,
@@ -50,6 +54,7 @@ app = Flask(__name__)
 app.register_blueprint(analyzer_routes.bp)
 app.register_blueprint(ingest_routes.bp)
 app.register_blueprint(model_test_routes.bp)
+app.register_blueprint(xbrl_routes.bp)
 
 
 def open_report_package(pdf_path, format_choice=None):
@@ -67,6 +72,12 @@ def open_report_package(pdf_path, format_choice=None):
 source.set_loader(open_report_package)
 
 
+@app.context_processor
+def brand():
+    """The RAG Champ logo for the top bar every page shows (templates/_brand.html)."""
+    return {"logo_svg": logo_svg()}
+
+
 @app.errorhandler(UserError)
 def handle_user_error(exc):
     return jsonify({"error": str(exc)}), 400
@@ -77,14 +88,23 @@ def index():
     return render_template("index.html", reports_dir=str(config.REPORTS_DIR))
 
 
+@app.route("/watchlist")
+@app.route("/watchlist.html")
+def watchlist():
+    """The stock watchlist of the STOCK INVESTMENT PLAYBOOK (indexes, macroeconomics, the stocks
+    to follow with links to their EDGAR filings), linked from the home page."""
+    return render_template("watchlist.html")
+
+
 @app.route("/api/reports")
 def api_reports():
     reports = []
     for path in list_reports():
         reports.append({
             "name": path.name,
-            "size_mb": round(path.stat().st_size / 1_048_576, 1),
+            "size_mb": round(store.report_size(path) / 1_048_576, 1),
             "indexed": pipeline.is_ingested(path),
+            "xbrl": is_xbrl_report(path),
         })
     return jsonify({"reports": reports, "reports_dir": str(config.REPORTS_DIR)})
 
@@ -103,7 +123,7 @@ def api_index():
         return jsonify(ingest_routes.needs_transcription(path, exc))
     except pipeline.NewModelDocument as exc:
         return jsonify(ingest_routes.new_model_document(path, exc))
-    except PdfError as exc:
+    except PdfError as exc:          # also an XBRL filing that fails its acceptance checks
         raise UserError(str(exc))
     return jsonify(analyzer_routes.report_summary(package))
 

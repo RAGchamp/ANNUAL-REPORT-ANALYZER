@@ -1,0 +1,64 @@
+{% from "_brand.html" import brand_nav -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>XBRL filings — Annual Report Analyzer</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body>
+  <header class="site-header">
+    {{ brand_nav(logo_svg) }}
+    <nav class="navbar">
+      <a class="ghost nav-link" href="/">← Analyze screen</a>
+      <h1>XBRL filings from SEC</h1>
+      <button type="button" id="refresh" class="ghost" title="Reload the list">↻</button>
+      <a class="ghost nav-link" href="/ingest" title="Ingest reports, see what was found and checked">Ingest screen ↗</a>
+    </nav>
+  </header>
+
+  <main class="ingest-main">
+    <section class="card">
+      <h2>Download a filing</h2>
+      <p class="muted small-text">
+        Give the stock's ticker and a link to its filing on SEC EDGAR: the filing's index page
+        (e.g. <code>https://www.sec.gov/Archives/edgar/data/874766/000087476626000012/0000874766-26-000012-index.htm</code>),
+        or the iXBRL viewer link of its main document. The app saves the inline XBRL document (marked
+        <b>iXBRL</b> under <i>Document Format Files</i>) and the <i>Data Files</i> (schema, calculation, definition,
+        label and presentation linkbases, extracted instance) in <code>{{ docs_dir }}\&lt;TICKER&gt;</code>.
+        The folder then appears in the report list, and the Ingest step reads it from its XBRL tags.
+      </p>
+      <form id="download-form" class="xbrl-form" autocomplete="off">
+        <label for="ticker">Ticker</label>
+        <input type="text" id="ticker" maxlength="10" placeholder="HIG" required />
+        <label for="link">SEC link</label>
+        <input type="url" id="link" placeholder="https://www.sec.gov/Archives/edgar/data/…-index.htm" required />
+        <span></span>
+        <label class="inline small-text"><input type="checkbox" id="overwrite" /> Replace the ticker's folder if it already holds a filing</label>
+        <span></span>
+        <div class="row">
+          <button type="submit" id="download-btn" data-job="1">Download</button>
+          <span id="download-status" class="muted small-text job-status"></span>
+        </div>
+      </form>
+      {% if not custom_agent %}
+      <p class="muted small-text">
+        SEC asks automated tools to identify themselves. The app sends a generic name; to send yours, set the
+        <code>SEC_USER_AGENT</code> environment variable (e.g. <code>Your Name your.email@example.com</code>) and restart.
+      </p>
+      {% endif %}
+    </section>
+
+    <div id="error-box" class="card error hidden"></div>
+
+    <section class="card">
+      <h2>Downloaded filings</h2>
+      <p class="muted small-text">One folder per ticker in <code>{{ docs_dir }}</code>.</p>
+      <div id="folder-list" class="report-list"><div class="muted">Loading…</div></div>
+    </section>
+  </main>
+
+  <script src="{{ url_for('static', filename='xbrl.js') }}"></script>
+</body>
+</html>

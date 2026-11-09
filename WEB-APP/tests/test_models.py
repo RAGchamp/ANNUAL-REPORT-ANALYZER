@@ -58,11 +58,11 @@ def _model_pdf(type_prefix):
 def test_registry():
     reg = registry.load()
     assert reg.fingerprint_version == FINGERPRINT_VERSION        # else: python -m ingest.models refresh
-    assert [m.id.split("-")[1] for m in reg.models] == [str(n) for n in range(1, 9)]
+    assert [m.id.split("-")[1] for m in reg.models] == [str(n) for n in range(1, 10)]
     assert {"-".join(m.id.split("-")[:2]): m.profile for m in reg.supported()} == {
         "TYPE-1": "in-indas-2020s", "TYPE-2": "in-schedule-vi-1970s", "TYPE-3": "us-10k-edgar",
         "TYPE-4": "us-10k-typewriter", "TYPE-5": "scanned-ocr", "TYPE-6": "ca-40f-usgaap",
-        "TYPE-7": "in-20f-ifrs", "TYPE-8": "au-20f-ifrs"}
+        "TYPE-7": "in-20f-ifrs", "TYPE-8": "au-20f-ifrs", "TYPE-9": "us-10k-two-column"}
     assert not any(m.pending for m in reg.models)                         # every model has rules
     assert all(m.profile is None or m.profile in profiles.PROFILES for m in reg.models)
     assert reg.by_id("TYPE-3").short == "TYPE-3 USA 10-K 2025 Chubb"
@@ -255,7 +255,7 @@ def test_app_blocks_a_new_model_document(sandbox, pending_report, monkeypatch):
     rows = client.get("/api/ingest/reports").get_json()["reports"]
     assert rows[0]["status"] == "new model document"
     models = client.get("/api/models").get_json()
-    assert len(models["models"]) == 8 and [m["pending"] for m in models["models"]].count(True) == 1
+    assert len(models["models"]) == 9 and [m["pending"] for m in models["models"]].count(True) == 1
 
 
 @pytest.mark.slow

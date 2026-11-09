@@ -1,0 +1,968 @@
+REPORT PROFILE
+Format: US annual report on Form 10-K (US GAAP)
+Periods in the statements: FY2025, FY2024, FY2023 (years ended December 31)
+Units: (in millions of U.S. dollars, except per share data)
+Source: the filing's inline XBRL (statement figures, notes and links read from its tags, not from page layout). "PDF page" numbers are the filing's document pages (between its page breaks); the printed page number is given alongside.
+The statements have no Notes column; LINKED FIGURES shows how the app linked statement lines to the notes.
+
+Annual report: TRV
+Statements: Consolidated
+Notes provided: Consolidated Note 2 – Segment Information (PDF p.134–139), Consolidated Note 8 – Insurance Claim Reserves (PDF p.157–174), Consolidated Note 20 – Schedule III (PDF p.219), Consolidated Note 22 – Schedule VI (PDF p.221), Consolidated Note 6 – Reinsurance (PDF p.154–156)
+Primary financial statements provided: Consolidated Statement of Income (PDF p.119); Consolidated Statement of Comprehensive Income (PDF p.120); Consolidated Balance Sheet (PDF p.121); Consolidated Statement of Cash Flows (PDF p.123); Consolidated Statement of Changes in Shareholders' Equity (PDF p.122)
+
+QUESTION: analyzE TRAVELER's commercial insurance business
+
+Structure your answer as:
+## Summary
+3–5 bullet points with the key conclusions.
+## Key figures
+A table with columns: Item | Current year | Prior year | Change | % change | Source.
+## Detailed analysis
+Trends, drivers, ratios and interpretation relevant to the question.
+## Impact on the financial statements
+How the matters in the notes flow into and affect each primary statement. Use one sub-heading per statement:
+### Income Statement (Statement of Operations)
+### Balance Sheet
+### Cash Flow Statement
+### Statement of Shareholders' Equity
+For each one, name the line items affected, give their figures (current and prior year, citing statement and page), show how the note reconciles to them, and explain the effect. For example, how the tax expense in the note drives profit after tax, how deferred tax balances appear on the Balance Sheet, how taxes paid appear in operating cash flow, or how OCI items move reserves in equity.
+## Red flags & areas for follow-up
+Anything unusual, inconsistent, or worth asking management about, including any note figure that does not agree with the statements.
+## Sources
+The notes, statements and PDF pages you relied on.
+
+----- PRIMARY FINANCIAL STATEMENTS (PDF page numbers) -----
+=== Consolidated Statement of Income (Consolidated) ===
+--- PDF page 119 (printed page 119) ---
+Consolidated Statement of Income
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Revenues
+Premiums | 43,914 | 41,941 | 37,761
+Net investment income | 3,959 | 3,590 | 2,922
+Fee income | 495 | 473 | 433
+Net realized investment losses | (48) | (30) | (105)
+Other revenues | 508 | 449 | 353
+Total revenues | 48,828 | 46,423 | 41,364
+Claims and expenses
+Claims and claim adjustment expenses | 27,221 | 27,059 | 26,215
+Amortization of deferred acquisition costs | 7,266 | 6,973 | 6,226
+General and administrative expenses | 6,120 | 5,819 | 5,176
+Interest expense | 425 | 392 | 376
+Total claims and expenses | 41,032 | 40,243 | 37,993
+Income before income taxes | 7,796 | 6,180 | 3,371
+Income tax expense | 1,508 | 1,181 | 380
+Net income | 6,288 | 4,999 | 2,991
+Net income per share
+Basic (in dollars per share) | 27.83 | 21.76 | 12.93
+Diluted (in dollars per share) | 27.43 | 21.47 | 12.79
+Weighted average number of common shares outstanding
+Basic (in shares) | 224.2 | 228.0 | 229.7
+Diluted (in shares) | 227.6 | 231.1 | 232.2
+
+=== Consolidated Statement of Comprehensive Income (Consolidated) ===
+--- PDF page 120 (printed page 120) ---
+Consolidated Statement of Comprehensive Income
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Net income | 6,288 | 4,999 | 2,991
+Other comprehensive income (loss):
+Changes in net unrealized gains (losses) on investment securities having no credit losses recognized in the consolidated statement of income | 2,744 | (644) | 2,249
+Changes in net unrealized gains (losses) on investment securities having credit losses recognized in the consolidated statement of income | 3 | 5 | 1
+Net changes in benefit plan assets and obligations | 94 | 296 | 106
+Net changes in unrealized foreign currency translation | 246 | (232) | 138
+Other comprehensive income (loss) before income taxes | 3,087 | (575) | 2,494
+Income tax expense (benefit) | 620 | (79) | 520
+Other comprehensive income (loss), net of taxes | 2,467 | (496) | 1,974
+Comprehensive income | 8,755 | 4,503 | 4,965
+
+=== Consolidated Balance Sheet (Consolidated) ===
+--- PDF page 121 (printed page 121) ---
+Consolidated Balance Sheet
+(in millions of U.S. dollars, except per share data) | Dec 31, 2025 | Dec 31, 2024
+Assets
+Fixed maturities, available for sale, at fair value (amortized cost $91,717 and $88,277; allowance for expected credit losses of $3 and $2) | 89,833 | 83,666
+Equity securities, at fair value (cost $457 and $544) | 618 | 687
+Real estate investments | 900 | 902
+Short-term securities | 5,716 | 4,766
+Other investments | 4,115 | 4,202
+Total investments | 101,182 | 94,223
+Cash (including restricted cash of $132 and $131) | 842 | 699
+Investment income accrued | 877 | 752
+Premiums receivable (net of allowance for expected credit losses of $58 and $58) | 10,992 | 11,110
+Reinsurance recoverables (net of allowance for estimated uncollectible reinsurance of $129 and $119) | 7,886 | 8,000
+Ceded unearned premiums | 1,283 | 1,202
+Deferred acquisition costs | 3,518 | 3,494
+Deferred taxes | 887 | 1,762
+Contractholder receivables (net of allowance for expected credit losses of $16 and $18) | 3,010 | 3,171
+Goodwill | 4,066 | 4,233
+Other intangible assets | 336 | 360
+Other assets | 4,279 | 4,183
+Assets held for sale | 4,550 | 
+Total assets | 143,708 | 133,189
+Liabilities
+Claims and claim adjustment expense reserves | 65,737 | 64,093
+Unearned premium reserves | 22,431 | 22,289
+Contractholder payables | 3,026 | 3,189
+Payables for reinsurance premiums | 529 | 550
+Debt | 9,267 | 8,033
+Other liabilities | 7,282 | 7,171
+Liabilities held for sale | 2,542 | 
+Total liabilities | 110,814 | 105,325
+Shareholders’ equity
+Common stock (1,750.0 shares authorized; 217.5 and 226.6 shares issued and outstanding) | 25,910 | 25,452
+Retained earnings | 54,931 | 49,630
+Accumulated other comprehensive loss | (2,500) | (4,967)
+Treasury stock, at cost (575.9 and 564.3 shares) | (45,447) | (42,251)
+Total shareholders’ equity | 32,894 | 27,864
+Total liabilities and shareholders’ equity | 143,708 | 133,189
+
+=== Consolidated Statement of Cash Flows (Consolidated) ===
+--- PDF page 123 (printed page 123) ---
+Consolidated Statement of Cash Flows
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Cash flows from operating activities
+Net income | 6,288 | 4,999 | 2,991
+Adjustments to reconcile net income to net cash provided by operating activities:
+Net realized investment losses | 48 | 30 | 105
+Depreciation and amortization | 680 | 715 | 722
+Deferred federal income tax expense (benefit) | 210 | (152) | (163)
+Amortization of deferred acquisition costs | 7,266 | 6,973 | 6,226
+Equity in income from other investments | (226) | (294) | (157)
+Premiums receivable | (115) | (859) | (1,341)
+Reinsurance recoverables | (137) | 111 | (63)
+Deferred acquisition costs | (7,373) | (7,173) | (6,689)
+Claims and claim adjustment expense reserves | 3,300 | 2,680 | 2,843
+Unearned premium reserves | 584 | 1,488 | 2,590
+Other operating activities | 81 | 556 | 647
+Net cash provided by operating activities | 10,606 | 9,074 | 7,711
+Cash flows from investing activities
+Proceeds from maturities of fixed maturities | 11,660 | 8,537 | 6,371
+Proceeds from sales of investments:
+Fixed maturities | 832 | 1,634 | 4,981
+Equity securities | 160 | 143 | 138
+Real estate investments | — | 64 | —
+Other investments | 321 | 422 | 255
+Purchases of investments:
+Fixed maturities | (18,771) | (17,132) | (15,690)
+Equity securities | (126) | (124) | (105)
+Real estate investments | (48) | (48) | (67)
+Other investments | (346) | (396) | (495)
+Net sales (purchases) of short-term securities | (945) | 370 | (1,664)
+Securities transactions in the course of settlement | 144 | 56 | (83)
+Acquisition, net of cash acquired | — | (382) | —
+Other investing activities | (533) | (408) | (462)
+Net cash used in investing activities | (7,652) | (7,264) | (6,821)
+Cash flows from financing activities
+Treasury stock acquired — share repurchase authorizations | (3,004) | (1,003) | (958)
+Treasury stock acquired — net employee share-based compensation | (127) | (114) | (64)
+Dividends paid to shareholders | (979) | (951) | (908)
+Issuance of debt | 1,233 | — | 738
+Issuance of common stock — employee share options | 214 | 321 | 141
+Net cash used in financing activities | (2,663) | (1,747) | (1,051)
+Effect of exchange rate changes on cash and restricted cash | 23 | (14) | 12
+Net increase (decrease) in cash and restricted cash | 314 | 49 | (149)
+Cash and restricted cash at beginning of year | 699 | 650 | 799
+Less amounts classified as held for sale at end of period | 171 |  | 
+Cash and restricted cash at end of year | 842 | 699 | 650
+Supplemental disclosure of cash flow information
+Income taxes paid | 1,274 | 1,310 | 201
+Interest paid | 393 | 390 | 370
+
+=== Consolidated Statement of Changes in Shareholders' Equity (Consolidated) ===
+--- PDF page 122 (printed page 122) ---
+Consolidated Statement of Changes in Shareholders' Equity
+(in millions of U.S. dollars, except per share data) | Year Ended Dec 31, 2025 | Year Ended Dec 31, 2024 | Year Ended Dec 31, 2023
+Common stock [Member]
+Balance, beginning of year | 25,452 | 24,906 | 24,565
+Employee share-based compensation | 202 | 286 | 125
+Compensation amortization under share-based plans and other changes | 256 | 260 | 216
+Balance, end of year | 25,910 | 25,452 | 24,906
+Retained earnings [Member]
+Balance, beginning of year | 49,630 | 45,591 | 43,516
+Net income | 6,288 | 4,999 | 2,991
+Dividends | (987) | (962) | (915)
+Other | — | 2 | (1)
+Balance, end of year | 54,931 | 49,630 | 45,591
+Accumulated other comprehensive loss, net of tax [Member]
+Balance, beginning of year | (4,967) | (4,471) | (6,445)
+Other comprehensive income (loss) | 2,467 | (496) | 1,974
+Balance, end of year | (2,500) | (4,967) | (4,471)
+Treasury stock, at cost [Member]
+Balance, beginning of year | (42,251) | (41,105) | (40,076)
+Treasury stock acquired — share repurchase authorizations | (3,025) | (1,000) | (965)
+Net shares acquired related to employee share-based compensation plans | (171) | (146) | (64)
+Balance, end of year | (45,447) | (42,251) | (41,105)
+Common shares outstanding [Member]
+Common shares outstanding
+Balance, beginning of year (in shares) | 226.6 | 228.2 | 232.1
+Treasury stock acquired — share repurchase authorizations (in shares) | (10.9) | (4.4) | (5.4)
+Net shares issued under employee share-based compensation plans (in shares) | 1.8 | 2.8 | 1.5
+Balance, end of year (in shares) | 217.5 | 226.6 | 228.2
+Total
+Balance, beginning of year | 27,864 | 24,921 | 
+Net income | 6,288 | 4,999 | 2,991
+Other comprehensive income (loss) | 2,467 | (496) | 1,974
+Treasury stock acquired — share repurchase authorizations | (3.0) |  | 
+Net shares acquired related to employee share-based compensation plans | (171) | (146) | 
+Balance, end of year | 32,894 | 27,864 | 24,921
+Common shares outstanding
+Balance, beginning of year (in shares) | 226.6 |  | 
+Treasury stock acquired — share repurchase authorizations (in shares) | (10.9) |  | 
+Balance, end of year (in shares) | 217.5 | 226.6 | 
+----- END OF PRIMARY FINANCIAL STATEMENTS -----
+
+----- LINKED FIGURES (statement lines the app linked to the notes provided; found automatically - check them against the statements and notes) -----
+- Reinsurance recoverables (net of allowance for estimated uncollectible reinsurance of $129 and $119) (Consolidated Balance Sheet, PDF p.121) | FY2025 7,886 | FY2024 8,000 -> Note 6 (same XBRL concept tagged in the note)
+- Deferred acquisition costs (Consolidated Balance Sheet, PDF p.121) | FY2025 3,518 | FY2024 3,494 -> Note 20 (same figure in the note); Note 22 (same figure in the note)
+- Total assets (Consolidated Balance Sheet, PDF p.121) | FY2025 143,708 | FY2024 133,189 -> Note 2 (same figure in the note)
+- Claims and claim adjustment expense reserves (Consolidated Balance Sheet, PDF p.121) | FY2025 65,737 | FY2024 64,093 -> Note 8 (same XBRL concept tagged in the note)
+- Unearned premium reserves (Consolidated Balance Sheet, PDF p.121) | FY2025 22,431 | FY2024 22,289 -> Note 20 (same figure in the note); Note 22 (same figure in the note)
+- Payables for reinsurance premiums (Consolidated Balance Sheet, PDF p.121) | FY2025 529 | FY2024 550 -> Note 6 (title match)
+- Total liabilities and shareholders’ equity (Consolidated Balance Sheet, PDF p.121) | FY2025 143,708 | FY2024 133,189 -> Note 2 (same figure in the note)
+- Net income (Consolidated Statement of Cash Flows, PDF p.123) | FY2025 6,288 | FY2024 4,999 | FY2023 2,991 -> Note 2 (same XBRL concept tagged in the note)
+- Net realized investment losses (Consolidated Statement of Cash Flows, PDF p.123) | FY2025 48 | FY2024 30 | FY2023 105 -> Note 2 (same XBRL concept tagged in the note)
+- Amortization of deferred acquisition costs (Consolidated Statement of Cash Flows, PDF p.123) | FY2025 7,266 | FY2024 6,973 | FY2023 6,226 -> Note 2 (same XBRL concept tagged in the note)
+- Reinsurance recoverables (Consolidated Statement of Cash Flows, PDF p.123) | FY2025 (137) | FY2024 111 | FY2023 (63) -> Note 6 (title match)
+- Net cash provided by operating activities (Consolidated Statement of Cash Flows, PDF p.123) | FY2025 10,606 | FY2024 9,074 | FY2023 7,711 -> Note 8 (same figure in the note)
+- Net income (Consolidated Statement of Changes in Shareholders' Equity, PDF p.122) | FY2025 6,288 | FY2024 4,999 | FY2023 2,991 -> Note 2 (same XBRL concept tagged in the note)
+- Net income (Consolidated Statement of Changes in Shareholders' Equity, PDF p.122) | FY2025 6,288 | FY2024 4,999 | FY2023 2,991 -> Note 2 (same XBRL concept tagged in the note)
+- Premiums (Consolidated Statement of Income, PDF p.119) | FY2025 43,914 | FY2024 41,941 | FY2023 37,761 -> Note 2 (same XBRL concept tagged in the note); Note 6 (same XBRL concept tagged in the note)
+- Net investment income (Consolidated Statement of Income, PDF p.119) | FY2025 3,959 | FY2024 3,590 | FY2023 2,922 -> Note 2 (same XBRL concept tagged in the note)
+- Fee income (Consolidated Statement of Income, PDF p.119) | FY2025 495 | FY2024 473 | FY2023 433 -> Note 2 (same XBRL concept tagged in the note)
+- Net realized investment losses (Consolidated Statement of Income, PDF p.119) | FY2025 (48) | FY2024 (30) | FY2023 (105) -> Note 2 (same XBRL concept tagged in the note)
+- Other revenues (Consolidated Statement of Income, PDF p.119) | FY2025 508 | FY2024 449 | FY2023 353 -> Note 2 (same XBRL concept tagged in the note)
+- Total revenues (Consolidated Statement of Income, PDF p.119) | FY2025 48,828 | FY2024 46,423 | FY2023 41,364 -> Note 2 (same XBRL concept tagged in the note)
+- Claims and claim adjustment expenses (Consolidated Statement of Income, PDF p.119) | FY2025 27,221 | FY2024 27,059 | FY2023 26,215 -> Note 2 (same XBRL concept tagged in the note)
+- Amortization of deferred acquisition costs (Consolidated Statement of Income, PDF p.119) | FY2025 7,266 | FY2024 6,973 | FY2023 6,226 -> Note 2 (same XBRL concept tagged in the note)
+- General and administrative expenses (Consolidated Statement of Income, PDF p.119) | FY2025 6,120 | FY2024 5,819 | FY2023 5,176 -> Note 2 (same XBRL concept tagged in the note)
+- Income tax expense (Consolidated Statement of Income, PDF p.119) | FY2025 1,508 | FY2024 1,181 | FY2023 380 -> Note 2 (same XBRL concept tagged in the note)
+- Net income (Consolidated Statement of Income, PDF p.119) | FY2025 6,288 | FY2024 4,999 | FY2023 2,991 -> Note 2 (same XBRL concept tagged in the note)
+- Net income (Consolidated Statement of Comprehensive Income, PDF p.120) | FY2025 6,288 | FY2024 4,999 | FY2023 2,991 -> Note 2 (same XBRL concept tagged in the note)
+CHECKS (automatic)
+- ok: Total assets 143,708 vs 'Total liabilities and shareholders’ equity' 143,708 (FY2025)
+- ok: Total assets 133,189 vs 'Total liabilities and shareholders’ equity' 133,189 (FY2024)
+----- END OF LINKED FIGURES -----
+
+----- NOTES EXTRACTED FROM THE ANNUAL REPORT (PDF page numbers) -----
+=== Note 2 — Segment Information (Consolidated) ===
+--- PDF page 134 (printed page 134) ---
+2. SEGMENT INFORMATION
+The accounting policies used to prepare the segment reporting data for the Company’s three reportable business segments are the same as those described in the Summary of Significant Accounting Policies in note 1.
+The chief operating decision maker (CODM) is the Company’s Chairman and Chief Executive Officer. The CODM reviews the financial performance of the reportable business segments to assess the efficiency with which capital is employed, the effective management of risk, the achievement of strategic initiatives, and how to allocate resources to reportable business segments based on the segment’s historical and projected financial performance. The significant measures of the reportable business segments’ financial performance include segment revenues, consisting of premiums, net investment income, fee income and other revenues, less segment expenses, consisting of claims and claim adjustment expenses, deferred acquisition costs, and general and administrative expenses.
+Except as described below for certain legal entities, the Company allocates its invested assets and the related net investment income to its reportable business segments. Pre-tax net investment income is allocated based upon an investable funds concept, which takes into account liabilities (net of non-invested assets) and appropriate capital considerations for each segment. For investable funds, a benchmark investment yield is developed that reflects the estimated duration of the loss reserves’ future cash flows, the interest rate environment at the time the losses were incurred and A+ rated corporate debt instrument yields. For capital, a benchmark investment yield is developed that reflects the average yield on the total investment portfolio. The benchmark investment yields are applied to each segment’s investable funds and capital, respectively, to produce a total notional investment income by segment. The Company’s actual net investment income is allocated to each segment in proportion to the respective segment’s notional investment income to total notional investment income. There are certain legal entities within the Company that are dedicated to specific reportable business segments. The invested assets and related net investment income from these legal entities are reported in the applicable business segment and are not allocated among the other business segments.
+The cost of the Company’s catastrophe treaty program is included in the Company’s ceded premiums and is allocated among reportable business segments based on an estimate of actual market reinsurance pricing using expected losses calculated by the Company’s catastrophe model, adjusted for any experience adjustments.
+The following tables summarize the components of the Company’s revenues, income (loss), net written premiums and total assets by reportable business segments.
+
+--- PDF page 135 (printed page 135) ---
+(for the year ended December 31, in millions) | Business Insurance | Bond & Specialty Insurance | Personal Insurance | Total Reportable Segments
+2025
+Premiums | $22,412 | $4,107 | $17,395 | $43,914
+Net investment income | 2,782 | 445 | 732 | 3,959
+Fee income | 445 | — | 50 | 495
+Other revenues | 379 | 27 | 102 | 508
+Total segment revenues (1) | 26,018 | 4,579 | 18,279 | 48,876
+Claims and claim adjustment expenses | 14,154 | 1,764 | 11,303 | 27,221
+Amortization of deferred acquisition costs | 3,796 | 778 | 2,692 | 7,266
+General and administrative expenses | 3,482 | 843 | 1,746 | 6,071
+Income tax expense | 891 | 244 | 485 | 1,620
+Segment income (1) | $3,695 | $950 | $2,053 | $6,698
+2024
+Premiums | $21,345 | $3,958 | $16,638 | $41,941
+Net investment income | 2,560 | 390 | 640 | 3,590
+Fee income | 430 | — | 43 | 473
+Other revenues | 322 | 30 | 97 | 449
+Total segment revenues (1) | 24,657 | 4,378 | 17,418 | 46,453
+Claims and claim adjustment expenses | 13,679 | 1,774 | 11,606 | 27,059
+Amortization of deferred acquisition costs | 3,588 | 756 | 2,629 | 6,973
+General and administrative expenses | 3,303 | 832 | 1,640 | 5,775
+Income tax expense | 781 | 201 | 294 | 1,276
+Segment income (1) | $3,306 | $815 | $1,249 | $5,370
+2023
+Premiums | $19,144 | $3,655 | $14,962 | $37,761
+Net investment income | 2,085 | 328 | 509 | 2,922
+Fee income | 400 | — | 33 | 433
+Other revenues | 232 | 25 | 96 | 353
+Total segment revenues (1) | 21,861 | 4,008 | 15,600 | 41,469
+Claims and claim adjustment expenses | 12,696 | 1,485 | 12,034 | 26,215
+Amortization of deferred acquisition costs | 3,173 | 673 | 2,380 | 6,226
+General and administrative expenses | 3,041 | 681 | 1,417 | 5,139
+Income tax expense (benefit) | 368 | 227 | (103) | 492
+Segment income (loss) (1) | $2,583 | $942 | $(128) | $3,397
+_________________________________________
+(1)Segment revenues for reportable business segments exclude net realized investment gains (losses) and revenues included in “interest expense and other.” Segment income (loss) for reportable business segments excludes the after-tax impact of net realized investment gains (losses) and income (loss) from “interest expense and other.”
+
+--- PDF page 136 (printed page 136) ---
+Prior year reserve development and catastrophe losses by reportable business segments were as follows:
+(for the year ended December 31, in millions) | Business Insurance | Bond & Specialty Insurance | Personal Insurance | Total Reportable Segments
+2025
+Net favorable prior year reserve development | $233 | $221 | $582 | $1,036
+Catastrophe losses | $1,073 | $25 | $2,592 | $3,690
+2024
+Net favorable prior year reserve development | $90 | $129 | $490 | $709
+Catastrophe losses | $1,032 | $51 | $2,252 | $3,335
+2023
+Net favorable (unfavorable) prior year reserve development | $(289) | $285 | $147 | $143
+Catastrophe losses | $838 | $37 | $2,116 | $2,991
+The following table presents the Company’s amortization and depreciation expense by reportable business segment (excluding the amortization of deferred acquisition costs which is disclosed separately in the table above with segment income (loss) by reportable business segment).
+(for the year ended December 31, in millions) | 2025 | 2024 | 2023
+Business Insurance | $409 | $426 | $467
+Bond & Specialty Insurance | 82 | 86 | 71
+Personal Insurance | 182 | 197 | 178
+Total | $673 | $709 | $716
+
+--- PDF page 137 (printed page 137) ---
+Net written premiums by market were as follows:
+(for the year ended December 31, in millions) | 2025 | 2024 | 2023
+Business Insurance:
+Domestic:
+Select Accounts | $3,830 | $3,727 | $3,477
+Middle Market | 12,541 | 12,023 | 11,045
+National Accounts | 1,262 | 1,259 | 1,135
+National Property and Other | 3,112 | 3,134 | 3,008
+Total Domestic | 20,745 | 20,143 | 18,665
+International | 1,934 | 1,935 | 1,765
+Total Business Insurance | 22,679 | 22,078 | 20,430
+Bond & Specialty Insurance:
+Domestic:
+Management Liability | 2,326 | 2,309 | 2,156
+Surety | 1,354 | 1,294 | 1,147
+Total Domestic | 3,680 | 3,603 | 3,303
+International | 582 | 506 | 539
+Total Bond & Specialty Insurance | 4,262 | 4,109 | 3,842
+Personal Insurance:
+Domestic:
+Automobile | 7,745 | 7,925 | 7,330
+Homeowners and Other | 9,051 | 8,550 | 7,949
+Total Domestic | 16,796 | 16,475 | 15,279
+International | 650 | 694 | 650
+Total Personal Insurance | 17,446 | 17,169 | 15,929
+Total consolidated net written premiums | $44,387 | $43,356 | $40,201
+
+--- PDF page 138 (printed page 138) ---
+Business Segment Reconciliations
+(for the year ended December 31, in millions) | 2025 | 2024 | 2023
+Revenue reconciliation
+Earned premiums
+Business Insurance:
+Domestic:
+Workers’ compensation | $3,360 | $3,470 | $3,467
+Commercial automobile | 3,942 | 3,590 | 3,215
+Commercial property | 3,772 | 3,616 | 3,154
+General liability | 3,566 | 3,464 | 3,146
+Commercial multi-peril | 5,797 | 5,269 | 4,686
+Other | 76 | 73 | 76
+Total Domestic | 20,513 | 19,482 | 17,744
+International | 1,899 | 1,863 | 1,400
+Total Business Insurance | 22,412 | 21,345 | 19,144
+Bond & Specialty Insurance:
+Domestic:
+Fidelity and surety | 1,492 | 1,416 | 1,290
+General liability | 1,838 | 1,778 | 1,639
+Other | 239 | 231 | 225
+Total Domestic | 3,569 | 3,425 | 3,154
+International | 538 | 533 | 501
+Total Bond & Specialty Insurance | 4,107 | 3,958 | 3,655
+Personal Insurance:
+Domestic:
+Automobile | 7,902 | 7,767 | 6,923
+Homeowners and Other | 8,824 | 8,208 | 7,404
+Total Domestic | 16,726 | 15,975 | 14,327
+International | 669 | 663 | 635
+Total Personal Insurance | 17,395 | 16,638 | 14,962
+Total earned premiums | 43,914 | 41,941 | 37,761
+Net investment income | 3,959 | 3,590 | 2,922
+Fee income | 495 | 473 | 433
+Other revenues | 508 | 449 | 353
+Total segment revenues | 48,876 | 46,453 | 41,469
+Net realized investment losses | (48) | (30) | (105)
+Total revenues | $48,828 | $46,423 | $41,364
+Income reconciliation, net of tax
+Total segment income | $6,698 | $5,370 | $3,397
+Interest Expense and Other (1) | (373) | (345) | (325)
+Core income | 6,325 | 5,025 | 3,072
+Net realized investment losses | (37) | (26) | (81)
+Net income | $6,288 | $4,999 | $2,991
+______________________________________
+(1) The primary component of Interest Expense and Other was after-tax interest expense of $336 million, $310 million and $297 million in 2025, 2024 and 2023, respectively.
+
+--- PDF page 139 (printed page 139) ---
+(as of December 31, in millions) | 2025 | 2024
+Asset reconciliation:
+Business Insurance | $106,084 | $98,311
+Bond & Specialty Insurance | 13,676 | 12,628
+Personal Insurance | 22,787 | 21,138
+Total assets for reportable segments | 142,547 | 132,077
+Other assets (1) | 1,161 | 1,112
+Total consolidated assets | $143,708 | $133,189
+___________________________________________
+(1) The primary components of other assets as of both December 31, 2025 and 2024, were the over-funded benefit plan assets related to the Company’s qualified domestic pension plan and other intangible assets.
+Enterprise-Wide Disclosures
+The Company does not have revenue from transactions with a single customer amounting to 10 percent or more of its revenues.
+The following table presents revenues of the Company’s operations based on location.
+(for the year ended December 31, in millions) | 2025 | 2024 | 2023
+U.S. | $46,360 | $43,924 | $39,086
+Non-U.S.:
+Canada | 1,345 | 1,359 | 1,281
+Other Non-U.S. | 1,123 | 1,140 | 997
+Total Non-U.S. | 2,468 | 2,499 | 2,278
+Total revenues | $48,828 | $46,423 | $41,364
+
+=== Note 8 — Insurance Claim Reserves (Consolidated) ===
+--- PDF page 157 (printed page 157) ---
+8. INSURANCE CLAIM RESERVES
+Claims and claim adjustment expense reserves were as follows:
+(as of December 31, in millions) | 2025 | 2024
+Property-casualty | $67,643 | $64,088
+Accident and health | 3 | 5
+Less amounts classified as held for sale | 1,909 | —
+Total | $65,737 | $64,093
+The following table presents a reconciliation of beginning and ending property casualty reserve balances for claims and claim adjustment expenses.
+(as of and for the year ended December 31, in millions) | 2025 | 2024 | 2023
+Claims and claim adjustment expense reserves at beginning of year | $64,088 | $61,621 | $58,643
+Less reinsurance recoverables on unpaid losses | 7,669 | 7,817 | 7,790
+Net reserves at beginning of year | 56,419 | 53,804 | 50,853
+Estimated claims and claim adjustment expenses for claims arising in the current year | 28,051 | 27,508 | 26,159
+Estimated decrease in claims and claim adjustment expenses for claims arising in prior years | (939) | (548) | (38)
+Total increases | 27,112 | 26,960 | 26,121
+Claims and claim adjustment expense payments for claims arising in:
+Current year | 10,606 | 10,924 | 10,852
+Prior years | 13,307 | 13,227 | 12,424
+Total payments | 23,913 | 24,151 | 23,276
+Unrealized foreign exchange (gain) loss | 228 | (194) | 106
+Net reserves at end of year | 59,846 | 56,419 | 53,804
+Plus reinsurance recoverables on unpaid losses | 7,797 | 7,669 | 7,817
+Claims and claim adjustment expense reserves at end of year | $67,643 | $64,088 | $61,621
+
+--- PDF page 158 (printed page 158) ---
+Gross claims and claim adjustment expense reserves as of December 31, 2025 increased by $3.56 billion over December 31, 2024, primarily reflecting the impacts of (i) catastrophe losses in 2025, (ii) higher volumes of insured exposures and (iii) loss cost trends for the current accident year, partially offset by (iv) claim payments made during 2025 and (v) net favorable prior year reserve development. Gross claims and claim adjustment expense reserves as of December 31, 2024 increased by $2.47 billion over December 31, 2023, primarily reflecting the impacts of (i) catastrophe losses in 2024, (ii) higher volumes of insured exposures and (iii) loss cost trends for the current accident year, partially offset by (iv) claim payments made during 2024 and (v) net favorable prior year reserve development.
+Reinsurance recoverables on unpaid losses as of December 31, 2025 increased by $128 million over December 31, 2024, primarily reflecting the impact of catastrophe losses, partially offset by a decrease in structured settlements and recoverables from mandatory pools and associations. Reinsurance recoverables on unpaid losses as of December 31, 2024 decreased by $148 million over December 31, 2023, primarily reflecting a decrease in structured settlements and recoverables from mandatory pools and associations, partially offset by the impact of catastrophe losses.
+Included in the claims and claim adjustment expense reserves are reserves for long-term disability and annuity claim payments, primarily arising from workers’ compensation insurance and workers’ compensation excess insurance policies, that are discounted to the present value of the estimated future payments. The discount rates used were a range of 3.5% to 5.0% as of both December 31, 2025 and 2024. Total reserves net of the discount were $2.61 billion and $2.65 billion, and the related amount of discount was $1.03 billion and $1.07 billion, as of December 31, 2025 and 2024, respectively. Accretion of the discount is reported as part of “claims and claim adjustment expenses” in the consolidated statement of income and was $43 million, $44 million and $45 million for the years ended December 31, 2025, 2024 and 2023.
+Prior Year Reserve Development
+The following disclosures regarding reserve development are on a “net of reinsurance” basis.
+2025
+In 2025, estimated claims and claim adjustment expenses incurred included $939 million of net favorable development for claims arising in prior years, including $1.04 billion of net favorable prior year reserve development and $43 million of accretion of discount that impacted the Company’s results of operations.
+Business Insurance. Net favorable prior year reserve development in 2025 totaled $233 million, primarily driven by better than expected loss experience in the workers’ compensation product line for multiple accident years, partially offset by an addition to reserves related to run-off operations, including an addition to asbestos reserves of $277 million.
+Bond & Specialty Insurance. Net favorable prior year reserve development in 2025 totaled $221 million, primarily driven by better than expected loss experience in the fidelity and surety product line for recent accident years.
+Personal Insurance. Net favorable prior year reserve development in 2025 totaled $582 million, primarily driven by better than expected loss experience in both the automobile and homeowners and other product lines for recent accident years.
+2024
+In 2024, estimated claims and claim adjustment expenses incurred included $548 million of net favorable development for claims arising in prior years, including $709 million of net favorable prior year reserve development and $44 million of accretion of discount that impacted the Company’s results of operations.
+Business Insurance. Net favorable prior year reserve development in 2024 totaled $90 million, primarily driven by (i) better than expected loss experience in the workers’ compensation product line for multiple accident years, partially offset by (ii) higher than expected loss experience in the general liability product line (excluding asbestos) for recent accident years, (iii) an addition to asbestos reserves of $242 million and (iv) additions to other reserves related to run-off operations.
+Bond & Specialty Insurance. Net favorable prior year reserve development in 2024 totaled $129 million, primarily driven by better than expected loss experience in the fidelity and surety product line for multiple accident years.
+
+--- PDF page 159 (printed page 159) ---
+Personal Insurance. Net favorable prior year reserve development in 2024 totaled $490 million, primarily driven by better than expected loss experience in the homeowners and other and automobile product lines for recent accident years.
+2023
+In 2023, estimated claims and claim adjustment expenses incurred included $38 million of net favorable development for claims arising in prior years, including $143 million of net favorable prior year reserve development and $45 million of accretion of discount that impacted the Company’s results of operations.
+Business Insurance. Net unfavorable prior year reserve development in 2023 totaled $289 million, primarily driven by (i) higher than expected loss experience in the general liability product line (excluding asbestos) for multiple accident years, including additions to reserves attributable to childhood sexual molestation and environmental claims in the Company’s run-off operations, (ii) an addition to asbestos reserves of $284 million and (iii) higher than expected loss experience in the commercial automobile product line for recent accident years, partially offset by (iv) better than expected loss experience in the workers’ compensation product line for multiple accident years.
+Bond & Specialty Insurance. Net favorable prior year reserve development in 2023 totaled $285 million, primarily driven by better than expected loss experience in the fidelity and surety product line and in the general liability product line for management liability coverages for recent accident years.
+Personal Insurance. Net favorable prior year reserve development in 2023 totaled $147 million, primarily driven by better than expected loss experience in the homeowners and other product line for recent accident years.
+
+--- PDF page 160 (printed page 160) ---
+Claims Development
+The following is a summary of claims and claim adjustment expense reserves, including certain components, for the Company’s major product lines by reporting segment as of December 31, 2025.
+(as of December 31, 2025, in millions) | Net Undiscounted Claims and Claim Adjustment Expense Reserves | Discount (Net of Reinsurance) | Subtotal: Net Claims and Claim Adjustment Expense Reserves | Reinsurance Recoverables on Unpaid Losses (4) | Claims and Claim Adjustment Expense Reserves
+Business Insurance
+General liability | $12,063 | $(121) | $11,942 | $1,496 | $13,438
+Commercial property | 1,299 | — | 1,299 | 296 | 1,595
+Commercial multi-peril | 6,275 | — | 6,275 | 317 | 6,592
+Commercial automobile | 5,474 | — | 5,474 | 324 | 5,798
+Workers’ compensation (1) | 15,560 | (870) | 14,690 | 531 | 15,221
+Bond & Specialty Insurance
+General liability | 2,967 | — | 2,967 | 364 | 3,331
+Fidelity and surety | 740 | — | 740 | 12 | 752
+Personal Insurance
+Automobile | 4,258 | — | 4,258 | 306 | 4,564
+Homeowners (excluding Other) | 2,638 | — | 2,638 | 13 | 2,651
+International - Canada | 847 | — | 847 | 13 | 860
+Subtotal — claims and allocated claim adjustment expenses for the products presented in the development tables below | 52,121 | (991) | 51,130 | 3,672 | 54,802
+Other insurance contracts (2) | 5,561 | (5) | 5,556 | 1,763 | 7,319
+Unallocated loss adjustment expense reserves | 3,061 | — | 3,061 | 18 | 3,079
+Structured settlements (3) | — | — | — | 2,428 | 2,428
+Other | 99 | — | 99 | (84) | 15
+Total property-casualty | 60,842 | (996) | 59,846 | 7,797 | 67,643
+Accident and health | — | — | — | 3 | 3
+Less amounts classified as held for sale | 1,627 | — | 1,627 | 282 | 1,909
+Total | $59,215 | $(996) | $58,219 | $7,518 | $65,737
+___________________________________________
+(1)Net discount amount includes discount of $31 million on reinsurance recoverables for long-term disability and annuity claim payments.
+(2)Primarily includes residual market, international (other than operations in Canada within the Personal Insurance segment) and runoff assumed reinsurance business.
+(3)Includes structured settlements in cases where the Company did not receive a release from the claimant.
+(4)Total reinsurance recoverables (on paid and unpaid losses) as of December 31, 2025 were $7.89 billion.
+The claim development tables that follow present, by accident year, incurred and cumulative paid claims and allocated claim adjustment expense on a historical basis. This claim development information is presented on an undiscounted, net of reinsurance basis for ten years, or the number of years for which claims incurred typically remain outstanding if less than ten years. The claim development tables also provide the historical average annual percentage payout of incurred claims by age, net of reinsurance, as supplementary information (identified as unaudited in the tables below). The historical average annual percentage payout for incurred claims is subject to variability due to the impact of both large claim activity and subrogation recoveries, among other items.
+
+--- PDF page 161 (printed page 161) ---
+Business Insurance
+General Liability
+(dollars in millions)
+For the Years Ended December 31,
+2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves Dec 31, 2025 | Cumulative Number of Reported Claims
+2016 | $1,075 | $1,058 | $1,087 | $1,187 | $1,204 | $1,179 | $1,185 | $1,183 | $1,173 | $1,185 | $85 | 21,090
+2017 | 1,133 | 1,143 | 1,196 | 1,234 | 1,226 | 1,243 | 1,288 | 1,306 | 1,313 | 98 | 19,983
+2018 | 1,253 | 1,312 | 1,344 | 1,395 | 1,477 | 1,530 | 1,571 | 1,604 | 122 | 20,194
+2019 | 1,447 | 1,486 | 1,498 | 1,567 | 1,706 | 1,698 | 1,752 | 181 | 19,972
+2020 | 1,467 | 1,493 | 1,470 | 1,577 | 1,568 | 1,570 | 226 | 23,456
+2021 | 1,591 | 1,589 | 1,628 | 1,711 | 1,711 | 383 | 16,269
+2022 | 1,696 | 1,736 | 1,916 | 2,014 | 620 | 19,494
+2023 | 1,998 | 2,060 | 2,129 | 1,080 | 19,166
+2024 | 2,340 | 2,315 | 1,782 | 17,488
+2025 | 2,604 | 2,396 | 13,197
+Total | $18,197
+Cumulative Paid Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2016 | $35 | $191 | $421 | $649 | $758 | $858 | $951 | $991 | $1,031 | $1,072
+2017 | 40 | 180 | 378 | 552 | 724 | 914 | 1,029 | 1,111 | 1,172
+2018 | 42 | 202 | 441 | 709 | 939 | 1,146 | 1,270 | 1,367
+2019 | 51 | 233 | 482 | 816 | 1,074 | 1,276 | 1,416 | Liability for Claims
+2020 | 61 | 244 | 458 | 770 | 1,031 | 1,179 | And Allocated Claim
+2021 | 67 | 231 | 493 | 826 | 1,100 | Adjustment Expenses,
+2022 | 81 | 302 | 668 | 1,042 | Net of Reinsurance
+2023 | 54 | 280 | 597
+2024 | 55 | 242 | 2016 - | Before
+2025 | 28 | 2025 | 2016
+Total | $9,215 | $8,982 | $3,081
+Total net liability | $12,063
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+2.9% | 10.6% | 15.7% | 18.0% | 14.0% | 11.4% | 8.1% | 5.2% | 4.0% | 3.5%
+
+--- PDF page 162 (printed page 162) ---
+Commercial Property
+(dollars in millions)
+For the Years Ended December 31,
+2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claims Adjustment Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+2021 | $1,236 | $1,190 | $1,190 | $1,201 | $1,207 | $15 | 25,814
+2022 | 1,309 | 1,369 | 1,372 | 1,343 | (3) | 28,976
+2023 | 1,268 | 1,244 | 1,219 | 16 | 29,443
+2024 | 1,474 | 1,434 | 28 | 28,903
+2025 | 1,417 | 266 | 22,297
+Total | $6,620
+Cumulative Paid Claims and Allocated Claim
+Adjustment Expenses, Net of Reinsurance
+Unaudited
+Liability for Claims
+Accident Year | And Allocated Claim
+2021 | $645 | $1,068 | $1,141 | $1,169 | $1,176 | Adjustment Expenses,
+2022 | 624 | 1,113 | 1,247 | 1,272 | Net of Reinsurance
+2023 | 614 | 1,049 | 1,125
+2024 | 702 | 1,193 | 2021 - | Before
+2025 | 664 | 2025 | 2021
+Total | $5,430 | $1,190 | $109
+Total net liability | $1,299
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5
+49.2% | 35.3% | 7.4% | 2.1% | 0.5%
+
+--- PDF page 163 (printed page 163) ---
+Commercial Multi-Peril
+(dollars in millions)
+For the Years Ended December 31,
+2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+2016 | $1,662 | $1,623 | $1,598 | $1,590 | $1,601 | $1,587 | $1,579 | $1,578 | $1,590 | $1,602 | $24 | 69,716
+2017 | 1,872 | 1,928 | 1,956 | 1,919 | 1,935 | 1,943 | 1,930 | 1,928 | 1,929 | 37 | 72,872
+2018 | 1,976 | 2,114 | 2,092 | 2,112 | 2,121 | 2,127 | 2,125 | 2,136 | 46 | 80,732
+2019 | 2,017 | 2,087 | 2,089 | 2,103 | 2,103 | 2,110 | 2,102 | 49 | 77,552
+2020 | 2,142 | 2,141 | 2,126 | 2,111 | 2,061 | 2,041 | 144 | 70,943
+2021 | 2,164 | 2,097 | 2,097 | 2,107 | 2,084 | 157 | 59,084
+2022 | 2,502 | 2,533 | 2,569 | 2,569 | 280 | 55,514
+2023 | 2,781 | 2,811 | 2,773 | 474 | 55,151
+2024 | 2,946 | 2,909 | 875 | 50,466
+2025 | 2,996 | 1,420 | 37,006
+Total | $23,141
+Cumulative Paid Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2016 | $585 | $950 | $1,133 | $1,278 | $1,373 | $1,437 | $1,477 | $1,510 | $1,547 | $1,559
+2017 | 716 | 1,199 | 1,388 | 1,531 | 1,674 | 1,763 | 1,815 | 1,843 | 1,865
+2018 | 792 | 1,302 | 1,500 | 1,669 | 1,815 | 1,917 | 1,986 | 2,021
+2019 | 707 | 1,187 | 1,423 | 1,628 | 1,801 | 1,916 | 1,973 | Liability for Claims
+2020 | 791 | 1,180 | 1,373 | 1,547 | 1,687 | 1,791 | And Allocated Claim
+2021 | 744 | 1,206 | 1,437 | 1,616 | 1,764 | Adjustment Expenses,
+2022 | 817 | 1,476 | 1,752 | 1,965 | Net of Reinsurance
+2023 | 935 | 1,603 | 1,894
+2024 | 906 | 1,539 | 2016 - | Before
+2025 | 897 | 2025 | 2016
+Total | $17,268 | $5,873 | $402
+Total net liability | $6,275
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+34.5% | 23.0% | 10.4% | 8.5% | 7.1% | 4.8% | 2.8% | 1.7% | 1.7% | 0.7%
+
+--- PDF page 164 (printed page 164) ---
+Commercial Automobile
+(dollars in millions)
+For the Years Ended December 31,
+2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claims Adjustment
+Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+2021 | $1,741 | $1,757 | $1,786 | $1,800 | $1,789 | $92 | 149,271
+2022 | 1,939 | 2,040 | 2,050 | 2,059 | 209 | 160,802
+2023 | 2,245 | 2,222 | 2,272 | 424 | 168,367
+2024 | 2,544 | 2,452 | 925 | 168,679
+2025 | 2,754 | 1,735 | 152,342
+Total | $11,326
+Cumulative Paid Claims and Allocated Claim
+Adjustment Expenses, Net of Reinsurance
+Unaudited
+Liability for Claims
+Accident Year | And Allocated Claim
+2021 | $453 | $800 | $1,135 | $1,405 | $1,591 | Adjustment Expenses,
+2022 | 540 | 966 | 1,324 | 1,607 | Net of Reinsurance
+2023 | 589 | 1,006 | 1,394
+2024 | 604 | 1,021 | 2021 - | Before
+2025 | 572 | 2025 | 2021
+Total | $6,185 | $5,141 | $333
+Total net liability | $5,474
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5
+24.6% | 18.9% | 17.7% | 14.4% | 10.4%
+
+--- PDF page 165 (printed page 165) ---
+Workers’ Compensation
+(dollars in millions)
+For the Years Ended December 31,
+2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+2016 | $2,768 | $2,690 | $2,569 | $2,473 | $2,372 | $2,300 | $2,235 | $2,151 | $2,111 | $2,092 | $216 | 132,524
+2017 | 2,779 | 2,681 | 2,584 | 2,483 | 2,439 | 2,342 | 2,243 | 2,190 | 2,167 | 290 | 130,310
+2018 | 2,744 | 2,687 | 2,599 | 2,503 | 2,416 | 2,318 | 2,245 | 2,194 | 313 | 132,689
+2019 | 2,680 | 2,714 | 2,699 | 2,632 | 2,521 | 2,424 | 2,355 | 369 | 129,611
+2020 | 2,559 | 2,530 | 2,433 | 2,271 | 2,152 | 2,025 | 362 | 102,671
+2021 | 2,356 | 2,349 | 2,294 | 2,237 | 2,166 | 419 | 96,412
+2022 | 2,293 | 2,294 | 2,226 | 2,148 | 476 | 103,197
+2023 | 2,373 | 2,365 | 2,371 | 579 | 98,269
+2024 | 2,352 | 2,344 | 809 | 95,182
+2025 | 2,356 | 1,379 | 86,579
+Total | $22,218
+Cumulative Paid Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2016 | $421 | $873 | $1,118 | $1,272 | $1,367 | $1,433 | $1,486 | $1,522 | $1,553 | $1,579
+2017 | 433 | 890 | 1,154 | 1,314 | 1,418 | 1,490 | 1,544 | 1,585 | 1,612
+2018 | 440 | 919 | 1,169 | 1,330 | 1,440 | 1,516 | 1,578 | 1,616
+2019 | 466 | 951 | 1,229 | 1,402 | 1,518 | 1,593 | 1,639 | Liability for Claims
+2020 | 389 | 794 | 1,017 | 1,164 | 1,273 | 1,342 | And Allocated Claim
+2021 | 427 | 848 | 1,076 | 1,234 | 1,341 | Adjustment Expenses,
+2022 | 388 | 830 | 1,081 | 1,242 | Net of Reinsurance
+2023 | 444 | 925 | 1,188
+2024 | 443 | 934 | 2016 - | Before
+2025 | 430 | 2025 | 2016
+Total | $12,923 | $9,295 | $6,265
+Total net liability | $15,560
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+19.3% | 20.7% | 11.4% | 7.4% | 4.9% | 3.3% | 2.5% | 1.8% | 1.4% | 1.2%
+
+--- PDF page 166 (printed page 166) ---
+Bond & Specialty Insurance
+General Liability
+(dollars in millions)
+For the Years Ended December 31,
+2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025
+Incurred Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Unaudited
+Accident Year | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+2016 | $512 | $511 | $504 | $520 | $514 | $510 | $511 | $509 | $512 | $513 | $13 | 4,421
+2017 | 534 | 517 | 526 | 493 | 524 | 554 | 565 | 582 | 574 | 37 | 4,626
+2018 | 530 | 548 | 585 | 595 | 605 | 612 | 636 | 624 | 19 | 4,895
+2019 | 588 | 653 | 665 | 670 | 662 | 654 | 646 | 25 | 5,517
+2020 | 772 | 753 | 741 | 698 | 684 | 673 | 70 | 5,528
+2021 | 812 | 756 | 683 | 659 | 654 | 86 | 5,769
+2022 | 803 | 763 | 727 | 689 | 180 | 5,206
+2023 | 862 | 888 | 884 | 277 | 6,060
+2024 | 1,001 | 1,073 | 487 | 6,499
+2025 | 1,078 | 735 | 5,165
+Total | $7,408
+Cumulative Paid Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2016 | $30 | $141 | $233 | $313 | $378 | $446 | $463 | $472 | $479 | $480
+2017 | 38 | 155 | 262 | 340 | 404 | 450 | 488 | 513 | 530
+2018 | 49 | 182 | 290 | 383 | 458 | 504 | 559 | 567
+2019 | 51 | 189 | 323 | 410 | 513 | 554 | 582 | Liability for Claims
+2020 | 52 | 210 | 333 | 447 | 525 | 564 | And Allocated Claim
+2021 | 78 | 210 | 316 | 401 | 461 | Adjustment Expenses,
+2022 | 69 | 212 | 335 | 405 | Net of Reinsurance
+2023 | 90 | 274 | 435
+2024 | 115 | 369 | 2016 - | Before
+2025 | 116 | 2025 | 2016
+Total | $4,509 | $2,899 | $68
+Total net liability | $2,967
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+8.9% | 21.5% | 18.1% | 14.0% | 12.1% | 8.2% | 5.8% | 2.5% | 2.1% | 0.3%
+
+--- PDF page 167 (printed page 167) ---
+Fidelity and Surety
+(dollars in millions)
+For the Years Ended December 31,
+2021 | 2022 | 2023 | 2024 | 2025 | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+Incurred Claims and Allocated Claims Adjustment
+Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2021 | $284 | $172 | $93 | $87 | $76 | $18 | 612
+2022 | 310 | 261 | 187 | 148 | 21 | 757
+2023 | 353 | 374 | 372 | 83 | 986
+2024 | 363 | 266 | 164 | 1,049
+2025 | 356 | 320 | 793
+Total | $1,218
+Cumulative Paid Claims and Allocated Claim
+Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited | Liability for Claims
+And Allocated Claim
+2021 | $25 | $50 | $57 | $58 | $57 | Adjustment Expenses,
+2022 | 36 | 82 | 99 | 118 | Net of Reinsurance
+2023 | 96 | 202 | 262
+2024 | 39 | 95 | 2021 - | Before
+2025 | 31 | 2025 | 2021
+Total | $563 | $655 | $85
+Total net liability | $740
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5
+21.3% | 28.5% | 12.1% | 7.2% | (0.8)%
+
+--- PDF page 168 (printed page 168) ---
+Personal Insurance
+Automobile
+(dollars in millions)
+For the Years Ended December 31,
+2021 | 2022 | 2023 | 2024 | 2025 | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+Incurred Claims and Allocated Claims Adjustment
+Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2021 | $3,716 | $3,770 | $3,751 | $3,724 | $3,703 | $29 | 1,001,126
+2022 | 4,755 | 4,784 | 4,729 | 4,686 | 80 | 1,132,092
+2023 | 5,206 | 5,133 | 5,032 | 232 | 1,112,458
+2024 | 5,179 | 4,988 | 586 | 1,033,917
+2025 | 4,770 | 1,487 | 851,578
+Total | $23,179
+Cumulative Paid Claims and Allocated Claim
+Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited | Liability for Claims
+And Allocated Claim
+2021 | $2,062 | $2,981 | $3,350 | $3,541 | $3,628 | Adjustment Expenses,
+2022 | 2,683 | 3,855 | 4,278 | 4,485 | Net of Reinsurance
+2023 | 2,888 | 4,068 | 4,531
+2024 | 2,838 | 3,904 | 2021 - | Before
+2025 | 2,557 | 2025 | 2021
+Total | $19,105 | $4,074 | $184
+Total net liability | $4,258
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5
+56.2% | 23.7% | 9.4% | 4.8% | 2.4%
+
+--- PDF page 169 (printed page 169) ---
+Homeowners (excluding Other)
+(dollars in millions)
+For the Years Ended December 31,
+2021 | 2022 | 2023 | 2024 | 2025 | IBNR Reserves December 31, 2025 | Cumulative Number of Reported Claims
+Incurred Claims and Allocated Claims Adjustment
+Expenses, Net of Reinsurance
+Accident Year | Unaudited
+2021 | $3,463 | $3,486 | $3,444 | $3,423 | $3,397 | $(3) | 234,160
+2022 | 4,277 | 4,184 | 4,146 | 4,145 | 24 | 236,736
+2023 | 5,171 | 5,018 | 4,979 | 70 | 271,119
+2024 | 5,021 | 4,915 | 219 | 239,165
+2025 | 5,120 | 1,157 | 153,096
+Total | $22,556
+Cumulative Paid Claims and Allocated Claim
+Adjustment Expenses, Net of Reinsurance
+Accident Year | Unaudited | Liability for Claims
+And Allocated Claim
+2021 | $2,334 | $3,235 | $3,344 | $3,372 | $3,380 | Adjustment Expenses,
+2022 | 2,537 | 3,828 | 4,018 | 4,084 | Net of Reinsurance
+2023 | 3,369 | 4,608 | 4,814
+2024 | 3,402 | 4,454 | 2021 - | Before
+2025 | 3,224 | 2025 | 2021
+Total | $19,956 | $2,600 | $38
+Total net liability | $2,638
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5
+66.0% | 26.0% | 4.0% | 1.2% | 0.3%
+
+--- PDF page 170 (printed page 170) ---
+International - Canada
+(dollars in millions)
+For the Years Ended December 31, | IBNR Reserves December 31, 2025 | Cumulative
+2016 | 2017 | 2018 | 2019 | 2020 | 2021 | 2022 | 2023 | 2024 | 2025 | Number of
+Accident | Incurred Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance | Reported
+Year | Unaudited | Claims
+2016 | $341 | $386 | $387 | $396 | $396 | $395 | $396 | $397 | $398 | $399 | $1 | 45,503
+2017 | 327 | 360 | 381 | 381 | 381 | 384 | 386 | 380 | 380 | (3) | 46,520
+2018 | 415 | 436 | 438 | 442 | 445 | 448 | 445 | 442 | (4) | 50,331
+2019 | 420 | 415 | 435 | 438 | 439 | 444 | 438 | 5 | 47,923
+2020 | 328 | 315 | 302 | 296 | 294 | 292 | 7 | 30,038
+2021 | 329 | 317 | 310 | 307 | 300 | 15 | 28,063
+2022 | 365 | 373 | 377 | 370 | 31 | 33,035
+2023 | 430 | 455 | 439 | 55 | 32,890
+2024 | 485 | 487 | 96 | 33,448
+2025 | 421 | 131 | 28,662
+Total | $3,968
+Accident | Cumulative Paid Claims and Allocated Claim Adjustment Expenses, Net of Reinsurance
+Year | Unaudited
+2016 | $200 | $268 | $292 | $325 | $347 | $364 | $376 | $381 | $388 | $391
+2017 | 172 | 243 | 280 | 303 | 328 | 348 | 361 | 369 | 374
+2018 | 207 | 288 | 321 | 358 | 388 | 405 | 418 | 425
+2019 | 204 | 273 | 307 | 344 | 373 | 398 | 410 | Liability for Claims
+2020 | 136 | 183 | 206 | 225 | 245 | 255 | And Allocated Claim
+2021 | 121 | 178 | 206 | 226 | 248 | Adjustment Expenses,
+2022 | 159 | 231 | 260 | 286 | Net of Reinsurance
+2023 | 193 | 275 | 310
+2024 | 197 | 278 | 2016 - | Before
+2025 | 173 | 2025 | 2016
+Total | $3,150 | $818 | $29
+Total net liability | $847
+Average Annual Percentage Payout of Incurred Claims by Age, Net of Reinsurance
+Unaudited
+Years | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10
+44.4% | 17.7% | 8.0% | 7.2% | 6.7% | 4.5% | 3.1% | 1.7% | 1.4% | 0.8%
+The incurred and paid amounts have been translated from the local currency to U.S. dollars using the December 31, 2025 spot rate for all years presented in the table above in order to isolate changes in foreign exchange rates from loss development.
+
+--- PDF page 171 (printed page 171) ---
+Methodology for Estimating Incurred But Not Reported (IBNR) Reserves
+Claims and claim adjustment expense reserves represent management’s estimate of the ultimate liability for unpaid losses and loss adjustment expenses for claims that have been reported and claims that have been incurred but not yet reported (IBNR) as of the balance sheet date. Claims and claim adjustment expense reserves do not represent an exact calculation of the liability, but instead represent management estimates, primarily utilizing actuarial expertise and projection methods that develop estimates for the ultimate cost of claims and claim adjustment expenses. Because the establishment of claims and claim adjustment expense reserves is an inherently uncertain process involving estimates and judgment, currently estimated claims and claim adjustment expense reserves may change. The Company reflects changes to the reserves in the results of operations in the period the estimates are changed.
+Cumulative amounts paid and case reserves held as of the balance sheet date are subtracted from the estimate of the ultimate cost of claims and claim adjustment expenses to derive incurred but not reported (IBNR) reserves. Accordingly, IBNR reserves include the cost of unreported claims, development on known claims and re-opened claims. This approach to estimating IBNR reserves has been in place for many years, with no material changes in methodology in the past year.
+Detailed claim data is typically insufficient to produce a reliable indication of the initial estimate for ultimate claims and claim adjustment expenses for an accident year. As a result, the initial estimate for an accident year is generally based on an exposure-based method using either the loss ratio projection or the expected loss method. The loss ratio projection method, which is typically used for guaranteed-cost business, develops an initial estimate of ultimate claims and claim adjustment expenses for an accident year by multiplying earned premium for the accident year by a projected loss ratio. The projected loss ratio is determined by analyzing prior period experience, and adjusting for loss cost trends, rate level differences, mix of business changes and other known or observed factors influencing the accident year relative to prior accident years. The expected loss method, which is typically used for loss sensitive business, develops an initial estimate of ultimate claims and claim adjustment expenses for an accident year by analyzing exposures by account.
+For prior accident years, the following estimation and analysis methods are principally used by the Company’s actuaries to estimate the ultimate cost of claims and claim adjustment expenses. These estimation and analysis methods are typically referred to as conventional actuarial methods.
+•The paid loss development method assumes that the future change (positive or negative) in cumulative paid losses for a given cohort of claims will occur in a stable, predictable pattern from year-to-year, consistent with the pattern observed in past cohorts.
+•The case incurred development method is the same as the paid loss development method but is based on cumulative case-incurred losses rather than paid losses.
+•The Bornhuetter-Ferguson method uses an initial estimate of ultimate losses for a given product line reserve component, typically expressed as a ratio to earned premium. The method assumes that the ratio of additional claim activity to earned premium for that component is relatively stable and predictable over time and that actual claim activity to date is not a credible predictor of further activity for that component. The method is used most often for more recent accident years where claim data is sparse and/or volatile, with a transition to other methods as the underlying claim data becomes more voluminous and therefore more credible.
+•The average value analysis combined with the reported claim development method assumes that average claim values are stable and predictable over time for a particular cohort of claims. It is typically limited to analysis at more granular levels, such as coverage or hazard/peril, where a more homogeneous subset of claims produce a more stable and fairly predictable average value. The reported claim development method is the same as the paid loss development method but uses changes in cumulative claim counts to produce estimates of ultimate claim counts rather than ultimate dollars. The resulting estimate of ultimate claim counts by cohort is multiplied by an average value per claim from an average value analysis to obtain estimated ultimate claims and claim adjustment expenses.
+While these are the principal methods utilized, the Company’s actuaries have available to them the full range of actuarial methods developed by the casualty actuarial profession. The Company’s actuaries are also regularly monitoring developments within the profession for advances in existing techniques or the creation of new techniques that might improve current and future estimates. Most actuarial methods assume that past patterns demonstrated in the data will repeat themselves in the future.
+
+--- PDF page 172 (printed page 172) ---
+For certain reserve components where this assumption may not hold, such as asbestos reserves, conventional actuarial methods are not utilized by the Company.
+Methodology for Determining Cumulative Number of Reported Claims
+A claim file is created when the Company is notified of an actual demand for payment, notified of an event that may lead to a demand for payment or when it is determined that a demand for payment could possibly lead to a future demand for payment on another coverage on the same policy or on another policy. Claim files are generally created for a policy at the claimant by coverage level, depending on the particular facts and circumstances of the underlying event.
+For Business Insurance and for Personal Insurance, claim file information is summarized such that the Company generally recognizes one count for each policy claim event by internal regulatory line of business, regardless of the number of claimants or coverages involved. The claims counts are then accumulated and reported by product line. While the methodology is generally consistent within each segment for the product lines displayed, there are some minor differences between and within segments. For Bond & Specialty Insurance, the Company generally recognizes one count per coverage per policy claim event and one count per bond per surety claim event.
+For purposes of the claims development tables above, claims reported for direct business are counted even if they eventually close with no loss payment, except in the case of (i) deductible business, where the claim is not counted until the case incurred claim estimate is above the deductible and (ii) International-Canada reported claim counts where claims closed with no loss payment are not counted. Note that claims with zero claim dollars may still generate some level of claim adjustment expenses. Claim counts for assumed business are included only to the extent such counts are available. The Company generally does not receive claim count information for which the underlying claim activity is handled by others, including pools and associations. The Company does not generate claim counts for ceded business. The methods used to summarize claim counts have not changed significantly over the time periods reported in the tables above.
+The Company cautions against using the summarized claim count information provided in this disclosure in attempting to project ultimate loss payouts by product line. The Company generally finds claim count data to be useful only on a more granular basis than the aggregated basis disclosed in the claim development tables above, as the risks, average values and other dynamics of the claim process can vary materially by the cause of loss and coverage within product line. For example, in Personal Automobile, the introduction of roadside assistance coverage resulted in a significant increase in claim counts with a low average claim cost. For this reason the Company varies its approach to, and in many cases the level of aggregation for, counting claims for internal analysis purposes depending on the particular granular analysis performed.
+Asbestos Reserves
+As of December 31, 2025 and 2024, the Company’s claims and claim adjustment expense reserves included $1.36 billion and $1.34 billion, respectively, for asbestos-related claims, net of reinsurance.
+It is difficult to estimate the reserves for asbestos-related claims due to the vagaries of court coverage decisions, plaintiffs’ expanded theories of liability, the risks inherent in complex litigation and other uncertainties, including, without limitation, those which are set forth below.
+Because each policyholder presents different liability and coverage issues, the Company generally conducts an in-depth asbestos claim review on an annual basis, including a review of domestic policyholders with open claims and litigation cases for potential product and “non-product” liability. Policyholders are identified for this review based upon, among other factors: a combination of past payments and current case reserves in excess of a specified threshold (currently $100,000), perceived level of exposure, number of reported claims, products/completed operations and potential “non-product” exposures, size of policyholder and geographic distribution of products or services sold by the policyholder.
+Among the factors the Company may consider in the course of this review are: available insurance coverage, including the role of any umbrella or excess insurance the Company has issued to the policyholder; limits and deductibles; an analysis of the policyholder’s potential liability, including as a result of the bankruptcy of other defendants; the jurisdictions involved, including any trends, judicial rulings or legislative actions in those jurisdictions; past and anticipated future claim activity and loss development on pending claims; past settlement values of similar claims; allocated claim adjustment expense; the potential role of other insurance; the role, if any, of non-asbestos claims or potential non-asbestos claims in any resolution process; and
+
+--- PDF page 173 (printed page 173) ---
+applicable coverage defenses or determinations, if any, including the determination as to whether or not an asbestos claim is a products/completed operation claim subject to an aggregate limit and the available coverage, if any, for that claim.
+The Company also reviews its asbestos reserves quarterly. These reviews include, as appropriate, an analysis of exposure and claim payment patterns by policyholder, as well as recent settlements, policyholder bankruptcies, judicial rulings and legislative actions. The Company also analyzes developing payment patterns among policyholders and the assumed reinsurance component of reserves, as well as projected reinsurance billings and recoveries. In addition, the Company reviews its historical gross and net loss and expense paid experience, year-by-year, to assess any emerging trends, fluctuations, or characteristics suggested by the aggregate paid activity. Conventional actuarial methods are not utilized to establish asbestos reserves, and the Company’s evaluations have not resulted in a reliable method to determine a meaningful average asbestos defense or indemnity payment.
+During the third quarter of 2025, the Company completed its annual in-depth asbestos claim review. While the latest available government data continue to reflect a declining trend in deaths caused by mesothelioma, the number of policyholders with open asbestos claims was relatively flat compared to 2024. Net asbestos paid claims and claim adjustment expenses in 2025, 2024 and 2023 were $261 million, $282 million and $212 million, respectively. Payments on behalf of these policyholders continue to be influenced by the factors described above, including an increase in severity for certain policyholders and a high level of litigation activity in a limited number of jurisdictions where individuals alleging serious asbestos-related injury, primarily mesothelioma, continue to target defendants who were not traditionally sued and/or primary targets of asbestos litigation. The completion of the analyses described above and the annual review in the third quarters of 2025, 2024 and 2023 resulted in $277 million, $242 million and $284 million increases, respectively, to the Company’s net asbestos reserves. In each year, the reserve increases were primarily driven by increases in the Company’s estimate of projected settlement and defense costs related to a broad number of policyholders. The increase in the estimate of projected settlement and defense costs primarily resulted from payment trends that continue to be higher than previously anticipated due to the continued high level of mesothelioma claim filings and the impact of the current litigation environment surrounding those claims discussed above. The 2023 charge also included an additional increase to strengthen the Company’s carried reserve position relative to the range of reasonable estimates.
+Over the past decade, the property and casualty insurance industry, including the Company, has experienced net unfavorable prior year reserve development with regard to asbestos reserves, but the Company believes that over that period there has been a reduction in the volatility associated with the Company’s overall asbestos exposure as the overall asbestos environment has evolved from one dominated by exposure to significant litigation risks, particularly coverage disputes relating to policyholders in bankruptcy who were asserting that their claims were not subject to the aggregate limits contained in their policies, to an environment primarily driven by a frequency of litigation related to individuals with mesothelioma. The Company’s overall view of the current underlying asbestos environment is essentially unchanged from recent periods, and there remains a high degree of uncertainty with respect to future exposure to asbestos claims.
+As a result of the processes and procedures discussed above, management believes that the reserves carried for asbestos claims are appropriately established based upon known facts, current law and management’s judgment. However, the uncertainties surrounding the final resolution of these claims continue, and it is difficult to determine the ultimate exposure for asbestos claims and related litigation. As a result, these reserves are subject to revision as new information becomes available and as claims develop. Changes in the legal, regulatory and legislative environment may impact the future resolution of asbestos claims and result in adverse loss reserve development. The emergence of a greater number of asbestos claims beyond that which is anticipated may result in adverse loss reserve development. Changes in applicable legislation and future court and regulatory decisions and interpretations, including the outcome of legal challenges to legislative and/or judicial reforms establishing medical criteria for the pursuit of asbestos claims, could affect the settlement of asbestos claims. It is also difficult to predict the ultimate outcome of complex coverage disputes until settlement negotiations near completion and significant legal questions are resolved or, failing settlement, until the dispute is adjudicated. This is particularly the case with policyholders in bankruptcy where negotiations often involve a large number of claimants and other parties and require court approval to be effective. As part of its continuing analysis of asbestos reserves, the Company continues to study the implications of these and other developments.
+Because of the uncertainties set forth above, additional liabilities may arise for amounts in excess of the Company’s current reserves. In addition, the Company’s estimate of claims and claim adjustment expenses may change. These additional liabilities
+
+--- PDF page 174 (printed page 174) ---
+or increases in estimates, or a range of either, cannot now be reasonably estimated and could result in income statement charges that could be material to the Company’s operating results in future periods.
+Catastrophe Exposure
+The Company has geographic exposure to catastrophe losses, which include hurricanes, tornadoes and other windstorms, earthquakes, hail, wildfires, severe winter weather, floods, tsunamis, volcanic eruptions, solar flares and other naturally-occurring events. Catastrophes can also result from terrorist attacks and other intentionally destructive acts including those involving cyber events, nuclear, biological, chemical and radiological events, civil unrest, explosions and destruction of infrastructure. The incidence and severity of catastrophes are inherently unpredictable. The extent of losses from a catastrophe is a function of both the total amount of insured exposure in the area affected by the event and the severity of the event. Most catastrophes are restricted to small geographic areas; however, hurricanes, earthquakes, wildfires and cyber attacks may produce significant damage in larger areas, especially those that are heavily populated. The Company generally seeks to mitigate its exposure to catastrophes through individual risk selection and the purchase of catastrophe reinsurance.
+There are also risks which impact the estimation of ultimate costs for catastrophes. For example, the estimation of reserves related to hurricanes can be affected by the inability of the Company and its insureds to access portions of the impacted areas, the complexity of factors contributing to the losses, the legal and regulatory uncertainties and the nature of the information available to establish the reserves. Complex factors include, but are not limited to: determining whether damage was caused by flooding versus wind; evaluating general liability and pollution exposures; estimating additional living expenses; the impact of demand surge; the potential impact of changing climate conditions, including higher frequency and severity of weather-related events; infrastructure disruption; fraud; the effect of mold damage and business income interruption costs; and reinsurance collectibility. The timing of a catastrophe’s occurrence, such as at or near the end of a reporting period, can also affect the information available to the Company in estimating reserves for that reporting period. The estimates related to catastrophes are adjusted as actual claims emerge.
+
+=== Note 20 — Schedule III (Consolidated) ===
+--- PDF page 219 (printed page 219) ---
+THE TRAVELERS COMPANIES, INC. AND SUBSIDIARIES
+Supplementary Insurance Information
+2023-2025
+(in millions)
+Segment | Deferred Acquisition Costs | Claims and Claim Adjustment Expense Reserves | Unearned Premiums | Earned Premiums | Net Investment Income (1) | Claims and Claim Adjustment Expenses | Amortization of Deferred Acquisition Costs | Other Operating Expenses (2) | Net Written Premiums
+2025
+Business Insurance | $1,750 | $51,655 | $11,088 | $22,412 | $2,782 | $14,154 | $3,796 | $3,482 | $22,679
+Bond & Specialty Insurance | 542 | 5,672 | 3,145 | 4,107 | 445 | 1,764 | 778 | 843 | 4,262
+Personal Insurance | 1,226 | 8,407 | 8,198 | 17,395 | 732 | 11,303 | 2,692 | 1,746 | 17,446
+Total—Reportable Segments | 3,518 | 65,734 | 22,431 | 43,914 | 3,959 | 27,221 | 7,266 | 6,071 | 44,387
+Other | — | 3 | — | — | — | — | — | 474 | —
+Consolidated | $3,518 | $65,737 | $22,431 | $43,914 | $3,959 | $27,221 | $7,266 | $6,545 | $44,387
+2024
+Business Insurance | $1,698 | $49,731 | $10,831 | $21,345 | $2,560 | $13,679 | $3,588 | $3,303 | $22,078
+Bond & Specialty Insurance | 502 | 5,365 | 3,012 | 3,958 | 390 | 1,774 | 756 | 832 | 4,109
+Personal Insurance | 1,294 | 8,992 | 8,446 | 16,638 | 640 | 11,606 | 2,629 | 1,640 | 17,169
+Total—Reportable Segments | 3,494 | 64,088 | 22,289 | 41,941 | 3,590 | 27,059 | 6,973 | 5,775 | 43,356
+Other | — | 5 | — | — | — | — | — | 436 | —
+Consolidated | $3,494 | $64,093 | $22,289 | $41,941 | $3,590 | $27,059 | $6,973 | $6,211 | $43,356
+2023
+Business Insurance | $1,580 | $47,739 | $10,068 | $19,144 | $2,085 | $12,696 | $3,173 | $3,041 | $20,430
+Bond & Specialty Insurance | 477 | 4,945 | 2,861 | 3,655 | 328 | 1,485 | 673 | 681 | 3,842
+Personal Insurance | 1,249 | 8,937 | 7,943 | 14,962 | 509 | 12,034 | 2,380 | 1,417 | 15,929
+Total—Reportable Segments | 3,306 | 61,621 | 20,872 | 37,761 | 2,922 | 26,215 | 6,226 | 5,139 | 40,201
+Other | — | 6 | — | — | — | — | — | 413 | —
+Consolidated | $3,306 | $61,627 | $20,872 | $37,761 | $2,922 | $26,215 | $6,226 | $5,552 | $40,201
+___________________________________________
+(1) See note 2 of the notes to the consolidated financial statements for discussion of the method used to allocate net investment income and invested assets to the identified segments.
+(2) Expense allocations are determined in accordance with prescribed statutory accounting practices. These practices make a reasonable allocation of all expenses to those product lines with which they are associated.
+See the Report of Independent Registered Public Accounting Firm.
+
+=== Note 22 — Schedule VI (Consolidated) ===
+--- PDF page 221 (printed page 221) ---
+THE TRAVELERS COMPANIES, INC. AND SUBSIDIARIES
+Supplementary Information Concerning Property-Casualty Insurance Operations (1)
+2023-2025
+(in millions)
+Claims and Claim Adjustment Expenses Incurred Related to: | Amortization of Deferred Acquisition Costs | Paid Claims and Claim Adjustment Expenses
+Affiliation with Registrant(2) | Deferred Acquisition Costs | Claims and Claim Adjustment Expense Reserves | Discount from Reserves for Unpaid Claims(3) | Unearned Premiums | Earned Premiums | Net Investment Income | Current Year | Prior Year | Net Written Premiums
+2025 | $3,518 | $65,734 | $1,027 | $22,431 | $43,914 | $3,959 | $28,051 | $(939) | $7,266 | $23,913 | $44,387
+2024 | $3,494 | $64,088 | $1,070 | $22,289 | $41,941 | $3,590 | $27,508 | $(548) | $6,973 | $24,151 | $43,356
+2023 | $3,306 | $61,621 | $1,096 | $20,872 | $37,761 | $2,922 | $26,159 | $(38) | $6,226 | $23,276 | $40,201
+___________________________________________
+(1) Excludes accident and health insurance business.
+(2) Consolidated property-casualty insurance operations.
+(3) For a discussion of types of reserves discounted and discount rates used, see note 8 of the notes to the consolidated financial statements.
+See the Report of Independent Registered Public Accounting Firm.
+
+=== Note 6 — Reinsurance (Consolidated) ===
+--- PDF page 154 (printed page 154) ---
+6. REINSURANCE
+The Company’s consolidated financial statements reflect the effects of assumed and ceded reinsurance transactions. Assumed reinsurance refers to the acceptance of certain insurance risks that other insurance companies have underwritten. Ceded reinsurance involves transferring certain insurance risks (along with the related written and earned premiums) the Company has underwritten to other insurance companies who agree to share these risks. The primary purpose of ceded reinsurance is to protect the Company, at a cost, from losses in excess of the amount it is prepared to accept and to protect the Company’s capital. Reinsurance is placed on both a quota-share and excess-of-loss basis. Ceded reinsurance arrangements do not discharge the Company as the primary insurer, except for instances where the primary policy or policies have been novated, such as in certain structured settlement agreements.
+The Company utilizes a corporate catastrophe excess-of-loss reinsurance treaty with unaffiliated reinsurers to manage its exposure to losses resulting from catastrophes and to protect its capital. In addition to the coverage provided under this treaty, the Company also utilizes a reinsurance agreement entered into in connection with catastrophe bonds issued by Long Point Re IV to protect against certain weather-related and earthquake losses in the Northeastern United States and a Northeast property catastrophe excess-of-loss reinsurance treaty to protect against losses resulting from weather-related and earthquake catastrophes in the Northeastern United States. The Company also utilizes excess-of-loss treaties to protect against earthquake losses up to a certain threshold in Business Insurance (for certain markets) and for Personal Insurance, and several reinsurance treaties specific to its international operations.
+The Company monitors the financial condition of its reinsurers under voluntary reinsurance arrangements to evaluate the collectability of amounts due from reinsurers and as a basis for determining the reinsurers with which the Company conducts ongoing business. In addition, in the ordinary course of business, the Company may become involved in coverage disputes with its reinsurers. Some of these disputes could result in lawsuits and arbitrations brought by or against the reinsurers to determine the Company’s rights and obligations under the various reinsurance agreements. The Company employs dedicated specialists and strategies to manage reinsurance collections and disputes.
+Included in reinsurance recoverables are amounts related to involuntary reinsurance arrangements. The Company is required to participate in various involuntary reinsurance arrangements through assumed reinsurance, principally with regard to residual market mechanisms in workers’ compensation and automobile insurance, as well as homeowners’ insurance in certain coastal areas. In addition, the Company provides services for several of these involuntary arrangements (mandatory pools and associations) under which it writes such residual market business directly, then cedes 100% of this business to the mandatory pool. Such participations and servicing arrangements are arranged to mitigate credit risk to the Company, as any ceded balances are jointly backed by all the pool members.
+Also included in reinsurance recoverables are amounts related to certain structured settlements. Structured settlements are annuities purchased from various life insurance companies to settle certain personal physical injury claims, of which workers’ compensation claims comprise a significant portion. In cases where the Company did not receive a release from the claimant, the structured settlement is included in reinsurance recoverables and the related claim cost is included in the liability for claims and claim adjustment expense reserves, as the Company retains the contingent liability to the claimant. If it is expected that the life insurance company is not able to pay, the Company would recognize an impairment of the related reinsurance recoverable if, and to the extent, the purchased annuities are not covered by state guaranty associations. In the event that the life insurance company fails to make the required annuity payments, the Company would be required to make such payments.
+
+--- PDF page 155 (printed page 155) ---
+The following is a summary of reinsurance financial data reflected in the consolidated statement of income.
+(for the year ended December 31, in millions) | 2025 | 2024 | 2023
+Written premiums
+Direct | $45,594 | $44,377 | $40,983
+Assumed | 2,136 | 2,173 | 1,989
+Ceded | (3,343) | (3,194) | (2,771)
+Total net written premiums | $44,387 | $43,356 | $40,201
+Earned premiums
+Direct | $45,042 | $42,983 | $38,796
+Assumed | 2,110 | 2,095 | 1,614
+Ceded | (3,238) | (3,137) | (2,649)
+Total net earned premiums | $43,914 | $41,941 | $37,761
+Percentage of assumed earned premiums to net earned premiums | 4.8% | 5.0% | 4.3%
+Ceded claims and claim adjustment expenses incurred | $1,679 | $1,249 | $1,462
+Ceded premiums include the premiums paid for coverage provided by the Company’s catastrophe bonds.
+Reinsurance recoverables include amounts recoverable on both paid and unpaid claims and claim adjustment expenses and were as follows:
+(as of December 31, in millions) | 2025 | 2024
+Gross reinsurance recoverables on paid and unpaid claims and claim adjustment expenses | $4,352 | $3,962
+Gross structured settlements | 2,469 | 2,626
+Mandatory pools and associations | 1,485 | 1,531
+Gross reinsurance recoverables | 8,306 | 8,119
+Allowance for estimated uncollectible reinsurance | (135) | (119)
+Less amounts classified as held for sale | 285 | —
+Net reinsurance recoverables | $7,886 | $8,000
+Terrorism Risk Insurance Program
+The Terrorism Risk Insurance Program is a Federal program administered by the Department of the Treasury authorized through December 31, 2027 that provides for a system of shared public and private compensation for certain insured losses resulting from certified acts of terrorism.
+In order for a loss to be covered under the program (subject losses), the loss must meet certain aggregate industry loss minimums and must be the result of an event that is certified as an act of terrorism by the U.S. Secretary of the Treasury, in consultation with the Secretary of Homeland Security and the Attorney General of the United States. The annual aggregate industry loss minimum under the program is $200 million. The program excludes from participation the following types of insurance: Federal crop insurance, private mortgage insurance, financial guaranty insurance, medical malpractice insurance, health or life insurance, flood insurance, reinsurance, commercial automobile, professional liability (other than directors’ and officers’), surety, burglary and theft, and farm-owners multi-peril. In the case of a war declared by Congress, only workers’ compensation losses are covered by the program. All commercial property and casualty insurers licensed in the United States are generally required to participate in the program. Under the program, a participating insurer, in exchange for making terrorism insurance available, is entitled to be reimbursed by the Federal Government for 80% of subject losses, after an insurer deductible, subject to an annual cap.
+The deductible for any calendar year is equal to 20% of the insurer’s direct earned premiums for covered lines for the preceding calendar year. The Company’s estimated deductible under the program is $4.01 billion for 2026. The annual cap limits the amount of aggregate subject losses for all participating insurers to $100 billion. Once subject losses have reached the $100
+
+--- PDF page 156 (printed page 156) ---
+billion aggregate during a program year, participating insurers will not be liable under the program for additional covered terrorism losses for that program year. There have been no terrorism-related losses that have triggered program coverage since the program was established. Given that the law establishing the program remains untested, there is substantial uncertainty as to how it will be applied if an act of terrorism is certified under the program. In addition, application of the program to a specific event will depend upon whether the government has designated such event as a covered event. It is also possible that future legislative action could change or eliminate the program. Further, given the unpredictable frequency and severity of terrorism losses, as well as the limited terrorism coverage in the Company’s own reinsurance program, future losses from acts of terrorism, particularly involving nuclear, biological, chemical or radiological events, could be material to the Company’s operating results, financial position and/or liquidity in future periods. In addition, the Company may not have sufficient resources to respond to claims arising from a high frequency of high severity natural catastrophes and/or of man-made catastrophic events involving conventional means. While the Company seeks to manage its exposure to man-made catastrophic events involving conventional means, the Company may not have sufficient resources to respond to claims arising out of one or more man-made catastrophic events involving cyber, nuclear, biological, chemical or radiological means.
+----- END OF NOTES -----

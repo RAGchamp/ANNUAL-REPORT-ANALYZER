@@ -73,8 +73,17 @@ def _prepare_rows(rows, title):
     """Drop the repeated title and the signature block, and turn the
     "In ₹ Million" unit into its own marker row."""
     typewriter = profiles.active().switches.monospace_columns
+    wrapped = profiles.active().switches.wrapped_label_amounts
     out = []
+    open_paren = False
     for cells in rows:
+        if wrapped:
+            cells = _merge_touching(cells)
+            # "$10,162)" closing the caption above is label text, not a figure
+            if open_paren and cells[0]["t"].count(")") > cells[0]["t"].count("("):
+                cells[0]["label"] = True
+            joined_now = " ".join(c["t"] for c in cells if not _is_value(c["t"]) or c.get("label"))
+            open_paren = joined_now.count("(") > joined_now.count(")")
         joined = " ".join(c["t"] for c in cells)
         if SIGNATURE_RE.match(joined):
             break  # auditor / director signature block
@@ -96,6 +105,24 @@ def _prepare_rows(rows, title):
     return out
 
 
+TOUCHING = 1.0      # spans this close are one piece of text
+FOOTNOTE_MARK_RE = re.compile(r"^\([a-z]\)$")    # "Total assets" + "(a)": the marker stays apart
+
+
+def _merge_touching(cells):
+    """wrapped_label_amounts: "Loans (included" + "$70,684" + "and $41,350 at fair
+    value)" are separate spans with no space between them; they are one label."""
+    out = []
+    for cell in cells:
+        prev = out[-1] if out else None
+        if (prev and cell["x0"] - prev["x1"] <= TOUCHING and not FOOTNOTE_MARK_RE.match(cell["t"])
+                and not (_is_value(prev["t"]) and _is_value(cell["t"]))):
+            out[-1] = {**prev, "t": f"{prev['t']} {cell['t']}", "x1": cell["x1"]}
+        else:
+            out.append(dict(cell))
+    return out
+
+
 def _split_parts(rows):
     """Lettered parts ("A. EQUITY SHARE CAPITAL:", "B. OTHER EQUITY") are
     separate tables with their own columns."""
@@ -114,7 +141,7 @@ def _numeric_cells(row_cells):
     """Figures in a row. A leading "(1)" before text is a label, not a figure."""
     nums = []
     for i, cell in enumerate(row_cells):
-        if not _is_value(cell["t"]):
+        if not _is_value(cell["t"]) or cell.get("label"):
             continue
         if i == 0 and len(row_cells) > 1 and not _is_value(row_cells[1]["t"]):
             continue
@@ -244,7 +271,13 @@ def _wraps_into(prev, cells):
     "USAir Group, Inc. Preferred Stock ... 268,500". The label-only row above a
     figure row is the start of its caption unless it is a heading: one ending
     in ":" or "-" ("REVENUES:", "Income taxes -"), or in capitals ("ASSETS")
-    unless it ends with a joining word ("…MINORITY INTEREST AND")."""
+    unless it ends with a joining word ("…MINORITY INTEREST AND").
+
+    wrapped_label_amounts: a caption whose "(" is still open ("Federal funds sold …
+    (included $327,018 and $286,771 at fair") goes on into the figure row below."""
+    if (profiles.active().switches.wrapped_label_amounts and prev["kind"] == "text"
+            and prev["label"].count("(") > prev["label"].count(")")):
+        return True
     if (not profiles.active().switches.monospace_columns or not cells or not all(c.get("m") for c in cells)
             or prev["kind"] not in ("text", "section")):
         return False

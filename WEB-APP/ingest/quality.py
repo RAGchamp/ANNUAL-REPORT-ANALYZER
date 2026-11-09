@@ -112,14 +112,21 @@ def _narrative_lines(n):
 
 
 def report_lines(quality, format_label=""):
+    xbrl = quality.get("source") == "xbrl"          # INFO/XBRL-ROUTE.md: document pages, not PDF pages
     head = f"{quality['pdf_name']}  ·  {format_label or quality['format']}  ·  {quality['page_count']} pages"
     if quality.get("ingest_seconds") is not None:
         head += f"  ·  ingested in {quality['ingest_seconds']:.0f}s"
     lines = [head]
     if quality.get("model"):
         lines.append(f"Model: {quality['model']}")
+    if xbrl and quality.get("xbrl"):
+        x = quality["xbrl"]
+        lines.append(f"XBRL: {x['main']} · {x['numeric']:,} figures ({x['concepts']} concepts), {x['text']} text facts, "
+                     f"{x['contexts']} contexts · {x['statement_roles']} statement and {x['disclosure_roles']} "
+                     f"disclosure roles · pages = the document's page breaks")
     for s in quality["sections"]:
-        where = f" (PDF {s['first_page']}–{s['last_page']})" if s.get("first_page") else ""
+        where = (f" ({'pages' if xbrl else 'PDF'} {s['first_page']}–{s['last_page']})"
+                 if s.get("first_page") else "")
         units = s.get("units") or {"note": s["notes"]}
         counts = ", ".join(f"{n} {KIND_WORDS.get(k, k)}{'' if n == 1 else 's'}" for k, n in units.items())
         line = f"{s['label']}: {counts or '0 notes'}{where}"

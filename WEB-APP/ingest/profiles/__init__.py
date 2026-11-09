@@ -54,6 +54,30 @@ class Switches:
     # Note tables with empty cells (loss development triangles): a row's figures are written
     # under the columns they sit in, "2017 |  | 1,088 | 1,894", not shifted to the left.
     aligned_note_columns: bool = False
+    # Note headings "Note 12 – Loans" (JPMorgan); two may share a row when a short note ends
+    # in the left column and the next one starts in the right ("Note 16 – … Note 17 – Deposits").
+    note_word_headings: bool = False
+    # The notes' running header is printed on left-hand pages only: a page between two pages
+    # of one notes section belongs to that section.
+    alternate_header_pages: bool = False
+    # The running header is a row of its own that starts with the header words, so a contents
+    # page listing "Notes to consolidated financial statements: Page" is not a notes page.
+    header_starts_row: bool = False
+    # Body text set in two columns: each band of rows that keeps clear of the gutter is read
+    # left column first, then right; full-width tables stay row by row.
+    two_column_text: bool = False
+    # The page number shares the footer row with a running title ("JPMorgan Chase & Co./2025
+    # Form 10-K  165"); only that row is the footer, so body lines low on the page are kept.
+    footer_page_numbers: bool = False
+    # The company is the one the US auditor's report is addressed to ("To the Board of Directors
+    # and Shareholders of JPMorgan Chase & Co.:"), a name without Inc./Limited.
+    us_auditor_addressee: bool = False
+    # The balance check uses each balance sheet's first "Total assets" only: a bank's balance
+    # sheet ends with a table of its consolidated VIEs' assets, with its own "Total assets".
+    first_total_assets_only: bool = False
+    # Statement line labels wrap onto a second line that carries amounts in words and figures
+    # ("Loans (included" / "$36,456 and $38,851 at fair value)"): that line stays in the label.
+    wrapped_label_amounts: bool = False
 
 
 @dataclass(frozen=True)
@@ -169,8 +193,21 @@ AU_20F = derive(
     )),
 )
 
+US_10K_TWO_COLUMN = derive(
+    US_10K_EDGAR, id="us-10k-two-column", version=1,
+    description="US Form 10-K typeset like an annual report (JPMorgan): two text columns, "
+                "'Note 12 – Loans' headings, the notes' running header on left-hand pages only, "
+                "statements titled in sentence case under the company name",
+    switches=Switches(note_word_headings=True, alternate_header_pages=True, header_starts_row=True,
+                      two_column_text=True, footer_page_numbers=True, us_auditor_addressee=True,
+                      first_total_assets_only=True, wrapped_label_amounts=True,
+                      narrative_sections=("bookmarks", "form_items")),
+    acceptance=Acceptance(must_contain=(("Form 10-K", r"(?i)\bForm\s+10-K\b"),
+                                        ("Item 8", r"(?i)\bItem\s+8\b"))),
+)
+
 PROFILES = {p.id: p for p in (IN_INDAS, US_10K_EDGAR, US_10K_TYPEWRITER, IN_SCHEDULE_VI, SCANNED_OCR, CA_40F,
-                              IN_20F, AU_20F)}
+                              IN_20F, AU_20F, US_10K_TWO_COLUMN)}
 
 # Outside an ingestion (e.g. a test calling a rule function directly): no switches.
 DEFAULT = Profile(id="default", version=0, indexer="notes", format="modern", description="no profile")

@@ -1,0 +1,2550 @@
+REPORT PROFILE
+Format: US annual report on Form 10-K (US GAAP)
+Periods in the statements: FY2025, FY2024, FY2023
+The statements have no Notes column; LINKED FIGURES shows how the app linked statement lines to the notes.
+
+Annual report: JP-MORGAN-2025.pdf
+Statements: Consolidated
+Notes provided: Consolidated Note 10 – Investment securities (PDF p.230–234), Consolidated Note 12 – Loans (PDF p.238–259), Consolidated Note 15 – Goodwill, mortgage servicing rights, and other intangible assets (PDF p.274–278)
+Primary financial statements provided: Consolidated statements of income (PDF p.167–168); Consolidated balance sheets (PDF p.169); Consolidated statements of cash flows (PDF p.171); Consolidated statements of changes in stockholders’ equity (PDF p.170)
+
+QUESTION: analyze jp morgan's exposure to mortgage related assets
+
+Structure your answer as:
+## Summary
+3–5 bullet points with the key conclusions.
+## Key figures
+A table with columns: Item | Current year | Prior year | Change | % change | Source.
+## Detailed analysis
+Trends, drivers, ratios and interpretation relevant to the question.
+## Impact on the financial statements
+How the matters in the notes flow into and affect each primary statement. Use one sub-heading per statement:
+### Income Statement (Statement of Operations)
+### Balance Sheet
+### Cash Flow Statement
+### Statement of Shareholders' Equity
+For each one, name the line items affected, give their figures (current and prior year, citing statement and page), show how the note reconciles to them, and explain the effect. For example, how the tax expense in the note drives profit after tax, how deferred tax balances appear on the Balance Sheet, how taxes paid appear in operating cash flow, or how OCI items move reserves in equity.
+## Red flags & areas for follow-up
+Anything unusual, inconsistent, or worth asking management about, including any note figure that does not agree with the statements.
+## Sources
+The notes, statements and PDF pages you relied on.
+
+----- PRIMARY FINANCIAL STATEMENTS (PDF page numbers) -----
+=== Consolidated statements of income (Consolidated) ===
+--- PDF page 167 (printed page 165) ---
+Consolidated statements of income
+Year ended December 31, (in millions, except per share data) | 2025 | 2024 | 2023
+Revenue
+Investment banking fees | $9,615 | $8,910 | $6,519
+Principal transactions | 27,212 | 24,787 | 24,460
+Lending- and deposit-related fees | 9,093 | 7,606 | 7,413
+Asset management fees | 20,327 | 17,801 | 15,220
+Commissions and other fees | 8,539 | 7,530 | 6,836
+Investment securities losses | (57) | (1,021) | (3,180)
+Mortgage fees and related income | 1,381 | 1,401 | 1,176
+Card income | 4,720 | 5,497 | 4,784
+Other income | 6,174 | 12,462 | 5,609
+Noninterest revenue | 87,004 | 84,973 | 68,837
+Interest income | 193,341 | 193,933 | 170,588
+Interest expense | 97,898 | 101,350 | 81,321
+Net interest income | 95,443 | 92,583 | 89,267
+Total net revenue | 182,447 | 177,556 | 158,104
+Provision for credit losses | 14,212 | 10,678 | 9,320
+Noninterest expense
+Compensation expense | 54,487 | 51,357 | 46,465
+Occupancy expense | 5,461 | 5,026 | 4,590
+Technology, communications and equipment expense | 11,029 | 9,831 | 9,246
+Professional and outside services | 12,356 | 11,057 | 10,235
+Marketing | 5,531 | 4,974 | 4,591
+Other expense | 6,776 | 9,552 | 12,045
+Total noninterest expense | 95,640 | 91,797 | 87,172
+Income before income tax expense | 72,595 | 75,081 | 61,612
+Income tax expense | 15,547 | 16,610 | 12,060
+Net income | $57,048 | $58,471 | $49,552
+Net income applicable to common stockholders | $55,681 | $56,868 | $47,760
+Net income per common share data
+Basic earnings per share | $20.05 | $19.79 | $16.25
+Diluted earnings per share | 20.02 | 19.75 | 16.23
+Weighted-average basic shares | 2,776.5 | 2,873.9 | 2,938.6
+Weighted-average diluted shares | 2,781.5 | 2,879.0 | 2,943.1
+The Notes to Consolidated Financial Statements are an integral part of these statements.
+
+--- PDF page 168 (printed page 166) ---
+Consolidated statements of comprehensive income
+Year ended December 31, (in millions) | 2025 | 2024 | 2023
+Net income | $57,048 | $58,471 | $49,552
+Other comprehensive income/(loss), after–tax
+Unrealized gains/(losses) on investment securities | 3,569 | (87) | 5,381
+Translation adjustments, net of hedges | 1,339 | (858) | 329
+Fair value hedges | 64 | (87) | (101)
+Cash flow hedges | 3,388 | (882) | 1,724
+Defined benefit pension and OPEB plans | 579 | (63) | 373
+DVA on fair value option elected liabilities | (773) | (36) | (808)
+Total other comprehensive income/(loss), after–tax | 8,166 | (2,013) | 6,898
+Comprehensive income | $65,214 | $56,458 | $56,450
+The Notes to Consolidated Financial Statements are an integral part of these statements.
+
+=== Consolidated balance sheets (Consolidated) ===
+--- PDF page 169 (printed page 167) ---
+Consolidated balance sheets
+December 31, (in millions, except share data) | 2025 | 2024
+Assets
+Cash and due from banks | $21,742 | $23,372
+Deposits with banks | 321,596 | 445,945
+Federal funds sold and securities purchased under resale agreements (included $327,018 and $286,771 at fair
+value) | 336,426 | 295,001
+Securities borrowed (included $98,111 and $83,962 at fair value) | 286,191 | 219,546
+Trading assets (included assets pledged of $165,927 and $136,070) | 802,873 | 637,784
+Available-for-sale securities (amortized cost of $507,226 and $411,045; included assets pledged of $7,735 and
+$10,162) | 507,198 | 406,852
+Held-to-maturity securities | 270,134 | 274,468
+Investment securities, net of allowance for credit losses | 777,332 | 681,320
+Loans (included $70,684 and $41,350 at fair value) | 1,493,429 | 1,347,988
+Allowance for loan losses | (25,765) | (24,345)
+Loans, net of allowance for loan losses | 1,467,664 | 1,323,643
+Accrued interest and accounts receivable | 111,599 | 101,223
+Premises and equipment | 36,244 | 32,223
+Goodwill, MSRs and other intangible assets | 64,458 | 64,560
+Other assets (included $15,849 and $15,122 at fair value and assets pledged of $11,984 and $6,288) | 198,775 | 178,197
+Total assets (a) | $ 4,424,900 | $4,002,814
+Liabilities
+Deposits (included $20,930 and $33,768 at fair value) | $ 2,559,320 $ 2,406,032
+Federal funds purchased and securities loaned or sold under repurchase agreements (included $360,194 and
+$226,329 at fair value) | 442,396 | 296,835
+Short-term borrowings (included $32,460 and $26,521 at fair value) | 64,776 | 52,893
+Trading liabilities | 216,019 | 192,883
+Accounts payable and other liabilities (included $6,660 and $5,893 at fair value) | 316,794 | 280,672
+Beneficial interests issued by consolidated VIEs (included $5 and $1 at fair value) | 27,951 | 27,323
+Long-term debt (included $134,559 and $100,780 at fair value) | 435,206 | 401,418
+Total liabilities (a) | 4,062,462 | 3,658,056
+Commitments and contingencies (refer to Notes 28, 29 and 30)
+Stockholders’ equity
+Preferred stock ($1 par value; authorized 200,000,000 shares: issued 2,005,375 and 2,005,375 shares) | 20,045 | 20,050
+Common stock ($1 par value; authorized 9,000,000,000 shares; issued 4,104,933,895 shares) | 4,105 | 4,105
+Additional paid-in capital | 91,114 | 90,911
+Retained earnings | 416,055 | 376,166
+Accumulated other comprehensive losses | (4,290) | (12,456)
+Treasury stock, at cost (1,408,661,319 and 1,307,313,494 shares) | (164,591) | (134,018)
+Total stockholders’ equity | 362,438 | 344,758
+Total liabilities and stockholders’ equity | $ 4,424,900 | $4,002,814
+(a) The following table presents information on assets and liabilities related to VIEs that are consolidated by the Firm at December 31, 2025 and
+2024. The assets of the consolidated VIEs are used to settle the liabilities of those entities. The holders of the beneficial interests generally do
+not have recourse to the general credit of JPMorganChase. The assets and liabilities in the table below include third-party assets and
+liabilities of consolidated VIEs and exclude intercompany balances that eliminate in consolidation. Refer to Note 14 for a further discussion.
+December 31, (in millions) | 2025 | 2024
+Assets
+Trading assets | $4,835 | $3,885
+Loans | 37,777 | 36,510
+All other assets | 683 | 681
+Total assets | $43,295 | $41,076
+Liabilities
+Beneficial interests issued by consolidated VIEs | $27,951 | $27,323
+All other liabilities | 691 | 454
+Total liabilities | $28,642 | $27,777
+The Notes to Consolidated Financial Statements are an integral part of these statements.
+
+=== Consolidated statements of cash flows (Consolidated) ===
+--- PDF page 171 (printed page 169) ---
+Consolidated statements of cash flows
+Year ended December 31, (in millions) | 2025 | 2024 | 2023
+Operating activities
+Net income | $ 57,048 | $58,471 | $49,552
+Adjustments to reconcile net income to net cash provided by operating activities:
+Provision for credit losses | 14,212 | 10,678 | 9,320
+Depreciation and amortization | 8,821 | 7,938 | 7,512
+Deferred tax (benefit)/expense | 5,611 | 2,004 | (4,534)
+Estimated bargain purchase gain associated with the First Republic acquisition | — | (103) | (2,775)
+Initial gain on the Visa share exchange | — | (7,990) | —
+Other | 1,309 | 1,985 | 4,301
+Originations and purchases of loans held-for-sale | (260,772) | (212,238) | (115,245)
+Proceeds from sales, securitizations and paydowns of loans held-for-sale | 235,232 | 205,303 | 116,430
+Net change in:
+Trading assets | (156,461) | (95,729) | (74,091)
+Securities borrowed | (66,648) | (18,762) | (14,902)
+Accrued interest and accounts receivable | (11,514) | 5,735 | 19,928
+Other assets | (12,582) | (7,650) | 32,970
+Trading liabilities | 23,134 | 2,276 | 5,315
+Accounts payable and other liabilities | 5,270 | (90) | (25,388)
+Other operating adjustments | 9,558 | 6,160 | 4,581
+Net cash (used in)/provided by operating activities | (147,782) | (42,012) | 12,974
+Investing activities
+Net change in:
+Federal funds sold and securities purchased under resale agreements | (41,264) | (18,706) | 39,740
+Held-to-maturity securities:
+Proceeds from paydowns and maturities | 54,791 | 99,363 | 53,056
+Purchases | (5,432) | (4,709) | (4,141)
+Available-for-sale securities:
+Proceeds from paydowns and maturities | 37,414 | 38,499 | 53,744
+Proceeds from sales | 141,295 | 104,625 | 108,434
+Purchases | (308,772) | (352,712) | (115,499)
+Proceeds from sales and securitizations of loans held-for-investment | 57,565 | 57,921 | 47,312
+Other changes in loans, net | (188,497) | (83,176) | (88,343)
+Net cash used in First Republic Acquisition | — | (2,362) | (9,920)
+All other investing activities, net | (12,665) | (2,146) | (16,740)
+Net cash (used in)/provided by investing activities | (265,565) | (163,403) | 67,643
+Financing activities
+Net change in:
+Deposits | 153,168 | 3,299 | (32,196)
+Federal funds purchased and securities loaned or sold under repurchase agreements | 145,535 | 80,288 | 13,801
+Short-term borrowings | 9,422 | 7,439 | (1,934)
+Beneficial interests issued by consolidated VIEs | (622) | 1,543 | 9,029
+Proceeds from long-term borrowings | 120,761 | 109,915 | 75,417
+Payments of long-term borrowings | (108,100) | (96,605) | (64,880)
+Proceeds from issuance of preferred stock | 3,000 | 2,500 | —
+Redemption of preferred stock | (3,000) | (9,850) | —
+Treasury stock repurchased | (31,591) | (18,830) | (9,824)
+Dividends paid | (16,625) | (14,783) | (13,463)
+All other financing activities, net | (2,415) | (1,469) | (1,521)
+Net cash provided by/(used in) financing activities | 269,533 | 63,447 | (25,571)
+Effect of exchange rate changes on cash and due from banks and deposits with banks | 17,835 | (12,866) | 1,871
+Net increase/(decrease) in cash and due from banks and deposits with banks | (125,979) | (154,834) | 56,917
+Cash and due from banks and deposits with banks at the beginning of the period | 469,317 | 624,151 | 567,234
+Cash and due from banks and deposits with banks at the end of the period | $ 343,338 $ 469,317 | $624,151
+Cash interest paid | $ 96,436 | $99,642 | $77,114
+Cash income taxes paid, net | 5,309 | 11,715 | 9,908
+The Notes to Consolidated Financial Statements are an integral part of these statements.
+
+=== Consolidated statements of changes in stockholders’ equity (Consolidated) ===
+--- PDF page 170 (printed page 168) ---
+Consolidated statements of changes in stockholders’ equity
+Year ended December 31, (in millions, except per share data) | 2025 | 2024 | 2023
+Preferred stock
+Balance at January 1 | $ 20,050 | $27,404 | $27,404
+Issuance | 2,995 | 2,496 | —
+Redemption | (3,000) | (9,850) | —
+Balance at December 31 | 20,045 | 20,050 | 27,404
+Common stock
+Balance at January 1 and December 31 | 4,105 | 4,105 | 4,105
+Additional paid-in capital
+Balance at January 1 | 90,911 | 90,128 | 89,044
+Shares issued and commitments to issue common stock for employee share-based compensation
+awards, and related tax effects | 220 | 768 | 1,084
+Other | (17) | 15 | —
+Balance at December 31 | 91,114 | 90,911 | 90,128
+Retained earnings
+Balance at January 1 | 376,166 | 332,901 | 296,456
+Cumulative effect of change in accounting principles | — | (161) | 449
+Net income | 57,048 | 58,471 | 49,552
+Preferred stock dividends | (1,099) | (1,259) | (1,501)
+Common stock dividends ($5.80 , $4.80 and $4.10 per share for 2025, 2024 and 2023, respectively) | (16,060) | (13,786) | (12,055)
+Balance at December 31 | 416,055 | 376,166 | 332,901
+Accumulated other comprehensive income/(loss)
+Balance at January 1 | (12,456) | (10,443) | (17,341)
+Other comprehensive income/(loss), after-tax | 8,166 | (2,013) | 6,898
+Balance at December 31 | (4,290) | (12,456) | (10,443)
+Treasury stock, at cost
+Balance at January 1 | (134,018) | (116,217) | (107,336)
+Repurchase | (31,924) | (19,007) | (9,980)
+Reissuance | 1,351 | 1,206 | 1,099
+Balance at December 31 | (164,591) | (134,018) | (116,217)
+Total stockholders’ equity | $ 362,438 $ 344,758 $ 327,878
+Effective January 1, 2024, the Firm adopted the Equity Method and Joint Ventures: Accounting for Investments in Tax Credit
+Structures Using the Proportional Amortization Method accounting guidance. Effective January 1, 2023, the Firm adopted the
+Financial Instruments – Credit Losses: Troubled Debt Restructurings, and Derivatives and Hedging: Fair Value Hedging –
+Portfolio Layer Method accounting guidance. Refer to Note 1 for further information.
+The Notes to Consolidated Financial Statements are an integral part of these statements.
+----- END OF PRIMARY FINANCIAL STATEMENTS -----
+
+----- LINKED FIGURES (statement lines the app linked to the notes provided; found automatically - check them against the statements and notes) -----
+- Available-for-sale securities (amortized cost of $507,226 and $411,045; included assets pledged of $7,735 and $10,162) (Consolidated balance sheets, PDF p.169) | FY2025 507,198 | FY2024 406,852 -> Note 10 (same figure in the note)
+- Held-to-maturity securities (Consolidated balance sheets, PDF p.169) | FY2025 270,134 | FY2024 274,468 -> Note 10 (same figure in the note)
+- Loans (included $70,684 and $41,350 at fair value) (Consolidated balance sheets, PDF p.169) | FY2025 1,493,429 | FY2024 1,347,988 -> Note 12 (same figure in the note, title match)
+- Allowance for loan losses (Consolidated balance sheets, PDF p.169) | FY2025 (25,765) | FY2024 (24,345) -> Note 12 (title match)
+- Loans, net of allowance for loan losses (Consolidated balance sheets, PDF p.169) | FY2025 1,467,664 | FY2024 1,323,643 -> Note 12 (title match)
+- Loans (Consolidated balance sheets, PDF p.169) | FY2025 37,777 | FY2024 36,510 -> Note 12 (title match)
+- Originations and purchases of loans held-for-sale (Consolidated statements of cash flows, PDF p.171) | FY2025 (260,772) | FY2024 (212,238) | FY2023 (115,245) -> Note 12 (title match)
+- Proceeds from sales, securitizations and paydowns of loans held-for-sale (Consolidated statements of cash flows, PDF p.171) | FY2025 235,232 | FY2024 205,303 | FY2023 116,430 -> Note 12 (title match)
+- Proceeds from sales and securitizations of loans held-for-investment (Consolidated statements of cash flows, PDF p.171) | FY2025 57,565 | FY2024 57,921 | FY2023 47,312 -> Note 12 (title match)
+- Other changes in loans, net (Consolidated statements of cash flows, PDF p.171) | FY2025 (188,497) | FY2024 (83,176) | FY2023 (88,343) -> Note 12 (title match)
+- Investment securities losses (Consolidated statements of income, PDF p.167) | FY2025 (57) | column 3 (1,021) | FY2023 (3,180) -> Note 10 (same figure in the note, title match)
+- Mortgage fees and related income (Consolidated statements of income, PDF p.167) | FY2025 1,381 | FY2024 1,401 | FY2023 1,176 -> Note 15 (same figure in the note)
+- Unrealized gains/(losses) on investment securities (Consolidated statements of income, PDF p.168) | FY2025 3,569 | column 3 (87) | FY2023 5,381 -> Note 10 (title match)
+CHECKS (automatic)
+- ok: Total assets $ 4,424,900 vs 'Total liabilities and stockholders’ equity' $ 4,424,900 (FY2025)
+- ok: Total assets 4,002,814 vs 'Total liabilities and stockholders’ equity' 4,002,814 (FY2024)
+----- END OF LINKED FIGURES -----
+
+----- NOTES EXTRACTED FROM THE ANNUAL REPORT (PDF page numbers) -----
+=== Note 10 — Investment securities (Consolidated) ===
+--- PDF page 230 (printed page 228) ---
+Note 10 – Investment securities
+Investment securities consist of debt securities that
+are classified as AFS or HTM. Debt securities classified
+as trading assets are discussed in Note 2.
+Predominantly all of the Firm’s AFS and HTM
+securities are held by Treasury and CIO in connection
+with its asset-liability management activities.
+AFS securities are carried at fair value on the
+Consolidated balance sheets. Unrealized gains and
+losses, after any applicable hedge accounting
+adjustments or allowance for credit losses, are
+reported in AOCI. The specific identification method is
+used to determine realized gains and losses on AFS
+securities, which are included in investment securities
+gains/(losses) on the Consolidated statements of
+income. HTM securities, which the Firm has the intent
+and ability to hold until maturity, are carried at
+amortized cost, net of allowance for credit losses, on
+the Consolidated balance sheets.
+For both AFS and HTM securities, purchase discounts
+or premiums are generally amortized into interest
+income on a level-yield basis over the contractual life
+of the security. However, premiums on certain callable
+debt securities are amortized to the earliest call date.
+During the third quarter of 2025, the Firm transferred
+$44.1 billion of investment securities from AFS to HTM
+for asset-liability management purposes. AOCI
+included pretax unrealized gains of $575 million on the
+securities at the date of transfer.
+Unrealized gains or losses at the date of transfer of
+these securities continue to be reported in AOCI and
+are amortized into interest income on a level-yield
+basis over the remaining life of the securities. This
+amortization will offset the effect on interest income of
+the amortization of the premium or discount resulting
+from the transfer recorded at fair value.
+Effective January 1, 2023, the Firm adopted the
+portfolio layer method hedge accounting guidance
+which permitted a transfer of HTM securities to AFS
+upon adoption. The Firm transferred obligations of
+U.S. states and municipalities with a carrying value of
+$7.1 billion resulting in the recognition of $38 million
+net pre-tax unrealized losses in AOCI. Refer to Note 24
+for additional information.
+Transfers of securities between AFS and HTM are non-
+cash transactions.
+
+--- PDF page 231 (printed page 229) ---
+The amortized costs and estimated fair values of the investment securities portfolio were as follows for the dates
+indicated.
+2025 | 2024
+Gross | Gross | Gross | Gross
+Amortized unrealized unrealized | Fair | Amortized unrealized unrealized | Fair
+December 31, (in millions) | cost (c)(d)
+Available-for-sale securities
+Mortgage-backed securities:
+U.S. GSEs and government agencies $ 92,112 $
+Residential:
+U.S. | 5,564
+Non-U.S. | 405
+Commercial | 4,466
+Total mortgage-backed securities | 102,547
+U.S. Treasury and government agencies | 313,470
+Obligations of U.S. states and
+municipalities | 20,915
+Non-U.S. government debt securities | 45,676
+Corporate debt securities | 139
+Asset-backed securities:
+Collateralized loan obligations | 21,897
+Other | 1,941
+Unallocated portfolio layer fair value
+basis adjustments (a) | 641
+Total available-for-sale securities | 507,226
+Held-to-maturity securities (b)
+Mortgage-backed securities:
+U.S. GSEs and government agencies | 89,073
+U.S. Residential | 7,542
+Commercial | 6,493
+Total mortgage-backed securities | 103,108
+U.S. Treasury and government agencies | 132,727
+Obligations of U.S. states and
+municipalities | 8,600
+Asset-backed securities:
+Collateralized loan obligations | 24,695
+Other | 1,004
+Total held-to-maturity securities | 270,134
+Total investment securities, net of
+allowance for credit losses | $ 777,360 $
+gains | losses | value | cost (c)(d) | gains | losses | value
+1,075 $ | 2,215 $ 90,972 $ | 95,671 $ | 251 $ 4,029 | $91,893
+38 | 17 | 5,585 | 4,242 | 16 | 50 | 4,208
+1 | — | 406 | 600 | 3 | — | 603
+48 | 30 | 4,484 | 4,115 | 20 | 70 | 4,065
+1,162 | 2,262 | 101,447 | 104,628 | 290 | 4,149 | 100,769
+2,384 | 32 | 315,822 | 235,495 | 545 | 1,261 | 234,779
+118 | 793 | 20,240 | 18,337 | 110 | 534 | 17,913
+215 | 236 | 45,655 | 36,655 | 94 | 504 | 36,245
+— | 11 | 128 | 71 | — | 1 | 70
+51 | 1 | 21,947 | 14,887 | 59 | 3 | 14,943
+25 | 7 | 1,959 | 2,125 | 17 | 9 | 2,133
+(641) | — | NA | (1,153) | — | (1,153) | NA
+3,314 | 3,342 | 507,198 | 411,045 | 1,115 | 5,308 406,852
+57 | 9,200 | 79,930 | 97,177 | 6 | 13,531 | 83,652
+6 | 570 | 6,978 | 8,605 | 4 | 904 | 7,705
+19 | 234 | 6,278 | 8,817 | 24 | 389 | 8,452
+82 | 10,004 | 93,186 | 114,599 | 34 | 14,824 | 99,809
+134 | 6,414 | 126,447 | 108,632 | — | 11,212 | 97,420
+17 | 609 | 8,008 | 9,310 | 32 | 631 | 8,711
+29 | 6 | 24,718 | 40,573 | 84 | 14 | 40,643
+1 | 20 | 985 | 1,354 | 2 | 39 | 1,317
+263 | 17,053 253,344 | 274,468 | 152 26,720 247,900
+3,577 $ 20,395 $ 760,542 $ 685,513 $ | 1,267 $ 32,028 $ 654,752
+(a) Represents the amount of portfolio layer method basis adjustments related to AFS securities hedged in a closed portfolio. Under U.S. GAAP
+portfolio layer method basis adjustments are not allocated to individual securities, however, the amounts impact the unrealized gains or
+losses in the table for the types of securities being hedged. Refer to Note 1 and Note 5 for additional information.
+(b) The Firm purchased $5.4 billion, $4.7 billion and $4.1 billion of HTM securities for the years ended December 31, 2025, 2024 and 2023,
+respectively.
+(c) The amortized cost of investment securities is reported net of allowance for credit losses of $106 million, $152 million and $128 million at
+December 31, 2025, 2024 and 2023, respectively.
+(d) Excludes $4.6 billion and $3.7 billion of accrued interest receivable at December 31, 2025 and 2024, respectively, included in accrued interest
+and accounts receivable on the Consolidated balance sheets. The Firm generally does not recognize an allowance for credit losses on
+accrued interest receivable, consistent with its policy to write them off no later than 90 days past due by reversing interest income. The Firm
+did not reverse through interest income any accrued interest receivable for the years ended December 31, 2025 and 2024.
+
+--- PDF page 232 (printed page 230) ---
+At December 31, 2025 , the investment securities
+portfolio consisted of debt securities with an average
+credit rating of AA+ (based upon external ratings
+where available, and where not available, based
+primarily upon internal risk ratings). Risk ratings are
+used to identify the credit quality of securities and
+differentiate risk within the portfolio. The Firm’s
+internal risk ratings generally align with the qualitative
+characteristics (e.g., borrower capacity to meet
+financial commitments and vulnerability to changes in
+the economic environment) defined by S&P and
+AFS securities impairment
+Moody’s, however, the quantitative characteristics
+(e.g., probability of default (“PD”) and loss given default
+(“LGD”)) may differ as they reflect internal historical
+experiences and assumptions. Risk ratings are
+assigned at acquisition, reviewed on a regular and
+ongoing basis by Credit Risk Management and
+adjusted as necessary over the life of the investment
+for updated information affecting the issuer’s ability to
+fulfill its obligations.
+The following tables present the fair value and gross unrealized losses by aging category for AFS securities at
+December 31, 2025 and 2024. The tables exclude U.S. Treasury and government agency securities and U.S. GSE
+and government agency MBS with unrealized losses of $2.2 billion and $5.3 billion, at December 31, 2025 and 2024,
+respectively; changes in the value of these securities are generally driven by changes in interest rates rather than
+changes in their credit profile given the explicit or implicit guarantees provided by the U.S. government.
+Available-for-sale securities with gross unrealized losses
+Less than 12 months
+12 months or more
+Gross | Gross | Total gross
+Year ended December 31, 2025 | unrealized | unrealized | Total fair | unrealized
+(in millions) | Fair value | losses | Fair value | losses | value | losses
+Available-for-sale securities
+Mortgage-backed securities:
+Residential:
+U.S. | $36 | $
+Non-U.S. | 3
+Commercial | 142
+Total mortgage-backed securities | 181
+Obligations of U.S. states and
+municipalities | 5,519
+Non-U.S. government debt securities | 9,324
+Corporate debt securities | 114
+Asset-backed securities:
+Collateralized loan obligations | 814
+Other | 63
+Total available-for-sale securities with
+gross unrealized losses | $16,015 | $
+— | $ | 609 $ | 17 $ | 645 | $17
+— | 20 | — | 23 | —
+1 | 576 | 29 | 718 | 30
+1 | 1,205 | 46 | 1,386 | 47
+131 | 9,597 | 662 | 15,116 | 793
+76 | 4,954 | 160 | 14,278 | 236
+11 | — | — | 114 | 11
+— | 143 | 1 | 957 | 1
+— | 131 | 7 | 194 | 7
+219 | $ | 16,030 $ | 876 $ 32,045 | $1,095
+Available-for-sale securities with gross unrealized losses
+Less than 12 months
+Year ended December 31, 2024 | Gross
+12 months or more
+Gross | Total fair | Total gross
+(in millions) | Fair value | unrealized losses | Fair value unrealized losses | value | unrealized losses
+Available-for-sale securities
+Mortgage-backed securities:
+Residential:
+U.S. | $ | 1,505 $
+Non-U.S. | —
+Commercial | 763
+Total mortgage-backed securities | 2,268
+Obligations of U.S. states and
+municipalities | 10,037
+Non-U.S. government debt securities | 14,234
+Corporate debt securities | 9
+Asset-backed securities:
+Collateralized loan obligations | 2
+Other | 214
+Total available-for-sale securities with
+gross unrealized losses | $ | 26,764 $
+6 | $ | 925 $ | 44 $ | 2,430 | $50
+— | 30 | — | 30 | —
+8 | 1,184 | 62 | 1,947 | 70
+14 | 2,139 | 106 | 4,407 | 120
+233 | 2,412 | 301 | 12,449 | 534
+234 | 4,184 | 270 | 18,418 | 504
+— | 30 | 1 | 39 | 1
+— | 375 | 3 | 377 | 3
+1 | 200 | 8 | 414 | 9
+482 | $ | 9,340 $ | 689 $ | 36,104 | $1,171
+
+--- PDF page 233 (printed page 231) ---
+AFS securities are considered impaired if the fair value
+is less than the amortized cost.
+The Firm recognizes impairment losses in earnings if
+the Firm has the intent to sell the debt security, or if it
+is more likely than not that the Firm will be required to
+sell the debt security before recovery of its amortized
+cost. In these circumstances the impairment loss is
+recognized in investment securities gains/(losses) in
+the Consolidated Statements of Income and is equal to
+the full difference between the amortized cost (net of
+allowance if applicable) and the fair value of the
+security.
+For impaired debt securities that the Firm has the
+intent and ability to hold, the securities are evaluated
+to determine if a credit loss exists. If it is determined
+that a credit loss exists, that loss is recognized as an
+allowance for credit losses through the provision for
+credit losses in the Consolidated Statements of
+Income, limited by the amount of impairment. Any
+impairment on debt securities that the Firm has the
+intent and ability to hold not due to credit losses is
+recorded in OCI.
+Factors considered in evaluating credit losses include
+adverse conditions specifically related to the industry,
+geographic area or financial condition of the issuer or
+underlying collateral of a security; and payment
+structure of the security.
+When assessing securities issued in a securitization
+for credit losses, the Firm estimates cash flows
+considering relevant market and economic data,
+underlying loan-level data, and structural features of
+the securitization, such as subordination, excess
+spread, overcollateralization or other forms of credit
+enhancement, and compares the losses projected for
+the underlying collateral (“pool losses”) against the
+level of credit enhancement in the securitization
+structure to determine whether these features are
+sufficient to absorb the pool losses, or whether a credit
+loss exists.
+For beneficial interests in securitizations that are rated
+below “AA” at their acquisition, or that can be
+contractually prepaid or otherwise settled in such a
+way that the Firm would not recover substantially all of
+its recorded investment, the Firm evaluates
+impairment for credit losses when there is an adverse
+change in expected cash flows.
+HTM securities – credit risk
+Allowance for credit losses
+The allowance for credit losses on HTM securities
+represents expected credit losses over the remaining
+expected life of the securities.
+The allowance for credit losses on HTM obligations of
+U.S. states and municipalities and commercial
+mortgage-backed securities is calculated by applying
+statistical credit loss factors (estimated PD and LGD)
+to the amortized cost. The credit loss factors are
+derived using a weighted average of five internally
+developed eight-quarter macroeconomic scenarios,
+followed by a single year straight-line interpolation to
+revert to long run historical information for periods
+beyond the forecast period. Refer to Note 13 for further
+information on the eight-quarter macroeconomic
+forecast.
+The allowance for credit losses on HTM collateralized
+loan obligations and U.S. residential mortgage-backed
+securities is calculated as the difference between the
+amortized cost and the present value of the cash flows
+expected to be collected, discounted at the security’s
+effective interest rate. These cash flow estimates are
+developed based on expectations of underlying
+collateral performance derived using the eight-quarter
+macroeconomic forecast and the single year straight-
+line interpolation, as well as considering the structural
+features of the security.
+The application of different inputs and assumptions
+into the calculation of the allowance for credit losses is
+subject to significant management judgment, and
+emphasizing one input or assumption over another, or
+considering other inputs or assumptions, could affect
+the estimate of the allowance for credit losses on HTM
+securities.
+Credit quality indicator
+The primary credit quality indicator for HTM securities
+is the risk rating assigned to each security. At both
+December 31, 2025 and 2024, all HTM securities were
+rated investment grade and were current and
+accruing, with approximately 99% rated at least AA+
+(based upon external ratings where available, and
+where not available, based primarily upon internal risk
+ratings).
+Allowance for credit losses on investment securities
+The allowance for credit losses on investment
+securities as of December 31, 2025 was $106 million,
+which included the impact of a $17 million reduction in
+allowance related to a sale of a corporate debt
+security. As of December 31, 2024 and 2023, the
+allowance for credit losses in investment securities
+was $152 million and $128 million, respectively, which
+included a cumulative-effect adjustment to retained
+earnings related to the transfer of HTM securities to
+AFS for the year ended December 31, 2023.
+Selected impacts of investment securities on the
+Consolidated statements of income
+Year ended December 31, (in millions) 2025 | 2024 | 2023
+Realized gains | $ 674 $ 593 | $622
+Realized losses | (731) (1,614) (3,802)
+Investment securities losses | $(57) $ (1,021) $ (3,180)
+Provision for credit losses | $(28) | $24 | $38
+
+--- PDF page 234 (printed page 232) ---
+Contractual maturities and yields
+The following table presents the amortized cost and estimated fair value at December 31, 2025, of JPMorganChase’s
+investment securities portfolio by contractual maturity.
+By remaining maturity | Due in one | Due after one year
+December 31, 2025 (in millions) | year or less | through five years
+Available-for-sale securities
+Mortgage-backed securities
+Amortized cost | $986 | $12,032
+Fair value | 978 | 12,215
+Average yield (a) | 2.79 % | 4.58 %
+U.S. Treasury and government agencies
+Amortized cost | $37,727 | $224,284
+Fair value | 37,869 | 225,962
+Average yield (a) | 4.17 % | 4.04 %
+Obligations of U.S. states and municipalities
+Amortized cost | $— | $21
+Fair value | — | 21
+Average yield (a) | — % | 3.95 %
+Non-U.S. government debt securities
+Amortized cost | $10,838 | $21,233
+Fair value | 10,848 | 21,305
+Average yield (a) | 3.51 % | 4.03 %
+Corporate debt securities
+Amortized cost | $49 | $123
+Fair value | 13 | 115
+Average yield (a) | 17.50 % | 15.66 %
+Asset-backed securities
+Amortized cost | $3 | $327
+Fair value | 3 | 329
+Average yield (a) | 5.30 % | 5.62 %
+Total available-for-sale securities
+Amortized cost (b) | $49,603 | $258,020
+Fair value | 49,711 | 259,947
+Average yield (a) | 4.01 % | 4.07 %
+Held-to-maturity securities
+Mortgage-backed securities
+Amortized cost | $1,161 | $8,780
+Fair value | 1,147 | 8,319
+Average yield (a) | 1.90 % | 2.47 %
+U.S. Treasury and government agencies
+Amortized cost | $17,328 | $91,142
+Fair value | 17,155 | 87,552
+Average yield (a) | 1.23 % | 2.69 %
+Obligations of U.S. states and municipalities
+Amortized cost | $— | $53
+Fair value | — | 50
+Average yield (a) | — % | 4.72 %
+Asset-backed securities
+Amortized cost | $— | $399
+Fair value | — | 398
+Average yield (a) | — % | 2.94 %
+Total held-to-maturity securities
+Amortized cost (b) | $18,489 | $100,374
+Fair value | 18,302 | 96,319
+Average yield (a) | 1.27 % | 2.67 %
+Due after five years | Due after
+through 10 years | 10 years (c) | Total
+$5,186 | $84,351 | $102,555
+5,258 | 82,996 | 101,447
+4.62 % | 4.56 % | 4.55 %
+$45,128 | $6,331 | $313,470
+45,529 | 6,462 | 315,822
+4.20 % | 4.58 % | 4.09 %
+$138 | $20,756 | $20,915
+133 | 20,086 | 20,240
+3.89 % | 5.11 % | 5.10 %
+$11,769 | $1,836 | $45,676
+11,719 | 1,783 | 45,655
+3.53 % | 3.21 % | 3.75 %
+$— | $— | $172
+— | — | 128
+— % | — % | 16.18 %
+$1,291 | $22,217 | $23,838
+1,296 | 22,278 | 23,906
+5.71 % | 5.04 % | 5.08 %
+$63,512 | $135,491 | $506,626
+63,935 | 133,605 | 507,198
+4.14 % | 4.71 % | 4.24 %
+$5,314 | $87,891 | $103,146
+4,908 | 78,812 | 93,186
+3.21 % | 2.90 % | 2.87 %
+$24,257 | $— | $132,727
+21,740 | — | 126,447
+1.48 % | — % | 2.28 %
+$286 | $8,288 | $8,627
+265 | 7,693 | 8,008
+3.14 % | 3.91 % | 3.89 %
+$12,811 | $12,489 | $25,699
+12,815 | 12,490 | 25,703
+4.47 % | 4.62 % | 4.52 %
+$42,668 | $108,668 | $270,199
+39,728 | 98,995 | 253,344
+2.60 % | 3.17 % | 2.77 %
+(a) Average yield is computed using the effective yield of each security owned at the end of the period, weighted based on the amortized cost of
+each security. The effective yield considers the contractual coupon, amortization of premiums and accretion of discounts, and the effect of
+related hedging derivatives, including closed portfolio hedges. Taxable-equivalent amounts are used where applicable. The effective yield
+excludes unscheduled principal prepayments; and accordingly, actual maturities of securities may differ from their contractual or expected
+maturities as certain securities may be prepaid. However, for certain callable debt securities, the average yield is calculated to the earliest call
+date.
+(b) For purposes of this table, the amortized cost of available-for-sale securities excludes the allowance for credit losses of $41 million and the
+portfolio layer fair value hedge basis adjustments of $641 million at December 31, 2025. The amortized cost of held-to-maturity securities also
+excludes the allowance for credit losses of $65 million at December 31, 2025.
+(c) Substantially all of the Firm’s U.S. residential MBS and collateralized mortgage obligations are due in 10 years or more, based on contractual
+maturity. The estimated weighted-average life, which reflects anticipated future prepayments, is approximately seven years for agency
+residential MBS, six years for agency residential collateralized mortgage obligations, and four years for nonagency residential collateralized
+mortgage obligations.
+
+=== Note 12 — Loans (Consolidated) ===
+--- PDF page 238 (printed page 236) ---
+Note 12 – Loans
+Loan accounting framework
+The accounting for a loan depends on management’s
+strategy for the loan. The Firm accounts for loans
+based on the following categories:
+• Originated or purchased loans held-for-investment
+(i.e., “retained”)
+• Loans held-for-sale
+• Loans at fair value
+The following provides a detailed accounting
+discussion of the Firm’s loans by category:
+Loans held-for-investment
+Originated or purchased loans held-for-investment,
+including PCD, are recorded at amortized cost,
+reflecting the principal amount outstanding, net of the
+following: unamortized deferred loan fees, costs,
+premiums or discounts; charge-offs; collection of cash;
+and foreign exchange. Credit card loans also include
+billed finance charges and fees.
+Interest income
+Interest income on performing loans held-for-
+investment is accrued and recognized as interest
+income at the contractual rate of interest. Purchase
+price discounts or premiums, as well as net deferred
+loan fees or costs, are recognized in interest income
+over the contractual life of the loan as an adjustment of
+yield.
+The Firm classifies accrued interest on loans, including
+accrued but unbilled interest on credit card loans, in
+accrued interest and accounts receivable on the
+Consolidated balance sheets. For credit card loans,
+accrued interest once billed is then recognized in the
+loan balances, with the related allowance recorded in
+the allowance for credit losses. Changes in the
+allowance for credit losses on accrued interest on
+credit card loans are recognized in the provision for
+credit losses and charge-offs are recognized by
+reversing interest income. For other loans, the Firm
+generally does not recognize an allowance for credit
+losses on accrued interest receivables, consistent with
+its policy to write them off no later than 90 days past
+due by reversing interest income.
+Nonaccrual loans
+Nonaccrual loans are those on which the accrual of
+interest has been suspended. Loans (other than credit
+card loans and certain consumer loans insured by U.S.
+government agencies) are placed on nonaccrual
+status and considered nonperforming when full
+payment of principal and interest is not expected,
+regardless of delinquency status, or when principal
+and interest has been in default for a period of 90 days
+or more, unless the loan is both well-secured and in the
+process of collection. A loan is determined to be past
+due when the minimum payment is not received from
+the borrower by the contractually specified due date or
+for certain loans (e.g., residential real estate loans),
+when a monthly payment is due and unpaid for 30
+days or more. Wholesale loans may be placed on
+nonaccrual status prior to becoming 90 days past due,
+as delinquency is generally a lagging indicator of
+credit quality. The Firm carefully monitors wholesale
+borrower liquidity, cash flows, enterprise/asset values,
+access to capital, and other relevant factors to make
+judgments about the borrower’s ability to make all
+contractual payments. Finally, collateral-dependent
+loans are typically maintained on nonaccrual status.
+On the date a loan is placed on nonaccrual status, all
+interest accrued but not collected is reversed against
+interest income. In addition, the amortization of
+deferred amounts is suspended. Interest income on
+nonaccrual loans may be recognized as cash interest
+payments are received (i.e., on a cash basis) if the
+recorded loan balance is deemed fully collectible;
+however, if there is doubt regarding the ultimate
+collectibility of the recorded loan balance, all interest
+cash receipts are applied to reduce the carrying value
+of the loan (the cost recovery method). For consumer
+loans, application of this policy typically results in the
+Firm recognizing interest income on nonaccrual
+consumer loans on a cash basis.
+A loan may be returned to accrual status when
+repayment is reasonably assured and there has been
+demonstrated performance under the terms of the
+loan or, if applicable, the terms of the restructured
+loan.
+As permitted by regulatory guidance, credit card loans
+are generally exempt from being placed on nonaccrual
+status; accordingly, interest and fees related to credit
+card loans continue to accrue until the loan is charged
+off or paid in full.
+Allowance for loan losses
+The allowance for loan losses represents the
+estimated expected credit losses in the held-for-
+investment loan portfolio at the balance sheet date
+and is recognized on the balance sheet as a contra
+asset, which brings the amortized cost to the net
+carrying value. Changes in the allowance for loan
+losses resulting from lending-related activity,
+macroeconomic variables, changes in credit and other
+inputs are recorded in the provision for credit losses
+on the Firm’s Consolidated statements of income.
+Refer to Note 13 for further information on the Firm’s
+accounting policies for the allowance for loan losses.
+Charge-offs
+Consumer loans are generally charged off or charged
+down to the lower of the amortized cost or the net
+realizable value of the underlying collateral (i.e., fair
+value less estimated costs to sell), with an offset to the
+allowance for loan losses, upon reaching specified
+
+--- PDF page 239 (printed page 237) ---
+stages of delinquency in accordance with standards
+established by the FFIEC. Residential real estate loans,
+unmodified credit card loans and scored business
+banking loans are generally charged off no later than
+180 days past due. Scored auto and closed-end
+consumer loans, including modified credit card
+accounts placed on a fixed payment plan, are charged
+off no later than 120 days past due.
+Certain consumer loans are charged off or charged
+down to their net realizable value earlier than the
+FFIEC charge-off standards in the following
+circumstances:
+• Loans modified to borrowers experiencing financial
+difficulty that are determined to be collateral-
+dependent.
+• Loans to borrowers who have experienced an event
+that suggests a loss is either known or highly certain
+are subject to accelerated charge-off standards
+(e.g., residential real estate and auto loans are
+charged off or charged down within 60 days of
+receiving notification of a bankruptcy filing).
+• Auto loans upon repossession of the automobile.
+Other than in certain limited circumstances, the Firm
+typically does not recognize charge-offs on the
+government-guaranteed portion of loans.
+Wholesale loans are charged off when they are
+deemed to be uncollectible. For loans that are not
+collateral-dependent, the determination of whether to
+recognize a charge-off as well as amount includes
+many factors, including the Firm’s confidence and
+visibility of the loan’s impairment, after considering the
+prioritization of the Firm’s claim in bankruptcy,
+expectations of the workout/restructuring of the loan
+and valuation of the borrower’s equity or the loan
+collateral.
+Collateral-dependent loans are charged down to the
+lower of its amortized cost or the estimated net
+realizable value of the underlying collateral, the
+determination of the fair value of the collateral
+depends on the type of collateral (e.g., securities, real
+estate). In cases where the collateral is in the form of
+liquid securities, the fair value is based on quoted
+market prices or broker quotes. For illiquid securities
+or other financial assets, the fair value of the collateral
+is generally estimated using a discounted cash flow
+model.
+For residential real estate loans, collateral values are
+based upon external valuation sources. When it
+becomes likely that a borrower is either unable or
+unwilling to pay, the Firm utilizes a broker’s price
+opinion, appraisal and/or an automated valuation
+model of the home based on an exterior-only valuation
+(“exterior opinions”), which is then updated at least
+every 12 months, or more frequently depending on
+various market factors. As soon as practicable after
+the Firm receives the property in satisfaction of a debt
+(e.g., by taking legal title or physical possession), the
+Firm generally obtains an appraisal based on an
+inspection that includes the interior of the home
+(“interior appraisals”). Exterior opinions and interior
+appraisals are discounted based upon the Firm’s
+experience with actual liquidation values as compared
+with the estimated values provided by exterior
+opinions and interior appraisals, considering state-
+specific factors.
+For commercial real estate loans, collateral values are
+generally based on appraisals from internal and
+external valuation sources. Collateral values are
+typically updated every six to twelve months, either by
+obtaining a new appraisal or by performing an internal
+analysis, in accordance with the Firm’s policies. The
+Firm also considers both borrower- and market-
+specific factors, which may result in obtaining
+appraisal updates or broker price opinions at more
+frequent intervals.
+Loans held-for-sale
+Loans held-for-sale are measured at the lower of cost
+or fair value, with valuation changes recorded in
+noninterest revenue. For consumer loans, the
+valuation is performed on a portfolio basis. For
+wholesale loans, the valuation is performed on an
+individual loan basis.
+Interest income on loans held-for-sale is accrued and
+recognized based on the contractual rate of interest.
+Loan origination fees or costs and purchase price
+discounts or premiums are deferred in a contra loan
+account until the related loan is sold. The deferred fees
+or costs and discounts or premiums are an adjustment
+to the basis of the loan and therefore are included in
+the periodic determination of the lower of cost or fair
+value adjustments and/or the gain or loss recognized
+at the time of sale.
+Because these loans are recognized at the lower of
+cost or fair value, the Firm’s allowance for loan losses
+and charge-off policies do not apply to these loans.
+However, loans held-for-sale are subject to the Firm’s
+nonaccrual policies.
+Loans at fair value
+Loans for which the fair value option has been elected
+are measured at fair value, with changes in fair value
+recorded in noninterest revenue.
+Interest income on these loans is accrued and
+recognized based on the contractual rate of interest.
+Loan origination fees are recognized upfront in
+noninterest revenue. Loan origination costs are
+recognized in the associated expense category as
+incurred.
+Because these loans are recognized at fair value, the
+Firm’s allowance for loan losses and charge-off
+
+--- PDF page 240 (printed page 238) ---
+policies do not apply to these loans. However, loans at
+fair value are subject to the Firm’s nonaccrual policies.
+Refer to Note 3 for further information on the Firm’s
+elections of fair value accounting under the fair value
+option. Refer to Note 2 and Note 3 for further
+information on loans carried at fair value and classified
+as trading assets.
+Loan classification changes
+Loans in the held-for-investment portfolio that
+management decides to sell are transferred to the
+held-for-sale portfolio at the lower of cost or fair value
+on the date of transfer. Credit-related losses are
+charged against the allowance for loan losses; non-
+credit related losses such as those due to changes in
+interest rates or foreign currency exchange rates are
+recognized in noninterest revenue.
+In the event that management decides to retain a loan
+in the held-for-sale portfolio, the loan is transferred to
+the held-for-investment portfolio at amortized cost on
+the date of transfer. These loans are subsequently
+assessed for impairment based on the Firm’s
+allowance methodology. Refer to Note 13 for a further
+discussion of the methodologies used in establishing
+the Firm’s allowance for loan losses.
+Loan modifications
+The Firm seeks to modify certain loans in conjunction
+with its loss mitigation activities. Through the
+modification, JPMorganChase grants one or more
+concessions to a borrower who is experiencing
+financial difficulty in order to minimize the Firm’s
+economic loss and avoid foreclosure or repossession
+of the collateral, and to ultimately maximize payments
+received by the Firm from the borrower. The
+concessions granted vary by program and by
+borrower-specific characteristics, and may include
+interest rate reductions, term extensions, other-than-
+insignificant payment delays or principal forgiveness.
+Loans, except for credit card loans, reported as FDMs
+are generally placed on nonaccrual status, although in
+many cases such loans were already on nonaccrual
+status prior to modification. These loans may be
+returned to performing status (the accrual of interest is
+resumed) if the following criteria are met: (i) the
+borrower has performed under the modified terms for
+a minimum of six months and/or six payments, and (ii)
+the Firm has an expectation that repayment of the
+modified loan is reasonably assured based on, for
+example, the borrower’s debt capacity and level of
+future earnings, collateral values, LTV ratios, and other
+current market considerations. In certain limited and
+well-defined circumstances in which the loan is current
+at the modification date, such loans are not placed on
+nonaccrual status at the time of modification.
+The allowance for credit losses associated with FDMs
+is measured using the Firm’s established allowance
+methodology, which considers the expected default
+rates for the modified loans. Refer to Note 13 for
+further discussion.
+Foreclosed property
+The Firm acquires property from borrowers through
+loan restructurings, workouts, and foreclosures.
+Property acquired may include real property (e.g.,
+residential real estate, land, and buildings) and other
+commercial and personal property (e.g., automobiles,
+aircraft, railcars, and ships).
+The Firm recognizes foreclosed property upon
+receiving assets in satisfaction of a loan (e.g., by taking
+legal title or physical possession). For loans
+collateralized by real property, the Firm generally
+recognizes the asset received at foreclosure sale or
+upon the execution of a deed in lieu of foreclosure
+transaction with the borrower. Foreclosed assets are
+reported in other assets on the Consolidated balance
+sheets and initially recognized at fair value less
+estimated costs to sell. Each quarter the fair value of
+the acquired property is reviewed and adjusted, if
+necessary, to the lower of cost or fair value.
+Subsequent adjustments to fair value are charged/
+credited to noninterest revenue. Operating expense,
+such as real estate taxes and maintenance, are
+charged to other expense.
+
+--- PDF page 241 (printed page 239) ---
+Loan portfolio
+The Firm’s loan portfolio is divided into three portfolio segments, which are the same segments used by the Firm to
+determine the allowance for loan losses: Consumer, excluding credit card; Credit card; and Wholesale. Within each
+portfolio segment the Firm monitors and assesses the credit risk in the following classes of loans, based on the risk
+characteristics of each loan class.
+Consumer, excluding | Credit card
+credit card
+• Residential real estate (a) | • Credit card loans
+• Auto and other (b)
+Wholesale (c)(d)
+• Secured by real estate
+• Commercial and industrial
+• Other (e)
+(a) Includes scored mortgage and home equity loans held in CCB and AWM, and scored mortgage loans held in CIB.
+(b) Includes scored auto, business banking and consumer unsecured loans as well as overdrafts, primarily in CCB.
+(c) Includes loans held in CIB, AWM, Corporate, and risk-rated exposure held in CCB, for which the wholesale methodology is applied when
+determining the allowance for loan losses.
+(d) The wholesale portfolio segment's classes align with loan classifications as defined by the Federal Reserve Board (“FRB”) in effect at each
+period presented, based on the loan's collateral, purpose, and type of borrower.
+(e) Includes loans to financial institutions, personal investment companies and trusts, individuals and individual entities (predominantly Global
+Private Bank clients within AWM and J.P. Morgan Wealth Management within CCB), states and political subdivisions, nonprofits, as well as
+loans to SPEs. Refer to Note 14 for more information on SPEs.
+The following tables summarize the Firm’s loan balances by portfolio segment.
+December 31, 2025 | Consumer, excluding
+(in millions) | credit card
+Retained | $368,741
+Held-for-sale | 334
+At fair value | 33,183
+Total | $402,258
+December 31, 2024 | Consumer, excluding
+(in millions) | credit card
+Retained | $376,334
+Held-for-sale | 945
+At fair value | 15,531
+Total | $392,810
+Credit card | Wholesale | Total (a)(b)
+$247,797 | $ 792,367 | $ 1,408,905
+— | 13,506 | 13,840
+— | 37,501 | 70,684
+$247,797 | $ 843,374 | $ 1,493,429
+Credit card | Wholesale | Total (a)(b)
+$232,860 | $ 690,396 | $ 1,299,590
+— | 6,103 | 7,048
+— | 25,819 | 41,350
+$232,860 | $722,318 | $ 1,347,988
+(a) Excludes $7.0 billion and $6.6 billion of accrued interest receivable at December 31, 2025 and 2024, respectively. The Firm wrote off accrued
+interest receivable of $109 million and $84 million for the years ended December 31, 2025 and 2024, respectively.
+(b) Loans (other than those for which the fair value option has been elected) are presented net of unamortized discounts and premiums and net
+deferred loan fees or costs, which were not material as of December 31, 2025 and 2024. For the discount associated with First Republic loans,
+refer to Note 34 on pages 312–314.
+The following tables provide information about the amounts paid or received for retained loans purchased and sold
+during the periods indicated. Retained loans reclassified to held-for-sale during the periods indicated are reported
+at the lower of cost or market value on the date of transfer. Loans that were reclassified to held-for-sale and sold in a
+subsequent period are excluded from the sales line of these tables.
+Year ended December 31, 2025 | Consumer, excluding
+(in millions) | credit card
+Credit card | Wholesale | Total
+Purchases | $756 (b)(c) | $— | $1,696 | $2,452
+Sales | 3,006
+Retained loans reclassified to held-for-sale (a) | 332
+Year ended December 31, 2024 | Consumer, excluding
+(in millions) | credit card
+— | 52,577 | 55,583
+— | 1,220 | 1,552
+Credit card | Wholesale | Total
+Purchases | $647 (b)(c) | $— | $1,432 | $2,079
+Sales | 10,440
+Retained loans reclassified to held-for-sale (a) | 1,656
+— | 45,147 | 55,587
+— | 749 | 2,405
+
+--- PDF page 242 (printed page 240) ---
+Year ended December 31, 2023 | Consumer, excluding
+(in millions) | credit card
+Purchases | $92,205 (b)(c)(d)
+Sales | 2,202
+Retained loans reclassified to held-for-sale (a) | 274
+(a) Reclassifications of loans to held-for-sale are non-cash transactions.
+Credit card | Wholesale | Total
+$— | $60,300 (d) | $152,505
+— | 43,949 | 46,151
+— | 1,486 | 1,760
+(b) Includes purchases of residential real estate loans, including the Firm’s voluntary repurchases of certain delinquent loans from loan pools as
+permitted by Government National Mortgage Association (“Ginnie Mae”) guidelines for the years ended December 31, 2025, 2024 and 2023.
+The Firm typically elects to repurchase these delinquent loans as it continues to service them and/or manage the foreclosure process in
+accordance with applicable requirements of Ginnie Mae, FHA, RHS, and/or VA.
+(c) Excludes purchases of retained loans of $3.7 billion, $902 million and $5.1 billion for the years ended December 31, 2025, 2024 and 2023,
+respectively, which are predominantly sourced through the correspondent origination channel and underwritten in accordance with the
+Firm’s standards.
+(d) Includes loans acquired in the First Republic acquisition consisting of $91.9 billion in Consumer, excluding credit card and $59.2 billion in
+Wholesale. Refer to Note 34 for additional information.
+Gains and losses on sales of loans
+The following table provides information on the net gains/(losses) on sales of loans and lending-related
+commitments (including adjustments to record loans and lending-related commitments held-for-sale at the lower of
+cost or fair value), which were recognized in noninterest revenue. In addition, the sale of loans may also result in
+write downs, recoveries or changes in the allowance recognized in the provision for credit losses.
+Year ended December 31,
+(in millions)
+Net gains/(losses) on sales of loans and lending-related commitments (a)
+2025 | 2024 | 2023
+$208 $ | 154 | $56
+(a) Includes $148 million, $113 million and $62 million related to loans for the years ended December 31, 2025, 2024 and 2023, respectively.
+
+--- PDF page 243 (printed page 241) ---
+Consumer, excluding credit card loan portfolio
+Consumer loans, excluding credit card loans, consist
+primarily of scored residential mortgages, home equity
+loans and lines of credit, auto and business banking
+loans, with a focus on serving the prime consumer
+credit market. These loans include home equity loans
+secured by junior liens and prime mortgage loans with
+an interest-only payment period.
+The following table provides information about
+retained consumer loans, excluding credit card, by
+class.
+December 31,
+(in millions) | 2025 | 2024
+Residential real estate | $303,531 | $309,513
+Auto and other | 65,210 | 66,821
+Total retained loans | $368,741 | $376,334
+Delinquency rates are the primary credit quality
+indicator for consumer loans. Loans that are more than
+30 days past due provide an early warning of
+borrowers who may be experiencing financial
+difficulties and/or who may be unable or unwilling to
+repay the loan. As the loan continues to age, it
+becomes more clear whether the borrower is likely to
+be unable or unwilling to pay. In the case of residential
+real estate loans, late-stage delinquencies (greater
+than 150 days past due) are a strong indicator of loans
+that will ultimately result in a foreclosure or similar
+liquidation transaction. In addition to delinquency
+rates, other credit quality indicators for consumer
+loans vary based on the class of loan, as follows:
+• For residential real estate loans, the current
+estimated LTV ratio, or the combined LTV ratio in
+the case of junior lien loans, is an indicator of the
+potential loss severity in the event of default.
+Additionally, LTV or combined LTV ratios can
+provide insight into a borrower’s continued
+willingness to pay, as the delinquency rate of high-
+LTV loans tends to be greater than that for loans
+where the borrower has equity in the collateral. The
+geographic distribution of the loan collateral also
+provides insight as to the credit quality of the
+portfolio, as factors such as the regional economy,
+home price changes and specific events such as
+natural disasters, will affect credit quality. The
+borrower’s current or “refreshed” FICO score is a
+secondary credit quality indicator for certain loans,
+as FICO scores are an indication of the borrower’s
+credit payment history. Thus, a loan to a borrower
+with a low FICO score (less than 660) is considered
+to be of higher risk than a loan to a borrower with a
+higher FICO score. Further, a loan to a borrower with
+a high LTV ratio and a low FICO score is at greater
+risk of default than a loan to a borrower that has both
+a high LTV ratio and a high FICO score.
+• For scored auto and business banking loans,
+geographic distribution is an indicator of the credit
+performance of the portfolio. Similar to residential
+real estate loans, geographic distribution provides
+insights into the portfolio performance based on
+regional economic activity and events.
+
+--- PDF page 244 (printed page 242) ---
+Residential real estate
+Delinquency is the primary credit quality indicator for retained residential real estate loans. The following tables
+provide information on delinquency and gross charge-offs.
+Term loans by origination year (c)
+As of or for the year ended
+December 31, 2025
+(in millions, except ratios) | 2025 | 2024 | 2023 | 2022
+Loan delinquency (a)
+Revolving loans
+Within the Converted
+Prior to | revolving | to term
+2021 | 2021 | period | loans | Total
+Current | $ 21,179 $ 9,894 $ 14,334 $ 57,258 $ 74,916 $ 110,489 | $ 6,644 $ 6,246 | $ 300,960
+30–149 days past due | 4 | 16 | 36 | 98
+150 or more days past due | — | 12 | 68 | 242
+99 | 770 | 27 | 184 | 1,234
+231 | 653 | 12 | 119 | 1,337
+Total retained loans | $ 21,183 $ 9,922 $ 14,438 $ 57,598 $ 75,246 $ 111,912 | $ 6,683 $ 6,549 | $ 303,531
+% of 30+ days past due to
+total retained loans (b) | 0.02 % | 0.28 % | 0.72 % | 0.59 %
+Gross charge-offs | $— | $2 | $4 | $7 $
+Term loans by origination year (c)
+As of or for the year ended
+December 31, 2024
+0.44 % | 1.26 % | 0.58 % | 4.63 % | 0.84 %
+10 | $9 | $22 | $4 | $58
+Revolving loans
+Within the Converted
+Prior to | revolving | to term
+(in millions, except ratios) | 2024 | 2023 | 2022 | 2021 | 2020 | 2020 | period | loans | Total
+Loan delinquency (a)
+Current | $ 12,301 $ 17,280 $ 61,337 $ 79,760 $ 52,289 $ 70,270 | $ 6,974 $ 7,088 | $ 307,299
+30–149 days past due | 13 | 54 | 139 | 110
+150 or more days past due | — | 11 | 71 | 68
+59 | 747 | 53 | 204 | 1,379
+49 | 501 | 8 | 127 | 835
+Total retained loans | $ 12,314 $ 17,345 $ 61,547 $ 79,938 $ 52,397 $ 71,518 | $ 7,035 | $7,419 | $ 309,513
+% of 30+ days past due to
+total retained loans (b) | 0.11 % | 0.37 % | 0.34 % | 0.22 %
+Gross charge-offs | $— | $— | $1 | $1 $
+0.21 % | 1.72 % | 0.87 % | 4.46 % | 0.71 %
+— | $176 | $21 | $7 | $206
+(a) Individual delinquency classifications include mortgage loans insured by U.S. government agencies which were not material at December 31,
+2025 and 2024.
+(b) Excludes mortgage loans that are 30 or more days past due insured by U.S. government agencies which were not material at December 31,
+2025 and 2024. These amounts have been excluded based upon the government guarantee.
+(c) Purchased loans are included in the year in which they were originated.
+Approximately 37% of the total revolving loans are senior lien loans; the remaining balance are junior lien loans. The
+lien position the Firm holds is considered in the Firm’s allowance for credit losses. Revolving loans that have been
+converted to term loans have higher delinquency rates than those that are still within the revolving period. That is
+primarily because the fully-amortizing payment that is generally required for those products is higher than the
+minimum payment options available for revolving loans within the revolving period.
+
+--- PDF page 245 (printed page 243) ---
+Nonaccrual loans and other credit quality indicators
+The following table provides information on nonaccrual and other credit quality indicators for retained residential real
+estate loans.
+(in millions, except weighted-average data)
+Nonaccrual loans (a)(b)(c)(d)
+Current estimated LTV ratios (e)(f)(g)
+Greater than 125% and refreshed FICO scores:
+Equal to or greater than 660
+Less than 660
+Greater than 100% but less than or equal to 125% and refreshed FICO scores:
+Equal to or greater than 660
+Less than 660
+Greater than 80% but less than or equal to 100% and refreshed FICO scores:
+Equal to or greater than 660
+Less than 660
+Less than or equal to 80% and refreshed FICO scores:
+Equal to or greater than 660
+Less than 660
+No FICO/LTV available (h)
+Total retained loans
+Weighted-average LTV ratio (e)(i)
+Weighted-average FICO (f)(i)
+Geographic region (h)(j)
+California
+New York
+Florida
+Texas
+Massachusetts
+Colorado
+Washington
+Illinois
+New Jersey
+Connecticut
+All other
+Total retained loans
+December 31, 2025 December 31, 2024
+$3,632 | $2,984
+$71 | $72
+4 | 3
+282 | 161
+5 | 5
+5,990 | 4,962
+131 | 73
+287,923 | 294,797
+8,435 | 8,534
+690 | 906
+$303,531 | $309,513
+48 % | 47 %
+775 | 774
+$117,500 | $120,944
+46,378 | 46,854
+21,864 | 21,820
+14,398 | 14,531
+12,985 | 13,511
+10,316 | 10,465
+9,408 | 9,372
+9,152 | 9,835
+7,486 | 7,554
+6,823 | 6,854
+47,221 | 47,773
+$303,531 | $309,513
+(a) Includes collateral-dependent residential real estate loans that are charged down to the fair value of the underlying collateral less costs to sell. The
+Firm reports, in accordance with regulatory guidance, residential real estate loans that have been discharged under Chapter 7 bankruptcy and not
+reaffirmed by the borrower (“Chapter 7 loans”) as collateral-dependent nonaccrual loans, regardless of their delinquency status. At December 31, 2025,
+approximately 9% of Chapter 7 residential real estate loans were 30 days or more past due.
+(b) Mortgage loans insured by U.S. government agencies excluded from nonaccrual loans were not material at December 31, 2025 and 2024.
+(c) Generally, all consumer nonaccrual loans have an allowance. In accordance with regulatory guidance, certain nonaccrual loans that are considered
+collateral-dependent have been charged down to the lower of amortized cost or the fair value of their underlying collateral less costs to sell. If the value
+of the underlying collateral improves subsequent to charge down, the related allowance may be negative.
+(d) Interest income on nonaccrual loans recognized on a cash basis was $147 million and $160 million for the years ended December 31, 2025 and 2024,
+respectively.
+(e) Represents the aggregate unpaid principal balance of loans divided by the estimated current property value. Current property values are estimated, at
+a minimum, quarterly, based on home valuation models using nationally recognized home price index valuation estimates incorporating actual data to
+the extent available and forecasted data where actual data is not available. Current estimated combined LTV for junior lien home equity loans
+considers all available lien positions, as well as unused lines, related to the property.
+(f) Refreshed FICO scores represent each borrower’s most recent credit score, which is obtained by the Firm on at least a quarterly basis.
+(g) Includes residential real estate loans, primarily held in LLCs in AWM that did not have a refreshed FICO score. These loans have been included in a FICO
+band based on management’s estimation of the borrower’s credit quality.
+(h) Included U.S. government-guaranteed loans as of December 31, 2025 and 2024.
+(i) Excludes loans with no FICO and/or LTV data available.
+(j) The geographic regions presented in the table are ordered based on the magnitude of the corresponding loan balances at December 31, 2025.
+
+--- PDF page 246 (printed page 244) ---
+Loan modifications
+The Firm grants certain modifications of residential
+real estate loans to borrowers experiencing financial
+difficulty. The Firm's proprietary modification
+programs as well as government programs, including
+U.S. GSE programs, that generally provide various
+modifications to borrowers experiencing financial
+difficulty including, but not limited to, interest rate
+reductions, term extensions, other-than-insignificant
+payment deferral and principal forgiveness that would
+otherwise have been required under the terms of the
+original agreement, are considered FDMs.
+In addition, the Firm offers trial modifications of
+residential real estate loans, which generally include a
+three-month trial payment period during which the
+borrower makes monthly payments under the
+proposed modified loan terms. Loans in a trial
+payment period continue to age and accrue interest in
+accordance with the original contractual terms. At the
+completion of a trial period, the loan modification is
+considered permanent.
+Financial effects of FDMs
+For the year ended December 31, 2025, retained
+residential real estate FDMs were $1.0 billion, which
+included $882 million of FDMs in the form of other-
+than-insignificant payment deferrals. These other-
+than-insignificant payment deferrals were driven by
+forbearances granted to certain borrowers impacted
+by the wildfires in Los Angeles County, California in
+January 2025 who were granted a second 90-day
+forbearance arrangement. The financial effects of the
+remaining FDMs, which were largely in the form of
+term extensions and interest rate reductions, included
+extending the weighted-average life of the loans by 19
+years, and reducing the weighted-average contractual
+interest rate from 6.94% to 6.08% for the year ended
+December 31, 2025.
+For the year ended December 31, 2024, retained
+residential real estate FDMs were $206 million. The
+financial effects of the FDMs, which were
+predominantly in the form of term extensions and
+interest rate reductions, included extending the
+weighted-average life of the loans by 15 years, and
+reducing the weighted-average contractual interest
+rate from 7.53% to 5.44% for the year ended
+December 31, 2024.
+For the year ended December 31, 2023, retained
+residential real estate FDMs were $136 million. The
+financial effects of the FDMs, which were
+predominantly in the form of term extensions and
+interest rate reductions, included extending the
+weighted-average life of the loans by 20 years, and
+reducing the weighted-average contractual interest
+rate from 7.21% to 4.44% for the year ended
+December 31, 2023.
+As of December 31, 2025, additional unfunded
+commitments to lend to borrowers experiencing
+financial difficulty whose loans have been modified as
+FDMs were not material, while there were no additional
+unfunded commitments as of December 31, 2024.
+For the years ended December 31, 2025, 2024 and
+2023, loans subject to a trial modification, where the
+terms of the loans have not been permanently
+modified, and Chapter 7 loans were not material.
+Payment status of FDMs
+The following table provides information on the
+payment status of retained residential real estate
+FDMs during the years ended December 31, 2025,
+2024 and 2023.
+Amortized cost basis
+Year ended December 31,
+(in millions) | 2025 | 2024 | 2023
+Current | $408 $ | 139 | $107
+30-149 days past due | 45 | 47 | 13
+150 or more days past due | 571 | 20 | 16
+Total | $1,024 $ | 206 | $136
+Defaults of FDMs
+During the years ended December 31, 2025, 2024 and
+2023, defaults of retained residential real estate FDMs
+that had been modified within twelve months were $83
+million, $93 million and not material, respectively.
+Active and suspended foreclosure
+At December 31, 2025 and 2024, the Firm had retained
+residential real estate loans, excluding those insured
+by U.S. government agencies, with a carrying value of
+$575 million and $576 million, respectively, that were
+not included in REO, but were in the process of active
+or suspended foreclosure.
+
+--- PDF page 247 (printed page 245) ---
+Auto and other
+Delinquency is the primary credit quality indicator for retained auto and other loans. The following tables provide
+information on delinquency and gross charge-offs.
+Term loans by origination year
+As of or for the year ended
+December 31, 2025
+(in millions, except ratios) | 2025 | 2024 | 2023 | 2022
+Loan delinquency
+Revolving loans
+Within the Converted
+Prior to | revolving | to term
+2021 | 2021 | period | loans | Total
+Current | $ 26,490 $ 15,586 $ 9,443 $ 4,899 $ 2,961 | $846 | $ 3,817 | $177 | $ 64,219
+30–119 days past due | 170 | 180 | 225 | 170
+120 or more days past due | — | 2 | 2 | —
+99 | 25 | 33 | 48 | 950
+1 | — | 2 | 34 | 41
+Total retained loans | $ 26,660 $ 15,768 $ 9,670 $ 5,069 $ 3,061 | $871 | $ 3,852 | $259 | $ 65,210
+% of 30+ days past due to
+total retained loans | 0.64 % | 1.15 % | 2.35 % | 3.35 %
+Gross charge-offs | $242 | $228 | $244 | $157 $
+Term loans by origination year
+As of or for the year ended
+December 31, 2024
+(in millions, except ratios) | 2024 | 2023 | 2022 | 2021
+Loan delinquency
+3.23 % | 2.87 % | 0.91 % | 31.66 % | 1.52 %
+69 | $83 | $— | $8 | $ 1,031
+Revolving loans
+Within the Converted
+Prior to | revolving | to term
+2020 | 2020 | period | loans | Total
+Current | $ 26,165 $ 15,953 $ 9,201 $ 7,014 $ 2,895 | $624 | $3,714 | $148 | $ 65,714
+30–119 days past due | 190 | 283 | 259 | 179
+120 or more days past due | 1 | 1 | — | 5
+53 | 23 | 40 | 34 | 1,061
+6 | — | 3 | 30 | 46
+Total retained loans | $ 26,356 $ 16,237 $ 9,460 | $7,198 $ 2,954 | $647 | $3,757 | $212 | $ 66,821
+% of 30+ days past due to
+total retained loans | 0.72 % | 1.75 % | 2.74 % | 2.50 %
+Gross charge-offs | $269 | $348 | $224 | $126 $
+1.76 % | 3.55 % | 1.14 % | 30.19 % | 1.64 %
+37 | $82 | $1 | $6 | $1,093
+
+--- PDF page 248 (printed page 246) ---
+Nonaccrual loans and other credit quality indicators
+The following table provides information on
+nonaccrual and geographic region as a credit quality
+indicator for retained auto and other consumer loans.
+December 31, December 31,
+(in millions) | 2025 | 2024
+Nonaccrual loans (a)(b) | $243 | $249
+Geographic region (c)
+California | $9,926 | $10,321
+Texas | 7,940 | 7,772
+Florida | 5,382 | 5,428
+New York | 4,771 | 4,905
+Illinois | 2,804 | 2,890
+New Jersey | 2,347 | 2,468
+Pennsylvania | 2,066 | 2,012
+Georgia | 1,682 | 1,716
+Arizona | 1,583 | 1,643
+North Carolina | 1,578 | 1,597
+All other | 25,131 | 26,069
+Total retained loans | $65,210 | $66,821
+(a) Generally, all consumer nonaccrual loans have an allowance. In
+accordance with regulatory guidance, certain nonaccrual loans
+that are considered collateral-dependent have been charged
+down to the lower of amortized cost or the fair value of their
+underlying collateral less costs to sell. If the value of the
+underlying collateral improves subsequent to charge down, the
+related allowance may be negative.
+(b) Interest income on nonaccrual loans recognized on a cash basis
+was not material for the years ended December 31, 2025 and
+2024.
+(c) The geographic regions presented in this table are ordered
+based on the magnitude of the corresponding loan balances at
+December 31, 2025.
+Loan modifications
+The Firm grants certain modifications of auto and
+other loans to borrowers experiencing financial
+difficulty.
+For the years ended December 31, 2025, 2024 and
+2023 retained auto and other FDMs were not
+material.
+As of December 31, 2025 and 2024, there were no
+additional unfunded commitments to lend to
+borrowers experiencing financial difficulty whose
+loans have been modified as FDMs.
+
+--- PDF page 249 (printed page 247) ---
+Credit card loan portfolio
+The credit card portfolio segment includes credit card
+loans originated and purchased by the Firm.
+Delinquency rates are the primary credit quality
+indicator for credit card loans as they provide an early
+warning that borrowers may be experiencing
+difficulties (30 days past due); information on those
+borrowers that have been delinquent for a longer
+period of time (90 days past due) is also considered. In
+addition to delinquency rates, the geographic
+distribution of the loans provides insight as to the
+credit quality of the portfolio based on the regional
+economy.
+While the borrower’s credit score is another general
+indicator of credit quality, the Firm does not view
+credit scores as a primary indicator of credit quality
+because the borrower’s credit score tends to be a
+lagging indicator. The distribution of such scores
+provides a general indicator of credit quality trends
+within the portfolio; however, the score does not
+capture all factors that would be predictive of future
+credit performance. Refreshed FICO score
+information, which is obtained at least quarterly, for a
+statistically significant random sample of the credit
+card portfolio is indicated in other credit quality
+indicators. FICO is considered to be the industry
+benchmark for credit scores.
+The Firm generally originates new credit card
+accounts to prime consumer borrowers. However,
+certain cardholders’ FICO scores may decrease over
+time, depending on the performance of the cardholder
+and changes in the credit score calculation.
+The following tables provide information on delinquency and gross charge-offs.
+As of or for the year ended December 31, 2025
+(in millions, except ratios)
+Loan delinquency
+Within the | Converted to
+revolving period | term loans | Total
+Current and less than 30 days past due and still accruing | $240,147 | $2,289 | $242,436
+30–89 days past due and still accruing | 2,422 | 207 | 2,629
+90 or more days past due and still accruing | 2,619 | 113 | 2,732
+Total retained loans | $245,188 | $2,609 | $247,797
+Loan delinquency ratios
+% of 30+ days past due to total retained loans | 2.06 % | 12.27 % | 2.16 %
+% of 90+ days past due to total retained loans | 1.07 | 4.33 | 1.10
+Gross charge-offs | $8,812 | $352 | $9,164
+As of or for the year ended December 31, 2024
+(in millions, except ratios)
+Loan delinquency
+Within the | Converted to
+revolving period | term loans | Total
+Current and less than 30 days past due and still accruing | $226,532 | $1,284 | $227,816
+30–89 days past due and still accruing | 2,291 | 109 | 2,400
+90 or more days past due and still accruing | 2,591 | 53 | 2,644
+Total retained loans | $231,414 | $1,446 | $232,860
+Loan delinquency ratios
+% of 30+ days past due to total retained loans | 2.11 % | 11.20 % | 2.17 %
+% of 90+ days past due to total retained loans | 1.12 | 3.67 | 1.14
+Gross charge-offs | $7,951 | $247 | $8,198
+
+--- PDF page 250 (printed page 248) ---
+Other credit quality indicators
+The following table provides information on other credit quality indicators for retained credit card loans.
+(in millions, except ratios)
+Geographic region (a)
+California
+Texas
+New York
+Florida
+Illinois
+New Jersey
+Colorado
+Ohio
+Pennsylvania
+Arizona
+All other
+Total retained loans
+December 31, 2025 | December 31, 2024
+$38,702 | $36,385
+26,313 | 24,423
+19,488 | 18,525
+18,622 | 17,236
+13,160 | 12,442
+10,282 | 9,644
+7,384 | 6,962
+7,326 | 6,976
+6,921 | 6,558
+6,295 | 5,796
+93,304 | 87,913
+$247,797 | $232,860
+Percentage of portfolio based on carrying value with estimated refreshed FICO scores
+Equal to or greater than 660
+Less than 660
+No FICO available
+84.6 % | 85.5 %
+15.2 | 14.3
+0.2 | 0.2
+(a) The geographic regions presented in the table are ordered based on the magnitude of the corresponding loan balances at December 31,
+2025.
+Loan modifications
+The Firm grants certain modifications of credit card loans to borrowers experiencing financial difficulty. These
+modifications may involve placing the customer’s credit card account on a fixed payment plan, generally for 60
+months, which typically includes reducing the interest rate on the credit card account. If the borrower does not
+make the contractual payments when due under the modified payment terms, the credit card loan continues to age
+and will be charged-off in accordance with the Firm's standard charge-off policy. In most cases, the Firm does not
+reinstate the borrower's line of credit.
+Financial effects of FDMs
+The following tables provide information on retained credit card FDMs.
+Year ended December 31, 2025 | Amortized
+(in millions, except ratios) | cost basis
+Term extension and interest rate reduction (a)(b) | $1,800
+Other (b)(c) | 284
+Total | $2,084
+Year ended December 31, 2024 | Amortized
+(in millions, except ratios) | cost basis
+Term extension and interest rate reduction (a)(b) | $926
+Total | $926
+Loan modifications
+% of loan modifications
+to total retained
+credit card loans | Financial effect of loan modifications
+Term extension with a reduction in the weighted
+0.73 % average contractual interest rate from 22.88% to 3.48%
+Reduced weighted-average contractual interest rate
+0.11 from 22.75% to 8.09%
+Loan modifications
+% of loan modifications
+to total retained
+credit card loans | Financial effect of loan modifications
+Term extension with a reduction in the weighted
+0.40 % average contractual interest rate from 23.64% to 3.20%
+
+--- PDF page 251 (printed page 249) ---
+Loan modifications
+% of loan modifications
+Year ended December 31, 2023 | Amortized | to total retained
+(in millions, except ratios) | cost basis | credit card loans
+Term extension and interest rate reduction (a)(b) | $648 | 0.31 %
+Total | $648
+Financial effect of loan modifications
+Term extension with a reduction in the weighted
+average contractual interest rate from 23.19% to 3.64%
+(a) Term extension includes credit card loans whose terms have been modified under long-term programs by placing the customer’s credit card
+account on a fixed payment plan.
+(b) The interest rates represent weighted average at the time of modification.
+(c) Primarily interest rate reduction.
+Payment status of FDMs
+The following table provides information on the
+payment status of retained credit card FDMs during
+the years ended December 31, 2025, 2024 and 2023.
+Amortized cost basis
+Year ended December 31,
+(in millions) | 2025 | 2024 | 2023
+Current and less than 30 days
+past due and still accruing | $1,801 $ | 811 | $558
+30-89 days past due and still
+accruing | 179 | 74 | 59
+90 or more days past due and
+still accruing | 104 | 41 | 31
+Total | $2,084 $ | 926 | $648
+Defaults of FDMs
+During the year ended December 31, 2025, defaults of
+retained credit card FDMs that had been modified
+within twelve months were $111 million. During the
+years ended December 31, 2024 and 2023, defaults of
+retained credit card FDMs that had been modified
+within twelve months were not material.
+For credit card loans modified as FDMs, payment
+default is deemed to have occurred when the borrower
+misses two consecutive contractual payments.
+Defaulted modified credit card loans remain in the
+modification program and continue to be charged off
+in accordance with the Firm’s standard charge-off
+policy.
+
+--- PDF page 252 (printed page 250) ---
+Wholesale loan portfolio
+Wholesale loans include loans made to a variety of
+clients, ranging from large corporate and institutional
+clients to small businesses and high-net-worth
+individuals.
+The primary credit quality indicator for wholesale loans
+is the internal risk rating assigned to each loan. Risk
+ratings are used to identify the credit quality of loans
+and differentiate risk within the portfolio. Risk ratings
+on loans consider the PD and the LGD. The PD is the
+likelihood that a loan will default. The LGD is the
+estimated loss on the loan that would be realized upon
+the default of the borrower and takes into
+consideration collateral and structural support for
+each credit facility.
+Management considers several factors to determine
+an appropriate internal risk rating, including the
+obligor’s debt capacity and financial flexibility, the
+level of the obligor’s earnings, the amount and sources
+for repayment, the level and nature of contingencies,
+management strength, and the industry and
+geography in which the obligor operates. The Firm’s
+internal risk ratings generally align with the qualitative
+characteristics (e.g., borrower capacity to meet
+financial commitments and vulnerability to changes in
+the economic environment) defined by S&P and
+Moody’s, however the quantitative characteristics
+(e.g., PD and LGD) may differ as they reflect internal
+historical experiences and assumptions. The Firm
+generally considers internal ratings with qualitative
+characteristics equivalent to BBB-/Baa3 or higher as
+investment grade, and these ratings have a lower PD
+and/or lower LGD than non-investment grade ratings.
+Noninvestment-grade ratings are further classified as
+noncriticized and criticized, and the criticized portion
+is further subdivided into performing and nonaccrual
+loans, representing management’s assessment of the
+collectibility of principal and interest. Criticized loans
+have a higher PD than noncriticized loans. The Firm’s
+definition of criticized aligns with the U.S. banking
+regulatory definition of criticized exposures, which
+consist of special mention, substandard and doubtful
+categories.
+Risk ratings are reviewed on a regular and ongoing
+basis by Credit Risk Management and are adjusted as
+necessary for updated information affecting the
+obligor’s ability to fulfill its obligations.
+As noted above, the risk rating of a loan considers the
+industry in which the obligor conducts its operations.
+As part of the overall credit risk management
+framework, the Firm focuses on the management and
+diversification of its industry and client exposures, with
+particular attention paid to industries with an actual or
+potential credit concern. Refer to Note 4 for further
+detail on industry concentrations.
+
+--- PDF page 253 (printed page 251) ---
+Internal risk rating is the primary credit quality indicator for retained wholesale loans. The following tables provide
+information on internal risk rating and gross charge-offs.
+Secured by real estate | Commercial and industrial
+December 31,
+(in millions, except ratios) | 2025 | 2024 | 2025 | 2024
+Loans by risk ratings
+Investment-grade | $ 118,875 $ 114,280 | $ 66,942 $ 70,862
+Noninvestment-grade:
+Noncriticized | 36,120 | 37,422 | 92,856 | 83,191
+Criticized performing | 8,872 | 9,291 | 12,651 | 10,977
+Criticized nonaccrual | 1,678 | 1,439 | 1,954 | 1,760
+Total noninvestment-grade | 46,670 | 48,152 | 107,461 | 95,928
+Total retained loans | $ 165,545 $ 162,432 | $ 174,403 $ 166,790
+% of investment-grade to total
+retained loans | 71.81 % | 70.36 % | 38.38 % | 42.49 %
+% of total criticized to total
+retained loans | 6.37 | 6.61 | 8.37 | 7.64
+% of criticized nonaccrual to
+total retained loans | 1.01 | 0.89 | 1.12 | 1.06
+Other (a) | Total retained loans
+2025 | 2024 | 2025 | 2024
+$ 355,547 $ 286,528 | $ 541,364 $ 471,670
+93,273 | 72,743 | 222,249 | 193,356
+2,833 | 1,160 | 24,356 | 21,428
+766 | 743 | 4,398 | 3,942
+96,872 | 74,646 | 251,003 | 218,726
+$ 452,419 $ 361,174 | $ 792,367 $ 690,396
+78.59 % | 79.33 % | 68.32 % | 68.32 %
+0.80 | 0.53 | 3.63 | 3.67
+0.17 | 0.21 | 0.56 | 0.57
+(a) Includes loans to financial institutions, personal investment companies and trusts, individuals and individual entities (predominantly Global
+Private Bank clients within AWM and J.P. Morgan Wealth Management within CCB), states and political subdivisions, nonprofits, as well as
+loans to SPEs. As of December 31, 2025, predominantly consisted of $245.1 billion to financial institutions, which includes loans to certain
+SPEs, primarily asset securitizations, as redefined by the FRB, $141.1 billion to individuals and individual entities, and $7.4 billion to other SPEs.
+As of December 31, 2024, predominantly consisted of $114.8 billion to individuals and individual entities, $94.0 billion to financial institutions,
+and $92.5 billion to SPEs. Refer to Note 14 for more information on SPEs.
+Secured by real estate
+Term loans by origination year
+As of or for the year ended
+December 31, 2025
+(in millions) | 2025 | 2024 | 2023 | 2022 | 2021
+Loans by risk ratings
+Revolving loans
+Prior to | Within the | Converted to
+2021 | revolving period term loans | Total
+Investment-grade | $ 17,242 $ 9,440 $ 9,187 $ 22,472 $ 22,019 $ 37,392 $ | 1,123 $ | — $ 118,875
+Noninvestment-grade | 6,930 | 3,032 | 4,392 | 12,444 | 6,625
+10,978 | 2,176 | 93 | 46,670
+Total retained loans | $ 24,172 $ 12,472 $ 13,579 $ 34,916 $ 28,644 $ 48,370 $ | 3,299 $ | 93 $ 165,545
+Gross charge-offs | $ | — $ | 54 $ | 13 $ | 92 $ | 119 | $141 $ | 1 $ | — | $420
+Secured by real estate
+Term loans by origination year
+As of or for the year ended
+December 31, 2024
+(in millions) | 2024 | 2023 | 2022 | 2021 | 2020
+Loans by risk ratings
+Revolving loans
+Prior to | Within the | Converted to
+2020 | revolving period term loans | Total
+Investment-grade | $ 10,002 $ 9,834 $ 25,284 $ 22,796 $ 15,548 $ 29,488 $ | 1,328 $ | — $ 114,280
+Noninvestment-grade | 4,238 | 5,366 | 14,717 | 8,567 | 3,462
+10,392 | 1,317 | 93 | 48,152
+Total retained loans | $ 14,240 $ 15,200 $ 40,001 $ 31,363 $ 19,010 $ 39,880 $ | 2,645 $ | 93 $ 162,432
+Gross charge-offs | $ | 72 $ | 18 $ | 43 $ | 2 $ | 109 | $80 $ | — $ | — | $324
+
+--- PDF page 254 (printed page 252) ---
+Commercial and industrial
+Term loans by origination year
+As of or for the year ended
+December 31, 2025
+Revolving loans
+Prior to | Within the | Converted to
+(in millions) | 2025 | 2024 | 2023 | 2022 | 2021 | 2021 | revolving period term loans | Total
+Loans by risk ratings
+Investment-grade | $ 16,186 $ 5,418 $ 3,040 $ 4,352 $
+Noninvestment-grade | 32,906 | 13,376 | 5,927 | 5,600
+Total retained loans | $ 49,092 $ 18,794 $ 8,967 $ 9,952 $
+Gross charge-offs | $ | 43 $ | 64 $ | 11 $ | 151 $
+1,836 | $1,225 $ | 34,884 $ | 1 $ 66,942
+2,006 | 825 | 46,721 | 100 | 107,461
+3,842 | $2,050 $ | 81,605 $ | 101 $ 174,403
+129 | $26 $ | 461 $ | 8 | $893
+Commercial and industrial
+Term loans by origination year
+As of or for the year ended
+December 31, 2024
+Revolving loans
+Prior to | Within the | Converted to
+(in millions) | 2024 | 2023 | 2022 | 2021 | 2020 | 2020 | revolving period | term loans | Total
+Loans by risk ratings
+Investment-grade | $ 11,564 $ 6,285 $ 6,588 $ | 3,119 $
+Noninvestment-grade | 21,251 | 11,350 | 10,942 | 5,322
+Total retained loans | $ 32,815 $ 17,635 $ 17,530 $ 8,441 $
+Gross charge-offs | $ | 25 $ | 22 $ | 128 $ | 24 $
+Term loans by origination year
+As of or for the year ended
+December 31, 2025
+1,067 | $1,139 $ | 41,099 $ | 1 $ 70,862
+783 | 975 | 45,181 | 124 | 95,928
+1,850 | $2,114 $ | 86,280 $ | 125 $ 166,790
+1 | $50 $ | 270 $ | 5 | $525
+Other (a)
+Revolving loans
+Prior to | Within the | Converted to
+(in millions) | 2025 | 2024 | 2023 | 2022 | 2021 | 2021 | revolving period term loans | Total
+Loans by risk ratings
+Investment-grade | $ 43,073 $ 13,123 $ 7,939 $ 10,838 $
+Noninvestment-grade | 16,162 | 6,456 | 4,425 | 4,079
+Total retained loans | $ 59,235 $ 19,579 $ 12,364 $ 14,917 $
+Gross charge-offs | $ | 46 $ | 195 $ | 32 $ | 2 $
+Term loans by origination year
+As of or for the year ended
+December 31, 2024
+5,574 | $11,757 $ | 263,150 $ | 93 $ 355,547
+2,013 | 2,563 | 61,095 | 79 | 96,872
+7,587 $ 14,320 $ | 324,245 $ | 172 $ 452,419
+9 | $58 $ | 26 $ | 106 | $474
+Other (a)
+Revolving loans
+Prior to | Within the | Converted to
+(in millions) | 2024 | 2023 | 2022 | 2021 | 2020 | 2020 | revolving period | term loans | Total
+Loans by risk ratings
+Investment-grade | $ 30,484 $ 17,039 $ 13,272 $ 6,288 $
+Noninvestment-grade | 11,784 | 7,248 | 5,918 | 3,296
+Total retained loans | $ 42,268 $ 24,287 $ 19,190 $ 9,584 $
+Gross charge-offs | $ | — $ | 38 $ | 3 $ | 36 $
+8,632 | $7,382 $ | 201,949 $ | 1,482 $ 286,528
+1,366 | 1,886 | 42,954 | 194 | 74,646
+9,998 | $9,268 $ | 244,903 $ | 1,676 $ 361,174
+40 | $50 $ | 6 $ | — | $173
+(a) Includes loans to financial institutions, personal investment companies and trusts, individuals and individual entities (predominantly Global
+Private Bank clients within AWM and J.P. Morgan Wealth Management within CCB), states and political subdivisions, nonprofits, as well as
+loans to SPEs. Refer to Note 14 for more information on SPEs.
+
+--- PDF page 255 (printed page 253) ---
+The following table presents additional information on retained loans secured by real estate, which consists of
+loans secured wholly or substantially by a lien or liens on real property at origination. Multifamily lending includes
+financing for acquisition, leasing and construction of apartment buildings. Other commercial lending largely
+includes financing for acquisition, leasing and construction, largely for office, retail and industrial real estate.
+Included in secured by real estate loans were $12.4 billion and $12.2 billion as of December 31, 2025 and 2024,
+respectively, of construction and development loans made to finance land development and on-site construction
+of commercial, industrial, residential, or farm buildings .
+December 31,
+Total retained Secured
+Multifamily | Other Commercial | by real estate loans
+(in millions, except ratios) | 2025 | 2024 | 2025 | 2024 | 2025 | 2024
+Retained loans secured by real estate | $ 105,130 $ 101,114 | $ 60,415 $ 61,318 | $ 165,545 $ 162,432
+Criticized
+% of criticized to total retained loans secured by real estate
+Criticized nonaccrual | $
+% of criticized nonaccrual loans to total retained loans secured by
+real estate
+Geographic distribution and delinquency
+4,661 | 4,700 | 5,889 | 6,030 | 10,550 | 10,730
+4.43 % | 4.65 % | 9.75 % | 9.83 % | 6.37 % | 6.61 %
+422 | $337 | $ 1,256 | $1,102 | $ 1,678 | $1,439
+0.40 % | 0.33 % | 2.08 % | 1.80 % | 1.01 % | 0.89 %
+The following table provides information on the geographic distribution and delinquency for retained wholesale
+loans.
+Secured by real estate
+December 31,
+(in millions) | 2025 | 2024
+Loans by geographic distribution (a)
+Total U.S. | $ 162,378 $ 159,209
+Total non-U.S. | 3,167 | 3,223
+Total retained loans | $ 165,545 $ 162,432
+Loan delinquency
+Current and less than 30 days past due and
+still accruing | $ 163,189 $ 159,949
+30–89 days past due and still accruing | 636 | 918
+90 or more days past due and still accruing (b) | 42 | 126
+Criticized nonaccrual | 1,678 | 1,439
+Total retained loans | $ 165,545 $ 162,432
+Commercial and
+industrial | Other | Total retained loans
+2025 | 2024 | 2025 | 2024 | 2025 | 2024
+$ 131,945 $ 127,626 $ 331,737 $ 278,077 $ 626,060 $ 564,912
+42,458 | 39,164 | 120,682 | 83,097 | 166,307 | 125,484
+$ 174,403 $ 166,790 $ 452,419 $ 361,174 $ 792,367 $ 690,396
+$ 171,227 $ 164,104 $ 450,582 $ 359,191 $ 784,998 $ 683,244
+1,220 | 868 | 1,057 | 1,152 | 2,913 | 2,938
+2 | 58 | 14 | 88 | 58 | 272
+1,954 | 1,760 | 766 | 743 | 4,398 | 3,942
+$ 174,403 $ 166,790 $ 452,419 $ 361,174 $ 792,367 $ 690,396
+(a) The U.S. and non-U.S. distribution is determined based predominantly on the domicile of the borrower.
+(b) Represents loans that are considered well-collateralized and therefore still accruing interest.
+Nonaccrual loans
+The following table provides information on retained wholesale nonaccrual loans.
+Secured by real estate | Commercial and industrial | Other | Total retained loans
+December 31,
+(in millions) | 2025 | 2024 | 2025
+Nonaccrual loans
+With an allowance | $365 | $366 | $1,562
+Without an allowance (a) | 1,313 | 1,073 | 392
+Total nonaccrual loans (b) | $1,678 | $1,439 | $1,954
+2024 | 2025 | 2024 | 2025 | 2024
+$1,362 | $468 | $555 | $2,395 | $2,283
+398 | 298 | 188 | 2,003 | 1,659
+$1,760 | $766 | $743 | $4,398 | $3,942
+(a) When the discounted cash flows or collateral value equals or exceeds the amortized cost of the loan, the loan does not require an allowance.
+This typically occurs when the loans have been partially charged off and/or there have been interest payments received and applied to the
+loan balance.
+(b) Interest income on nonaccrual loans recognized on a cash basis was not material and $51 million for the years ended December 31, 2025 and
+2024, respectively.
+
+--- PDF page 256 (printed page 254) ---
+Loan modifications
+The Firm grants certain modifications of wholesale loans to borrowers experiencing financial difficulty, which
+generally align with loans graded substandard or worse consistent with the U.S. banking regulators’ definition of
+criticized exposures.
+Financial effects of FDMs
+The following tables provide information on retained wholesale loan modifications considered FDMs during the
+years ended December 31, 2025, 2024 and 2023.
+Year ended December 31, 2025
+Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $736
+Other-than-insignificant payment deferral | 23
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 54
+Other (a) | 2
+Total | $815
+(a) Includes loans with single and multiple modifications.
+Year ended December 31, 2024
+Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $271
+Other-than-insignificant payment deferral | 37
+Multiple modifications
+Other-than-insignificant payment deferral
+and interest rate reduction | 46
+Total | $354
+Year ended December 31, 2023 | Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $149
+Other-than-insignificant payment deferral | 3
+Multiple modifications
+Other-than-insignificant payment deferral
+and interest rate reduction | 5
+Other (a) | 3
+Total | $160
+(a) Includes a loan with multiple modifications.
+Secured by real estate
+% of loan modifications to
+total retained Secured by
+real estate loans | Financial effect of loan modifications
+0.44 % Extended loans by a weighted-average of 14 months
+Provided payment deferrals with delayed amounts
+0.01 primarily recaptured at maturity
+Provided payment deferrals with delayed amounts
+recaptured at maturity and extended loans by a
+0.03 weighted-average of 28 months
+— NM
+Secured by real estate
+% of loan modifications to
+total retained Secured by
+real estate loans | Financial effect of loan modifications
+0.17 % Extended loans by a weighted-average of 21 months
+Provided payment deferrals with delayed amounts re-
+0.02 amortized over the remaining tenor
+Provided payment deferrals with delayed amounts
+recaptured at maturity and reduced weighted-
+0.03 average contractual interest by 162 bps
+Secured by real estate
+% of loan modifications to
+total retained Secured by
+real estate loans | Financial effect of loan modifications
+0.09 % Extended loans by a weighted-average of 14 months
+— NM
+Provided payment deferrals with delayed amounts
+primarily recaptured at maturity and reduced
+— weighted-average contractual interest 184 bps
+— NM
+
+--- PDF page 257 (printed page 255) ---
+Year ended December 31, 2025
+Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $1,308
+Other-than-insignificant payment deferral | 689
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 247
+Other-than-insignificant payment
+deferral, interest rate reduction, and
+term extension | 86
+Interest rate reduction and term extension | 67
+Other-than-insignificant payment
+deferral, principal forgiveness, and term
+extension | 19
+Other (a) | 45
+Total | $2,461
+(a) Includes loans with single and multiple modifications.
+Year ended December 31, 2024 | Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $1,180
+Other-than-insignificant payment deferral | 464
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 175
+Interest rate reduction and term extension | 51
+Other (a) | 30
+Total | $1,900
+(a) Includes loans with single and multiple modifications.
+Year ended December 31, 2023 | Amortized
+(in millions, except ratios) | cost basis
+Single modifications
+Term extension | $916
+Other-than-insignificant payment deferral | 402
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 35
+Interest rate reduction and term extension | 1
+Commercial and industrial
+% of loan modifications to
+total retained Commercial
+and industrial loans | Financial effect of loan modifications
+0.75 % Extended loans by a weighted-average of 19 months
+Provided payment deferrals with delayed amounts
+0.40 primarily recaptured at the end of the deferral period
+Provided payment deferrals with delayed amounts
+primarily recaptured at maturity and extended loans by a
+0.14 weighted-average of 20 months
+Provided payment deferrals with delayed amounts
+recaptured at maturity, reduced weighted-average
+contractual interest by 1060 bps and extended loans by a
+0.05 weighted-average of 16 months
+Reduced weighted-average contractual interest by 672
+bps and extended loans by a weighted-average of 15
+0.04 months
+Provided payment deferrals with delayed amounts
+recaptured at maturity, reduced amortized cost basis of
+the loan by $37 million and extended the loan by a
+0.01 weighted-average of 42 months
+Reduced the net amortized cost basis by $273 million
+0.03 due to modified loans that include principal forgiveness
+Commercial and industrial
+% of loan modifications to
+total retained Commercial
+and industrial loans | Financial effect of loan modifications
+0.71 % Extended loans by a weighted-average of 20 months
+Provided payment deferrals with delayed amounts
+0.28 primarily re-amortized over the remaining tenor
+Provided payment deferrals with delayed amounts
+primarily recaptured at maturity and extended loans by a
+0.10 weighted-average of 18 months
+Reduced weighted-average contractual interest by 434
+bps and extended loans by a weighted-average of 36
+0.03 months
+0.02 NM
+Commercial and industrial
+% of loan modifications to
+total retained Commercial
+and industrial loans | Financial effect of loan modifications
+0.55 % Extended loans by a weighted-average of 17 months
+Provided payment deferrals with delayed amounts
+0.24 primarily recaptured at the end of the deferral period
+Provided payment deferrals with delayed amounts
+primarily re-amortized over the remaining life of the loan
+0.02 and extended loans by a weighted-average of 7 months
+— NM
+Other (a) | 9 | NM
+Total | $1,363
+(a) Include loans with multiple modifications.
+—
+
+--- PDF page 258 (printed page 256) ---
+Year ended December 31, 2025
+Amortized % of loan modifications to
+(in millions, except ratios) | cost basis total retained Other loans
+Single modifications
+Term extension | $123 | 0.03 %
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 3 | —
+Other (a) | 1 | —
+Total | $127
+(a) Includes a loan with a single modification.
+Year ended December 31, 2024 | Amortized % of loan modifications to
+(in millions, except ratios) | cost basis total retained Other loans
+Single modifications
+Term extension | $268 | 0.07 %
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 2 | —
+Other (a) | 5 | —
+Total | $275
+(a) Includes loans with a single modification.
+Year ended December 31, 2023 | Amortized % of loan modifications to
+(in millions, except ratios) | cost basis total retained Other loans
+Single modifications
+Term extension | $355 | 0.10 %
+Multiple modifications
+Other-than-insignificant payment deferral
+and term extension | 245 | 0.07
+Other (a) | 9 | —
+Total | $609
+(a) Includes a loan with a single modification.
+Other
+Financial effect of loan modification
+Extended loans by a weighted-average of 14 months
+NM
+NM
+Other
+Financial effect of loan modifications
+Extended loans by a weighted-average of 28 months
+NM
+NM
+Other
+Financial effect of loan modifications
+Extended loans by a weighted-average of 23 months
+Provided payment deferrals with delayed amounts
+primarily recaptured at the end of the deferral period
+and extended loans by a weighted-average of 137
+months
+NM
+
+--- PDF page 259 (printed page 257) ---
+Payment status of FDMs
+The following table provides information on the payment status of retained wholesale FDMs during the years ended
+December 31, 2025, 2024 and 2023.
+Secured by real estate
+Year ended December 31,
+(in millions) | 2025 | 2024 | 2023
+Current and less than 30 days past due and
+still accruing | $377 $ 264 | $118
+30-89 days past due and still accruing | — | 3 | 2
+Criticized nonaccrual | 438 | 87 | 40
+Total | $815 $ 354 | $160
+Defaults of FDMs
+Amortized cost basis
+Commercial and industrial | Other
+2025 | 2024 | 2023 | 2025 | 2024 | 2023
+$ 1,669 $ 1,215 | $947 | $115 $ 240 | $400
+7 | 13 | 42 | — | 9 | —
+786 | 672 | 374 | 12 | 26 | 209
+$ 2,462 $ 1,900 $ 1,363 | $127 $ 275 | $609
+The following table provides information on defaults of retained wholesale FDMs that had been modified within
+twelve months during the years ended December 31, 2025, 2024 and 2023.
+Secured by real estate
+Year ended December 31,
+(in millions) | 2025 | 2024 | 2023
+Term extension | $173 $ | 3 | $1
+Other-than-insignificant payment deferral | — | — | 2
+Interest rate reduction and term extension | — | — | 3
+Total (a) | $173 $ | 3 | $6
+(a) Represents FDMs that were 30 days or more past due.
+Amortized cost basis
+Commercial and industrial | Other
+2025 | 2024 | 2023 | 2025 | 2024 | 2023
+$57 $ | 92 | $49 | $3 $ | 22 | $31
+5 | 118 | — | — | — | —
+3 | — | 1 | — | — | —
+$65 $ | 210 | $50 | $3 $ | 22 | $31
+As of December 31, 2025 and 2024, additional unfunded commitments on modified loans to borrowers experiencing
+financial difficulty were $2.8 billion and $1.8 billion, respectively, in Commercial and industrial, and $73 million and
+$69 million, respectively, in Other. Additional unfunded commitments on modified loans to borrowers experiencing
+financial difficulty whose loans have been modified as FDMs in Secured by real estate were not material at both
+periods.
+
+=== Note 15 — Goodwill, mortgage servicing rights, and other intangible assets (Consolidated) ===
+--- PDF page 274 (printed page 272) ---
+Note 15 – Goodwill, mortgage servicing rights, and other intangible assets
+Goodwill
+Goodwill is recorded upon completion of a business
+combination as the difference between the purchase
+price and the fair value of the net assets acquired, and
+can be adjusted up to one year from the acquisition
+date as additional information pertaining to facts and
+circumstances that existed as of the acquisition date is
+obtained about the fair value of assets acquired and
+liabilities assumed. Subsequent to initial recognition,
+goodwill is not amortized but is tested for impairment
+during the fourth quarter of each fiscal year, or more
+often if events or circumstances, such as adverse
+changes in the business climate, indicate that there
+may be an impairment.
+The goodwill associated with each business
+combination is allocated to the related reporting units,
+which are generally determined based on how the
+Firm’s businesses are managed and how they are
+reviewed. The following table presents goodwill
+attributed to the reportable business segments and
+Corporate.
+December 31,
+(in millions) | 2025 | 2024 | 2023
+Consumer & Community Banking | $ 32,116 $ 32,116 $ 32,116
+Commercial & Investment Bank | 11,259 | 11,236 | 11,251
+Asset & Wealth Management | 8,634 | 8,521 | 8,582
+Corporate | 722 | 692 | 685
+Total goodwill | $ 52,731 $ 52,565 $ 52,634
+The following table presents changes in the carrying
+amount of goodwill.
+(in millions) | 2025 | 2024 | 2023
+Balance at beginning of period | $ 52,565 $ 52,634 $ 51,662
+Changes during the period from:
+Business combinations (a) | — | 29 | 917
+Other (b) | 166 | (98) | 55
+Balance at December 31, | $ 52,731 $ 52,565 $ 52,634
+(a) For 2024, includes estimated goodwill associated with the
+acquisition of LayerOne Financial in CIB. For 2023,
+predominantly represents estimated goodwill associated with
+the acquisition of the remaining 51% interest in CIFM in AWM and
+the acquisition of Aumni Inc., predominantly in CIB.
+(b) Primarily foreign currency adjustments and an immaterial
+amount of goodwill written off due to impairment during the third
+quarter of 2025.
+Goodwill impairment testing
+The Firm’s goodwill was not impaired as of December
+31, 2025, 2024 and 2023.
+The goodwill impairment test is performed by
+comparing the current fair value of each reporting unit
+with its carrying value. If the fair value is in excess of
+the carrying value, then the reporting unit’s goodwill is
+considered not to be impaired. If the fair value is less
+than the carrying value, then an impairment is
+recognized for the amount by which the reporting
+unit’s carrying value exceeds its fair value, up to the
+amount of goodwill allocated to that reporting unit.
+The Firm uses the reporting units’ allocated capital
+plus goodwill and other intangible assets as a proxy for
+the carrying values of equity for the reporting units in
+the goodwill impairment testing. Reporting unit equity
+is determined on a similar basis as the allocation of
+capital to the LOBs which takes into consideration a
+variety of factors including capital levels of similarly
+rated peers and applicable regulatory capital
+requirements. LOB’s allocated capital levels are
+incorporated into the Firm’s annual budget process,
+which is reviewed by the Firm’s Board of Directors and
+Operating Committee.
+The primary method the Firm uses to estimate the fair
+value of its reporting units is the income approach.
+This approach projects cash flows for the forecast
+period and uses the perpetuity growth method to
+calculate terminal values. These cash flows and
+terminal values, which are based on the reporting
+units’ annual budgets and forecasts are then
+discounted using an appropriate discount rate. The
+discount rate used for each reporting unit represents
+an estimate of the cost of equity for that reporting unit
+and is determined considering the Firm’s overall
+estimated cost of equity (estimated using the Capital
+Asset Pricing Model), as adjusted for the risk
+characteristics specific to each reporting unit (for
+example, for higher levels of risk or uncertainty
+associated with the business or management’s
+forecasts and assumptions). To assess the
+reasonableness of the discount rates used for each
+reporting unit, management compares the discount
+rate to the estimated cost of equity for publicly traded
+institutions with similar businesses and risk
+characteristics. In addition, the weighted average cost
+of equity (aggregating the various reporting units) is
+compared with the Firm’s overall estimated cost of
+equity for reasonableness. The valuations derived
+from the discounted cash flow analyses are then
+compared with market-based trading and transaction
+multiples for relevant competitors. Trading and
+transaction comparables are used as general
+indicators to assess the overall reasonableness of the
+estimated fair values, although precise conclusions
+
+--- PDF page 275 (printed page 273) ---
+generally cannot be drawn due to the differences that
+naturally exist between the Firm’s businesses and
+competitor institutions.
+The Firm also takes into consideration a comparison
+between the aggregate fair values of the Firm’s
+reporting units and JPMorganChase’s market
+capitalization. In evaluating this comparison, the Firm
+considers several factors, including (i) a control
+premium that would exist in a market transaction, (ii)
+factors related to the level of execution risk that would
+exist at the Firmwide level that do not exist at the
+reporting unit level and (iii) short-term market volatility
+and other factors that do not directly affect the value of
+individual reporting units.
+Unanticipated declines in business performance,
+increases in credit losses, increases in capital
+requirements, as well as deterioration in economic or
+market conditions, adverse regulatory or legislative
+changes or increases in the estimated market cost of
+equity, could cause the estimated fair values of the
+Firm’s reporting units to decline in the future, which
+could result in a material impairment charge to
+earnings in a future period related to some portion of
+the associated goodwill.
+Mortgage servicing rights
+MSRs represent the fair value of expected future cash
+flows for performing servicing activities for others. The
+fair value considers estimated future servicing fees
+and ancillary revenue, offset by estimated costs to
+service the loans, and generally declines over time as
+net servicing cash flows are received, effectively
+amortizing the MSR asset against contractual
+servicing and ancillary fee income. MSRs are either
+purchased from third parties or recognized upon sale
+or securitization of mortgage loans if servicing is
+retained.
+As permitted by U.S. GAAP, the Firm has elected to
+account for its MSRs at fair value. The Firm treats its
+MSRs as a single class of servicing assets based on the
+availability of market inputs used to measure the fair
+value of its MSR asset and its treatment of MSRs as
+one aggregate pool for risk management purposes.
+The Firm estimates the fair value of MSRs using an
+option-adjusted spread (“OAS”) model, which projects
+MSR cash flows over multiple interest rate scenarios in
+conjunction with the Firm’s prepayment model, and
+then discounts these cash flows at risk-adjusted rates.
+The model considers portfolio characteristics,
+contractually specified servicing fees, prepayment
+assumptions, delinquency rates, costs to service, late
+charges and other ancillary revenue, and other
+economic factors. The Firm compares fair value
+estimates and assumptions to observable market data
+where available, and also considers recent market
+activity and actual portfolio experience.
+
+--- PDF page 276 (printed page 274) ---
+The fair value of MSRs is sensitive to changes in
+interest rates, including their effect on prepayment
+speeds. MSRs typically decrease in value when
+interest rates decline because declining interest rates
+tend to increase prepayments and therefore reduce
+the expected life of the net servicing cash flows that
+comprise the MSR asset. Conversely, securities (e.g.,
+mortgage-backed securities), and certain derivatives
+(e.g., those for which the Firm receives fixed-rate
+interest payments) increase in value when interest
+rates decline. JPMorganChase uses combinations of
+derivatives and securities to manage the risk of
+changes in the fair value of MSRs. The intent is to
+offset any interest-rate related changes in the fair
+value of MSRs with changes in the fair value of the
+related risk management instruments.
+The following table summarizes MSR activity for the years ended December 31, 2025, 2024 and 2023.
+As of or for the year ended December 31, (in millions, except where otherwise noted) | 2025 | 2024 | 2023
+Fair value at beginning of period
+MSR activity:
+Originations of MSRs
+Purchase of MSRs (a)
+Disposition of MSRs
+Net additions/(dispositions)
+Changes due to collection/realization of expected cash flows
+Changes in valuation due to inputs and assumptions:
+Changes due to market interest rates and other (b)
+Changes in valuation due to other inputs and assumptions:
+Projected cash flows (e.g., cost to service)
+Discount rates
+Prepayment model changes and other (c)
+Total changes in valuation due to other inputs and assumptions
+Total changes in valuation due to inputs and assumptions
+Fair value at December 31,
+$9,121 | $8,522 | $7,973
+433 | 325 | 253
+624 | 601 | 1,028
+9 | (21) (e) | (188) (e)
+1,066 | 905 | 1,093
+(1,068) | (1,068) | (1,011)
+48 | 670 | 424
+(36) | 102 | (22)
+(1) | 14 | 14
+37 | (24) | 51
+— | 92 | 43
+48 | 762 | 467
+$9,167 | $9,121 | $8,522
+Change in unrealized gains/(losses) included in income related to MSRs held at December 31, | $48 | $762 | $467
+Contractual service fees, late fees and other ancillary fees included in income | 1,635 | 1,606 | 1,590
+Third-party mortgage loans serviced at December 31, (in billions)
+668 | 652 | 632
+Servicer advances, net of an allowance for uncollectible amounts, at December 31 (d) | 493 | 577 | 659
+(a) Includes purchase price adjustments associated with purchased MSRs, primarily due to loans that prepaid within 90 days of settlement or did
+not meet certain criteria and were removed from the purchase prior to the transfer date, allowing the Firm to recover the purchase price.
+(b) Represents both the impact of changes in estimated future prepayments due to changes in market interest rates, and the difference between
+actual and expected prepayments.
+(c) Represents changes in prepayments other than those attributable to changes in market interest rates.
+(d) Represents amounts the Firm pays as the servicer (e.g., scheduled principal and interest, taxes and insurance), which will generally be
+reimbursed within a short period of time after the advance from future cash flows from the trust or the underlying loans. The Firm’s credit risk
+associated with these servicer advances is minimal because reimbursement of the advances is typically senior to all cash payments to
+investors. In addition, the Firm maintains the right to stop payment to investors if the collateral is insufficient to cover the advance. However,
+certain of these servicer advances may not be recoverable if they were not made in accordance with applicable rules and agreements.
+(e) Includes excess MSRs transferred to agency-sponsored trusts in exchange for stripped mortgage-backed securities (“SMBS”). In each
+transaction, a portion of the SMBS was acquired by third parties at the transaction date; the Firm acquired the remaining balance of those
+SMBS as trading securities.
+
+--- PDF page 277 (printed page 275) ---
+The following table presents the components of
+mortgage fees and related income (including the
+impact of MSR risk management activities) for the
+years ended December 31, 2025, 2024 and 2023.
+Year ended December 31,
+(in millions) | 2025 | 2024 | 2023
+CCB mortgage fees and related
+income
+Production revenue | $622 | $627 | $421
+Net mortgage servicing
+revenue:
+Operating revenue:
+Loan servicing revenue | 1,651 | 1,659 | 1,634
+Changes in MSR asset fair
+value due to collection/
+realization of expected cash
+flows | (1,065) | (1,067) | (1,011)
+Total operating revenue | 586 | 592 | 623
+Risk management:
+Changes in MSR asset fair
+value due to market interest
+rates and other (a) | 48 | 670 | 424
+Other changes in MSR asset
+fair value due to other inputs
+and assumptions in model (b) | — | 92 | 43
+Change in derivative fair value
+and other | 70 | (603) | (336)
+Total risk management | 118 | 159 | 131
+Total net mortgage servicing
+revenue | 704 | 751 | 754
+Total CCB mortgage fees and
+related income | 1,326 | 1,378 | 1,175
+All other | 55 | 23 | 1
+Mortgage fees and related income $ 1,381 $ 1,401 $ 1,176
+(a) Represents both the impact of changes in estimated future
+prepayments due to changes in market interest rates, and the
+difference between actual and expected prepayments.
+(b) Represents the aggregate impact of changes in model inputs
+and assumptions such as projected cash flows (e.g., cost to
+service), discount rates and changes in prepayments other than
+those attributable to changes in market interest rates (e.g.,
+changes in prepayments due to changes in home prices).
+Changes in fair value based on variations in
+assumptions generally cannot be easily extrapolated,
+because the relationship of the change in the
+assumptions to the change in fair value are often
+highly interrelated and may not be linear. In the
+following table, the effect that a change in a particular
+assumption may have on the fair value is calculated
+without changing any other assumption. In reality,
+changes in one factor may result in changes in
+another, which would either magnify or counteract the
+impact of the initial change.
+The table below outlines the key economic
+assumptions used to determine the fair value of the
+Firm’s MSRs at December 31, 2025 and 2024, and
+outlines the sensitivities of those fair values to
+immediate adverse changes in those assumptions, as
+defined below.
+December 31,
+(in millions, except rates) | 2025 | 2024
+Weighted-average prepayment speed
+assumption (constant prepayment rate) | 6.77 % | 6.19 %
+Impact on fair value of 10% adverse
+change | $(181) $ (209)
+Impact on fair value of 20% adverse
+change | (353) | (406)
+Weighted-average option adjusted
+spread (a) | 6.14 % | 5.97 %
+Impact on fair value of 100 basis points
+adverse change | $ (394) | $(391)
+Impact on fair value of 200 basis points
+adverse change | (757) | (751)
+(a) Includes the impact of operational risk and regulatory capital.
+
+--- PDF page 278 (printed page 276) ---
+Other intangible assets
+The Firm’s finite-lived and indefinite-lived other
+intangible assets are initially recorded at their fair
+value primarily upon completion of a business
+combination. Finite-lived intangible assets, including
+core deposit intangibles, customer relationship
+intangibles, and certain other intangible assets, are
+amortized over their useful lives, estimated based on
+the expected future economic benefits. The Firm’s
+intangible assets with indefinite lives, such as asset
+management contracts, are not subject to
+amortization and are assessed periodically for
+impairment.
+As of December 31, 2025 and 2024, the gross carrying
+values of other intangible assets were $3.5 billion and
+$3.8 billion, respectively, and the accumulated
+amortization was $962 million and $879 million,
+respectively.
+As of December 31, 2025 and 2024, the net carrying
+values consist of finite-lived intangible assets of $1.3
+billion and $1.7 billion, respectively, as well as
+indefinite-lived intangible assets, which are not subject
+to amortization, of $1.3 billion and $1.2 billion,
+respectively.
+As of December 31, 2025, other intangible assets
+reflected core deposit and certain wealth management
+customer relationship intangibles related to the First
+Republic acquisition, and asset management
+contracts related to the Firm’s acquisition of the
+remaining 51% interest in CIFM. Refer to Note 34 for
+additional information on the First Republic
+acquisition.
+For the years ended December 31, 2025 and 2024,
+amortization expense was $292 million and $339
+million, respectively.
+The following table presents estimated future
+amortization expense.
+December 31, | Finite-lived
+(in millions) | intangible assets
+2026 | $266
+2027 | 264
+2028 | 264
+2029 | 252
+2030 | 100
+Impairment testing
+The Firm’s finite-lived and indefinite-lived other
+intangible assets are assessed for impairment annually
+or more often if events or changes in circumstances
+indicate that the asset might be impaired. Once the
+Firm determines that an impairment exists for an
+intangible asset, the impairment is recognized in other
+expense.
+----- END OF NOTES -----

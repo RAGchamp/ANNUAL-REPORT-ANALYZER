@@ -11,6 +11,8 @@ from contextlib import contextmanager
 
 import pymupdf
 
+from ingest import profiles
+
 BOLD_FONT_HINTS = ("Bold", "Black", "Heavy", "Semibold", "SemiBold", "Demi")
 YEAR_ENDED_RE = re.compile(r"^(for the (year|period) ended|as at)\b", re.I)
 GROUP_LINE_RE = re.compile(r"\band (its )?(consolidated )?subsidiaries$", re.I)
@@ -120,8 +122,9 @@ def page_rows(page, y_tolerance=2.0, horizontal_only=False):
     horizontal_only drops sideways text, e.g. the running header of a page
     that was de-rotated to read a landscape table.
 
-    Returns dicts: {x0, y0, x1, y1, text, font, size, bold}, where the font
-    info comes from the row's first non-blank span."""
+    Returns dicts: {x0, y0, x1, y1, text, font, size, bold, parts}, where the
+    font info comes from the row's first non-blank span and parts are the
+    row's spans as (x0, x1, text, font, size), left to right."""
     spans = []
     for block in text_dict(page)["blocks"]:
         for line in block.get("lines", []):
@@ -156,6 +159,8 @@ def page_rows(page, y_tolerance=2.0, horizontal_only=False):
             "font": first["font"],
             "size": round(first["size"], 1),
             "bold": is_bold(first),
+            "parts": [(s["bbox"][0], s["bbox"][2], s["text"].strip(), s["font"], round(s["size"], 1))
+                      for s in row["spans"]],
         })
     out.sort(key=lambda r: (r["y0"], r["x0"]))
     return out
@@ -172,12 +177,30 @@ def find_header_row(rows, header_text, page_height):
     if not header_text:
         return None
     wanted = header_text.lower()
+    starts = profiles.active().switches.header_starts_row
     for position, row in enumerate(rows):
         if row["y0"] > page_height * 0.2 or position > MAX_ROWS_ABOVE_HEADER:
             break
-        if wanted in row["text"].lower():
+        text = row["text"].lower()
+        if (text.startswith(wanted) if starts else wanted in text):
             return row
     return None
+
+
+# "JPMorgan Chase & Co./2025 Form 10-K   165" or "164   JPMorgan Chase & Co./2025 Form 10-K"
+FOOTER_NUMBER_RE = re.compile(r"^(\d{1,4})\s+\D.*$|^.*\D\s+(\d{1,4})$")
+
+
+def _footer_row(rows, height):
+    """footer_page_numbers: the lowest row in the bottom 10% that carries a page
+    number on its own or at either end, and that number."""
+    for row in sorted((r for r in rows if r["y0"] > height * 0.9), key=lambda r: -r["y0"]):
+        if PAGE_NUMBER_RE.match(row["text"]):
+            return row, row["text"]
+        match = FOOTER_NUMBER_RE.match(row["text"])
+        if match:
+            return row, match.group(1) or match.group(2)
+    return None, None
 
 
 def page_layout(page, rows, section_header_text=None):
@@ -206,6 +229,15 @@ def page_layout(page, rows, section_header_text=None):
 
     printed = None
     bottom = height
+    footer, number = _footer_row(rows, height) if profiles.active().switches.footer_page_numbers else (None, None)
+    if footer:
+        body = [r for r in rows if r["y0"] > top + 0.5 and r["y1"] < footer["y0"]]
+        return {
+            "top": round(top, 1),
+            "bottom": round(footer["y0"], 1),
+            "body_top": round(min((r["y0"] for r in body), default=top), 1),
+            "printed": number,
+        }
     for row in rows:
         near_edge = row["y0"] > height * 0.9 or row["y1"] < height * 0.12
         if near_edge and PAGE_NUMBER_RE.match(row["text"]):

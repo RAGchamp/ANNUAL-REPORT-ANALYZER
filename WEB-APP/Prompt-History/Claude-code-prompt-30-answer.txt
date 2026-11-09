@@ -1,0 +1,175 @@
+## Summary
+
+- **Total investments at 31-Dec-2025 were $63,957m**, up $4,747m (+8.0%) from $59,210m (Balance Sheet, p.125). Schedule I gives the same total (Note 21, p.213).
+- **Fixed maturities, AFS dominate at $46,041m (72.0%)**. Next come mortgage loans at $6,837m (10.7%), limited partnerships and other alternative investments at $5,804m (9.1%) and short-term investments at $4,353m (6.8%). The remaining lines total $922m (1.4%).
+- **Within AFS bonds, corporates are the largest block at $23,076m (half of AFS).** Structured securities follow at $16,485m (ABS, CLOs, CMBS, RMBS), then municipals at $4,652m and U.S. Treasuries at $1,381m (Note 5, p.150).
+- **The bond book's net unrealized loss narrowed** from $(1,955)m to $(814)m because interest rates fell (Note 5, p.150–151). This drove the $898m AFS gain in OCI (Comprehensive Income, p.124).
+- **About 93% of the fair-valued investments are Level 1/2.** Level 3 assets rose to $4,028m from $2,992m (Note 4, p.141–142, 146).
+
+## Key figures
+
+| Item (carrying amount, $m) | 31-Dec-2025 | 31-Dec-2024 | Change | % change | % of 2025 total | Source |
+|---|---|---|---|---|---|---|
+| Fixed maturities, AFS | 46,041 | 42,567 | +3,474 | +8.2% | 72.0% | BS p.125; Note 5 p.150; Note 21 p.213 |
+| FVO securities | 168 | 308 | −140 | −45.5% | 0.3% | BS p.125; Note 4 p.147 |
+| Equity securities, at fair value | 492 | 603 | −111 | −18.4% | 0.8% | BS p.125; Note 4 p.141–142 |
+| Mortgage loans, net of ACL | 6,837 | 6,396 | +441 | +6.9% | 10.7% | BS p.125; Note 5 p.153 |
+| Limited partnerships and other alternative investments | 5,804 | 5,042 | +762 | +15.1% | 9.1% | BS p.125; Note 21 p.213 |
+| Other investments | 262 | 226 | +36 | +15.9% | 0.4% | BS p.125; Note 21 p.213 |
+| Short-term investments | 4,353 | 4,068 | +285 | +7.0% | 6.8% | BS p.125; Note 4 p.141–142 |
+| **Total investments** | **63,957** | **59,210** | **+4,747** | **+8.0%** | **100%** | BS p.125; Note 21 p.213 |
+
+**Tie-out of the totals:**
+- 2025: 46,041 + 168 + 492 + 6,837 + 5,804 + 262 + 4,353 = **63,957** ✓
+- 2024: 42,567 + 308 + 603 + 6,396 + 5,042 + 226 + 4,068 = **59,210** ✓
+
+## Detailed analysis
+
+### 1. Schedule I breakup (cost vs. fair value vs. carrying amount, 2025)
+
+All figures are from Note 21, p.213.
+
+| Type | Cost | Fair value | On Balance Sheet |
+|---|---|---|---|
+| U.S. govt & agencies | 6,253 | 5,929 | 5,929 |
+| States/municipalities | 4,831 | 4,652 | 4,652 |
+| Foreign governments | 440 | 447 | 447 |
+| Public utilities | 2,793 | 2,716 | 2,716 |
+| All other corporate bonds | 20,512 | 20,360 | 20,360 |
+| Other MBS/ABS | 12,042 | 11,937 | 11,937 |
+| **Fixed maturities, AFS** | **46,871** | **46,041** | **46,041** |
+| FVO securities | 199 | 168 | 168 |
+| Common stocks | 369 | 470 | 470 |
+| Non-redeemable preferred stocks | 22 | 22 | 22 |
+| Mortgage loans | 6,886 | 6,607 | 6,837 |
+| Other investments | 279 | 262 | 262 |
+| Short-term investments | 4,353 | 4,353 | 4,353 |
+| Limited partnerships and other alternative investments | 5,804 | n/a | 5,804 |
+| **Total** | **64,783** | — | **63,957** |
+
+**Arithmetic checks:**
+- The cost column sums to 64,783 ✓.
+- The AFS sub-rows sum to 46,041 at fair value and 46,871 at cost ✓.
+- Mortgage loans: cost 6,886 less ACL 49 = 6,837 ✓.
+
+### 2. AFS bonds by type (Note 5, p.150)
+
+| Type | Fair value 2025 | Fair value 2024 | Change | Gross unrealized loss 2025 |
+|---|---|---|---|---|
+| Corporate | 23,076 | 20,636 | +2,440 | (604) |
+| RMBS | 6,178 | 5,230 | +948 | (244) |
+| ABS | 4,663 | 3,937 | +726 | (16) |
+| Municipal | 4,652 | 5,304 | −652 | (268) |
+| CLOs | 3,316 | 3,250 | +66 | (1) |
+| CMBS | 2,328 | 2,736 | −408 | (150) |
+| U.S. Treasuries | 1,381 | 994 | +387 | (139) |
+| Foreign govt. | 447 | 480 | −33 | (2) |
+| **Total** | **46,041** | **42,567** | **+3,474** | **(1,424)** |
+
+- **Amortized cost roll to fair value:**
+  - 2025: 46,871 − 16 ACL + 610 gains − 1,424 losses = 46,041 ✓
+  - 2024: 44,538 − 16 + 272 − 2,227 = 42,567 ✓
+- **Portfolio mix:** the book shifted toward corporates and structured securities and away from municipals and CMBS.
+- **Maturity profile (Note 5, p.150):**
+  - Structured securities (ABS + CLOs + CMBS + RMBS) total 16,485, which matches the "MBS/ABS" maturity line ✓.
+  - 9,531 matures in over 10 years, and 1,179 within one year.
+- **Unrealized losses (Note 5, p.151):** 2,659 positions are in an unrealized loss position. $(1,365)m of the losses is more than 12 months old. 94% of the positions are depressed less than 20%.
+
+### 3. Fair value hierarchy, 2025 (Note 4, p.141)
+
+| Category | Total | L1 | L2 | L3 |
+|---|---|---|---|---|
+| AFS | 46,041 | 164 | 42,505 | 3,372 |
+| FVO | 168 | — | — | 168 |
+| Equity securities | 492 | 379 | 7 | 106 |
+| Short-term investments | 4,353 | 602 | 3,369 | 382 |
+
+- Level 3 totals 4,028, which is 6.3% of total investments (4,028 / 63,957).
+- Level 3 grew by $1,036m. Net purchases were $2,847m against settlements and sales of $1,505m (Note 4, p.146).
+
+### 4. Other components
+
+- **Mortgage loans** (Note 5, p.152–153):
+  - Amortized cost is $6,886m. The largest property types are industrial (46.6%) and multifamily (32.1%); office is only 5.8% ($399m).
+  - Weighted-average LTV is 56% and DSCR is 2.36x. No loans are past due.
+  - Fair value is $6,607m, which is **$230m below carrying amount** (2024: a $495m gap) (Note 4, p.147).
+- **Limited partnerships and other alternative investments, $5,804m:**
+  - $5,313m is accounted for under the equity method (Note 5, p.155).
+  - The rest (5,804 − 5,313 = $491m) is insurer-owned life insurance at cash surrender value.
+  - Unfunded commitments are $2.6bn.
+- **Short-term investments** include $87m of reverse repurchase agreements (Note 5, p.154).
+- **Other investments** include $87m of overseas deposits measured at NAV (Note 4, p.142).
+- **Restricted investments** total $3,846m (Note 5, p.155).
+
+### 5. Yield
+
+- Net investment income was $2,911m (P&L p.123; Note 5 p.148).
+- Average investments were (63,957 + 59,210) / 2 = 61,584.
+- **Net yield ≈ 4.73%**, against roughly 4.4% in 2024 (prior-year average not available; estimated from 2,568 / 59,210).
+- Income from limited partnerships rose to $303m from $148m (Note 5, p.148).
+
+## Impact on the financial statements
+
+### Income Statement (Statement of Operations)
+
+- **Net investment income** was $2,911m (2024: $2,568m), +13.4%.
+  - It equals Note 5's gross income of $3,010m less $99m of expenses ✓ (P&L p.123; Note 5 p.148).
+  - It is 10.3% of total revenues of $28,368m.
+- **Net realized losses** were $(100)m (2024: $(61)m), which ties to Note 5 ✓. The main components were:
+  - net losses on bond sales of $(68)m;
+  - equity securities, +$58m;
+  - other, net, $(84)m;
+  - the mortgage-loan ACL, $(6)m.
+
+### Balance Sheet
+
+- The seven investment lines and **Total investments of $63,957m / $59,210m** tie to Notes 4, 5 and 21 (see the table above).
+- Investments are 74.4% of total assets (63,957 / 85,997).
+- Accrued investment income of $474m is shown separately: AFS $439m and mortgage loans $25m, which sum to $464m. The remaining $10m is unexplained.
+
+### Cash Flow Statement
+
+All figures are from the Cash Flow Statement, p.127.
+
+| Asset | Purchases | Proceeds | Net |
+|---|---|---|---|
+| Fixed maturities, AFS | (12,769) | 10,352 | (2,417) |
+| Mortgage loans | (2,021) | 1,598 | (423) |
+| Limited partnerships | (1,025) | 291 | (734) |
+| Equity securities | (97) | 240 | +143 |
+| FVO securities | (17) | 109 | +92 |
+
+- These investment flows, plus derivatives of (12) and short-term investments of (149), total **(3,500)**.
+- Adding property and equipment (169) and other (89) gives (3,758), the net cash used for investing activities ✓.
+- The net mortgage outflow of 423 is close to the 446 rise in amortized cost.
+- The limited partnership outflow of 734 plus equity-method income makes up most of the 762 increase.
+
+### Statement of Shareholders' Equity
+
+- The AFS unrealized position improved by 1,141 pre-tax: (−814) − (−1,955).
+- This produced the **+$898m** "Change in net unrealized gain (loss) on fixed maturities, AFS" in OCI (Comprehensive Income, p.124). That implies a tax rate of about 21% (1 − 898 / 1,141).
+- Total OCI of +$829m moved AOCI from $(2,886)m to $(2,057)m (Equity statement p.126; BS p.125).
+- Investment income also feeds net income of $3,836m and therefore retained earnings.
+
+## Red flags & areas for follow-up
+
+1. **Schedule I uses different classes from Note 5.**
+   - Schedule I shows "U.S. govt & agencies" of 5,929 against U.S. Treasuries of 1,381 in Note 5, and "MBS/ABS" of 11,937 against structured securities of 16,485.
+   - Both gaps are exactly **4,548**, which suggests agency RMBS is reported under government in Schedule I. This is not stated; confirm with management.
+2. **Mortgage loans sit $230m above their Level 3 fair value.** This economic loss does not appear in book value or OCI.
+3. **Level 3 grew 35%** (2,992 → 4,028), mainly in private corporates ($2,866m) and short-term investments (98 → 382). The unobservable-input table covers only $2,765m of the corporates, because broker-priced items are excluded.
+4. **Fair value is not disclosed** for limited partnerships ($5.8bn) in Schedule I. There are also $2.6bn of unfunded commitments.
+5. **The FVO book halved** and lost $(30)m in fair value (Note 4, p.147).
+6. **Source and tagging oddities:**
+   - The cash-flow equity-proceeds line is labelled "Marketable Securities", and "Securties" is a typo.
+   - The equity statement's "Total – Treasury stock acquired (1.6)" appears to be a scaling or tagging error (the real figure is $(1,616)m).
+   - In Note 4's 2024 table, foreign-exchange derivative liabilities are shown as a positive 18. The total of (12) only works if 18 nets against (30).
+   - The contents of "Other investments" ($262m) are not fully broken down. Are derivative assets of $20m included?
+7. **Accrued investment income** has a $10m difference that is not explained (see Balance Sheet above).
+
+## Sources
+
+- Note 21 – Schedule I (p.213)
+- Note 5 – Investments (p.148–155)
+- Note 4 – Fair Value Measurements (p.140–147)
+- Statements of Operations (p.123), Comprehensive Income (p.124), Balance Sheets (p.125), Changes in Stockholders' Equity (p.126), Cash Flows (p.127)

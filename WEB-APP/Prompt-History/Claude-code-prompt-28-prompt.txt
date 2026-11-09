@@ -1,0 +1,447 @@
+REPORT PROFILE
+Format: US annual report on Form 10-K (US GAAP)
+Periods in the statements: FY2026, FY2025, FY2024 (years ended January 25)
+Units: (in millions of U.S. dollars, except per share data)
+Source: the filing's inline XBRL (statement figures, notes and links read from its tags, not from page layout). "PDF page" numbers are the filing's document pages (between its page breaks); the printed page number is given alongside.
+The statements have no Notes column; LINKED FIGURES shows how the app linked statement lines to the notes.
+
+Annual report: NVIDIA-10-K-2026
+Statements: Consolidated
+Notes provided: Consolidated Note 13 – Income Taxes (PDF p.72–76), Consolidated Note 9 – Balance Sheet Components (PDF p.67–69), Consolidated Note 12 – Commitments and Contingencies (PDF p.70–72)
+Primary financial statements provided: Consolidated Statements of Income (PDF p.51); Consolidated Statements of Comprehensive Income (PDF p.51–52); Consolidated Balance Sheets (PDF p.53); Consolidated Statements of Cash Flows (PDF p.55); Consolidated Statements of Shareholders' Equity (PDF p.54)
+
+QUESTION: Analyze the company's tax related liabilities and comment on it.
+
+Structure your answer as:
+## Summary
+3–5 bullet points with the key conclusions.
+## Key figures
+A table with columns: Item | Current year | Prior year | Change | % change | Source.
+## Detailed analysis
+Trends, drivers, ratios and interpretation relevant to the question.
+## Impact on the financial statements
+How the matters in the notes flow into and affect each primary statement. Use one sub-heading per statement:
+### Income Statement (Statement of Operations)
+### Balance Sheet
+### Cash Flow Statement
+### Statement of Shareholders' Equity
+For each one, name the line items affected, give their figures (current and prior year, citing statement and page), show how the note reconciles to them, and explain the effect. For example, how the tax expense in the note drives profit after tax, how deferred tax balances appear on the Balance Sheet, how taxes paid appear in operating cash flow, or how OCI items move reserves in equity.
+## Red flags & areas for follow-up
+Anything unusual, inconsistent, or worth asking management about, including any note figure that does not agree with the statements.
+## Sources
+The notes, statements and PDF pages you relied on.
+
+----- PRIMARY FINANCIAL STATEMENTS (PDF page numbers) -----
+=== Consolidated Statements of Income (Consolidated) ===
+--- PDF page 51 (printed page 51) ---
+Consolidated Statements of Income
+(in millions of U.S. dollars, except per share data) | Year Ended Jan 25, 2026 | Year Ended Jan 26, 2025 | Year Ended Jan 28, 2024
+Revenue | 215,938 | 130,497 | 60,922
+Cost of revenue | 62,475 | 32,639 | 16,621
+Gross profit | 153,463 | 97,858 | 44,301
+Operating expenses
+Research and development | 18,497 | 12,914 | 8,675
+Sales, general and administrative | 4,579 | 3,491 | 2,654
+Total operating expenses | 23,076 | 16,405 | 11,329
+Operating income | 130,387 | 81,453 | 32,972
+Interest income | 2,300 | 1,786 | 866
+Interest expense | (259) | (247) | (257)
+Other income, net | 9,022 | 1,034 | 237
+Total other income, net | 11,063 | 2,573 | 846
+Income before income tax | 141,450 | 84,026 | 33,818
+Income tax expense | 21,383 | 11,146 | 4,058
+Net income | 120,067 | 72,880 | 29,760
+Net income per share:
+Basic (in USD per share) | 4.93 | 2.97 | 1.21
+Diluted (in USD per share) | 4.90 | 2.94 | 1.19
+Weighted average shares used in per share computation:
+Basic (in shares) | 24,359 | 24,555 | 24,690
+Diluted (in shares) | 24,514 | 24,804 | 24,940
+
+=== Consolidated Statements of Comprehensive Income (Consolidated) ===
+--- PDF page 51 (printed page 51) ---
+Consolidated Statements of Comprehensive Income
+(in millions of U.S. dollars, except per share data) | Year Ended Jan 25, 2026 | Year Ended Jan 26, 2025 | Year Ended Jan 28, 2024
+Net income | 120,067 | 72,880 | 29,760
+Other comprehensive income, net of tax
+Available-for-sale securities:
+Net change in unrealized gain | 107 | 1 | 80
+Cash flow hedges:
+Net change in unrealized gain (loss) | 43 | — | (10)
+Other comprehensive income, net of tax | 150 | 1 | 70
+Total comprehensive income | 120,217 | 72,881 | 29,830
+
+=== Consolidated Balance Sheets (Consolidated) ===
+--- PDF page 53 (printed page 53) ---
+Consolidated Balance Sheets
+(in millions of U.S. dollars, except per share data) | Jan 25, 2026 | Jan 26, 2025
+Assets
+Current assets:
+Cash and cash equivalents | 10,605 | 8,589
+Marketable securities | 51,951 | 34,621
+Accounts receivable, net | 38,466 | 23,065
+Inventories | 21,403 | 10,080
+Prepaid expenses and other current assets | 3,180 | 3,771
+Total current assets | 125,605 | 80,126
+Property and equipment, net | 10,383 | 6,283
+Operating lease assets | 2,867 | 1,793
+Goodwill | 20,832 | 5,188
+Intangible assets, net | 3,306 | 807
+Deferred income tax assets | 13,258 | 10,979
+Non-marketable equity securities | 22,251 | 3,387
+Other assets | 8,301 | 3,038
+Total assets | 206,803 | 111,601
+Liabilities and Shareholders' Equity
+Current liabilities:
+Accounts payable | 9,812 | 6,310
+Accrued and other current liabilities | 21,352 | 11,737
+Short-term debt | 999 | —
+Total current liabilities | 32,163 | 18,047
+Long-term debt | 7,469 | 8,463
+Long-term operating lease liabilities | 2,572 | 1,519
+Other long-term liabilities | 7,306 | 4,245
+Total liabilities | 49,510 | 32,274
+Commitments and contingencies - see Note 12 | — | —
+Shareholders’ equity:
+Preferred stock, $0.001 par value; 2 shares authorized; none issued | — | —
+Common stock, $0.001 par value; 80,000 shares authorized; 24,304 shares issued and outstanding as of January 25, 2026; 24,477 shares issued and outstanding as of January 26, 2025 | 24 | 24
+Additional paid-in capital | 10,118 | 11,237
+Accumulated other comprehensive income | 178 | 28
+Retained earnings | 146,973 | 68,038
+Total shareholders' equity | 157,293 | 79,327
+Total liabilities and shareholders' equity | 206,803 | 111,601
+
+=== Consolidated Statements of Cash Flows (Consolidated) ===
+--- PDF page 55 (printed page 55) ---
+Consolidated Statements of Cash Flows
+(in millions of U.S. dollars, except per share data) | Year Ended Jan 25, 2026 | Year Ended Jan 26, 2025 | Year Ended Jan 28, 2024
+Cash flows from operating activities:
+Net income | 120,067 | 72,880 | 29,760
+Adjustments to reconcile net income to net cash provided by operating activities:
+Stock-based compensation expense | 6,386 | 4,737 | 3,549
+Depreciation and amortization | 2,843 | 1,864 | 1,508
+Gains on non-marketable equity securities and publicly-held equity securities, net | (8,918) | (1,030) | (238)
+Deferred income taxes | (1,424) | (4,477) | (2,489)
+Other | (287) | (502) | (278)
+Changes in operating assets and liabilities, net of acquisitions:
+Accounts receivable | (15,399) | (13,063) | (6,172)
+Inventories | (11,324) | (4,781) | (98)
+Prepaid expenses and other assets | 577 | (395) | (1,522)
+Accounts payable | 3,096 | 3,357 | 1,531
+Accrued and other current liabilities | 5,257 | 4,278 | 2,025
+Other long-term liabilities | 1,844 | 1,221 | 514
+Net cash provided by operating activities | 102,718 | 64,089 | 28,090
+Cash flows from investing activities:
+Proceeds from sales of marketable securities | 15,157 | 495 | 50
+Proceeds from maturities of marketable securities | 11,226 | 11,195 | 9,732
+Proceeds from sales of non-marketable equity securities | 84 | 171 | 1
+Purchases of marketable securities | (40,616) | (26,575) | (18,211)
+Purchases of non-marketable equity securities | (17,502) | (1,486) | (862)
+Groq, Inc. | (13,000) | — | —
+Purchases related to property and equipment and intangible assets | (6,042) | (3,236) | (1,069)
+Acquisitions, net of cash acquired | (1,535) | (1,007) | (83)
+Other | — | 22 | (124)
+Net cash used in investing activities | (52,228) | (20,421) | (10,566)
+Cash flows from financing activities:
+Proceeds related to employee stock plans | 644 | 490 | 403
+Payments related to repurchases of common stock | (40,086) | (33,706) | (9,533)
+Payments related to employee stock plan taxes | (7,948) | (6,930) | (2,783)
+Dividends paid | (974) | (834) | (395)
+Principal payments on property and equipment and intangible assets | (101) | (129) | (74)
+Repayment of debt | — | (1,250) | (1,250)
+Other | (9) | — | (1)
+Net cash used in financing activities | (48,474) | (42,359) | (13,633)
+Change in cash and cash equivalents | 2,016 | 1,309 | 3,891
+Cash and cash equivalents at beginning of period | 8,589 | 7,280 | 3,389
+Cash and cash equivalents at end of period | 10,605 | 8,589 | 7,280
+Supplemental disclosures of cash flow information:
+Cash paid for income taxes, net | 20,288 | 15,118 | 6,549
+
+=== Consolidated Statements of Shareholders' Equity (Consolidated) ===
+--- PDF page 54 (printed page 54) ---
+Consolidated Statements of Shareholders' Equity
+(in millions of U.S. dollars, except per share data) | Year Ended Jan 25, 2026 | Year Ended Jan 26, 2025 | Year Ended Jan 28, 2024
+Common Stock Outstanding
+Beginning balance, common stock outstanding (in shares) | 24,477 | 24,643 | 24,661
+Beginning balances, shareholders' equity | 24 | 25 | 25
+Issuance of common stock (in shares) | 160 | 203 | 265
+Tax withholding related to common stock (in shares) | (51) | (59) | (72)
+Share repurchased (in shares) | (282) | (310) | (211)
+Shares repurchased |  | (1) | 
+Ending balance, common stock outstanding (in shares) | 24,304 | 24,477 | 24,643
+Ending balances, shareholders' equity | 24 | 24 | 25
+Additional Paid-in Capital
+Beginning balances, shareholders' equity | 11,237 | 13,109 | 11,948
+Issuance of common stock | 644 | 490 | 403
+Tax withholding related to common stock | (7,948) | (6,930) | (2,783)
+Shares repurchased | (230) | (189) | (27)
+Fair value of partially vested equity awards assumed in connection with acquisitions | 28 |  | 
+Stock-based compensation | 6,387 | 4,757 | 3,568
+Ending balances, shareholders' equity | 10,118 | 11,237 | 13,109
+Accumulated Other Comprehensive Income (Loss)
+Beginning balances, shareholders' equity | 28 | 27 | (43)
+Other comprehensive income | 150 | 1 | 70
+Ending balances, shareholders' equity | 178 | 28 | 27
+Retained Earnings
+Beginning balances, shareholders' equity | 68,038 | 29,817 | 10,171
+Net income | 120,067 | 72,880 | 29,760
+Shares repurchased | (40,158) | (33,825) | (9,719)
+Cash dividends declared and paid | (974) | (834) | (395)
+Ending balances, shareholders' equity | 146,973 | 68,038 | 29,817
+Total
+Beginning balance, common stock outstanding (in shares) | 24,477 |  | 
+Beginning balances, shareholders' equity | 79,327 | 42,978 | 22,101
+Net income | 120,067 | 72,880 | 29,760
+Other comprehensive income | 150 | 1 | 70
+Issuance of common stock | 644 | 490 | 403
+Tax withholding related to common stock | (7,948) | (6,930) | (2,783)
+Share repurchased (in shares) | (282) | (310) | 
+Shares repurchased | (40,388) | (34,015) | (9,746)
+Cash dividends declared and paid | (974) | (834) | (395)
+Fair value of partially vested equity awards assumed in connection with acquisitions | 28 |  | 
+Stock-based compensation | 6,387 | 4,757 | 3,568
+Ending balance, common stock outstanding (in shares) | 24,304 | 24,477 | 
+Ending balances, shareholders' equity | 157,293 | 79,327 | 42,978
+----- END OF PRIMARY FINANCIAL STATEMENTS -----
+
+----- LINKED FIGURES (statement lines the app linked to the notes provided; found automatically - check them against the statements and notes) -----
+- Inventories (Consolidated Balance Sheets, PDF p.53) | FY2026 21,403 | FY2025 10,080 -> Note 9 (same XBRL concept tagged in the note)
+- Property and equipment, net (Consolidated Balance Sheets, PDF p.53) | FY2026 10,383 | FY2025 6,283 -> Note 9 (same XBRL concept tagged in the note)
+- Deferred income tax assets (Consolidated Balance Sheets, PDF p.53) | FY2026 13,258 | FY2025 10,979 -> Note 13 (same XBRL concept tagged in the note)
+- Accrued and other current liabilities (Consolidated Balance Sheets, PDF p.53) | FY2026 21,352 | FY2025 11,737 -> Note 9 (same XBRL concept tagged in the note)
+- Other long-term liabilities (Consolidated Balance Sheets, PDF p.53) | FY2026 7,306 | FY2025 4,245 -> Note 9 (same XBRL concept tagged in the note)
+- Commitments and contingencies - see Note 12 (Consolidated Balance Sheets, PDF p.53) | FY2026 — | FY2025 — -> Note 12 (cited in the line)
+- Deferred income taxes (Consolidated Statements of Cash Flows, PDF p.55) | FY2026 (1,424) | FY2025 (4,477) | FY2024 (2,489) -> Note 13 (same XBRL concept tagged in the note)
+- Cash paid for income taxes, net (Consolidated Statements of Cash Flows, PDF p.55) | FY2026 20,288 | FY2025 15,118 | FY2024 6,549 -> Note 13 (same XBRL concept tagged in the note)
+- Cost of revenue (Consolidated Statements of Income, PDF p.51) | FY2026 62,475 | FY2025 32,639 | FY2024 16,621 -> Note 9 (same XBRL concept tagged in the note)
+- Income before income tax (Consolidated Statements of Income, PDF p.51) | FY2026 141,450 | FY2025 84,026 | FY2024 33,818 -> Note 13 (same XBRL concept tagged in the note)
+- Income tax expense (Consolidated Statements of Income, PDF p.51) | FY2026 21,383 | FY2025 11,146 | FY2024 4,058 -> Note 13 (same XBRL concept tagged in the note)
+CHECKS (automatic)
+- ok: Total assets 206,803 vs 'Total liabilities and shareholders' equity' 206,803 (FY2026)
+- ok: Total assets 111,601 vs 'Total liabilities and shareholders' equity' 111,601 (FY2025)
+----- END OF LINKED FIGURES -----
+
+----- NOTES EXTRACTED FROM THE ANNUAL REPORT (PDF page numbers) -----
+=== Note 13 — Income Taxes (Consolidated) ===
+--- PDF page 72 (printed page 72) ---
+Note 13 - Income Taxes
+The FASB issued a new accounting standard which includes new and updated income tax disclosures, including disaggregation of information in the rate reconciliation and income taxes paid, which we adopted on a prospective basis for the year ending January 25, 2026.
+The Income tax expense applicable to income before income taxes consists of the following:
+Year Ended
+Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024
+(In millions)
+Current income taxes:
+Federal | $19,039 | $14,032 | $5,710
+State | 1,218 | 892 | 335
+Foreign | 2,550 | 699 | 502
+Total current | 22,807 | 15,623 | 6,547
+Deferred income taxes:
+Federal | (1,364) | (4,515) | (2,499)
+State | (885) | (242) | (206)
+Foreign | 825 | 280 | 216
+Total deferred | (1,424) | (4,477) | (2,489)
+Income tax expense | $21,383 | $11,146 | $4,058
+
+--- PDF page 73 (printed page 73) ---
+Income before income tax consists of the following:
+Year Ended
+Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024
+(In millions)
+U.S. | $123,181 | $77,456 | $29,495
+Foreign | 18,269 | 6,570 | 4,323
+Income before income tax | $141,450 | $84,026 | $33,818
+The income tax expense (benefit) differs from the amount computed by applying the U.S. federal statutory rate of 21.0% to income before income taxes for the fiscal year ended January 25, 2026 as follows:
+Year Ended
+Jan 25, 2026
+(In millions, except percentages)
+US Federal Statutory Tax Rate | $29,704 | 21.0%
+State and Local Income Taxes, Net of Federal Income Tax Effect (1) | 258 | 0.2%
+Foreign tax effects
+Israel
+Reduced statutory tax rate on qualifying income | (3,064) | (2.2)%
+Other | 1,606 | 1.2%
+Other foreign jurisdictions | 741 | 0.5%
+Effect of cross-border tax laws
+Foreign-derived deduction eligible income | (4,208) | (3.0)%
+Other | (142) | (0.1)%
+Tax credits | (1,933) | (1.4)%
+Nontaxable or nondeductible items
+Stock-based compensation | (1,475) | (1.0)%
+Other | 29 | —%
+Other (2) | (133) | (0.1)%
+Income tax expense | $21,383 | 15.1%
+(1) State taxes in California, Tennessee, Arizona, and Illinois made up the majority of the tax effect in fiscal year 2026.
+(2) Includes the tax effects of enactment of new tax laws, change in valuation allowance, and change in unrecognized tax benefits.
+
+--- PDF page 74 (printed page 74) ---
+The income tax expense (benefit) differs from the amount computed by applying the U.S. federal statutory rate of 21% to income before income taxes for fiscal years ended January 26, 2025 and January 28, 2024 as follows:
+Year Ended
+Jan 26, 2025 | Jan 28, 2024
+(In millions, except percentages)
+Tax expense computed at federal statutory rate | $17,645 | 21.0% | $7,102 | 21.0%
+Expense (benefit) resulting from:
+State income taxes, net of federal tax effect | 554 | 0.7% | 120 | 0.4%
+Foreign-derived deduction eligible income | (2,976) | (3.5)% | (1,408) | (4.2)%
+Stock-based compensation | (2,097) | (2.5)% | (741) | (2.2)%
+U.S. federal research and development tax credit | (990) | (1.2)% | (431) | (1.3)%
+Foreign tax rate differential | (984) | (1.2)% | (467) | (1.4)%
+Other | (6) | —% | (117) | (0.3)%
+Income tax expense | $11,146 | 13.3% | $4,058 | 12.0%
+In July 2025, the OBBBA was enacted into law and contains several changes to key U.S. federal income tax laws. We have recognized the tax effects of currently effective OBBBA provisions in our results for fiscal year 2026.
+The amount of cash paid for income taxes (net of refunds) for the fiscal year ended January 25, 2026 is as follows:
+Year Ended
+Jan 25, 2026
+(In millions)
+Federal | $16,755
+State
+California | 1,049
+Other | 1,041
+Foreign
+Israel | 1,287
+Other | 156
+Total income taxes paid, net of refunds | $20,288
+
+--- PDF page 75 (printed page 75) ---
+The tax effect of temporary differences that gives rise to significant portions of the deferred tax assets and liabilities are presented below:
+Jan 25, 2026 | Jan 26, 2025
+(In millions)
+Deferred tax assets:
+Capitalized research and development expenditure | $5,436 | $6,256
+Net controlled foreign corporation tested income deferred tax assets | 5,389 | 2,820
+Accruals and reserves, not currently deductible for tax purposes | 3,644 | 2,058
+Research and other tax credit carryforwards | 718 | 759
+Operating lease liabilities | 554 | 299
+Net operating loss and capital loss carryforwards | 443 | 456
+Other deferred tax assets | 679 | 566
+Gross deferred tax assets | 16,863 | 13,214
+Less valuation allowance | (768) | (1,610)
+Total deferred tax assets | 16,095 | 11,604
+Deferred tax liabilities:
+Equity investments | (2,227) | (264)
+Unremitted earnings of foreign subsidiaries | (1,813) | (891)
+Operating lease assets | (533) | (286)
+Acquired intangibles | (38) | (70)
+Gross deferred tax liabilities | (4,611) | (1,511)
+Net deferred tax asset (1) | $11,484 | $10,093
+(1) Net deferred tax asset includes long-term deferred tax assets of $13.3 billion and $11.0 billion and long-term deferred tax liabilities of $1.8 billion and $886 million for fiscal years 2026 and 2025, respectively. Long-term deferred tax liabilities are included in other long-term liabilities on our Consolidated Balance Sheets.
+As of January 25, 2026, we intend to indefinitely reinvest approximately $1.4 billion of cumulative undistributed earnings held by certain subsidiaries. We have not provided the amount of unrecognized deferred tax liabilities for temporary differences related to these investments as the determination of such amount is not practicable.
+As of January 25, 2026 and January 26, 2025, we had a valuation allowance of $768 million and $1.6 billion, respectively, related to capital loss carryforwards, and certain other deferred tax assets that management determined are not likely to be realized due, in part, to jurisdictional projections of future taxable income, including capital gains. To the extent realization of the deferred tax assets becomes more-likely-than-not, we would recognize such deferred tax assets as income tax benefits during the period.
+As of January 25, 2026, based on recent jurisdictional taxable income and expected future earnings, we concluded certain state deferred tax assets are more likely than not realizable and released $711 million of valuation allowance.
+As of January 25, 2026, we had U.S. federal, state and foreign net operating loss carryforwards of $747 million, $427 million and $503 million, respectively. The federal and state carryforwards will begin to expire in fiscal year 2027. The foreign net operating loss carryforwards may be carried forward indefinitely. As of January 25, 2026, we had federal research tax credit carryforwards of $56 million, before the impact of uncertain tax positions, that will begin to expire in fiscal year 2027. We have state research tax credit carryforwards of $1.4 billion, before the impact of uncertain tax positions, of which $1.3 billion is attributable to the State of California and may be carried over indefinitely and $132 million is attributable to various other states and will begin to expire in fiscal year 2028. As of January 25, 2026, we had federal capital loss carryforwards of $902 million that will begin to expire in fiscal year 2028.
+Our tax attributes remain subject to audit and may be adjusted for changes or modification in tax laws, other authoritative interpretations thereof, or other facts and circumstances. Utilization of tax attributes may also be subject to limitations due to ownership changes and other limitations provided by the Internal Revenue Code and similar state and foreign tax provisions. If any such limitations apply, the tax attributes may expire or be denied before utilization.
+
+--- PDF page 76 (printed page 76) ---
+A reconciliation of gross unrecognized tax benefits is as follows:
+Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024
+(In millions)
+Balance at beginning of period | $2,861 | $1,670 | $1,238
+Increases in tax positions for current year | 1,959 | 1,268 | 616
+Increases in tax positions for prior years | 57 | 48 | 87
+Lapse in statute of limitations | (224) | (27) | (19)
+Decreases in tax positions for prior years | (157) | (88) | (148)
+Settlements | (76) | (10) | (104)
+Balance at end of period | $4,420 | $2,861 | $1,670
+Included in the balance of unrecognized tax benefits as of January 25, 2026 are $3.7 billion of tax benefits that would affect our effective tax rate if recognized.
+We classify an unrecognized tax benefit as a current liability, or amount refundable, to the extent that we anticipate payment or receipt of cash for income taxes within one year. The amount is classified as a long-term liability, or long-term amount refundable, if we anticipate payment or receipt of cash for income taxes during a period beyond a year.
+We include interest and penalties related to unrecognized tax benefits as a component of income tax expense. We recognized net interest and penalties related to unrecognized tax benefits in the income tax expense line of our consolidated statements of income of $103 million, $92 million, and $42 million during fiscal years 2026, 2025, and 2024, respectively. As of January 25, 2026 and January 26, 2025, we have accrued $374 million and $251 million, respectively, for the payment of interest and penalties related to unrecognized tax benefits, which is not included as a component of our gross unrecognized tax benefits.
+We are subject to examination by taxing authorities both in the United States and other countries. As of January 25, 2026, the significant tax jurisdictions that may be subject to examination include the United States for fiscal years after 2022, as well as Canada, China, Germany, Hong Kong, India, Israel, Italy, and Taiwan for fiscal years 2014 through 2025. As of January 25, 2026, the significant tax jurisdictions for which we are currently under examination include the United States, Germany, Hong Kong, India, Israel, and Taiwan for fiscal years 2014 through 2025.
+
+=== Note 9 — Balance Sheet Components (Consolidated) ===
+--- PDF page 67 (printed page 67) ---
+Note 9 - Balance Sheet Components
+We refer to customers who purchase products directly from NVIDIA as direct customers, such as AIBs, distributors, ODMs, OEMs, CSPs, AI model makers, and system integrators. Certain direct customers may use either internal resources or third-party system integrators to complete their build. Three direct customers accounted for 25%, 18%, and 13% of our accounts receivable balance as of January 25, 2026. Two direct customers accounted for 17% and 16% of our accounts receivable balance as of January 26, 2025.
+Certain balance sheet components are as follows:
+Jan 25, 2026 | Jan 26, 2025
+Inventories: | (In millions)
+Raw materials | $3,807 | $3,408
+Work in process | 8,822 | 3,399
+Finished goods | 8,774 | 3,273
+Total inventories (1) | $21,403 | $10,080
+(1) In fiscal years 2026 and 2025, we recorded inventory provisions of $4.0 billion and $1.6 billion, respectively, in cost of revenue.
+Jan 25, 2026 | Jan 26, 2025 | Estimated Useful Life
+Property and Equipment: | (In millions) | (In years)
+Land | $777 | $511 | (A)
+Buildings, leasehold improvements, and furniture | 2,891 | 2,076 | (B)
+Equipment, compute hardware, and software | 12,619 | 7,568 | 2-7
+Construction in process | 683 | 529 | (C)
+Total property and equipment, gross | 16,970 | 10,684
+Accumulated depreciation and amortization | (6,587) | (4,401)
+Total property and equipment, net | $10,383 | $6,283
+(A)Land is a non-depreciable asset.
+
+--- PDF page 68 (printed page 68) ---
+(B)The estimated useful lives of our buildings are up to thirty years. Leasehold improvements and finance leases are amortized based on the lesser of either the asset’s estimated useful life or the expected remaining lease term.
+(C)Construction in process represents assets that are not available for their intended use.
+Depreciation expense for fiscal years 2026, 2025, and 2024 was $2.4 billion, $1.3 billion, and $894 million, respectively.
+Accumulated amortization of leasehold improvements and finance leases was $519 million and $410 million as of January 25, 2026 and January 26, 2025, respectively.
+Property, equipment and intangible assets acquired but not paid for during fiscal years 2026, 2025, and 2024 were $820 million, $525 million, and $170 million, respectively.
+Jan 25, 2026 | Jan 26, 2025
+Accrued and Other Current Liabilities: | (In millions)
+Customer program accruals | $5,318 | $4,880
+Accrued purchase consideration | 3,921 | 9
+Product warranty | 2,807 | 1,290
+Excess inventory purchase obligations (1) | 2,739 | 2,095
+Taxes payable | 2,669 | 881
+Deferred revenue (2) | 1,379 | 837
+Accrued payroll and related expenses | 1,146 | 848
+Other | 1,373 | 897
+Total accrued and other current liabilities | $21,352 | $11,737
+(1)In fiscal years 2026 and 2025, we recorded an expense of approximately $3.2 billion and $2.0 billion, respectively, in cost of revenue.
+(2)Includes customer advances and unearned revenue related to hardware and software support, cloud services, and license and development arrangements. The balance as of January 25, 2026 and January 26, 2025 included $160 million and $81 million of customer advances, respectively.
+Jan 25, 2026 | Jan 26, 2025
+Other Long-Term Liabilities: | (In millions)
+Income tax payable (1) | $3,958 | $2,188
+Deferred income tax | 1,774 | 886
+Deferred revenue (2) | 1,193 | 976
+Other | 381 | 195
+Total other long-term liabilities | $7,306 | $4,245
+(1)Primarily comprised of unrecognized tax benefits and related interest and penalties.
+(2)Includes unearned revenue related to hardware and software support and cloud services.
+Deferred Revenue
+The following table shows the changes in short- and long-term deferred revenue during fiscal years 2026 and 2025:
+Jan 25, 2026 | Jan 26, 2025
+(In millions)
+Balance at beginning of period | $1,813 | $1,337
+Deferred revenue additions (1) | 11,137 | 5,083
+Revenue recognized (2) | (10,378) | (4,607)
+Balance at end of period | $2,572 | $1,813
+(1) Includes $9.0 billion and $3.6 billion of customer advances for fiscal years 2026 and 2025, respectively.
+(2) Includes $8.9 billion and $3.7 billion related to customer advances for fiscal years 2026 and 2025, respectively.
+
+--- PDF page 69 (printed page 69) ---
+We recognized revenue of $974 million and $729 million in fiscal years 2026 and 2025, respectively, that were included in the prior year end deferred revenue balance.
+As of January 25, 2026, revenue related to remaining performance obligations from contracts greater than one year in length was $2.3 billion, which includes $1.9 billion from deferred revenue and $390 million which has not yet been billed nor recognized as revenue. Approximately 42% of revenue from contracts greater than one year in length will be recognized over the next twelve months.
+
+=== Note 12 — Commitments and Contingencies (Consolidated) ===
+--- PDF page 70 (printed page 70) ---
+Note 12 - Commitments and Contingencies
+Commitments
+Manufacturing, supply, and capacity commitments reflect datacenter-scale production and longer future ordering horizons across current and future product architectures. We enter into agreements with our supply vendors that allow them to procure inventory based upon our defined criteria, and in certain instances, these agreements are cancellable, able to be rescheduled, or adjustable for our business needs prior to placing firm orders. Changes to these agreements may result in additional costs. As of January 25, 2026, these commitments were $95.2 billion, of which substantially all will be paid through fiscal year 2027.
+Multi-year cloud service agreement commitments as of January 25, 2026, were $27 billion, for which $7 billion, $6 billion, $5 billion, $5 billion, $2 billion, and $2 billion will be paid in fiscal years 2027, 2028, 2029, 2030, 2031, and 2032 and thereafter, respectively. Some cloud service capacity may be reduced, terminated or sold to others by the CSPs, in which case our commitments will be reduced. We expect cloud service agreements to be used to support our research and development efforts.
+Investment commitments are $11.4 billion as of January 25, 2026, subject to certain contingencies, of which we expect substantially all will be made through fiscal year 2027.
+Other commitments were $3.4 billion as of January 25, 2026, of which the majority will be paid through fiscal year 2027.
+
+--- PDF page 71 (printed page 71) ---
+Accrual for Product Warranty Liabilities
+The estimated amount of product warranty liabilities was $2.8 billion and $1.3 billion as of January 25, 2026 and January 26, 2025, respectively. The estimated product returns and product warranty activity consisted of the following:
+Year Ended
+Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024
+(In millions)
+Balance at beginning of period | $1,290 | $306 | $82
+Additions | 2,474 | 1,203 | 278
+Utilization | (957) | (219) | (54)
+Balance at end of period | $2,807 | $1,290 | $306
+In fiscal years 2026, 2025, and 2024 the additions in product warranty liabilities primarily related to our Compute & Networking segment.
+We have provided indemnities for matters such as tax, product, and employee liabilities. We have included intellectual property indemnification provisions in our technology-related agreements with third parties. Maximum potential future payments cannot be estimated because many of these agreements do not have a maximum stated liability. We have not recorded any liability in our Consolidated Financial Statements for such indemnifications.
+Litigation
+Securities Class Action and Derivative Lawsuits
+The plaintiffs in the putative securities class action lawsuit, captioned 4:18-cv-07669-HSG, initially filed on December 21, 2018 in the United States District Court for the Northern District of California, and titled In Re NVIDIA Corporation Securities Litigation, filed an amended complaint on May 13, 2020. The amended complaint asserted that NVIDIA and certain NVIDIA executives violated Section 10(b) of the Securities Exchange Act of 1934, as amended, or the Exchange Act, and SEC Rule 10b-5, by making materially false or misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand between May 10, 2017 and November 14, 2018. Plaintiffs also alleged that the NVIDIA executives who they named as defendants violated Section 20(a) of the Exchange Act. Plaintiffs sought class certification, an award of unspecified compensatory damages, an award of reasonable costs and expenses, including attorneys’ fees and expert fees, and further relief as the Court may deem just and proper. On March 2, 2021, the district court granted NVIDIA’s motion to dismiss the complaint without leave to amend, entered judgment in favor of NVIDIA and closed the case. On March 30, 2021, plaintiffs filed an appeal from judgment in the United States Court of Appeals for the Ninth Circuit, case number 21-15604. On August 25, 2023, a majority of a three-judge Ninth Circuit panel affirmed in part and reversed in part the district court’s dismissal of the case, with a third judge dissenting on the basis that the district court did not err in dismissing the case. On November 15, 2023, the Ninth Circuit denied NVIDIA’s petition for rehearing en banc of the Ninth Circuit panel’s majority decision to reverse in part the dismissal of the case, which NVIDIA had filed on October 10, 2023. On December 5, 2023, the Ninth Circuit granted NVIDIA’s motion to stay the mandate pending NVIDIA’s petition for a writ of certiorari in the Supreme Court of the United States and the Supreme Court’s final disposition of the matter. NVIDIA filed a petition for a writ of certiorari on March 4, 2024. On June 17, 2024, the Supreme Court of the United States granted NVIDIA’s petition for a writ of certiorari. After briefing and argument, the Supreme Court dismissed NVIDIA’s writ of certiorari as improvidently granted on December 11, 2024, and issued judgment on January 13, 2025. On February 20, 2025, the Ninth Circuit’s judgment, entered August 25, 2023 and corrected August 28, 2023, took effect, and the case was remanded to the district court for further proceedings.
+The putative derivative lawsuit pending in the United States District Court for the Northern District of California, captioned 4:19-cv-00341-HSG, initially filed January 18, 2019 and titled In re NVIDIA Corporation Consolidated Derivative Litigation, was stayed pending resolution of the plaintiffs’ appeal in the In Re NVIDIA Corporation Securities Litigation action. On February 22, 2022, the court administratively closed the case, but stated that it would reopen the case once the appeal in the In Re NVIDIA Corporation Securities Litigation action is resolved. The case has not yet been reopened by the court. The lawsuit asserts claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, waste of corporate assets, and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs are seeking unspecified damages and other relief, including reforms and improvements to NVIDIA’s corporate governance and internal procedures.
+The putative derivative actions initially filed September 24, 2019 and pending in the United States District Court for the District of Delaware, Lipchitz v. Huang, et al. (Case No. 1:19-cv-01795-MN) and Nelson v. Huang, et. al. (Case No. 1:19-cv-01798-MN), were stayed pending resolution of the plaintiffs’ appeal in the In Re NVIDIA Corporation Securities
+
+--- PDF page 72 (printed page 72) ---
+Litigation action. On March 7, 2025, after the Supreme Court issued its judgment dismissing the Company’s petition for writ of certiorari as improvidently granted in the In Re NVIDIA Securities Litigation action, the district court adopted the parties' stipulation to extend the stay until the final and complete resolution of the In Re NVIDIA Corporation Securities Litigation action. The lawsuits assert claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty, unjust enrichment, insider trading, misappropriation of information, corporate waste and violations of Sections 14(a), 10(b), and 20(a) of the Exchange Act based on the dissemination of allegedly false, and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs seek unspecified damages and other relief, including disgorgement of profits from the sale of NVIDIA stock and unspecified corporate governance measures.
+Another putative derivative action was filed on October 30, 2023 in the Court of Chancery of the State of Delaware, captioned Horanic v. Huang, et al. (Case No. 2023-1096-KSJM). This lawsuit asserts claims, purportedly on behalf of us, against certain officers and directors of the Company for breach of fiduciary duty and insider trading based on the dissemination of allegedly false and misleading statements related to channel inventory and the impact of cryptocurrency mining on GPU demand. The plaintiffs seek unspecified damages and other relief, including disgorgement of profits from the sale of NVIDIA stock and reform of unspecified corporate governance measures. On August 11, 2025, the court granted the parties’ stipulation to voluntarily dismiss with prejudice plaintiff City of Westland Police and Fire Retirement System. This derivative matter is stayed pending the final resolution of In Re NVIDIA Corporation Securities Litigation action.
+Accounting for Loss Contingencies
+As of January 25, 2026, there are no accrued contingent liabilities associated with the legal proceedings described above based on our belief that liabilities, while reasonably possible, are not probable. Further, any possible loss or range of loss in these matters cannot be reasonably estimated at this time. We are engaged in legal actions not described above arising in the ordinary course of business, as well as regulatory and government inquiries and investigations, and, while there can be no assurance of favorable outcomes, we believe that the ultimate outcome of these matters will not have a material adverse effect on our operating results, liquidity or financial position. These matters are subject to inherent uncertainties and if the ultimate outcome is unfavorable, there exists the possibility of a material adverse impact on our operating results, liquidity or financial position in the period the outcome becomes estimable and probable.
+----- END OF NOTES -----

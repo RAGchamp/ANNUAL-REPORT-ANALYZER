@@ -35,8 +35,16 @@ MODEL_TESTING_DIR = Path(os.environ.get("MODEL_TESTING_DIR", BASE_DIR / "Model-T
 FEEDBACK_MAX_CHARS = 400
 MODEL_TEST_DPI = 150
 
+# Inline XBRL filings downloaded from SEC EDGAR on the XBRL page (/xbrl): one subfolder per ticker
+# (XBRL-docs\HIG\), listed with the reports and ingested by the XBRL route (INFO/XBRL-ROUTE.md).
+XBRL_DOCS_DIR = Path(os.environ.get("XBRL_DOCS_DIR", BASE_DIR / "XBRL-docs"))
+# SEC asks automated clients to identify themselves: "Company or name contact@example.com".
+# Set SEC_USER_AGENT to your own name and email; the default names the app only.
+SEC_USER_AGENT = os.environ.get("SEC_USER_AGENT", "RAGChamp-AnnualReportAnalyzer/1.0 (local research tool)")
+SEC_MAX_FILE_MB = 200
+
 for _d in (CACHE_DIR, THREADS_DIR, HISTORY_DIR, ANALYSIS_HISTORY_DIR, LOG_DIR,
-           MODEL_FEEDBACK_DIR, MODEL_TESTING_DIR):
+           MODEL_FEEDBACK_DIR, MODEL_TESTING_DIR, XBRL_DOCS_DIR):
     _d.mkdir(parents=True, exist_ok=True)
 
 # --- Claude Code CLI (same pattern as basic-chatbot) ---

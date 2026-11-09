@@ -69,7 +69,7 @@ ANN-RPT-ANALYZER\
     HOW-ANN-RPT-FOOT-NOTE-ANALYZER-WORKS.html   full technical write-up
     HOW-TO-TRAIN-NEW-MODEL-FORMAT.html          user guide: add a format (naming, the prompt, worked example)
     logo.svg, Requirements.txt
-  MODEL-DOCS\                one PDF per report format the app can read (TYPE-1 … TYPE-8), README.md
+  MODEL-DOCS\                one PDF per report format the app can read (TYPE-1 … TYPE-9), README.md
                              (the routine to add a format), _candidates\ (proposed from the app);
                              not in git, not in the exe
   WEB-APP\                   the application (details below)
@@ -85,7 +85,7 @@ ANN-RPT-ANALYZER\
 | `app.py` | Creates the Flask app, registers both blueprints, wires the analyzer to the ingester (`source.set_loader`), and holds the routes that join them: `/`, `/api/reports`, `/api/index` (ingest if needed → summary), `/api/jobs/<id>` |
 | `config.py` | Paths, Claude CLI settings, limits, notes header strings (env-overridable) |
 | `claude_client.py` | `run_claude()`: `claude -p` via **stdin** with **all tools disabled**; `fill_prompt()` |
-| `webcommon.py` | Shared web plumbing: `UserError`, the job runner, `render_markdown`, report list, `parse_page_spec` |
+| `webcommon.py` | Shared web plumbing: `UserError`, the job runner, `render_markdown`, report list (PDFs + XBRL filings in `Annual-reports\` and `XBRL-docs\`), `parse_page_spec` |
 | **`rptpkg\`** | **Report package** (SQLite): `schema.sql`, `writer.py`, `reader.py` (`Package`: `.index`, `.meta`, `unit_text`, `page`, `ocr_page`, `statement_view`, `lines`, `values`, `edges`, `checks`, `query`), `store.py` (location, SHA-256 key), `model.py` (unit ids) |
 | **`ingest\`** | **Ingester** |
 | `ingest\pipeline.py` | `ensure_package` / `open_report` / `build_package` / `package_status` / `import_package`; `INGESTER_VERSION` |
@@ -97,7 +97,7 @@ ANN-RPT-ANALYZER\
 | `ingest\links.py` | Links line → note (Notes column, same figure, title match), carried figures; checks |
 | `ingest\quality.py` | Quality report (stored in the package, shown in step 1, Ingest screen, CLI) |
 | `ingest\report_format.py`, `legacy_index.py`, `transcribed_index.py`, `ocr_transcribe.py`, `ocr_quality.py`, `pdf_utils.py` | Formats (modern / us-10k / legacy; transcribed), old reports, scanned reports, PyMuPDF helpers |
-| **`ingest\profiles\`** | **Format profiles** (`in-indas-2020s`, `in-schedule-vi-1970s`, `us-10k-edgar`, `us-10k-typewriter`, `scanned-ocr`, `ca-40f-usgaap`, `in-20f-ifrs`, `au-20f-ifrs`): indexer, **switches** (read with `profiles.active()` during ingestion), acceptance checks, `version` |
+| **`ingest\profiles\`** | **Format profiles** (`in-indas-2020s`, `in-schedule-vi-1970s`, `us-10k-edgar`, `us-10k-typewriter`, `scanned-ocr`, `ca-40f-usgaap`, `in-20f-ifrs`, `au-20f-ifrs`, `us-10k-two-column`): indexer, **switches** (read with `profiles.active()` during ingestion), acceptance checks, `version` |
 | **`ingest\models\`** | **Model documents**: `registry.json`, `fingerprint.py`, `match.py` (sha → fingerprint shortlist → trial extraction → verdict; `NewModelDocument`), `acceptance.py`, `gap_report.py`, `python -m ingest.models list/fingerprint/match/register/refresh/verify` |
 | `ingest\routes.py` + `templates/ingest.html`, `static/ingest.js` | **Ingest screen** (`/ingest`), export/import, `/page-image`, OCR routes, `/ocr-review` |
 | `ingest\__main__.py` | `python -m ingest <pdf> [--format X] [--force]` |
@@ -105,6 +105,7 @@ ANN-RPT-ANALYZER\
 | **`ingest\narrative\`** | Pages outside notes/statements: `geometry.py` (page → segments, drawings, images), `layout.py` (blocks in reading order, coverage check), `sections.py` (section map), `kinds.py`, `render.py` (section text); `build()` called by the pipeline when the profile switches it on |
 | **`ingest\formatted_report.py`** + `templates/formatted_report.html`, `formatted_preparing.html`, `static/formatted_report.js` | **Formatted document** (`/model-testing/formatted?doc=`): a model document's whole extraction as one Bootstrap page; `format_unit_text` (stored text → blocks), `build_document`, `FORMATTER_VERSION`, in-memory `CACHE` |
 | `Model-Feedback\`, `Model-Testing\` | Feedback JSONs + audit trail `feedback-status.json`; page PNGs saved with each feedback. **In git** |
+| **`ingest\xbrl\`** | **XBRL route** (`INFO\XBRL-ROUTE.md`): `filing`, `ixbrl` (facts, pages, blocks), `linkbase`, `roles`, `notes`, `statements`, `checks`, `links`, `narrative`, `build` (index + content + acceptance), `pageview` (a filing's HTML page) |
 | **`analyzer\`** | **Analyzer** (never imports `ingest` or `pymupdf`; `tests/test_boundary.py`) |
 | `analyzer\routes.py`, `analyzer\jobs.py` | Routes and the identify / analyze / follow-up jobs, threads, history, saved reports |
 | `analyzer\note_selector.py` | Scope rules, Claude note-picker (+ statement hints), keyword fallback |
@@ -114,7 +115,7 @@ ANN-RPT-ANALYZER\
 | `analyzer\source.py`, `extract.py`, `statement_info.py`, `statements_page.py`, `history.py`, `report_html.py` | Package source, extracts from the package, statement labels, statements page, history, HTML reports |
 | `prompts/*.txt` | Selector, analysis and follow-up prompts (edit these, not code, to change Claude's behaviour) |
 | `templates/`, `static/` | UI (`index.html` + `app.js`: Analyze; `ingest.html` + `ingest.js`: Ingest) |
-| `tests/` | 455 pytest tests (Claude mocked); `tests/fixtures/baseline/` = frozen prompts |
+| `tests/` | 493 pytest tests (Claude mocked); `tests/fixtures/baseline/` = frozen prompts |
 | `cache/` | `packages/*.rptpkg.db`, `<pdf>.ocr/` (transcriptions), `threads/*.json` |
 | `Prompt-History/`, `Analysis-history/`, `logs/app.log` | Outputs (see §5) |
 | `README.md` | User-facing run/usage guide |
@@ -128,7 +129,7 @@ cd C:\Daya\RAGchamp\ANN-RPT-ANALYZER\WEB-APP
 pip install -r requirements.txt          # flask, pymupdf, markdown, pytest
 python app.py                            # http://127.0.0.1:5000  (Ingest screen: /ingest)
 python -m ingest "..\Annual-reports\Chubb-10-K-2025.pdf"    # ingest one report, print its quality report
-python -m pytest -q                      # 455 tests, ~8 min, no Claude calls
+python -m pytest -q                      # 493 tests, ~8-14 min, no Claude calls
 ```
 
 Requirements: Python 3.12, and the Claude Code CLI installed and logged in
@@ -226,6 +227,7 @@ GET  /ingest        Ingest screen; /api/ingest/*, /api/packages/export|import, /
 | Prompts (Q5) | All four statements **plus** LINKED FIGURES |
 | US 10-K (Q6) | Its own format, `us-10k` |
 | Batch (Q7) | **No**: one report at a time |
+| EDGAR download (XBRL Q1) | **Yes** since 2026-11-08: the XBRL page downloads a filing from a ticker + SEC link (was: the user downloads by hand) |
 | Cross-year (Q8) | **Not needed** |
 | Claude tools (Q9) | **Never**: no MCP / query tool; Python decides what Claude sees |
 | Model documents | Every report is matched to a MODEL-DOCS model first (`INFO\MODEL-DOCS-FUNCTIONALITY-PLAN.md` §14) |
@@ -407,6 +409,51 @@ GET  /ingest        Ingest screen; /api/ingest/*, /api/packages/export|import, /
     `MAX_FOLLOWUP_NEW_PASSAGES` (2) passages + `MAX_BUSINESS_NOTES` notes. Additions that would pass
     `MAX_CONTEXT_CHARS` are skipped. Results carry `rescanned`; the UI says what was added or "nothing new".
     Baseline: only `Reliance-1976-1977.3-followup.prompt.txt` changed (its canned reply adds the Directors' Report).
+25. **TYPE-9 JPMorgan 10-K** (2026-11-08, registry v13, `MATCHER_VERSION` 3). `JP-MORGAN-2025.pdf` was refused as
+    a "new model document" although it is a 10-K: TYPE-3's rules found 0 notes and 0 statements. Its 10-K is
+    typeset like an annual report, so a new profile **`us-10k-two-column`** (derived from `us-10k-edgar`) with
+    new switches: `note_word_headings` ("Note 12 – Loans"; two headings may share a row, one per column; wrapped
+    titles taken from the same column via `page_rows` `parts`), `alternate_header_pages` (the notes header is on
+    left-hand pages only), `header_starts_row` (the contents page p.45 lists the header mid-row and had started
+    the section, pushing the statements out of the window), `two_column_text` (`clip._column_order`: bands clear
+    of the gutter read left column then right; rows crossing it, or figures-only on the right with table-size
+    labels on the left, stay whole), `footer_page_numbers` ("JPMorgan Chase & Co./2025 Form 10-K 165"; only that
+    row is the footer - the old rule cut every row in the bottom 10%), `us_auditor_addressee` (company name),
+    `first_total_assets_only` (the balance sheet ends with a VIE table with its own "Total assets"),
+    `wrapped_label_amounts` (`tables._merge_touching`: "Loans (included" + "$70,684" + "and … at fair value)").
+    `acceptance.evaluate` now runs the balance check inside the profile. Result: 34 notes (PDF 172–316), P&L
+    167–168, BS 169, Equity 170, CF 171, balance checks ok, narrative 260/260 pages OK. `tests/test_jpm_10k.py`.
+    Not in the prompt baseline (like TYPE-6/7/8).
+26. **XBRL route** (2026-11-08, `INFO\XBRL-ROUTE.md` phases 0-4, INDEX_VERSION 36, schema 1.3). An inline XBRL
+    filing (a folder or `.zip` of the EDGAR files in `Annual-reports\`) is read from its tags by `ingest\xbrl\`:
+    no model matching, no layout rules, the same package (meta `source: "xbrl"`, `lines.concept`). Notes = the
+    Disclosure roles' TextBlocks (continuations joined); statements from the presentation trees (equity: one
+    component after another, then the total; comprehensive income = `C-PL-2`); subtotals from the calculation
+    linkbase; links by concept in a note's Details roles (`xbrl concept`), else the PDF rules; Item sections and
+    passages. Pages = the XHTML's page breaks (extract markers still read "PDF page N"; the REPORT PROFILE's
+    "Source:" line, only for XBRL packages, says so). Acceptance checks instead of matching (`build.acceptance`;
+    US GAAP only - IFRS is phase 6). A PDF and a filing with the same name: only the filing is listed.
+    `XBRL_VERSION` (`ingest\xbrl\__init__.py`) rebuilds XBRL packages only. Nvidia 10-K
+    (`Annual-reports\NVIDIA-10-K-2026\`): 18 notes (pages 56-81), 332 figures, 28/28 checks ok. `tests\test_xbrl.py`.
+27. **Part of the STOCK INVESTMENT PLAYBOOK** (2026-11-08). The app is one piece of the playbook in
+    `C:\Daya\RAGchamp\STOCK-INV-PLAYBOOOK` (stock playbooks, industry research, model portfolio …; another agent
+    will write a stock's story). Every page and saved report has the playbook's RAG Champ bar
+    (`templates\_brand.html`, macro `brand_nav`: logo left, "STOCK INVESTMENT PLAYBOOK" right, green #0a3d1f /
+    yellow #ffe14d, as in `DLTR-PLAYBOOK.html`); the app screens keep their own toolbar under it
+    (`.site-header` in `static\style.css`). `logo_svg` reaches every template through a context processor in
+    `app.py`. **Watchlist** page `/watchlist` (`templates\watchlist.html`, linked from the home page): the content
+    of `STOCK-INV-PLAYBOOOK\watchlist.html` without the old Safe Multiple header, breadcrumb and footer, and
+    (user's request) without the note box and the Bank Stocks / India Stocks / CHARTS lines above the stock
+    search, and without the macro table's "learn more" (macro.html, not in the app). Baseline: only the
+    5 `*.statements.html` files re-frozen.
+28. **XBRL page: download filings from SEC** (2026-11-08; changes XBRL-ROUTE Q1 at the user's request). `/xbrl`
+    (`ingest\xbrl_routes.py`, `ingest\xbrl\edgar.py`): ticker + any link into a filing on www.sec.gov -> the
+    iXBRL main document + EX-101 schema/linkbases + extracted instance + `filing.json` in
+    `WEB-APP\XBRL-docs\<TICKER>\` (not in git), listed with the reports and ingested by the XBRL route.
+    `config.SEC_USER_AGENT` (env). **SEC's CDN injects scripts into served HTML** (a bare `defer` breaks the XML
+    parse): the downloader strips script/noscript (the result equals the size the index lists) and the parser
+    retries without scripts. HIG FY2025: 25 notes, 24/24 checks, Items from running headers (XBRL_VERSION 2).
+    Tests use an empty `XBRL_DOCS_DIR` (autouse fixture in `tests\conftest.py`); `tests\test_xbrl_download.py`.
 
 ---
 
@@ -433,7 +480,7 @@ When the user says *"fix the model feedback `Model-Feedback\X.json`"* (work in `
 
 ## 8. Testing and verification
 
-- `python -m pytest -q` → **455 passed** (~8 min); `-m "not slow"` skips the
+- `python -m pytest -q` → **493 tests** (~8-14 min; 3 Chubb prompt-baseline files are stale since `aligned_note_columns` was switched on for us-10k-edgar - they already failed at commit ae72d85; re-freeze Chubb after reviewing the diff); `-m "not slow"` skips the
   large MODEL-DOCS checks. Claude is mocked (`run_claude`
   monkeypatched on `analyzer.jobs` / `analyzer.note_selector`), so the tests are
   free. They run against the real sample PDFs and **skip** those that are missing.
@@ -479,7 +526,7 @@ When the user says *"fix the model feedback `Model-Feedback\X.json`"* (work in `
   `MODEL-DOCS\README.md`).
 - Narrative quality lines start with `Narrative`, **never `Warning:`**: the `/api/index` summary (frozen in the
   prompt baseline) shows the `Warning:` lines.
-- Packages are rebuilt when `INDEX_VERSION` (`ingest\notes_index.py`, currently **34**)
+- Packages are rebuilt when `INDEX_VERSION` (`ingest\notes_index.py`, currently **36**)
   changes. **Bump it whenever you change what goes into a package** — otherwise tests
   and the app silently use old packages.
 - `CURRENT_JOB` is thread-local: capture `current_job_id()` before handing work to a
@@ -521,7 +568,7 @@ When the user says *"fix the model feedback `Model-Feedback\X.json`"* (work in `
 ### Suggested first prompt for another Claude Code session
 > Read `.claude/claude.md`, `WEB-APP/README.md`, `INFO/SPLIT-FUNCTIONALITY-PLAN.md` and
 > `INFO/HOW-ANN-RPT-FOOT-NOTE-ANALYZER-WORKS.html`. Run `python -m pytest -q` in
-> `WEB-APP` to confirm 455 tests pass. Then <describe the enhancement>. Keep the
+> `WEB-APP` to confirm 493 tests pass. Then <describe the enhancement>. Keep the
 > decisions in §6, add tests for the change, and update README and the HOW doc.
 
 ### Conventions for enhancements

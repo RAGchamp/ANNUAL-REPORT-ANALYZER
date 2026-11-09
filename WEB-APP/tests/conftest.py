@@ -12,6 +12,13 @@ from ingest import pipeline  # noqa: E402
 SAMPLE_PDF = config.REPORTS_DIR / "Bharat-Forge-IR-2026-conv-single-page.pdf"
 
 
+@pytest.fixture(autouse=True)
+def _empty_xbrl_docs(tmp_path_factory, monkeypatch):
+    """Filings downloaded on the XBRL page (XBRL-docs\\<TICKER>\\) are listed with the reports:
+    tests see an empty folder, so the report lists they check don't depend on what was downloaded."""
+    monkeypatch.setattr(config, "XBRL_DOCS_DIR", tmp_path_factory.mktemp("xbrl-docs"))
+
+
 @pytest.fixture(scope="session")
 def index():
     if not SAMPLE_PDF.exists():

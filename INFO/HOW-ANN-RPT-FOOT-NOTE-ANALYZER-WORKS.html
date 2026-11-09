@@ -185,6 +185,7 @@
             <div class="toc-item"><span class="toc-num">13</span><a href="#scanned">Scanned Reports (OCR)</a></div>
             <div class="toc-item"><span class="toc-num">14</span><a href="#packages">Ingester, Analyzer &amp; Report Packages</a></div>
             <div class="toc-item"><span class="toc-num">15</span><a href="#models">Model Documents</a></div>
+            <div class="toc-item"><span class="toc-num">15a</span><a href="#xbrl">Inline XBRL Filings (the XBRL Route)</a></div>
             <div class="toc-item"><span class="toc-num">16</span><a href="#walkthrough">Step-by-Step: "Analyze the Tax Liabilities"</a></div>
             <div class="toc-item"><span class="toc-num">17</span><a href="#testing">Testing &amp; Verification</a></div>
             <div class="toc-item"><span class="toc-num">18</span><a href="#limitations">Known Limitations</a></div>
@@ -1077,6 +1078,32 @@ Model-Feedback/feedback-status.json            Reported ─► Fixed by Claude c
           <li><strong>Pages outside notes and statements</strong> (<code>ingest/narrative/</code>, <code>INFO/ANNUAL-REPORT-NON-FIN-STMTS-NOTES-EXTRACTION-PLAN.md</code>): for every model format (each profile's <code>narrative_sections</code> switch names the section sources that fit it), ingestion also builds a <em>section map</em> (PDF bookmarks, a contents page over one or more pages → PDF pages via the footers' page numbers, running headers, <code>Item N.</code> headings, or large page headings as a last resort; scanned reports from their Markdown transcription) and reads each page into <em>blocks in reading order</em>: page geometry (segments, drawings, images) → tables (ruled grids, row-ruled text tables, aligned figure columns) → bullets and badges → panels and graphics → text boxes → a recursive XY-cut (columns first; bands whose gutters line up stay columns) → typed blocks. A coverage check compares the characters of the blocks with the page's; a page that fails keeps its flat text. Stored in <code>doc_sections</code>, <code>narrative_pages</code>, <code>page_blocks</code> (schema 1.1); <code>pages.text</code> and every prompt are unchanged. The formatted document renders these sections (KPI tiles, panels, graphics with a page-image crop) and Model testing lists the blocks.</li>
           <li><strong>Questions use the report's sections</strong> (<code>INFO/ANALYZE-NON-FIN-DATA-PLAN.md</code>): at ingest each section is cut into <em>passages</em> (1.5–8 K characters, heading path, money figures; table <code>doc_passages</code>). For a question, <code>analyzer/passages.py</code> ranks them (BM25 over path and text, synonyms such as CV ↔ commercial vehicle, section-kind boosts) and the existing selector call picks up to 4 with the notes. Analyses and follow-ups then carry a REPORT SECTIONS block (management's unaudited commentary), NARRATIVE FIGURES (money amounts converted to the statements' unit and matched to statement lines or note figures within half their last printed digit), a "Business context" answer section and a system-prompt addition. When no passage is chosen these parts are empty, so the prompt is byte-identical to before.</li>
           <li><strong>Two flows</strong> (plan §16): <em>Identify notes</em> is the original notes-only flow with the original prompts; <em>Analyze non notes</em> (<code>mode: "business"</code>) picks up to 4 passages and at most 2 confirming notes (<code>select_for_business</code>) and sends <code>prompts/business_*.txt</code>: REPORT SECTIONS first, NARRATIVE FIGURES, the notes, the statements for reference, and a business answer with a short <em>How it shows in the audited numbers</em> table. An approximate figure tie needs a word shared by the line label and the figure's context; an exact one (within 0.5 units) stands alone. Both flows pause in step 3; threads keep their mode.</li>
+        </ul>
+      </div>
+    </div>
+    <p class="back-to-top mt-2"><a href="#toc">↑ Back to Table of Contents</a></p>
+  </section>
+
+
+
+<!-- 15a. XBRL ROUTE -->
+  <section id="xbrl" class="mb-5">
+    <h2 class="section-title">15a. Inline XBRL Filings (the XBRL Route)</h2>
+    <div class="card shadow-sm accent-blue mb-4">
+      <div class="card-body">
+        <p>SEC filings (10-K, 20-F, 40-F) are also published as <strong>inline XBRL</strong>: the same report as an XHTML file in which every statement figure is a tagged fact (concept, period, unit, scale) and every note one tagged text block. The structure is already in the file, so the XBRL route (<code>ingest/xbrl/</code>, <code>INFO/XBRL-ROUTE.md</code>) needs no layout rules and no model document. It writes the same report package, so the analyzer is unchanged.</p>
+        <pre><code class="language-plaintext">PDF  ──► ingest\  (model match + profile rules) ──┐
+                                                  ├──► report package (.rptpkg.db) ──► analyzer ──► Claude
+XBRL ──► ingest\xbrl\ (no layout rules)       ────┘</code></pre>
+        <ul class="mb-0">
+          <li><strong>Input</strong>: a folder (or <code>.zip</code>) in <code>Annual-reports\</code> with the files EDGAR publishes ("Download all files"): the <code>.htm</code> with <code>ix:header</code>, the <code>.xsd</code> and the <code>_pre</code> / <code>_cal</code> / <code>_lab</code> linkbases. The app does not download filings. When a PDF has the same name as a filing, only the filing is listed.</li>
+          <li><strong>Notes</strong>: one per <em>Disclosure</em> role with a <code>…TextBlock</code> fact; its text is the blocks the fact and its <code>ix:continuation</code> chain cover, tables as <code>label | FY2026 | FY2025</code>. The number is the printed "Note 13".</li>
+          <li><strong>Statements</strong>: built from each statement role's presentation tree (labels incl. <code>totalLabel</code>, <code>negatedLabel</code>, <code>periodStartLabel</code>) and the facts; the equity statement one component (axis member) after another, then the total. Comprehensive income is a second income statement (<code>C-PL-2</code>).</li>
+          <li><strong>Checks</strong>: subtotals from the calculation linkbase (<em>ok</em> / <em>fail</em>, never <em>unverified</em>), balance (<code>Assets</code> = <code>LiabilitiesAndStockholdersEquity</code>), the same concept in two statements.</li>
+          <li><strong>Links</strong>: a line whose concept is tagged in a note's Tables / Details roles is linked to that note (<em>xbrl concept</em>, high); other lines use the PDF route's label, figure and title rules.</li>
+          <li><strong>Pages</strong>: document pages between the XHTML's page breaks (numbered 1…n, printed number from the footer). The prompt's REPORT PROFILE says so; extracts keep the usual "PDF page N (printed page M)" marker. The Ingest screen's page view shows the filing's own HTML for that page.</li>
+          <li><strong>Acceptance instead of matching</strong>: ≥ 5 notes, ≥ 3 of 4 statements, readable figures, a balance that holds, US GAAP (<code>us-gaap</code>) facts. A filing that fails is refused with the reason. IFRS filings come in phase 6.</li>
+          <li>Nvidia FY2026 10-K: 18 notes (pages 56–81), all statements, 332/332 figures, 28/28 checks ok, 62 narrative passages; read in about 1 second.</li>
         </ul>
       </div>
     </div>

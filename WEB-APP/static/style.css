@@ -28,11 +28,16 @@ body {
 
 .hidden { display: none !important; }
 
-.navbar {
+/* The RAG Champ bar (templates/_brand.html) with the page's own toolbar under it; both stay on top. */
+.site-header {
   position: sticky;
   top: 0;
-  z-index: 10;
-  background: var(--navy);
+  z-index: 30;
+}
+.site-header .rc-topnav { position: static; }
+
+.navbar {
+  background: var(--navy);      /* the analyzer's own blue toolbar under the playbook's green bar */
   padding: 14px 16px;
   display: flex;
   align-items: center;
@@ -66,9 +71,9 @@ body {
   width: 280px;
   flex: none;
   position: sticky;
-  top: 80px;
+  top: 160px;                   /* under the two header bars */
   align-self: flex-start;
-  max-height: calc(100vh - 100px);
+  max-height: calc(100vh - 180px);
   overflow-y: auto;
   background: var(--card);
   border: 1px solid var(--border);
@@ -421,6 +426,7 @@ code { background: var(--chip-bg); padding: 1px 5px; border-radius: 4px; font-si
 .status-up-to-date { color: var(--green); border-color: var(--green); }
 .status-stale, .status-needs-transcription { color: #8a5a00; border-color: #d4a017; }
 .status-not-ingested { color: var(--muted); border-color: var(--border); }
+.status-xbrl { color: #1f5fa8; border-color: #1f5fa8; }
 .small-select { max-width: 260px; font-size: 0.85rem; }
 .page-number { width: 90px; }
 .job-status:empty { display: none; }
@@ -487,3 +493,11 @@ code { background: var(--chip-bg); padding: 1px 5px; border-radius: 4px; font-si
 .passage-results { margin-top: 4px; }
 .passage-box .row input[type="text"] { flex: 1 1 260px; }
 .link-btn { background: none; border: none; color: var(--blue, #0d6efd); cursor: pointer; padding: 0 4px; }
+
+/* ---------- XBRL page (/xbrl): download a filing from SEC ---------- */
+.xbrl-form { display: grid; grid-template-columns: 90px 1fr; gap: 10px 12px; align-items: center; margin-top: 10px; }
+.xbrl-form input[type="text"], .xbrl-form input[type="url"] { padding: 8px 10px; border: 1px solid var(--border); border-radius: 6px; font-size: 0.95rem; }
+.xbrl-form #ticker { max-width: 160px; text-transform: uppercase; }
+.xbrl-form label.inline { display: flex; gap: 6px; align-items: center; }
+.status-not-readable { color: #b42318; border-color: #b42318; }
+@media (max-width: 640px) { .xbrl-form { grid-template-columns: 1fr; } }

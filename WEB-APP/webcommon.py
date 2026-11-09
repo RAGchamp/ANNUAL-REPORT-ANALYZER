@@ -7,11 +7,13 @@ import re
 import threading
 import uuid
 from datetime import datetime
+from pathlib import Path
 
 import markdown
 
 import config
 from claude_client import ClaudeError
+from rptpkg import store
 
 log = logging.getLogger("app")
 
@@ -54,10 +56,26 @@ def logo_svg():
 # ---------------------------------------------------------------- reports
 
 def list_reports():
-    if not config.REPORTS_DIR.is_dir():
-        return []
-    return sorted(p for p in config.REPORTS_DIR.iterdir()
-                  if p.is_file() and p.suffix.lower() == ".pdf")
+    """The PDFs in REPORTS_DIR, and the inline XBRL filings (a folder or .zip of the files
+    EDGAR publishes, INFO/XBRL-ROUTE.md §4) there and in XBRL_DOCS_DIR (the ones the XBRL page
+    downloaded, one folder per ticker). When a PDF and a filing share a name
+    ("JP-MORGAN-2025.pdf" and "JP-MORGAN-2025\\"), the filing is listed and the PDF is not (Q3);
+    a downloaded folder with the name of a report in REPORTS_DIR is left out."""
+    items = list(config.REPORTS_DIR.iterdir()) if config.REPORTS_DIR.is_dir() else []
+    filings = [p for p in items if (p.is_dir() or p.suffix.lower() == ".zip") and store.is_xbrl_filing(p)]
+    names = {(p.stem if p.is_file() else p.name).lower() for p in filings}
+    pdfs = [p for p in items if p.is_file() and p.suffix.lower() == ".pdf" and p.stem.lower() not in names]
+    taken = names | {p.stem.lower() for p in pdfs}
+    downloaded = []
+    docs = Path(config.XBRL_DOCS_DIR)
+    if docs.is_dir():
+        downloaded = [p for p in docs.iterdir() if p.is_dir() and not p.name.endswith(".partial")
+                      and p.name.lower() not in taken and store.is_xbrl_filing(p)]
+    return sorted(pdfs + filings, key=lambda p: p.name.lower()) + sorted(downloaded, key=lambda p: p.name.lower())
+
+
+def is_xbrl_report(path):
+    return not (path.is_file() and path.suffix.lower() == ".pdf")
 
 
 def parse_page_spec(spec):

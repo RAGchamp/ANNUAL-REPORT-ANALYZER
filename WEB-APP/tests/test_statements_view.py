@@ -161,7 +161,7 @@ def test_route_renders_page(index):
     assert '<td class="num">168,116.53</td>' in html
     assert 'colspan="5" class="grp">Reserves and Surplus (Refer note 16)</td>' in html
     assert ">Foreign currency translation reserve (FCTR)</td>" in html
-    assert "RAG Champ" in html and "ANNUAL REPORT ANALYZER" in html
+    assert "RAG Champ" in html and "STOCK INVESTMENT PLAYBOOK" in html
     assert client.get("/statements?report=..%5Csecret.pdf").status_code == 400
 
 

@@ -6,7 +6,7 @@ ingester's other routes:
   POST /api/ingest/run          ingest one report (a job; one report at a time)
   GET  /api/packages/export     download a report's package
   POST /api/packages/import     add a package exported on another PC
-  GET  /page-image              any PDF page as an image
+  GET  /page-image              any PDF page as an image (an XBRL filing: its HTML page)
   GET  /gap-report              a new model document's gap report; /api/models, /api/models/propose,
                                 /api/models/describe (INFO/MODEL-DOCS-FUNCTIONALITY-PLAN.md)
   scanned reports: /api/ocr/start, /api/ocr/page, /ocr-review, /ocr-image
@@ -19,11 +19,13 @@ import shutil
 import tempfile
 from pathlib import Path
 
-from flask import Blueprint, jsonify, render_template, request, send_file
+from flask import Blueprint, Response, jsonify, render_template, request, send_file
 
 import config
 from ingest import notes_index, ocr_quality, ocr_transcribe, pipeline
 from ingest.models import gap_report, registry
+from ingest.xbrl import filing as xbrl_filing
+from ingest.xbrl import pageview
 from ingest.pdf_utils import PdfError, open_pdf
 from rptpkg import store
 from webcommon import (UserError, current_job_id, job_cancelled, list_reports, logo_svg, parse_page_spec,
@@ -151,8 +153,12 @@ def ingest_screen():
 
 
 def _report_row(path):
-    row = {"name": path.name, "size_mb": round(path.stat().st_size / 1_048_576, 1)}
+    row = {"name": path.name, "size_mb": round(store.report_size(path) / 1_048_576, 1),
+           "xbrl": pipeline.is_xbrl(path)}
     row.update(pipeline.package_status(path))
+    if row["xbrl"]:
+        row["scanned"] = False
+        return row
     manifest = ocr_transcribe.load_manifest(path)
     row["scanned"] = row.get("format") == "transcribed" or bool(manifest.get("requested"))
     if row["scanned"]:
@@ -231,6 +237,18 @@ def page_image():
         page = int(request.args.get("page", "1"))
     except ValueError:
         raise UserError("Page must be a number.")
+    if pipeline.is_xbrl(path):
+        # an inline XBRL filing has no page images: its own HTML between two page breaks
+        try:
+            html, _ = pageview.page_html(path, page)
+        except ValueError as exc:
+            raise UserError(str(exc))
+        except xbrl_filing.FilingError as exc:
+            raise UserError(str(exc))
+        response = Response(html, mimetype="text/html")
+        response.headers["Content-Security-Policy"] = ("default-src 'none'; style-src 'unsafe-inline'; "
+                                                       "img-src 'none'; script-src 'none'")
+        return response
     doc = open_pdf(path)
     try:
         if not 1 <= page <= doc.page_count:
